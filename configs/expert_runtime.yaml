@@ -1,0 +1,85 @@
+schema_version: 2
+runtime_version: stage1-provider-runtime
+
+contract:
+  request_file: request.json
+  event_log: events.jsonl
+  artifact_files: [metadata.json, predictions.npz]
+  optional_files: [latents.npz, training_log.jsonl, native_training_summary.json]
+  lifecycle: [describe, prepare, fit, predict, export_latent, finalize]
+  production_latent_projection_dim: 256
+
+experts:
+  tpot_mat:
+    bridge: tpot_mat_selected_pipeline
+    backend: published_tpot_mat_stacking_xgboost_pipeline
+    environment: envs/tpot_mat.yml
+    source: pinned_external_provider
+    source_repository: https://github.com/materialsproject/matbench
+    source_commit: 936176db18ca4cd7b38cbd957c017a5bac770c6b
+    modality: steels_14_element_composition
+    supported_tasks: [steels]
+    native_latent: three_stacking_predictions_plus_xgboost_leaf_path_103d
+    gpu_required: false
+    pretrained: false
+
+  anchorboost:
+    bridge: anchorboost
+    backend: first_party_xgboost_extra_trees_residual_mlp_ensemble
+    environment: envs/anchorboost.yml
+    source: first_party
+    modality: enriched_composition_descriptors
+    supported_tasks: [glass]
+    native_latent: task_trained_residual_descriptor_representation_512d
+    gpu_required: true
+    pretrained: false
+
+  mattervial_modnet:
+    bridge: mattervial_modnet_multitask
+    backend: published_mattervial_features_plus_modnet_ensemble
+    environment: envs/mattervial.yml
+    source: pinned_external_provider
+    modality: task_frozen_published_feature_recipe
+    supported_tasks: [expt_gap, expt_is_metal, dielectric, log_kvrh, log_gvrh, mp_is_metal]
+    native_latent: frozen_target_free_recipe_blocks_right_padded_288d
+    gpu_required: true
+    pretrained: true
+    overlap_audit_required: true
+
+  jmp_l:
+    bridge: jmp_l_official_finetune
+    backend: official_facebookresearch_jmp_l_full_finetune
+    environment: envs/jmp_l.yml
+    source: pinned_external_provider
+    source_repository: https://github.com/facebookresearch/JMP
+    source_commit: 937b14874381d9b80809582e323ef82f2d4e1291
+    source_root: external/JMP
+    checkpoint_path: checkpoints/jmp-l.pt
+    checkpoint_url: https://jmp-iclr-datasets.s3.amazonaws.com/jmp-l.pt
+    modality: periodic_crystal_structure
+    supported_tasks: [jdft2d, perovskites, phonons, mp_gap, mp_e_form]
+    native_latent: gemnet_oc_final_atom_energy_embedding_graph_pooled_256d
+    gpu_required: true
+    pretrained: true
+    overlap_audit_required: true
+    workflow_stage: stage1
+
+phases:
+  official_finetune:
+    train: complete_official_matbench_outer_train
+    validation: none
+    predict: official_matbench_outer_test
+    hyperparameter_policy: fixed_release_values
+    fit_protocol: single_outer_fold_fit
+  holdout_validation:
+    train: deterministic_90_percent_of_outer_train
+    validation: deterministic_10_percent_of_outer_train
+    predict: same_untouched_validation_subset
+  inner_oof:
+    train: complete_inner_train
+    validation: none
+    predict: untouched_inner_val
+  outer_refit:
+    train: complete_outer_train
+    validation: none
+    predict: untouched_outer_test

@@ -1,0 +1,61 @@
+schema_version: tpot-mat-stage1
+experiment_id: stage1_tpot_mat_steels_official_pipeline_fe14
+status: release
+task: steels
+
+official_source:
+  repository: https://github.com/materialsproject/matbench
+  commit: 936176db18ca4cd7b38cbd957c017a5bac770c6b
+  directory: benchmarks/matbench_v0.1_TPOT
+  algorithm: TPOT-Mat
+  official_mean_mae: 79.94681065713206
+  official_fold_mae:
+    - 105.63630216083828
+    - 66.3153579954117
+    - 78.27863927041332
+    - 77.96769113848288
+    - 71.5360627205141
+  pipeline_sha256: 21a3f2e07020ce2437310e23aa8d8051542ed785949cf38b0a4b7b08a795bec0
+  notebook_sha256: 4c666e4852d6ae0d27b06b5e8d2957bcf8b8dd52c46ac885d82823fe3adfbf61
+  info_sha256: 7bb7175b1de6fdaffd5310ede5b39f1e8f85d8705e449ea7250cbaa52c218ab2
+  results_sha256: d7cce0528740474f099abcd007197c1a05b9ed5dd273727418bb5af122c72e11
+  utils_sha256: df221d8279222c3bc3e47f612a514aebc114838f51c68dd0e065a8fcd3dd1df4
+
+recipe:
+  mode: clone_official_selected_pipeline_then_refit_each_project_outer_fold
+  pipeline_initialization: official_topology_fresh_outer_fold_fit
+  composition_elements: [Al, C, Co, Cr, Fe, Mn, Mo, N, Nb, Ni, Si, Ti, V, W]
+  expected_input_dim: 14
+  implementation: official_fe14_cleaner_parity
+  expected_stacking_estimators: 3
+  expected_xgboost_trees: 100
+  hidden_dim: 103
+  hidden_source: three_stacking_predictions_plus_xgboost_leaf_path
+  uncertainty_source: standard_deviation_of_three_stacking_and_final_predictions
+  fit_scope: complete_outer_train
+  replay_roles: [holdout_train, holdout_val, outer_test]
+  fold_mapping: {0: 0, 1: 1, 2: 2, 3: 3, 4: 4}
+
+fixed_protocol:
+  random_seed: 18012019
+  random_seed_source: matbench_v0.1_fixed_random_state
+  seed_scope: all_outer_folds
+
+stage2_contract:
+  expert_id: tpot_mat_steels_anchor
+  provider: tpot_mat_official_pipeline
+  representation_kind: task_trained_hidden
+  input_modality: steels_14_element_composition
+  availability_scope: own_task
+  outer_fold_checkpoint_mapping: one_to_one
+  checkpoint_replay_scope: train_val_test_within_outer_fold
+
+execution:
+  environment: hpsafe-tpot-mat
+  cpu_concurrency: 8
+  threads_per_fit: 2
+  preprocess_concurrency: 1
+  retry_limit: 1
+  minimum_free_disk_gb: 5
+  fit_timeout_minutes: 30
+  gpu_jobs: 0

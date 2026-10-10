@@ -1,0 +1,10 @@
+{
+  "analysis_scope": "released held-out Matbench predictions and routing diagnostics; no model fitting",
+  "source_variant": "final__oof_locked",
+  "hierarchical_bootstrap_repeats": 2000,
+  "paired_fold_bootstrap_repeats": 100000,
+  "maximum_rows_per_selected_fold": 4096,
+  "base_seed": 20260930,
+  "hierarchical_bootstrap": "resample five outer folds with replacement, then resample samples within each selected fold; classification resampling is label-stratified",
+  "full_minus_no_cross_bootstrap": "paired resampling of the five official outer-fold differences"
+}

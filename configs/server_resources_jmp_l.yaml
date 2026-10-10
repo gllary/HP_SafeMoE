@@ -1,0 +1,30 @@
+schema_version: 1
+expected_gpu:
+  count_at_least: 8
+  allowed_indices: [0, 1, 2, 3, 4, 5, 6, 7]
+  isolated_allowed_indices: []
+  name_contains: H20
+  memory_gb_minimum_each: 130
+
+scheduler:
+  poll_seconds: 5
+  # Two automatic retries reuse resume/last.ckpt; completed folds are retained.
+  retry_limit: 2
+  cpu_concurrency: 8
+  preprocess_concurrency: 2
+  work_stealing:
+    enabled: true
+    prefer_declared_lane: true
+    policy: longest_remaining_first
+  gpu_lanes:
+    0: {max_concurrent_jobs: 1, reserve_free_gb: 12}
+    1: {max_concurrent_jobs: 1, reserve_free_gb: 12}
+    2: {max_concurrent_jobs: 1, reserve_free_gb: 12}
+    3: {max_concurrent_jobs: 1, reserve_free_gb: 12}
+    4: {max_concurrent_jobs: 1, reserve_free_gb: 12}
+    5: {max_concurrent_jobs: 1, reserve_free_gb: 12}
+    6: {max_concurrent_jobs: 1, reserve_free_gb: 12}
+    7: {max_concurrent_jobs: 1, reserve_free_gb: 12}
+
+job_memory_gb:
+  jmp_l: 120

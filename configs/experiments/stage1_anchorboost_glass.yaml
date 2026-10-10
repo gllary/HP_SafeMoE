@@ -1,0 +1,31 @@
+schema_version: 1
+status: release
+provider: anchorboost
+task: glass
+seed: 20260817
+split_protocol: official_matbench_outer_fivefold
+selection_source: outer_train_holdout_only
+training_scope: stage1_outer_train
+
+model:
+  defaults:
+    n_estimators: 1200
+    max_depth: 10
+    learning_rate: 0.035
+    subsample: 0.85
+    colsample_bytree: 0.85
+    min_child_weight: 2.0
+    reg_lambda: 2.0
+    xgb_patience: 80
+    extra_trees_estimators: 768
+    extra_trees_min_samples_leaf: 1
+    mlp_hidden_dim: 768
+    mlp_layers: 6
+    mlp_dropout: 0.10
+    mlp_epochs: 300
+    mlp_patience: 40
+    mlp_batch_size: 2048
+    learning_rate_mlp: 0.0007
+    weight_decay: 0.00001
+    mc_dropout_samples: 3
+  task_overrides: {}

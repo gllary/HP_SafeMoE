@@ -1,0 +1,44 @@
+{
+  "schema_version": "jarvis-hpsafemoe-public",
+  "method_name": "HP-SafeMoE",
+  "stage1_provider": "coGN",
+  "selected_global_profile": "conservative",
+  "selection_scope": "uniform dual-certificate rule applied independently to all tasks",
+  "calibration_data_scope": "official_training_oof_and_official_validation",
+  "locked_before_test_prediction": true,
+  "task_scope": "five_predeclared_release_tasks",
+  "task_policy": "one_global_profile",
+  "prediction_input_scope": "features_only",
+  "prediction_barrier_before_test_scoring": true,
+  "test_label_role": "evaluation",
+  "profile_selection_timing": "before_test_prediction",
+  "prediction_file_count": 5,
+  "scoring_status": "scored once after policy lock and prediction barrier",
+  "tasks": {
+    "formation_energy_peratom": {
+      "residual_scale": 0.25,
+      "benefit_probability_threshold": 0.55,
+      "task_safety_accepted": true
+    },
+    "optb88vdw_bandgap": {
+      "residual_scale": 1.0,
+      "benefit_probability_threshold": 0.55,
+      "task_safety_accepted": true
+    },
+    "optb88vdw_total_energy": {
+      "residual_scale": 0.1,
+      "benefit_probability_threshold": 0.35,
+      "task_safety_accepted": false
+    },
+    "mbj_bandgap": {
+      "residual_scale": 1.0,
+      "benefit_probability_threshold": 0.45,
+      "task_safety_accepted": true
+    },
+    "ehull": {
+      "residual_scale": 0.25,
+      "benefit_probability_threshold": 0.55,
+      "task_safety_accepted": false
+    }
+  }
+}

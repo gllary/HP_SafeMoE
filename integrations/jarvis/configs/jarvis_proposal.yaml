@@ -1,0 +1,84 @@
+schema_version: "jarvis-hpsafemoe-proposal"
+method_name: hpsafemoe_jarvis_learned_relation_task_private_nested_oof
+
+task_order: [formation_energy_peratom, optb88vdw_bandgap, optb88vdw_total_energy, ehull, mbj_bandgap]
+outer_folds: [0]
+model_seeds: [20261071, 20261072]
+primary_proposal: proposal_full
+architecture_candidate_order: [proposal_full]
+
+architecture_candidate_specs:
+  proposal_full: {role: main_learned_data_relation_task_private_proposal, use_cross_expert_input: true, use_data_branch: true, use_relation_branch: true, use_learned_task_source_relation: true, use_shared_low_rank_basis: false, use_task_private_correction: true}
+
+safety_profiles:
+  conservative: {minimum_oof_gain_percent: 0.25, bootstrap_lower_floor_percent: 0.0, required_positive_partitions: 4, maximum_partition_regret_percent: 0.5}
+  balanced: {minimum_oof_gain_percent: 0.1, bootstrap_lower_floor_percent: -0.25, required_positive_partitions: 3, maximum_partition_regret_percent: 1.0}
+  liberal: {minimum_oof_gain_percent: 0.0, bootstrap_lower_floor_percent: -1.0, required_positive_partitions: 2, maximum_partition_regret_percent: 3.0}
+
+# Proposal-network hyperparameters for the five JARVIS tasks.
+token_dim: 128
+task_dim: 32
+residual_hidden: 192
+residual_rank: 16
+dropout: 0.08
+attention_top_k: 4
+residual_limit: 1.25
+route_temperature: 0.75
+
+proposal_training_steps: 1400
+progress_every: 10
+regression_batch_size: 384
+classification_per_class: 160
+learning_rate: 0.0003
+weight_decay: 0.0001
+gradient_clip: 2.0
+pairwise_auc_temperature: 0.5
+mean_positive_task_regret_weight: 0.75
+task_cvar_fraction: 0.25
+task_cvar_weight: 0.25
+branch_auxiliary_weight: 0.20
+route_entropy_target: 0.45
+route_entropy_weight: 0.003
+expert_dropout: 0.05
+
+inner_oof_folds: 5
+inner_partition_seed: 20261073
+meta_crossfit_partitions: 5
+meta_partition_seed: 20261074
+benefit_gate_steps: 160
+benefit_gate_learning_rate: 0.03
+benefit_gate_weight_decay: 0.001
+benefit_gate_max_rows: 12000
+benefit_probability_threshold_grid: [0.35, 0.45, 0.55, 0.65, 0.75]
+residual_scale_grid: [0.0, 0.25, 0.5, 0.75, 1.0]
+minimum_sample_coverage: 0.05
+bootstrap_resamples: 400
+bootstrap_max_rows: 4096
+bootstrap_confidence: 0.95
+
+oof_profile_selection_clear_gain_percent: 0.10
+oof_profile_selection_max_worst_loss_percent: 1.00
+oof_profile_tie_break_order: [conservative, balanced, liberal]
+profile_selection_scope: official_train_true_inner_oof
+profile_lock_before_outer_test_prediction: true
+profile_selection_policy: one_global_profile
+
+stage1_frozen: true
+joint_task_count: 5
+scientific_input_scope: frozen_cogn5_prediction_hidden_uncertainty_only
+learned_task_source_relation: true
+task_private_residual_output: true
+stage2_artifact_source: current_run
+task_routing_policy: learned_shared_rules
+evaluation_protocol: official_jarvis_holdout
+same_outer_fold_stage1_stage2: true
+true_inner_oof_proposals: true
+crossfit_ensemble_deployment: true
+proposal_fit_scope: official_train_inner_crossfit
+training_data_scope: official_train
+calibration_data_scope: official_train_oof
+all_outer_predictions_committed_before_scoring: true
+input_validation: schema_alignment_and_manifest
+
+cpu_threads_per_job: 4
+minimum_free_disk_gb: 20.0

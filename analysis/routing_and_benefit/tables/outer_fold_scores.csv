@@ -1,0 +1,261 @@
+outer_fold,task,task_display,metric,variant,score,normalized_gain_percent,n_samples
+0,expt_is_metal,Experimental metallicity (expt_is_metal),ROC-AUC ↑,Stage1,0.9766526216842436,0.0,985
+0,glass,Glass formation ability (glass),ROC-AUC ↑,Stage1,0.9681547854449856,0.0,1136
+0,mp_is_metal,MP metallicity (mp_is_metal),ROC-AUC ↑,Stage1,0.9829437025335924,0.0,21223
+0,dielectric,Refractive index (dielectric),MAE ↓,Stage1,0.1398778678054769,0.0,953
+0,expt_gap,Experimental band gap (expt_gap),MAE ↓,Stage1,0.3068199903260458,0.0,921
+0,jdft2d,2D exfoliation energy (jdft2d),MAE ↓,Stage1,21.027254613025313,0.0,128
+0,log_gvrh,Shear modulus (log_gvrh),MAE ↓,Stage1,0.0346640570575417,0.0,2198
+0,log_kvrh,Bulk modulus (log_kvrh),MAE ↓,Stage1,0.0239321134619247,0.0,2198
+0,mp_e_form,MP formation energy (mp_e_form),MAE ↓,Stage1,0.0126421859278439,0.0,26551
+0,mp_gap,MP band gap (mp_gap),MAE ↓,Stage1,0.0987363408156537,0.0,21223
+0,perovskites,Perovskite formation energy (perovskites),MAE ↓,Stage1,0.0271522704835802,0.0,3786
+0,phonons,Optical phonon frequency (phonons),MAE ↓,Stage1,21.139858671770988,0.0,253
+0,steels,Steel yield strength (steels),MAE ↓,Stage1,102.96913248697916,0.0,63
+0,expt_is_metal,Experimental metallicity (expt_is_metal),ROC-AUC ↑,HP-SafeMoE,0.9809939230027128,18.594384601800925,985
+0,glass,Glass formation ability (glass),ROC-AUC ↑,HP-SafeMoE,0.9681547854449856,0.0,1136
+0,mp_is_metal,MP metallicity (mp_is_metal),ROC-AUC ↑,HP-SafeMoE,0.9888186942563734,34.444707207714224,21223
+0,dielectric,Refractive index (dielectric),MAE ↓,HP-SafeMoE,0.1222191825525319,12.624359757543804,953
+0,expt_gap,Experimental band gap (expt_gap),MAE ↓,HP-SafeMoE,0.241327406596415,21.34560517391136,921
+0,jdft2d,2D exfoliation energy (jdft2d),MAE ↓,HP-SafeMoE,21.027254613025313,0.0,128
+0,log_gvrh,Shear modulus (log_gvrh),MAE ↓,HP-SafeMoE,0.0338849205284657,2.247678417395334,2198
+0,log_kvrh,Bulk modulus (log_kvrh),MAE ↓,HP-SafeMoE,0.0238628990163365,0.2892115888485446,2198
+0,mp_e_form,MP formation energy (mp_e_form),MAE ↓,HP-SafeMoE,0.0115821264567393,8.38509635244236,26551
+0,mp_gap,MP band gap (mp_gap),MAE ↓,HP-SafeMoE,0.0956437442438669,3.1321766091785768,21223
+0,perovskites,Perovskite formation energy (perovskites),MAE ↓,HP-SafeMoE,0.0266296206278667,1.9248845360078473,3786
+0,phonons,Optical phonon frequency (phonons),MAE ↓,HP-SafeMoE,21.177493196349417,-0.1780263773886265,253
+0,steels,Steel yield strength (steels),MAE ↓,HP-SafeMoE,102.96913248697916,0.0,63
+0,expt_is_metal,Experimental metallicity (expt_is_metal),ROC-AUC ↑,No cross-expert,0.9766526216842436,0.0,985
+0,glass,Glass formation ability (glass),ROC-AUC ↑,No cross-expert,0.9681547854449856,0.0,1136
+0,mp_is_metal,MP metallicity (mp_is_metal),ROC-AUC ↑,No cross-expert,0.9829437025335924,0.0,21223
+0,dielectric,Refractive index (dielectric),MAE ↓,No cross-expert,0.1244503369801331,11.02928652501214,953
+0,expt_gap,Experimental band gap (expt_gap),MAE ↓,No cross-expert,0.3050934469483048,0.5627219321355963,921
+0,jdft2d,2D exfoliation energy (jdft2d),MAE ↓,No cross-expert,20.960377524914172,0.3180495473228084,128
+0,log_gvrh,Shear modulus (log_gvrh),MAE ↓,No cross-expert,0.0346767501778245,-0.0366175265108996,2198
+0,log_kvrh,Bulk modulus (log_kvrh),MAE ↓,No cross-expert,0.0246968526464446,-3.195451942581202,2198
+0,mp_e_form,MP formation energy (mp_e_form),MAE ↓,No cross-expert,0.0115405501576141,8.713965895751148,26551
+0,mp_gap,MP band gap (mp_gap),MAE ↓,No cross-expert,0.0956775933650909,3.097894276104067,21223
+0,perovskites,Perovskite formation energy (perovskites),MAE ↓,No cross-expert,0.0267410742420732,1.5144083134987194,3786
+0,phonons,Optical phonon frequency (phonons),MAE ↓,No cross-expert,21.181797416804255,-0.1983870643812289,253
+0,steels,Steel yield strength (steels),MAE ↓,No cross-expert,102.96913248697916,0.0,63
+0,expt_is_metal,Experimental metallicity (expt_is_metal),ROC-AUC ↑,No safety,0.9809939230027128,18.594384601800925,985
+0,glass,Glass formation ability (glass),ROC-AUC ↑,No safety,0.9671265484759116,-3.2288586635128445,1136
+0,mp_is_metal,MP metallicity (mp_is_metal),ROC-AUC ↑,No safety,0.9888186942563734,34.444707207714224,21223
+0,dielectric,Refractive index (dielectric),MAE ↓,No safety,0.1239252324992153,11.404688644844352,953
+0,expt_gap,Experimental band gap (expt_gap),MAE ↓,No safety,0.2413945654113528,21.323716503989154,921
+0,jdft2d,2D exfoliation energy (jdft2d),MAE ↓,No safety,20.815410010458525,1.0074762800254564,128
+0,log_gvrh,Shear modulus (log_gvrh),MAE ↓,No safety,0.0342788565534481,1.111238951211556,2198
+0,log_kvrh,Bulk modulus (log_kvrh),MAE ↓,No safety,0.0241686359398431,-0.9883058522793474,2198
+0,mp_e_form,MP formation energy (mp_e_form),MAE ↓,No safety,0.0115819714287843,8.386322627359078,26551
+0,mp_gap,MP band gap (mp_gap),MAE ↓,No safety,0.0956146405300937,3.161652801564061,21223
+0,perovskites,Perovskite formation energy (perovskites),MAE ↓,No safety,0.0266119367220323,1.9900131809406172,3786
+0,phonons,Optical phonon frequency (phonons),MAE ↓,No safety,21.210007461362057,-0.3318318758901583,253
+0,steels,Steel yield strength (steels),MAE ↓,No safety,104.37406126033189,-1.3644174126943982,63
+1,expt_is_metal,Experimental metallicity (expt_is_metal),ROC-AUC ↑,Stage1,0.9782347351896225,0.0,984
+1,glass,Glass formation ability (glass),ROC-AUC ↑,Stage1,0.9510702327280672,0.0,1136
+1,mp_is_metal,MP metallicity (mp_is_metal),ROC-AUC ↑,Stage1,0.9816876926853052,0.0,21223
+1,dielectric,Refractive index (dielectric),MAE ↓,Stage1,0.235076051996741,0.0,953
+1,expt_gap,Experimental band gap (expt_gap),MAE ↓,Stage1,0.3185639148067637,0.0,921
+1,jdft2d,2D exfoliation energy (jdft2d),MAE ↓,Stage1,26.114386361069293,0.0,127
+1,log_gvrh,Shear modulus (log_gvrh),MAE ↓,Stage1,0.0344757859670941,0.0,2198
+1,log_kvrh,Bulk modulus (log_kvrh),MAE ↓,Stage1,0.0283123992941918,0.0,2198
+1,mp_e_form,MP formation energy (mp_e_form),MAE ↓,Stage1,0.0120639352003267,0.0,26551
+1,mp_gap,MP band gap (mp_gap),MAE ↓,Stage1,0.101446931558778,0.0,21223
+1,perovskites,Perovskite formation energy (perovskites),MAE ↓,Stage1,0.0291958679015587,0.0,3786
+1,phonons,Optical phonon frequency (phonons),MAE ↓,Stage1,18.821717166515207,0.0,253
+1,steels,Steel yield strength (steels),MAE ↓,Stage1,69.47615249875993,0.0,63
+1,expt_is_metal,Experimental metallicity (expt_is_metal),ROC-AUC ↑,HP-SafeMoE,0.9806659505907626,11.17016228527998,984
+1,glass,Glass formation ability (glass),ROC-AUC ↑,HP-SafeMoE,0.9510702327280672,0.0,1136
+1,mp_is_metal,MP metallicity (mp_is_metal),ROC-AUC ↑,HP-SafeMoE,0.986054441833576,23.845980046252983,21223
+1,dielectric,Refractive index (dielectric),MAE ↓,HP-SafeMoE,0.1964135259358502,16.446816139921715,953
+1,expt_gap,Experimental band gap (expt_gap),MAE ↓,HP-SafeMoE,0.2445973659355864,23.218746830143733,921
+1,jdft2d,2D exfoliation energy (jdft2d),MAE ↓,HP-SafeMoE,26.21133675822934,-0.3712528252418677,127
+1,log_gvrh,Shear modulus (log_gvrh),MAE ↓,HP-SafeMoE,0.0345043696269667,-0.0829093784835433,2198
+1,log_kvrh,Bulk modulus (log_kvrh),MAE ↓,HP-SafeMoE,0.0282780402203884,0.1213569837243167,2198
+1,mp_e_form,MP formation energy (mp_e_form),MAE ↓,HP-SafeMoE,0.010940684530833,9.310814844755685,26551
+1,mp_gap,MP band gap (mp_gap),MAE ↓,HP-SafeMoE,0.0996245489482934,1.7963900755624789,21223
+1,perovskites,Perovskite formation energy (perovskites),MAE ↓,HP-SafeMoE,0.0285590747738408,2.1811070315327212,3786
+1,phonons,Optical phonon frequency (phonons),MAE ↓,HP-SafeMoE,18.135562660451903,3.6455467904066015,253
+1,steels,Steel yield strength (steels),MAE ↓,HP-SafeMoE,69.47615249875993,0.0,63
+1,expt_is_metal,Experimental metallicity (expt_is_metal),ROC-AUC ↑,No cross-expert,0.9782347351896225,0.0,984
+1,glass,Glass formation ability (glass),ROC-AUC ↑,No cross-expert,0.9510702327280672,0.0,1136
+1,mp_is_metal,MP metallicity (mp_is_metal),ROC-AUC ↑,No cross-expert,0.9816876926853052,0.0,21223
+1,dielectric,Refractive index (dielectric),MAE ↓,No cross-expert,0.2082449966539342,11.413776569286084,953
+1,expt_gap,Experimental band gap (expt_gap),MAE ↓,No cross-expert,0.3171241088710247,0.4519676802102234,921
+1,jdft2d,2D exfoliation energy (jdft2d),MAE ↓,No cross-expert,26.16529339928349,-0.1949386729227898,127
+1,log_gvrh,Shear modulus (log_gvrh),MAE ↓,No cross-expert,0.0345518598130212,-0.2206587719268407,2198
+1,log_kvrh,Bulk modulus (log_kvrh),MAE ↓,No cross-expert,0.0282152284188407,0.3432096105362843,2198
+1,mp_e_form,MP formation energy (mp_e_form),MAE ↓,No cross-expert,0.0108998672493711,9.649156196761696,26551
+1,mp_gap,MP band gap (mp_gap),MAE ↓,No cross-expert,0.0997811415367065,1.6420309579362269,21223
+1,perovskites,Perovskite formation energy (perovskites),MAE ↓,No cross-expert,0.0286182375612715,1.9784660700438947,3786
+1,phonons,Optical phonon frequency (phonons),MAE ↓,No cross-expert,18.060567841345794,4.043995127732215,253
+1,steels,Steel yield strength (steels),MAE ↓,No cross-expert,69.47615249875993,0.0,63
+1,expt_is_metal,Experimental metallicity (expt_is_metal),ROC-AUC ↑,No safety,0.9806659505907626,11.17016228527998,984
+1,glass,Glass formation ability (glass),ROC-AUC ↑,No safety,0.948038251921824,-6.196597644523102,1136
+1,mp_is_metal,MP metallicity (mp_is_metal),ROC-AUC ↑,No safety,0.986054441833576,23.845980046252983,21223
+1,dielectric,Refractive index (dielectric),MAE ↓,No safety,0.195968035944271,16.636325019195148,953
+1,expt_gap,Experimental band gap (expt_gap),MAE ↓,No safety,0.255008677239175,19.950545122519745,921
+1,jdft2d,2D exfoliation energy (jdft2d),MAE ↓,No safety,26.202097182984065,-0.3358716559602159,127
+1,log_gvrh,Shear modulus (log_gvrh),MAE ↓,No safety,0.034942132700747,-1.352679048703959,2198
+1,log_kvrh,Bulk modulus (log_kvrh),MAE ↓,No safety,0.0286086088051105,-1.046218329435232,2198
+1,mp_e_form,MP formation energy (mp_e_form),MAE ↓,No safety,0.0109391494592034,9.323539313215203,26551
+1,mp_gap,MP band gap (mp_gap),MAE ↓,No safety,0.0996093608375183,1.8113615592158745,21223
+1,perovskites,Perovskite formation energy (perovskites),MAE ↓,No safety,0.0285600879318828,2.177636821140432,3786
+1,phonons,Optical phonon frequency (phonons),MAE ↓,No safety,18.06753947524514,4.006954756560607,253
+1,steels,Steel yield strength (steels),MAE ↓,No safety,71.98930074507207,-3.617281838335821,63
+2,expt_is_metal,Experimental metallicity (expt_is_metal),ROC-AUC ↑,Stage1,0.9788110385854748,0.0,984
+2,glass,Glass formation ability (glass),ROC-AUC ↑,Stage1,0.9478160322105588,0.0,1136
+2,mp_is_metal,MP metallicity (mp_is_metal),ROC-AUC ↑,Stage1,0.982947073045989,0.0,21223
+2,dielectric,Refractive index (dielectric),MAE ↓,Stage1,0.3816184534463217,0.0,953
+2,expt_gap,Experimental band gap (expt_gap),MAE ↓,Stage1,0.3282150013115556,0.0,921
+2,jdft2d,2D exfoliation energy (jdft2d),MAE ↓,Stage1,45.95614129347243,0.0,127
+2,log_gvrh,Shear modulus (log_gvrh),MAE ↓,Stage1,0.0337514697818298,0.0,2197
+2,log_kvrh,Bulk modulus (log_kvrh),MAE ↓,Stage1,0.0260761677190286,0.0,2197
+2,mp_e_form,MP formation energy (mp_e_form),MAE ↓,Stage1,0.0114473111136636,0.0,26550
+2,mp_gap,MP band gap (mp_gap),MAE ↓,Stage1,0.0980940070990516,0.0,21223
+2,perovskites,Perovskite formation energy (perovskites),MAE ↓,Stage1,0.0259731477231369,0.0,3786
+2,phonons,Optical phonon frequency (phonons),MAE ↓,Stage1,22.787650668212613,0.0,253
+2,steels,Steel yield strength (steels),MAE ↓,Stage1,76.86285912298388,0.0,62
+2,expt_is_metal,Experimental metallicity (expt_is_metal),ROC-AUC ↑,HP-SafeMoE,0.9826737172601834,18.22967440046764,984
+2,glass,Glass formation ability (glass),ROC-AUC ↑,HP-SafeMoE,0.9478160322105588,0.0,1136
+2,mp_is_metal,MP metallicity (mp_is_metal),ROC-AUC ↑,HP-SafeMoE,0.9867049722745146,22.036681671480803,21223
+2,dielectric,Refractive index (dielectric),MAE ↓,HP-SafeMoE,0.3724774350570846,2.3953292370131307,953
+2,expt_gap,Experimental band gap (expt_gap),MAE ↓,HP-SafeMoE,0.2492696186455371,24.05294771736536,921
+2,jdft2d,2D exfoliation energy (jdft2d),MAE ↓,HP-SafeMoE,45.88247345007144,0.1603003240210118,127
+2,log_gvrh,Shear modulus (log_gvrh),MAE ↓,HP-SafeMoE,0.0346808077043436,-2.753473933197802,2197
+2,log_kvrh,Bulk modulus (log_kvrh),MAE ↓,HP-SafeMoE,0.0259972422022059,0.3026729911891059,2197
+2,mp_e_form,MP formation energy (mp_e_form),MAE ↓,HP-SafeMoE,0.0109189370403574,4.615704666884957,26550
+2,mp_gap,MP band gap (mp_gap),MAE ↓,HP-SafeMoE,0.097171782269601,0.940143905549139,21223
+2,perovskites,Perovskite formation energy (perovskites),MAE ↓,HP-SafeMoE,0.0250564763182139,3.529304244115431,3786
+2,phonons,Optical phonon frequency (phonons),MAE ↓,HP-SafeMoE,22.081069764621233,3.1007185158275994,253
+2,steels,Steel yield strength (steels),MAE ↓,HP-SafeMoE,76.86285912298388,0.0,62
+2,expt_is_metal,Experimental metallicity (expt_is_metal),ROC-AUC ↑,No cross-expert,0.9788110385854748,0.0,984
+2,glass,Glass formation ability (glass),ROC-AUC ↑,No cross-expert,0.9478160322105588,0.0,1136
+2,mp_is_metal,MP metallicity (mp_is_metal),ROC-AUC ↑,No cross-expert,0.9828826772103656,-0.3776233593037053,21223
+2,dielectric,Refractive index (dielectric),MAE ↓,No cross-expert,0.3767965839031074,1.2635315456233782,953
+2,expt_gap,Experimental band gap (expt_gap),MAE ↓,No cross-expert,0.3257365934114944,0.7551171915230644,921
+2,jdft2d,2D exfoliation energy (jdft2d),MAE ↓,No cross-expert,45.90803455864624,0.1046796651594086,127
+2,log_gvrh,Shear modulus (log_gvrh),MAE ↓,No cross-expert,0.0358112622248154,-6.102822947563812,2197
+2,log_kvrh,Bulk modulus (log_kvrh),MAE ↓,No cross-expert,0.0260761677190286,0.0,2197
+2,mp_e_form,MP formation energy (mp_e_form),MAE ↓,No cross-expert,0.0108944246852631,4.829836656929694,26550
+2,mp_gap,MP band gap (mp_gap),MAE ↓,No cross-expert,0.0969167997371967,1.2000808170332729,21223
+2,perovskites,Perovskite formation energy (perovskites),MAE ↓,No cross-expert,0.0251477071865208,3.1780535244128316,3786
+2,phonons,Optical phonon frequency (phonons),MAE ↓,No cross-expert,22.138335937109925,2.8494149772466133,253
+2,steels,Steel yield strength (steels),MAE ↓,No cross-expert,76.86285912298388,0.0,62
+2,expt_is_metal,Experimental metallicity (expt_is_metal),ROC-AUC ↑,No safety,0.9826737172601834,18.22967440046764,984
+2,glass,Glass formation ability (glass),ROC-AUC ↑,No safety,0.9418273993137554,-11.476001443522376,1136
+2,mp_is_metal,MP metallicity (mp_is_metal),ROC-AUC ↑,No safety,0.9867049722745146,22.036681671480803,21223
+2,dielectric,Refractive index (dielectric),MAE ↓,No safety,0.3729115273239297,2.2815789026346707,953
+2,expt_gap,Experimental band gap (expt_gap),MAE ↓,No safety,0.2497493879468174,23.906772405644936,921
+2,jdft2d,2D exfoliation energy (jdft2d),MAE ↓,No safety,45.90249579177627,0.1167319539592838,127
+2,log_gvrh,Shear modulus (log_gvrh),MAE ↓,No safety,0.0407998296578724,-20.88311982145782,2197
+2,log_kvrh,Bulk modulus (log_kvrh),MAE ↓,No safety,0.02621018691014,-0.5139527884443739,2197
+2,mp_e_form,MP formation energy (mp_e_form),MAE ↓,No safety,0.0109190125805033,4.615044772651273,26550
+2,mp_gap,MP band gap (mp_gap),MAE ↓,No safety,0.0965008984868436,1.6240631403704229,21223
+2,perovskites,Perovskite formation energy (perovskites),MAE ↓,No safety,0.0250564516684848,3.529399148781331,3786
+2,phonons,Optical phonon frequency (phonons),MAE ↓,No safety,22.093551355774437,3.0459450276127087,253
+2,steels,Steel yield strength (steels),MAE ↓,No safety,77.96455054013757,-1.4333208909012018,62
+3,expt_is_metal,Experimental metallicity (expt_is_metal),ROC-AUC ↑,Stage1,0.9771750805585392,0.0,984
+3,glass,Glass formation ability (glass),ROC-AUC ↑,Stage1,0.954832902076436,0.0,1136
+3,mp_is_metal,MP metallicity (mp_is_metal),ROC-AUC ↑,Stage1,0.982890611617568,0.0,21222
+3,dielectric,Refractive index (dielectric),MAE ↓,Stage1,0.2632348364913628,0.0,953
+3,expt_gap,Experimental band gap (expt_gap),MAE ↓,Stage1,0.3152697067617506,0.0,921
+3,jdft2d,2D exfoliation energy (jdft2d),MAE ↓,Stage1,17.916648493400388,0.0,127
+3,log_gvrh,Shear modulus (log_gvrh),MAE ↓,Stage1,0.0334774313513278,0.0,2197
+3,log_kvrh,Bulk modulus (log_kvrh),MAE ↓,Stage1,0.0280868354520163,0.0,2197
+3,mp_e_form,MP formation energy (mp_e_form),MAE ↓,Stage1,0.0122346039741216,0.0,26550
+3,mp_gap,MP band gap (mp_gap),MAE ↓,Stage1,0.0963969916628416,0.0,21222
+3,perovskites,Perovskite formation energy (perovskites),MAE ↓,Stage1,0.0271949955802927,0.0,3785
+3,phonons,Optical phonon frequency (phonons),MAE ↓,Stage1,20.131811635950324,0.0,253
+3,steels,Steel yield strength (steels),MAE ↓,Stage1,76.28706487840222,0.0,62
+3,expt_is_metal,Experimental metallicity (expt_is_metal),ROC-AUC ↑,HP-SafeMoE,0.9840741964802115,30.22624434389159,984
+3,glass,Glass formation ability (glass),ROC-AUC ↑,HP-SafeMoE,0.954832902076436,0.0,1136
+3,mp_is_metal,MP metallicity (mp_is_metal),ROC-AUC ↑,HP-SafeMoE,0.9870997150863308,24.60113345188076,21222
+3,dielectric,Refractive index (dielectric),MAE ↓,HP-SafeMoE,0.2418980104363143,8.105623989379772,953
+3,expt_gap,Experimental band gap (expt_gap),MAE ↓,HP-SafeMoE,0.2490540572314329,21.002858222707975,921
+3,jdft2d,2D exfoliation energy (jdft2d),MAE ↓,HP-SafeMoE,17.848504371086676,0.3803396731191791,127
+3,log_gvrh,Shear modulus (log_gvrh),MAE ↓,HP-SafeMoE,0.0334018650178116,0.2257232125223634,2197
+3,log_kvrh,Bulk modulus (log_kvrh),MAE ↓,HP-SafeMoE,0.0281299029894824,-0.1533370946671767,2197
+3,mp_e_form,MP formation energy (mp_e_form),MAE ↓,HP-SafeMoE,0.0115076348995213,5.9419093265139855,26550
+3,mp_gap,MP band gap (mp_gap),MAE ↓,HP-SafeMoE,0.0953765804984896,1.0585508393466825,21222
+3,perovskites,Perovskite formation energy (perovskites),MAE ↓,HP-SafeMoE,0.0261744186089799,3.752811682942238,3785
+3,phonons,Optical phonon frequency (phonons),MAE ↓,HP-SafeMoE,19.85938416355659,1.3532188623662826,253
+3,steels,Steel yield strength (steels),MAE ↓,HP-SafeMoE,76.28706487840222,0.0,62
+3,expt_is_metal,Experimental metallicity (expt_is_metal),ROC-AUC ↑,No cross-expert,0.9771750805585392,0.0,984
+3,glass,Glass formation ability (glass),ROC-AUC ↑,No cross-expert,0.954832902076436,0.0,1136
+3,mp_is_metal,MP metallicity (mp_is_metal),ROC-AUC ↑,No cross-expert,0.9829189484936508,0.1656217945927948,21222
+3,dielectric,Refractive index (dielectric),MAE ↓,No cross-expert,0.2561572839163984,2.688683864681629,953
+3,expt_gap,Experimental band gap (expt_gap),MAE ↓,No cross-expert,0.3129017380498326,0.7510930042217779,921
+3,jdft2d,2D exfoliation energy (jdft2d),MAE ↓,No cross-expert,17.887414601155285,0.1631660757081361,127
+3,log_gvrh,Shear modulus (log_gvrh),MAE ↓,No cross-expert,0.0334977330281578,-0.0606428749475682,2197
+3,log_kvrh,Bulk modulus (log_kvrh),MAE ↓,No cross-expert,0.0280893663259265,-0.0090108902246776,2197
+3,mp_e_form,MP formation energy (mp_e_form),MAE ↓,No cross-expert,0.011484598580041,6.130197558229112,26550
+3,mp_gap,MP band gap (mp_gap),MAE ↓,No cross-expert,0.0955239108482844,0.9057137567226498,21222
+3,perovskites,Perovskite formation energy (perovskites),MAE ↓,No cross-expert,0.0262625865101359,3.4286053380809625,3785
+3,phonons,Optical phonon frequency (phonons),MAE ↓,No cross-expert,19.82164915384823,1.5406585741554508,253
+3,steels,Steel yield strength (steels),MAE ↓,No cross-expert,76.28706487840222,0.0,62
+3,expt_is_metal,Experimental metallicity (expt_is_metal),ROC-AUC ↑,No safety,0.9840741964802115,30.22624434389159,984
+3,glass,Glass formation ability (glass),ROC-AUC ↑,No safety,0.9520834039540044,-6.0873915943964905,1136
+3,mp_is_metal,MP metallicity (mp_is_metal),ROC-AUC ↑,No safety,0.9870997150863308,24.60113345188076,21222
+3,dielectric,Refractive index (dielectric),MAE ↓,No safety,0.2473130209283142,6.0485214553169335,953
+3,expt_gap,Experimental band gap (expt_gap),MAE ↓,No safety,0.2507207161094152,20.474212798730807,921
+3,jdft2d,2D exfoliation energy (jdft2d),MAE ↓,No safety,17.824459893087518,0.514541546912792,127
+3,log_gvrh,Shear modulus (log_gvrh),MAE ↓,No safety,0.0339759133945509,-1.489009231299109,2197
+3,log_kvrh,Bulk modulus (log_kvrh),MAE ↓,No safety,0.0285105253128825,-1.508499815118313,2197
+3,mp_e_form,MP formation energy (mp_e_form),MAE ↓,No safety,0.0115083841689701,5.935785144232091,26550
+3,mp_gap,MP band gap (mp_gap),MAE ↓,No safety,0.0954023921010303,1.031774482434034,21222
+3,perovskites,Perovskite formation energy (perovskites),MAE ↓,No safety,0.0261791521151248,3.7354058843973874,3785
+3,phonons,Optical phonon frequency (phonons),MAE ↓,No safety,19.7707799544114,1.7933392586199772,253
+3,steels,Steel yield strength (steels),MAE ↓,No safety,78.50715988804797,-2.910185380948221,62
+4,expt_is_metal,Experimental metallicity (expt_is_metal),ROC-AUC ↑,Stage1,0.9716289349747996,0.0,984
+4,glass,Glass formation ability (glass),ROC-AUC ↑,Stage1,0.9577066925797448,0.0,1136
+4,mp_is_metal,MP metallicity (mp_is_metal),ROC-AUC ↑,Stage1,0.9818069756869332,0.0,21222
+4,dielectric,Refractive index (dielectric),MAE ↓,Stage1,0.3353513255315721,0.0,952
+4,expt_gap,Experimental band gap (expt_gap),MAE ↓,Stage1,0.3706122531504775,0.0,920
+4,jdft2d,2D exfoliation energy (jdft2d),MAE ↓,Stage1,33.77457210058454,0.0,127
+4,log_gvrh,Shear modulus (log_gvrh),MAE ↓,Stage1,0.0366414888227958,0.0,2197
+4,log_kvrh,Bulk modulus (log_kvrh),MAE ↓,Stage1,0.0267537073258089,0.0,2197
+4,mp_e_form,MP formation energy (mp_e_form),MAE ↓,Stage1,0.0121442284833712,0.0,26550
+4,mp_gap,MP band gap (mp_gap),MAE ↓,Stage1,0.1014034408394931,0.0,21222
+4,perovskites,Perovskite formation energy (perovskites),MAE ↓,Stage1,0.0272089107159421,0.0,3785
+4,phonons,Optical phonon frequency (phonons),MAE ↓,Stage1,19.2491960229289,0.0,253
+4,steels,Steel yield strength (steels),MAE ↓,Stage1,66.96559428553425,0.0,62
+4,expt_is_metal,Experimental metallicity (expt_is_metal),ROC-AUC ↑,HP-SafeMoE,0.9742956291828472,9.399344739715938,984
+4,glass,Glass formation ability (glass),ROC-AUC ↑,HP-SafeMoE,0.9577066925797448,0.0,1136
+4,mp_is_metal,MP metallicity (mp_is_metal),ROC-AUC ↑,HP-SafeMoE,0.9866341735949644,26.533235073863818,21222
+4,dielectric,Refractive index (dielectric),MAE ↓,HP-SafeMoE,0.2839939969768151,15.314485032480327,952
+4,expt_gap,Experimental band gap (expt_gap),MAE ↓,HP-SafeMoE,0.2461267120899211,33.5891595602513,920
+4,jdft2d,2D exfoliation energy (jdft2d),MAE ↓,HP-SafeMoE,33.74202383182181,0.0963691521118282,127
+4,log_gvrh,Shear modulus (log_gvrh),MAE ↓,HP-SafeMoE,0.0366414888227958,0.0,2197
+4,log_kvrh,Bulk modulus (log_kvrh),MAE ↓,HP-SafeMoE,0.0267602117345989,-0.0243121774146018,2197
+4,mp_e_form,MP formation energy (mp_e_form),MAE ↓,HP-SafeMoE,0.0111355683385364,8.305674964992361,26550
+4,mp_gap,MP band gap (mp_gap),MAE ↓,HP-SafeMoE,0.1000981279554554,1.2872471320809205,21222
+4,perovskites,Perovskite formation energy (perovskites),MAE ↓,HP-SafeMoE,0.026237365298065,3.5706883969737624,3785
+4,phonons,Optical phonon frequency (phonons),MAE ↓,HP-SafeMoE,19.253796541724785,-0.023899797115696,253
+4,steels,Steel yield strength (steels),MAE ↓,HP-SafeMoE,66.96559428553425,0.0,62
+4,expt_is_metal,Experimental metallicity (expt_is_metal),ROC-AUC ↑,No cross-expert,0.9716289349747996,0.0,984
+4,glass,Glass formation ability (glass),ROC-AUC ↑,No cross-expert,0.9577066925797448,0.0,1136
+4,mp_is_metal,MP metallicity (mp_is_metal),ROC-AUC ↑,No cross-expert,0.9818069756869332,0.0,21222
+4,dielectric,Refractive index (dielectric),MAE ↓,No cross-expert,0.2877490356676773,14.194752261211288,952
+4,expt_gap,Experimental band gap (expt_gap),MAE ↓,No cross-expert,0.3635929353357222,1.8939788836137943,920
+4,jdft2d,2D exfoliation energy (jdft2d),MAE ↓,No cross-expert,33.77362386342712,0.002807547508225,127
+4,log_gvrh,Shear modulus (log_gvrh),MAE ↓,No cross-expert,0.0366414888227958,0.0,2197
+4,log_kvrh,Bulk modulus (log_kvrh),MAE ↓,No cross-expert,0.0270747012908678,-1.1998111557020572,2197
+4,mp_e_form,MP formation energy (mp_e_form),MAE ↓,No cross-expert,0.0110935373088969,8.651773769844528,26550
+4,mp_gap,MP band gap (mp_gap),MAE ↓,No cross-expert,0.1002764719783079,1.111371420787481,21222
+4,perovskites,Perovskite formation energy (perovskites),MAE ↓,No cross-expert,0.0263369186602021,3.2048032530355117,3785
+4,phonons,Optical phonon frequency (phonons),MAE ↓,No cross-expert,19.20361187529118,0.236810657356394,253
+4,steels,Steel yield strength (steels),MAE ↓,No cross-expert,66.96559428553425,0.0,62
+4,expt_is_metal,Experimental metallicity (expt_is_metal),ROC-AUC ↑,No safety,0.9742956291828472,9.399344739715938,984
+4,glass,Glass formation ability (glass),ROC-AUC ↑,No safety,0.9539929868965698,-8.780835337073947,1136
+4,mp_is_metal,MP metallicity (mp_is_metal),ROC-AUC ↑,No safety,0.9866341735949644,26.533235073863818,21222
+4,dielectric,Refractive index (dielectric),MAE ↓,No safety,0.2830957924157428,15.58232490448577,952
+4,expt_gap,Experimental band gap (expt_gap),MAE ↓,No safety,0.2407667320027819,35.03540966169166,920
+4,jdft2d,2D exfoliation energy (jdft2d),MAE ↓,No safety,33.58831537672433,0.5514702697210115,127
+4,log_gvrh,Shear modulus (log_gvrh),MAE ↓,No safety,0.0407249672593685,-11.144411888722766,2197
+4,log_kvrh,Bulk modulus (log_kvrh),MAE ↓,No safety,0.0273017195978772,-2.0483601221863035,2197
+4,mp_e_form,MP formation energy (mp_e_form),MAE ↓,No safety,0.0111362309932088,8.300218425094668,26550
+4,mp_gap,MP band gap (mp_gap),MAE ↓,No safety,0.100095970779434,1.2893744524198638,21222
+4,perovskites,Perovskite formation energy (perovskites),MAE ↓,No safety,0.0262239454381266,3.6200099595992583,3785
+4,phonons,Optical phonon frequency (phonons),MAE ↓,No safety,19.25672373112322,-0.0391066109221074,253
+4,steels,Steel yield strength (steels),MAE ↓,No safety,68.22547881768713,-1.8813908031352131,62

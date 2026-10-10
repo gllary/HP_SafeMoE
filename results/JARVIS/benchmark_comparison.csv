@@ -1,0 +1,21 @@
+task,display_name,unit,method,mae,evidence_type
+formation_energy_peratom,Formation energy,eV/atom,coGN Stage-1,0.027271755963579013,matched_current_pipeline
+formation_energy_peratom,Formation energy,eV/atom,HP-SafeMoE,0.027107601675993073,matched_current_pipeline
+formation_energy_peratom,Formation energy,eV/atom,ReciNet-MT,0.0350,literature_reported_reference
+formation_energy_peratom,Formation energy,eV/atom,MoCE,0.0243,literature_reported_reference
+optb88vdw_bandgap,OptB88vdW band gap,eV,coGN Stage-1,0.11675258053088938,matched_current_pipeline
+optb88vdw_bandgap,OptB88vdW band gap,eV,HP-SafeMoE,0.11195475483275104,matched_current_pipeline
+optb88vdw_bandgap,OptB88vdW band gap,eV,ReciNet-MT,0.1220,literature_reported_reference
+optb88vdw_bandgap,OptB88vdW band gap,eV,MoCE,0.1120,literature_reported_reference
+optb88vdw_total_energy,OptB88vdW total energy,eV/atom,coGN Stage-1,0.026278422272376038,matched_current_pipeline
+optb88vdw_total_energy,OptB88vdW total energy,eV/atom,HP-SafeMoE,0.026278422272376038,matched_current_pipeline
+optb88vdw_total_energy,OptB88vdW total energy,eV/atom,ReciNet-MT,0.0360,literature_reported_reference
+optb88vdw_total_energy,OptB88vdW total energy,eV/atom,MoCE,0.0257,literature_reported_reference
+mbj_bandgap,MBJ band gap,eV,coGN Stage-1,0.25122337860437755,matched_current_pipeline
+mbj_bandgap,MBJ band gap,eV,HP-SafeMoE,0.19632140631478726,matched_current_pipeline
+mbj_bandgap,MBJ band gap,eV,ReciNet-MT,0.2100,literature_reported_reference
+mbj_bandgap,MBJ band gap,eV,MoCE,0.2390,literature_reported_reference
+ehull,Energy above hull,eV/atom,coGN Stage-1,0.04093309033034836,matched_current_pipeline
+ehull,Energy above hull,eV/atom,HP-SafeMoE,0.04093309033034836,matched_current_pipeline
+ehull,Energy above hull,eV/atom,ReciNet-MT,0.0692,literature_reported_reference
+ehull,Energy above hull,eV/atom,MoCE,0.0446,literature_reported_reference

@@ -1,0 +1,62 @@
+{
+  "METADATA.json": {
+    "bytes": 56954,
+    "sha256": "66a9eeaf291eeebd7b469d0736f03db3d35a1dc9d118b660bd0e553f5dc58807"
+  },
+  "physical_descriptors.csv": {
+    "bytes": 10214373,
+    "sha256": "b4ad55be8939a8469a10c6e2b94333d21eb182cd3bf9b8597398a9f3b4f60975"
+  },
+  "representations/dielectric.npz": {
+    "bytes": 8239244,
+    "sha256": "88efdc87684eed2b227c4e8f1085e4b65a8d872282c39d29d84c3ef2b2643ea6"
+  },
+  "representations/expt_gap.npz": {
+    "bytes": 3338470,
+    "sha256": "4bc5bd80f5e818933e5831fba744fa5c9b54b1718d79e8e390e1177f58acfa7c"
+  },
+  "representations/expt_is_metal.npz": {
+    "bytes": 3319809,
+    "sha256": "9f2e8ca5f13faccab415485f28e79c3fa2c7339d696cbf6ca1e3d907071fc5d9"
+  },
+  "representations/glass.npz": {
+    "bytes": 3314466,
+    "sha256": "c7f455eb0f53b1dcb5fe75a778096a8c8e3bb8bb7c4213f5d2412316172d7e1b"
+  },
+  "representations/jdft2d.npz": {
+    "bytes": 3488169,
+    "sha256": "82587e31886532ca0f21d90a8fa644aaec484dc3b6143a5be90e155587f05b5a"
+  },
+  "representations/log_gvrh.npz": {
+    "bytes": 8060244,
+    "sha256": "fd06f6a8c0d0d2d3cab450642b4b4d0ca4bec61f4b77139c4382490abb0c386e"
+  },
+  "representations/log_kvrh.npz": {
+    "bytes": 8017549,
+    "sha256": "470ce4d3df70142813dfa280bb043d4dcb496e944cb25f41abc85302242defe0"
+  },
+  "representations/mp_e_form.npz": {
+    "bytes": 8214321,
+    "sha256": "1835a8c04fee98842478df3120e9b98f491bb3b32a849797797c3fec8f5bf6c1"
+  },
+  "representations/mp_gap.npz": {
+    "bytes": 7950978,
+    "sha256": "128f794cb39d859df82c0b0e7d8c00d006df3e13d082f14e3d17379226d53f3a"
+  },
+  "representations/mp_is_metal.npz": {
+    "bytes": 7924203,
+    "sha256": "1ba96fe8cd69c34d341d1f0ff49d937e71695e8ce302c04a57e7f75d748de6ed"
+  },
+  "representations/perovskites.npz": {
+    "bytes": 7815439,
+    "sha256": "120b00efc63368e28d508cc77cf325bdc685ed2f115b3ff5202e75329872ad92"
+  },
+  "representations/phonons.npz": {
+    "bytes": 6654471,
+    "sha256": "22bfba476eb1ee61effc0322b99a6c0b9a625a7cad03bc4316f075414f18b609"
+  },
+  "representations/steels.npz": {
+    "bytes": 646567,
+    "sha256": "19f6a329b610af90f840b6cf39c15c600191f5ab1cd48401333ea8c735714436"
+  }
+}

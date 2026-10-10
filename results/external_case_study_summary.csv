@@ -1,0 +1,9 @@
+dataset,protocol,algorithm,n_splits_or_samples,mean_mae,mae_sd,sd_definition
+HEA-95,5%-label scalar output-bias calibration; 5 calibration and 90 test samples,Stage 1,100,0.111064798260469,0.026596921898513842,sample SD across the 100 fixed splits (ddof=1)
+HEA-95,5%-label scalar output-bias calibration; 5 calibration and 90 test samples,HP-SafeMoE,100,0.11069996096024687,0.026079778757112197,sample SD across the 100 fixed splits (ddof=1)
+B2-18,5%-label scalar output-bias calibration; 1 calibration and 17 test samples,Stage 1,18,0.10434539589874542,0.03878535126728208,population SD across all 18 calibration choices (ddof=0)
+B2-18,5%-label scalar output-bias calibration; 1 calibration and 17 test samples,HP-SafeMoE,18,0.10411461079816368,0.03827659641734771,population SD across all 18 calibration choices (ddof=0)
+Core-23,strict zero-shot,Stage 1,23,0.05255817255886799,,not applicable
+Core-23,strict zero-shot,HP-SafeMoE,23,0.04788133843439546,,not applicable
+DS2-248,strict zero-shot,Stage 1,248,0.7481466895309896,,not applicable
+DS2-248,strict zero-shot,HP-SafeMoE,248,0.6805946898381403,,not applicable

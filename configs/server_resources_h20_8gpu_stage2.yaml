@@ -1,0 +1,43 @@
+schema_version: 1
+expected_gpu:
+  count_at_least: 8
+  allowed_indices: [0, 1, 2, 3, 4, 5, 6, 7]
+  isolated_allowed_indices: []
+  name_contains: H20
+  memory_gb_minimum_each: 130
+
+scheduler:
+  poll_seconds: 5
+  retry_limit: 1
+  cpu_concurrency: 8
+  preprocess_concurrency: 1
+  work_stealing:
+    enabled: true
+    prefer_declared_lane: true
+    policy: declared_lane_first_then_least_loaded_compatible_gpu
+    reproducibility_note: GPU assignment may change but model inputs seeds and folds do not
+  gpu_lanes:
+    0: {max_concurrent_jobs: 2, reserve_free_gb: 8}
+    1: {max_concurrent_jobs: 2, reserve_free_gb: 8}
+    2: {max_concurrent_jobs: 2, reserve_free_gb: 8}
+    3: {max_concurrent_jobs: 2, reserve_free_gb: 8}
+    4: {max_concurrent_jobs: 2, reserve_free_gb: 8}
+    5: {max_concurrent_jobs: 2, reserve_free_gb: 8}
+    6: {max_concurrent_jobs: 2, reserve_free_gb: 8}
+    7: {max_concurrent_jobs: 2, reserve_free_gb: 8}
+  note: dedicated eight-H20 profile for lightweight HP-SafeMoE Stage 2 jobs
+
+job_memory_gb:
+  native_cache: 0
+  native_tabular: 0
+  native_modnet: 18
+  native_edge_gnn: 34
+  native_alignn: 46
+  native_matformer: 40
+  native_cogn: 42
+  safe_moe_validation: 28
+  safe_moe_outer: 32
+  analysis: 20
+  anchorboost: 42
+  mattervial_modnet: 70
+  jmp_l: 80

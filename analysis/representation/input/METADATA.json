@@ -1,0 +1,1652 @@
+{
+  "interpretation_warning": "Descriptor-SHAP on a fitted surrogate is an association explanation of the end-to-end output and must be reported with surrogate fidelity; it is not an exact gradient attribution of every heterogeneous Stage1 model.",
+  "max_samples_per_task": 1500,
+  "random_seed": 20260908,
+  "raw_data_sha256_verified": true,
+  "row_alignment": "official_outer_test_partition_and_sample_id_verified",
+  "schema_version": "hpsafemoe-joint-analysis-sample",
+  "selected_variant": "hpsafemoe",
+  "symmetry_descriptors_requested": true,
+  "task_order": [
+    "steels",
+    "expt_gap",
+    "glass",
+    "expt_is_metal",
+    "jdft2d",
+    "dielectric",
+    "log_kvrh",
+    "log_gvrh",
+    "perovskites",
+    "phonons",
+    "mp_gap",
+    "mp_is_metal",
+    "mp_e_form"
+  ],
+  "tasks": {
+    "dielectric": {
+      "experts": [
+        {
+          "array_suffix": "00",
+          "available_fraction": 0.0,
+          "expert_id": "tpot_mat_steels_anchor",
+          "hidden_dim": 103,
+          "input_modality": "steels_14_element_composition",
+          "provider": "tpot_mat",
+          "source_task": "steels"
+        },
+        {
+          "array_suffix": "01",
+          "available_fraction": 1.0,
+          "expert_id": "mattervial_expt_gap_anchor",
+          "hidden_dim": 40,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "expt_gap"
+        },
+        {
+          "array_suffix": "02",
+          "available_fraction": 0.0,
+          "expert_id": "anchorboost_glass_anchor",
+          "hidden_dim": 512,
+          "input_modality": "enriched_composition_descriptors",
+          "provider": "anchorboost",
+          "source_task": "glass"
+        },
+        {
+          "array_suffix": "03",
+          "available_fraction": 1.0,
+          "expert_id": "mattervial_expt_is_metal_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "expt_is_metal"
+        },
+        {
+          "array_suffix": "04",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_jdft2d_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "jdft2d"
+        },
+        {
+          "array_suffix": "05",
+          "available_fraction": 1.0,
+          "expert_id": "mattervial_dielectric_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "dielectric"
+        },
+        {
+          "array_suffix": "06",
+          "available_fraction": 1.0,
+          "expert_id": "mattervial_log_kvrh_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "log_kvrh"
+        },
+        {
+          "array_suffix": "07",
+          "available_fraction": 0.19,
+          "expert_id": "mattervial_log_gvrh_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "log_gvrh"
+        },
+        {
+          "array_suffix": "08",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_perovskites_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "perovskites"
+        },
+        {
+          "array_suffix": "09",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_phonons_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "phonons"
+        },
+        {
+          "array_suffix": "10",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_mp_gap_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "mp_gap"
+        },
+        {
+          "array_suffix": "11",
+          "available_fraction": 0.19,
+          "expert_id": "mattervial_mp_is_metal_anchor",
+          "hidden_dim": 40,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "mp_is_metal"
+        },
+        {
+          "array_suffix": "12",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_mp_e_form_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "mp_e_form"
+        }
+      ],
+      "n_sampled": 1500,
+      "n_total": 4764,
+      "representation_file": "representations/dielectric.npz",
+      "sampling": "target_decile_stratified"
+    },
+    "expt_gap": {
+      "experts": [
+        {
+          "array_suffix": "00",
+          "available_fraction": 0.0,
+          "expert_id": "tpot_mat_steels_anchor",
+          "hidden_dim": 103,
+          "input_modality": "steels_14_element_composition",
+          "provider": "tpot_mat",
+          "source_task": "steels"
+        },
+        {
+          "array_suffix": "01",
+          "available_fraction": 1.0,
+          "expert_id": "mattervial_expt_gap_anchor",
+          "hidden_dim": 40,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "expt_gap"
+        },
+        {
+          "array_suffix": "02",
+          "available_fraction": 1.0,
+          "expert_id": "anchorboost_glass_anchor",
+          "hidden_dim": 512,
+          "input_modality": "enriched_composition_descriptors",
+          "provider": "anchorboost",
+          "source_task": "glass"
+        },
+        {
+          "array_suffix": "03",
+          "available_fraction": 1.0,
+          "expert_id": "mattervial_expt_is_metal_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "expt_is_metal"
+        },
+        {
+          "array_suffix": "04",
+          "available_fraction": 0.0,
+          "expert_id": "jmp_l_jdft2d_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "jdft2d"
+        },
+        {
+          "array_suffix": "05",
+          "available_fraction": 0.0,
+          "expert_id": "mattervial_dielectric_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "dielectric"
+        },
+        {
+          "array_suffix": "06",
+          "available_fraction": 0.0,
+          "expert_id": "mattervial_log_kvrh_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "log_kvrh"
+        },
+        {
+          "array_suffix": "07",
+          "available_fraction": 0.0,
+          "expert_id": "mattervial_log_gvrh_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "log_gvrh"
+        },
+        {
+          "array_suffix": "08",
+          "available_fraction": 0.0,
+          "expert_id": "jmp_l_perovskites_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "perovskites"
+        },
+        {
+          "array_suffix": "09",
+          "available_fraction": 0.0,
+          "expert_id": "jmp_l_phonons_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "phonons"
+        },
+        {
+          "array_suffix": "10",
+          "available_fraction": 0.0,
+          "expert_id": "jmp_l_mp_gap_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "mp_gap"
+        },
+        {
+          "array_suffix": "11",
+          "available_fraction": 0.0,
+          "expert_id": "mattervial_mp_is_metal_anchor",
+          "hidden_dim": 40,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "mp_is_metal"
+        },
+        {
+          "array_suffix": "12",
+          "available_fraction": 0.0,
+          "expert_id": "jmp_l_mp_e_form_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "mp_e_form"
+        }
+      ],
+      "n_sampled": 1500,
+      "n_total": 4604,
+      "representation_file": "representations/expt_gap.npz",
+      "sampling": "target_decile_stratified"
+    },
+    "expt_is_metal": {
+      "experts": [
+        {
+          "array_suffix": "00",
+          "available_fraction": 0.0,
+          "expert_id": "tpot_mat_steels_anchor",
+          "hidden_dim": 103,
+          "input_modality": "steels_14_element_composition",
+          "provider": "tpot_mat",
+          "source_task": "steels"
+        },
+        {
+          "array_suffix": "01",
+          "available_fraction": 1.0,
+          "expert_id": "mattervial_expt_gap_anchor",
+          "hidden_dim": 40,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "expt_gap"
+        },
+        {
+          "array_suffix": "02",
+          "available_fraction": 1.0,
+          "expert_id": "anchorboost_glass_anchor",
+          "hidden_dim": 512,
+          "input_modality": "enriched_composition_descriptors",
+          "provider": "anchorboost",
+          "source_task": "glass"
+        },
+        {
+          "array_suffix": "03",
+          "available_fraction": 1.0,
+          "expert_id": "mattervial_expt_is_metal_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "expt_is_metal"
+        },
+        {
+          "array_suffix": "04",
+          "available_fraction": 0.0,
+          "expert_id": "jmp_l_jdft2d_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "jdft2d"
+        },
+        {
+          "array_suffix": "05",
+          "available_fraction": 0.0,
+          "expert_id": "mattervial_dielectric_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "dielectric"
+        },
+        {
+          "array_suffix": "06",
+          "available_fraction": 0.0,
+          "expert_id": "mattervial_log_kvrh_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "log_kvrh"
+        },
+        {
+          "array_suffix": "07",
+          "available_fraction": 0.0,
+          "expert_id": "mattervial_log_gvrh_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "log_gvrh"
+        },
+        {
+          "array_suffix": "08",
+          "available_fraction": 0.0,
+          "expert_id": "jmp_l_perovskites_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "perovskites"
+        },
+        {
+          "array_suffix": "09",
+          "available_fraction": 0.0,
+          "expert_id": "jmp_l_phonons_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "phonons"
+        },
+        {
+          "array_suffix": "10",
+          "available_fraction": 0.0,
+          "expert_id": "jmp_l_mp_gap_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "mp_gap"
+        },
+        {
+          "array_suffix": "11",
+          "available_fraction": 0.0,
+          "expert_id": "mattervial_mp_is_metal_anchor",
+          "hidden_dim": 40,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "mp_is_metal"
+        },
+        {
+          "array_suffix": "12",
+          "available_fraction": 0.0,
+          "expert_id": "jmp_l_mp_e_form_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "mp_e_form"
+        }
+      ],
+      "n_sampled": 1500,
+      "n_total": 4921,
+      "representation_file": "representations/expt_is_metal.npz",
+      "sampling": "class_stratified"
+    },
+    "glass": {
+      "experts": [
+        {
+          "array_suffix": "00",
+          "available_fraction": 0.0,
+          "expert_id": "tpot_mat_steels_anchor",
+          "hidden_dim": 103,
+          "input_modality": "steels_14_element_composition",
+          "provider": "tpot_mat",
+          "source_task": "steels"
+        },
+        {
+          "array_suffix": "01",
+          "available_fraction": 1.0,
+          "expert_id": "mattervial_expt_gap_anchor",
+          "hidden_dim": 40,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "expt_gap"
+        },
+        {
+          "array_suffix": "02",
+          "available_fraction": 1.0,
+          "expert_id": "anchorboost_glass_anchor",
+          "hidden_dim": 512,
+          "input_modality": "enriched_composition_descriptors",
+          "provider": "anchorboost",
+          "source_task": "glass"
+        },
+        {
+          "array_suffix": "03",
+          "available_fraction": 1.0,
+          "expert_id": "mattervial_expt_is_metal_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "expt_is_metal"
+        },
+        {
+          "array_suffix": "04",
+          "available_fraction": 0.0,
+          "expert_id": "jmp_l_jdft2d_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "jdft2d"
+        },
+        {
+          "array_suffix": "05",
+          "available_fraction": 0.0,
+          "expert_id": "mattervial_dielectric_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "dielectric"
+        },
+        {
+          "array_suffix": "06",
+          "available_fraction": 0.0,
+          "expert_id": "mattervial_log_kvrh_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "log_kvrh"
+        },
+        {
+          "array_suffix": "07",
+          "available_fraction": 0.0,
+          "expert_id": "mattervial_log_gvrh_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "log_gvrh"
+        },
+        {
+          "array_suffix": "08",
+          "available_fraction": 0.0,
+          "expert_id": "jmp_l_perovskites_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "perovskites"
+        },
+        {
+          "array_suffix": "09",
+          "available_fraction": 0.0,
+          "expert_id": "jmp_l_phonons_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "phonons"
+        },
+        {
+          "array_suffix": "10",
+          "available_fraction": 0.0,
+          "expert_id": "jmp_l_mp_gap_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "mp_gap"
+        },
+        {
+          "array_suffix": "11",
+          "available_fraction": 0.0,
+          "expert_id": "mattervial_mp_is_metal_anchor",
+          "hidden_dim": 40,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "mp_is_metal"
+        },
+        {
+          "array_suffix": "12",
+          "available_fraction": 0.0,
+          "expert_id": "jmp_l_mp_e_form_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "mp_e_form"
+        }
+      ],
+      "n_sampled": 1500,
+      "n_total": 5680,
+      "representation_file": "representations/glass.npz",
+      "sampling": "class_stratified"
+    },
+    "jdft2d": {
+      "experts": [
+        {
+          "array_suffix": "00",
+          "available_fraction": 0.0,
+          "expert_id": "tpot_mat_steels_anchor",
+          "hidden_dim": 103,
+          "input_modality": "steels_14_element_composition",
+          "provider": "tpot_mat",
+          "source_task": "steels"
+        },
+        {
+          "array_suffix": "01",
+          "available_fraction": 1.0,
+          "expert_id": "mattervial_expt_gap_anchor",
+          "hidden_dim": 40,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "expt_gap"
+        },
+        {
+          "array_suffix": "02",
+          "available_fraction": 0.0,
+          "expert_id": "anchorboost_glass_anchor",
+          "hidden_dim": 512,
+          "input_modality": "enriched_composition_descriptors",
+          "provider": "anchorboost",
+          "source_task": "glass"
+        },
+        {
+          "array_suffix": "03",
+          "available_fraction": 1.0,
+          "expert_id": "mattervial_expt_is_metal_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "expt_is_metal"
+        },
+        {
+          "array_suffix": "04",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_jdft2d_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "jdft2d"
+        },
+        {
+          "array_suffix": "05",
+          "available_fraction": 1.0,
+          "expert_id": "mattervial_dielectric_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "dielectric"
+        },
+        {
+          "array_suffix": "06",
+          "available_fraction": 1.0,
+          "expert_id": "mattervial_log_kvrh_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "log_kvrh"
+        },
+        {
+          "array_suffix": "07",
+          "available_fraction": 0.20125786163522014,
+          "expert_id": "mattervial_log_gvrh_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "log_gvrh"
+        },
+        {
+          "array_suffix": "08",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_perovskites_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "perovskites"
+        },
+        {
+          "array_suffix": "09",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_phonons_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "phonons"
+        },
+        {
+          "array_suffix": "10",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_mp_gap_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "mp_gap"
+        },
+        {
+          "array_suffix": "11",
+          "available_fraction": 0.0,
+          "expert_id": "mattervial_mp_is_metal_anchor",
+          "hidden_dim": 40,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "mp_is_metal"
+        },
+        {
+          "array_suffix": "12",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_mp_e_form_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "mp_e_form"
+        }
+      ],
+      "n_sampled": 636,
+      "n_total": 636,
+      "representation_file": "representations/jdft2d.npz",
+      "sampling": "target_decile_stratified"
+    },
+    "log_gvrh": {
+      "experts": [
+        {
+          "array_suffix": "00",
+          "available_fraction": 0.0,
+          "expert_id": "tpot_mat_steels_anchor",
+          "hidden_dim": 103,
+          "input_modality": "steels_14_element_composition",
+          "provider": "tpot_mat",
+          "source_task": "steels"
+        },
+        {
+          "array_suffix": "01",
+          "available_fraction": 1.0,
+          "expert_id": "mattervial_expt_gap_anchor",
+          "hidden_dim": 40,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "expt_gap"
+        },
+        {
+          "array_suffix": "02",
+          "available_fraction": 0.0,
+          "expert_id": "anchorboost_glass_anchor",
+          "hidden_dim": 512,
+          "input_modality": "enriched_composition_descriptors",
+          "provider": "anchorboost",
+          "source_task": "glass"
+        },
+        {
+          "array_suffix": "03",
+          "available_fraction": 1.0,
+          "expert_id": "mattervial_expt_is_metal_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "expt_is_metal"
+        },
+        {
+          "array_suffix": "04",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_jdft2d_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "jdft2d"
+        },
+        {
+          "array_suffix": "05",
+          "available_fraction": 0.19533333333333333,
+          "expert_id": "mattervial_dielectric_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "dielectric"
+        },
+        {
+          "array_suffix": "06",
+          "available_fraction": 0.19533333333333333,
+          "expert_id": "mattervial_log_kvrh_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "log_kvrh"
+        },
+        {
+          "array_suffix": "07",
+          "available_fraction": 1.0,
+          "expert_id": "mattervial_log_gvrh_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "log_gvrh"
+        },
+        {
+          "array_suffix": "08",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_perovskites_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "perovskites"
+        },
+        {
+          "array_suffix": "09",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_phonons_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "phonons"
+        },
+        {
+          "array_suffix": "10",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_mp_gap_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "mp_gap"
+        },
+        {
+          "array_suffix": "11",
+          "available_fraction": 0.8173333333333334,
+          "expert_id": "mattervial_mp_is_metal_anchor",
+          "hidden_dim": 40,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "mp_is_metal"
+        },
+        {
+          "array_suffix": "12",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_mp_e_form_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "mp_e_form"
+        }
+      ],
+      "n_sampled": 1500,
+      "n_total": 10987,
+      "representation_file": "representations/log_gvrh.npz",
+      "sampling": "target_decile_stratified"
+    },
+    "log_kvrh": {
+      "experts": [
+        {
+          "array_suffix": "00",
+          "available_fraction": 0.0,
+          "expert_id": "tpot_mat_steels_anchor",
+          "hidden_dim": 103,
+          "input_modality": "steels_14_element_composition",
+          "provider": "tpot_mat",
+          "source_task": "steels"
+        },
+        {
+          "array_suffix": "01",
+          "available_fraction": 1.0,
+          "expert_id": "mattervial_expt_gap_anchor",
+          "hidden_dim": 40,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "expt_gap"
+        },
+        {
+          "array_suffix": "02",
+          "available_fraction": 0.0,
+          "expert_id": "anchorboost_glass_anchor",
+          "hidden_dim": 512,
+          "input_modality": "enriched_composition_descriptors",
+          "provider": "anchorboost",
+          "source_task": "glass"
+        },
+        {
+          "array_suffix": "03",
+          "available_fraction": 1.0,
+          "expert_id": "mattervial_expt_is_metal_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "expt_is_metal"
+        },
+        {
+          "array_suffix": "04",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_jdft2d_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "jdft2d"
+        },
+        {
+          "array_suffix": "05",
+          "available_fraction": 0.20266666666666666,
+          "expert_id": "mattervial_dielectric_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "dielectric"
+        },
+        {
+          "array_suffix": "06",
+          "available_fraction": 1.0,
+          "expert_id": "mattervial_log_kvrh_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "log_kvrh"
+        },
+        {
+          "array_suffix": "07",
+          "available_fraction": 0.20266666666666666,
+          "expert_id": "mattervial_log_gvrh_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "log_gvrh"
+        },
+        {
+          "array_suffix": "08",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_perovskites_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "perovskites"
+        },
+        {
+          "array_suffix": "09",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_phonons_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "phonons"
+        },
+        {
+          "array_suffix": "10",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_mp_gap_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "mp_gap"
+        },
+        {
+          "array_suffix": "11",
+          "available_fraction": 0.20266666666666666,
+          "expert_id": "mattervial_mp_is_metal_anchor",
+          "hidden_dim": 40,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "mp_is_metal"
+        },
+        {
+          "array_suffix": "12",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_mp_e_form_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "mp_e_form"
+        }
+      ],
+      "n_sampled": 1500,
+      "n_total": 10987,
+      "representation_file": "representations/log_kvrh.npz",
+      "sampling": "target_decile_stratified"
+    },
+    "mp_e_form": {
+      "experts": [
+        {
+          "array_suffix": "00",
+          "available_fraction": 0.0,
+          "expert_id": "tpot_mat_steels_anchor",
+          "hidden_dim": 103,
+          "input_modality": "steels_14_element_composition",
+          "provider": "tpot_mat",
+          "source_task": "steels"
+        },
+        {
+          "array_suffix": "01",
+          "available_fraction": 1.0,
+          "expert_id": "mattervial_expt_gap_anchor",
+          "hidden_dim": 40,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "expt_gap"
+        },
+        {
+          "array_suffix": "02",
+          "available_fraction": 0.0,
+          "expert_id": "anchorboost_glass_anchor",
+          "hidden_dim": 512,
+          "input_modality": "enriched_composition_descriptors",
+          "provider": "anchorboost",
+          "source_task": "glass"
+        },
+        {
+          "array_suffix": "03",
+          "available_fraction": 1.0,
+          "expert_id": "mattervial_expt_is_metal_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "expt_is_metal"
+        },
+        {
+          "array_suffix": "04",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_jdft2d_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "jdft2d"
+        },
+        {
+          "array_suffix": "05",
+          "available_fraction": 1.0,
+          "expert_id": "mattervial_dielectric_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "dielectric"
+        },
+        {
+          "array_suffix": "06",
+          "available_fraction": 1.0,
+          "expert_id": "mattervial_log_kvrh_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "log_kvrh"
+        },
+        {
+          "array_suffix": "07",
+          "available_fraction": 0.19533333333333333,
+          "expert_id": "mattervial_log_gvrh_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "log_gvrh"
+        },
+        {
+          "array_suffix": "08",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_perovskites_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "perovskites"
+        },
+        {
+          "array_suffix": "09",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_phonons_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "phonons"
+        },
+        {
+          "array_suffix": "10",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_mp_gap_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "mp_gap"
+        },
+        {
+          "array_suffix": "11",
+          "available_fraction": 0.19533333333333333,
+          "expert_id": "mattervial_mp_is_metal_anchor",
+          "hidden_dim": 40,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "mp_is_metal"
+        },
+        {
+          "array_suffix": "12",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_mp_e_form_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "mp_e_form"
+        }
+      ],
+      "n_sampled": 1500,
+      "n_total": 132752,
+      "representation_file": "representations/mp_e_form.npz",
+      "sampling": "target_decile_stratified"
+    },
+    "mp_gap": {
+      "experts": [
+        {
+          "array_suffix": "00",
+          "available_fraction": 0.0,
+          "expert_id": "tpot_mat_steels_anchor",
+          "hidden_dim": 103,
+          "input_modality": "steels_14_element_composition",
+          "provider": "tpot_mat",
+          "source_task": "steels"
+        },
+        {
+          "array_suffix": "01",
+          "available_fraction": 1.0,
+          "expert_id": "mattervial_expt_gap_anchor",
+          "hidden_dim": 40,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "expt_gap"
+        },
+        {
+          "array_suffix": "02",
+          "available_fraction": 0.0,
+          "expert_id": "anchorboost_glass_anchor",
+          "hidden_dim": 512,
+          "input_modality": "enriched_composition_descriptors",
+          "provider": "anchorboost",
+          "source_task": "glass"
+        },
+        {
+          "array_suffix": "03",
+          "available_fraction": 1.0,
+          "expert_id": "mattervial_expt_is_metal_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "expt_is_metal"
+        },
+        {
+          "array_suffix": "04",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_jdft2d_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "jdft2d"
+        },
+        {
+          "array_suffix": "05",
+          "available_fraction": 0.21466666666666667,
+          "expert_id": "mattervial_dielectric_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "dielectric"
+        },
+        {
+          "array_suffix": "06",
+          "available_fraction": 0.402,
+          "expert_id": "mattervial_log_kvrh_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "log_kvrh"
+        },
+        {
+          "array_suffix": "07",
+          "available_fraction": 0.21466666666666667,
+          "expert_id": "mattervial_log_gvrh_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "log_gvrh"
+        },
+        {
+          "array_suffix": "08",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_perovskites_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "perovskites"
+        },
+        {
+          "array_suffix": "09",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_phonons_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "phonons"
+        },
+        {
+          "array_suffix": "10",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_mp_gap_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "mp_gap"
+        },
+        {
+          "array_suffix": "11",
+          "available_fraction": 0.21466666666666667,
+          "expert_id": "mattervial_mp_is_metal_anchor",
+          "hidden_dim": 40,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "mp_is_metal"
+        },
+        {
+          "array_suffix": "12",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_mp_e_form_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "mp_e_form"
+        }
+      ],
+      "n_sampled": 1500,
+      "n_total": 106113,
+      "representation_file": "representations/mp_gap.npz",
+      "sampling": "target_decile_stratified"
+    },
+    "mp_is_metal": {
+      "experts": [
+        {
+          "array_suffix": "00",
+          "available_fraction": 0.0,
+          "expert_id": "tpot_mat_steels_anchor",
+          "hidden_dim": 103,
+          "input_modality": "steels_14_element_composition",
+          "provider": "tpot_mat",
+          "source_task": "steels"
+        },
+        {
+          "array_suffix": "01",
+          "available_fraction": 1.0,
+          "expert_id": "mattervial_expt_gap_anchor",
+          "hidden_dim": 40,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "expt_gap"
+        },
+        {
+          "array_suffix": "02",
+          "available_fraction": 0.0,
+          "expert_id": "anchorboost_glass_anchor",
+          "hidden_dim": 512,
+          "input_modality": "enriched_composition_descriptors",
+          "provider": "anchorboost",
+          "source_task": "glass"
+        },
+        {
+          "array_suffix": "03",
+          "available_fraction": 1.0,
+          "expert_id": "mattervial_expt_is_metal_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "expt_is_metal"
+        },
+        {
+          "array_suffix": "04",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_jdft2d_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "jdft2d"
+        },
+        {
+          "array_suffix": "05",
+          "available_fraction": 0.16666666666666666,
+          "expert_id": "mattervial_dielectric_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "dielectric"
+        },
+        {
+          "array_suffix": "06",
+          "available_fraction": 0.16666666666666666,
+          "expert_id": "mattervial_log_kvrh_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "log_kvrh"
+        },
+        {
+          "array_suffix": "07",
+          "available_fraction": 0.16666666666666666,
+          "expert_id": "mattervial_log_gvrh_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "log_gvrh"
+        },
+        {
+          "array_suffix": "08",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_perovskites_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "perovskites"
+        },
+        {
+          "array_suffix": "09",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_phonons_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "phonons"
+        },
+        {
+          "array_suffix": "10",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_mp_gap_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "mp_gap"
+        },
+        {
+          "array_suffix": "11",
+          "available_fraction": 1.0,
+          "expert_id": "mattervial_mp_is_metal_anchor",
+          "hidden_dim": 40,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "mp_is_metal"
+        },
+        {
+          "array_suffix": "12",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_mp_e_form_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "mp_e_form"
+        }
+      ],
+      "n_sampled": 1500,
+      "n_total": 106113,
+      "representation_file": "representations/mp_is_metal.npz",
+      "sampling": "class_stratified"
+    },
+    "perovskites": {
+      "experts": [
+        {
+          "array_suffix": "00",
+          "available_fraction": 0.0,
+          "expert_id": "tpot_mat_steels_anchor",
+          "hidden_dim": 103,
+          "input_modality": "steels_14_element_composition",
+          "provider": "tpot_mat",
+          "source_task": "steels"
+        },
+        {
+          "array_suffix": "01",
+          "available_fraction": 1.0,
+          "expert_id": "mattervial_expt_gap_anchor",
+          "hidden_dim": 40,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "expt_gap"
+        },
+        {
+          "array_suffix": "02",
+          "available_fraction": 0.0,
+          "expert_id": "anchorboost_glass_anchor",
+          "hidden_dim": 512,
+          "input_modality": "enriched_composition_descriptors",
+          "provider": "anchorboost",
+          "source_task": "glass"
+        },
+        {
+          "array_suffix": "03",
+          "available_fraction": 1.0,
+          "expert_id": "mattervial_expt_is_metal_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "expt_is_metal"
+        },
+        {
+          "array_suffix": "04",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_jdft2d_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "jdft2d"
+        },
+        {
+          "array_suffix": "05",
+          "available_fraction": 0.19333333333333333,
+          "expert_id": "mattervial_dielectric_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "dielectric"
+        },
+        {
+          "array_suffix": "06",
+          "available_fraction": 0.19333333333333333,
+          "expert_id": "mattervial_log_kvrh_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "log_kvrh"
+        },
+        {
+          "array_suffix": "07",
+          "available_fraction": 0.0,
+          "expert_id": "mattervial_log_gvrh_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "log_gvrh"
+        },
+        {
+          "array_suffix": "08",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_perovskites_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "perovskites"
+        },
+        {
+          "array_suffix": "09",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_phonons_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "phonons"
+        },
+        {
+          "array_suffix": "10",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_mp_gap_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "mp_gap"
+        },
+        {
+          "array_suffix": "11",
+          "available_fraction": 0.0,
+          "expert_id": "mattervial_mp_is_metal_anchor",
+          "hidden_dim": 40,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "mp_is_metal"
+        },
+        {
+          "array_suffix": "12",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_mp_e_form_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "mp_e_form"
+        }
+      ],
+      "n_sampled": 1500,
+      "n_total": 18928,
+      "representation_file": "representations/perovskites.npz",
+      "sampling": "target_decile_stratified"
+    },
+    "phonons": {
+      "experts": [
+        {
+          "array_suffix": "00",
+          "available_fraction": 0.0,
+          "expert_id": "tpot_mat_steels_anchor",
+          "hidden_dim": 103,
+          "input_modality": "steels_14_element_composition",
+          "provider": "tpot_mat",
+          "source_task": "steels"
+        },
+        {
+          "array_suffix": "01",
+          "available_fraction": 1.0,
+          "expert_id": "mattervial_expt_gap_anchor",
+          "hidden_dim": 40,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "expt_gap"
+        },
+        {
+          "array_suffix": "02",
+          "available_fraction": 0.0,
+          "expert_id": "anchorboost_glass_anchor",
+          "hidden_dim": 512,
+          "input_modality": "enriched_composition_descriptors",
+          "provider": "anchorboost",
+          "source_task": "glass"
+        },
+        {
+          "array_suffix": "03",
+          "available_fraction": 1.0,
+          "expert_id": "mattervial_expt_is_metal_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "expt_is_metal"
+        },
+        {
+          "array_suffix": "04",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_jdft2d_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "jdft2d"
+        },
+        {
+          "array_suffix": "05",
+          "available_fraction": 0.2,
+          "expert_id": "mattervial_dielectric_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "dielectric"
+        },
+        {
+          "array_suffix": "06",
+          "available_fraction": 0.2,
+          "expert_id": "mattervial_log_kvrh_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "log_kvrh"
+        },
+        {
+          "array_suffix": "07",
+          "available_fraction": 0.2,
+          "expert_id": "mattervial_log_gvrh_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "log_gvrh"
+        },
+        {
+          "array_suffix": "08",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_perovskites_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "perovskites"
+        },
+        {
+          "array_suffix": "09",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_phonons_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "phonons"
+        },
+        {
+          "array_suffix": "10",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_mp_gap_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "mp_gap"
+        },
+        {
+          "array_suffix": "11",
+          "available_fraction": 0.0,
+          "expert_id": "mattervial_mp_is_metal_anchor",
+          "hidden_dim": 40,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "mp_is_metal"
+        },
+        {
+          "array_suffix": "12",
+          "available_fraction": 1.0,
+          "expert_id": "jmp_l_mp_e_form_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "mp_e_form"
+        }
+      ],
+      "n_sampled": 1265,
+      "n_total": 1265,
+      "representation_file": "representations/phonons.npz",
+      "sampling": "target_decile_stratified"
+    },
+    "steels": {
+      "experts": [
+        {
+          "array_suffix": "00",
+          "available_fraction": 1.0,
+          "expert_id": "tpot_mat_steels_anchor",
+          "hidden_dim": 103,
+          "input_modality": "steels_14_element_composition",
+          "provider": "tpot_mat",
+          "source_task": "steels"
+        },
+        {
+          "array_suffix": "01",
+          "available_fraction": 0.0,
+          "expert_id": "mattervial_expt_gap_anchor",
+          "hidden_dim": 40,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "expt_gap"
+        },
+        {
+          "array_suffix": "02",
+          "available_fraction": 1.0,
+          "expert_id": "anchorboost_glass_anchor",
+          "hidden_dim": 512,
+          "input_modality": "enriched_composition_descriptors",
+          "provider": "anchorboost",
+          "source_task": "glass"
+        },
+        {
+          "array_suffix": "03",
+          "available_fraction": 0.0,
+          "expert_id": "mattervial_expt_is_metal_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "expt_is_metal"
+        },
+        {
+          "array_suffix": "04",
+          "available_fraction": 0.0,
+          "expert_id": "jmp_l_jdft2d_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "jdft2d"
+        },
+        {
+          "array_suffix": "05",
+          "available_fraction": 0.0,
+          "expert_id": "mattervial_dielectric_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "dielectric"
+        },
+        {
+          "array_suffix": "06",
+          "available_fraction": 0.0,
+          "expert_id": "mattervial_log_kvrh_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "log_kvrh"
+        },
+        {
+          "array_suffix": "07",
+          "available_fraction": 0.0,
+          "expert_id": "mattervial_log_gvrh_anchor",
+          "hidden_dim": 160,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "log_gvrh"
+        },
+        {
+          "array_suffix": "08",
+          "available_fraction": 0.0,
+          "expert_id": "jmp_l_perovskites_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "perovskites"
+        },
+        {
+          "array_suffix": "09",
+          "available_fraction": 0.0,
+          "expert_id": "jmp_l_phonons_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "phonons"
+        },
+        {
+          "array_suffix": "10",
+          "available_fraction": 0.0,
+          "expert_id": "jmp_l_mp_gap_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "mp_gap"
+        },
+        {
+          "array_suffix": "11",
+          "available_fraction": 0.0,
+          "expert_id": "mattervial_mp_is_metal_anchor",
+          "hidden_dim": 40,
+          "input_modality": "composition_or_structure_official_mattervial_features",
+          "provider": "mattervial_modnet",
+          "source_task": "mp_is_metal"
+        },
+        {
+          "array_suffix": "12",
+          "available_fraction": 0.0,
+          "expert_id": "jmp_l_mp_e_form_anchor",
+          "hidden_dim": 256,
+          "input_modality": "periodic_crystal_structure",
+          "provider": "jmp_l",
+          "source_task": "mp_e_form"
+        }
+      ],
+      "n_sampled": 312,
+      "n_total": 312,
+      "representation_file": "representations/steels.npz",
+      "sampling": "target_decile_stratified"
+    }
+  }
+}

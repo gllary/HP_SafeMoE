@@ -1,0 +1,57 @@
+schema_version: 1
+protocol_version: matbench-v0.1-official-fivefold
+
+official_validation:
+  benchmark: matbench_v0.1
+  package_version: "0.6"
+  filename: matbench_v0.1_validation.json
+  sha256: 94c17bc3dac32c67d33d69289927a5fec174497e74bbc47293e23d3d147e9a6d
+  n_outer_folds: 5
+  random_state: 18012019
+  shuffle: true
+  source_url: https://github.com/materialsproject/matbench/blob/main/matbench/matbench_v0.1_validation.json
+
+model_validation:
+  fraction: 0.10
+  base_random_state: 20260814
+  regression_splitter: ShuffleSplit
+  classification_splitter: StratifiedShuffleSplit
+  shuffle: true
+  purpose: early_stopping_and_configuration_selection_only
+  refit_after_selection: complete_outer_train
+
+stacking_oof:
+  enabled: true
+  n_splits: 5
+  base_random_state: 20260814
+  regression_splitter: KFold
+  classification_splitter: StratifiedKFold
+  shuffle: true
+  scope: predeclared_second_stage_experts_only
+  purpose: stage2_features_from_outer_train_partitions
+  stored_arrays: validation_positions_only
+  train_reconstruction: preserve_outer_train_order_and_remove_inner_validation
+
+sample_identity:
+  primary_id: official_matbench_identifier
+  raw_position_must_be_contiguous: true
+  fingerprint_algorithm: sha256
+  fingerprint_payload: task_name_raw_index_input_and_target_canonical_orjson
+  composition_entity_hash: reduced_composition_required_for_cross_task_filtering
+  structure_entity_hash: normalized_structure_required_for_cross_task_filtering
+
+cross_task_leakage:
+  target_outer_test_entity_may_appear_in_auxiliary_training: false
+  default_match_level: exact_structure_or_reduced_composition
+  overlap_report_required: true
+  filtering_manifest_required: true
+
+artifacts:
+  schema_version: "1.0"
+  prediction_file: predictions.npz
+  latent_file: latents.npz
+  metadata_file: metadata.json
+  production_latent_dim: 512
+  sample_order: exact_split_manifest_order
+  classification_prediction: positive_class_probability
+  selection_data_scope: outer_train

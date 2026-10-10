@@ -1,0 +1,28 @@
+{
+  "dataset": "DS2-248",
+  "n_samples": 248,
+  "target_unit": "eV",
+  "prediction_rule": "For every external sample, average the five frozen outer-model predictions first; compute metrics once on the ensemble vector.",
+  "definitions": {
+    "mean mae": "MAE of the five-model mean prediction vector",
+    "std mae": "bootstrap standard deviation (standard error) of the ensemble MAE; 200,000 replicates",
+    "mean rmse": "RMSE of the five-model mean prediction vector",
+    "max max_error": "maximum absolute error of the five-model mean prediction vector"
+  },
+  "rows": [
+    {
+      "algorithm": "Stage 1",
+      "mean mae": 0.7481466895309896,
+      "std mae": 0.041160403062894896,
+      "mean rmse": 0.9888477754712597,
+      "max max_error": 2.808694391138852
+    },
+    {
+      "algorithm": "HP-SafeMoE",
+      "mean mae": 0.6805946898381403,
+      "std mae": 0.03865253762835695,
+      "mean rmse": 0.912632186303382,
+      "max max_error": 2.7778921227331703
+    }
+  ]
+}

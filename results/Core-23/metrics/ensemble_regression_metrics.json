@@ -1,0 +1,28 @@
+{
+  "dataset": "Core-23",
+  "n_samples": 23,
+  "target_unit": "dimensionless refractive index n",
+  "prediction_rule": "For every external sample, average the five frozen outer-model predictions first; compute metrics once on the ensemble vector.",
+  "definitions": {
+    "mean mae": "MAE of the five-model mean prediction vector",
+    "std mae": "bootstrap standard deviation (standard error) of the ensemble MAE; 200,000 replicates",
+    "mean rmse": "RMSE of the five-model mean prediction vector",
+    "max max_error": "maximum absolute error of the five-model mean prediction vector"
+  },
+  "rows": [
+    {
+      "algorithm": "Stage 1",
+      "mean mae": 0.05255817255886799,
+      "std mae": 0.006326003953205269,
+      "mean rmse": 0.060674907410482995,
+      "max max_error": 0.1140715733974571
+    },
+    {
+      "algorithm": "HP-SafeMoE",
+      "mean mae": 0.04788133843439544,
+      "std mae": 0.00628939314170524,
+      "mean rmse": 0.05657968496252415,
+      "max max_error": 0.10895689623485194
+    }
+  ]
+}

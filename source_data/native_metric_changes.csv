@@ -1,0 +1,14 @@
+task,task_label,native_metric,full_vs_stage1_native_improvement,full_vs_no_cross_native_improvement
+expt_is_metal,Experimental metallicity,ROC-AUC,0.004040201104807584,0.004040201104807584
+glass,Glass-forming ability,ROC-AUC,0.0,0.0
+mp_is_metal,MP metallicity,ROC-AUC,0.004607188295274178,0.00461440008718228
+dielectric,Refractive index,MAE (dimensionless),0.027631276862575667,0.007279217232530844
+expt_gap,Experimental band gap,MAE (eV),0.08182114117154009,0.0788147324234972
+jdft2d,2D exfoliation energy,MAE (meV atom^-1),0.015481967463477275,-0.0033698153616548154
+log_gvrh,Shear modulus,MAE (log G),-2.064374395885915e-05,0.00041312847324624923
+log_kvrh,Bulk modulus,MAE (log K),2.6585417991650123e-05,0.0002248040476192169
+mp_e_form,MP formation energy,MAE (eV atom^-1),0.0008894626866679578,-3.4394656960209936e-05
+mp_gap,MP band gap,MAE (eV),0.0016325856120223358,5.22267099760082e-05
+perovskites,Perovskite formation energy,MAE (eV atom^-1),0.000813647355508871,8.99137066474466e-05
+phonons,Optical phonon peak,MAE (cm^-1),0.3245855677348203,-0.020268820460908898
+steels,Steel yield strength,MAE (MPa),0.0,0.0

@@ -1,0 +1,115 @@
+schema_version: stage1-provider-pool
+configuration_status: release
+protocol: one_strongest_frozen_expert_per_task
+split_protocol: stage1_train_val_test
+stage2_input_protocol: frozen_provider_exports
+relation_learning_scope: stage2_outer_train
+availability_mask_policy: source_runtime_availability
+
+experts:
+  - expert_id: tpot_mat_steels_anchor
+    source_task: steels
+    provider: tpot_mat_official_pipeline
+    hidden_dim: 103
+    input_modality: steels_14_element_composition
+    representation_kind: task_trained_hidden
+    export_root: ../../stage1_exports/tpot_mat_steels_anchor
+  - expert_id: mattervial_expt_gap_anchor
+    source_task: expt_gap
+    provider: mattervial_modnet_0.4.5_checkpoint_consistent
+    hidden_dim: 40
+    input_modality: composition_or_structure_official_mattervial_features
+    representation_kind: task_trained_hidden
+    export_root: ../../stage1_exports/mattervial_expt_gap_anchor
+  - expert_id: anchorboost_glass_anchor
+    source_task: glass
+    provider: anchorboost
+    hidden_dim: 512
+    input_modality: enriched_composition_descriptors
+    representation_kind: task_trained_hidden
+    export_root: ../../stage1_exports/anchorboost_glass_anchor
+  - expert_id: mattervial_expt_is_metal_anchor
+    source_task: expt_is_metal
+    provider: mattervial_modnet_0.4.5_checkpoint_consistent
+    hidden_dim: 160
+    input_modality: composition_or_structure_official_mattervial_features
+    representation_kind: task_trained_hidden
+    export_root: ../../stage1_exports/mattervial_expt_is_metal_anchor
+  - expert_id: jmp_l_jdft2d_anchor
+    source_task: jdft2d
+    provider: jmp_l_official_checkpoint_consistent
+    hidden_dim: 256
+    input_modality: periodic_crystal_structure
+    representation_kind: task_trained_hidden
+    export_root: ../../stage1_exports/jmp_l_jdft2d_anchor
+  - expert_id: mattervial_dielectric_anchor
+    source_task: dielectric
+    provider: mattervial_modnet_0.4.5_checkpoint_consistent
+    hidden_dim: 160
+    input_modality: composition_or_structure_official_mattervial_features
+    representation_kind: task_trained_hidden
+    export_root: ../../stage1_exports/mattervial_dielectric_anchor
+  - expert_id: mattervial_log_kvrh_anchor
+    source_task: log_kvrh
+    provider: mattervial_modnet_0.4.5_checkpoint_consistent
+    hidden_dim: 160
+    input_modality: composition_or_structure_official_mattervial_features
+    representation_kind: task_trained_hidden
+    export_root: ../../stage1_exports/mattervial_log_kvrh_anchor
+  - expert_id: mattervial_log_gvrh_anchor
+    source_task: log_gvrh
+    provider: mattervial_modnet_0.4.5_checkpoint_consistent
+    hidden_dim: 160
+    input_modality: composition_or_structure_official_mattervial_features
+    representation_kind: task_trained_hidden
+    export_root: ../../stage1_exports/mattervial_log_gvrh_anchor
+  - expert_id: jmp_l_perovskites_anchor
+    source_task: perovskites
+    provider: jmp_l_official_checkpoint_consistent
+    hidden_dim: 256
+    input_modality: periodic_crystal_structure
+    representation_kind: task_trained_hidden
+    export_root: ../../stage1_exports/jmp_l_perovskites_anchor
+  - expert_id: jmp_l_phonons_anchor
+    source_task: phonons
+    provider: jmp_l_official_checkpoint_consistent
+    hidden_dim: 256
+    input_modality: periodic_crystal_structure
+    representation_kind: task_trained_hidden
+    export_root: ../../stage1_exports/jmp_l_phonons_anchor
+  - expert_id: jmp_l_mp_gap_anchor
+    source_task: mp_gap
+    provider: jmp_l_frozen_outer_checkpoint_replay
+    hidden_dim: 256
+    input_modality: periodic_crystal_structure
+    representation_kind: task_trained_hidden
+    export_root: ../../stage1_exports/jmp_l_mp_gap_anchor
+  - expert_id: mattervial_mp_is_metal_anchor
+    source_task: mp_is_metal
+    provider: mattervial_modnet_0.4.5_checkpoint_consistent
+    hidden_dim: 40
+    input_modality: composition_or_structure_official_mattervial_features
+    representation_kind: task_trained_hidden
+    export_root: ../../stage1_exports/mattervial_mp_is_metal_anchor
+  - expert_id: jmp_l_mp_e_form_anchor
+    source_task: mp_e_form
+    provider: jmp_l_frozen_outer_checkpoint_replay
+    hidden_dim: 256
+    input_modality: periodic_crystal_structure
+    representation_kind: task_trained_hidden
+    export_root: ../../stage1_exports/jmp_l_mp_e_form_anchor
+
+anchor_map:
+  steels: tpot_mat_steels_anchor
+  expt_gap: mattervial_expt_gap_anchor
+  glass: anchorboost_glass_anchor
+  expt_is_metal: mattervial_expt_is_metal_anchor
+  jdft2d: jmp_l_jdft2d_anchor
+  dielectric: mattervial_dielectric_anchor
+  log_kvrh: mattervial_log_kvrh_anchor
+  log_gvrh: mattervial_log_gvrh_anchor
+  perovskites: jmp_l_perovskites_anchor
+  phonons: jmp_l_phonons_anchor
+  mp_gap: jmp_l_mp_gap_anchor
+  mp_is_metal: mattervial_mp_is_metal_anchor
+  mp_e_form: jmp_l_mp_e_form_anchor

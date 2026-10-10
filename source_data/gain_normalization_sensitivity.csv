@@ -1,0 +1,7 @@
+analysis,definition,unit,full_vs_stage1,full_vs_stage1_ci95_low,full_vs_stage1_ci95_high,full_vs_no_cross,full_vs_no_cross_ci95_low,full_vs_no_cross_ci95_high
+Primary 13-task macro,Mean fold-wise relative MAE reduction for regression and remaining-AUC-headroom recovery for classification,percentage points,7.157629369537987,2.479082901007718,12.630264632406579,5.582033744400381,0.6762070511021229,11.275667870820412
+Regression-only macro,Mean relative MAE reduction across the ten regression tasks,percentage points,4.92328722395241,1.0878808177361314,10.196777811657343,2.870772879979305,0.11242006811952655,7.829756877176362
+Classification-only macro,Mean remaining-AUC-headroom recovery across the three classification tasks,percentage points,14.605436521489912,0.0,26.080171922893772,14.619569959137303,0.0,26.074624641510656
+Median task effect,Median of the 13 task-level primary normalized gains,percentage points,1.6429017123435596,0.04172142461529619,12.300843239471359,0.33089187850001606,0.0,3.54690994572564
+Alternative AUC normalization,Classification gains divided by anchor AUC rather than remaining AUC headroom; regression definition unchanged,percentage points,3.855034432506644,0.8177881600507579,8.102557599792592,2.2762336800385046,0.15113467622583396,6.153320731211426
+Classification raw AUC change,Mean unnormalized ROC-AUC change across the three classification tasks,AUC percentage points,0.2882463133360587,0.0,0.47957994567281487,0.2884867063996621,0.0,0.48036121735276494

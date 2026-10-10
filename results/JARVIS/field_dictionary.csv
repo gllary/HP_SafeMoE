@@ -1,0 +1,28 @@
+field,public_meaning
+sample_id,Stable task and official-test sample identifier
+y_true,Official test target used during scoring
+stage1_anchor_prediction,Frozen coGN target-task Stage-1 prediction
+raw_stage2_prediction,Raw cross-expert Stage-2 proposal before safety control
+hpsafemoe_prediction,Safety-controlled HP-SafeMoE prediction
+benefit_probability,Cross-fitted probability that the proposed correction will improve the anchor
+correction_accepted,Sample-level benefit-gate decision
+residual_scale,Multiplier selected from training-OOF and official-validation evidence
+task_safety_accepted,Task safety acceptance from the shared-profile dual-certificate rule
+abs_error_stage1_anchor,Absolute Stage-1 error
+abs_error_hpsafemoe,Absolute HP-SafeMoE prediction error
+proposal_route_index,Serialized proposal-router choice
+directional_agreement,Agreement diagnostic for the proposed residual direction
+route_consensus,Consensus diagnostic for the proposal routes
+route_probability_0,Proposal-router probability for the Anchor route
+route_probability_1,Proposal-router probability for the Sample-conditioned route
+route_probability_2,Proposal-router probability for the Relation-augmented route
+data_attention_source_0,Sample-conditioned branch attention weight for source slot 0
+data_attention_source_1,Sample-conditioned branch attention weight for source slot 1
+data_attention_source_2,Sample-conditioned branch attention weight for source slot 2
+data_attention_source_3,Sample-conditioned branch attention weight for source slot 3
+data_attention_source_4,Sample-conditioned branch attention weight for source slot 4
+learned_relation_attention_source_0,Relation-augmented branch attention weight for source slot 0
+learned_relation_attention_source_1,Relation-augmented branch attention weight for source slot 1
+learned_relation_attention_source_2,Relation-augmented branch attention weight for source slot 2
+learned_relation_attention_source_3,Relation-augmented branch attention weight for source slot 3
+learned_relation_attention_source_4,Relation-augmented branch attention weight for source slot 4

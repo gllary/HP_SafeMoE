@@ -1,0 +1,6 @@
+outer_fold,n_matched_samples,descriptor_bulk_linear_cka,descriptor_shear_linear_cka,bulk_shear_linear_cka,bulk_expert_id,shear_expert_id,representation_scope
+0,41,0.2478818557275908,0.2061022758481777,0.7862886814003014,mattervial_log_kvrh_anchor,mattervial_log_gvrh_anchor,own frozen Stage-1 expert on its outer-test rows
+1,35,0.3873958031253228,0.39051967979102764,0.9564346515046221,mattervial_log_kvrh_anchor,mattervial_log_gvrh_anchor,own frozen Stage-1 expert on its outer-test rows
+2,40,0.154480024174732,0.1382294494990384,0.8661888882334935,mattervial_log_kvrh_anchor,mattervial_log_gvrh_anchor,own frozen Stage-1 expert on its outer-test rows
+3,45,0.2938332210076126,0.24710152465218688,0.8709793380860568,mattervial_log_kvrh_anchor,mattervial_log_gvrh_anchor,own frozen Stage-1 expert on its outer-test rows
+4,38,0.19902145690133743,0.17822349646871466,0.7792316460039087,mattervial_log_kvrh_anchor,mattervial_log_gvrh_anchor,own frozen Stage-1 expert on its outer-test rows

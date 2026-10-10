@@ -1,0 +1,56 @@
+schema_version: 1
+experiment_id: jmp_l_mp_gap_mp_e_form_stage1
+expert_name: jmp_l
+finetune_protocol: jmp_l_fp32_32epoch
+training_profile: fp32_32epoch
+workflow_stage: stage1
+split_protocol: official_matbench_outer_fivefold_full_outer_train_to_outer_test
+training_seed: 42
+hyperparameter_policy: fixed_release_values
+fit_protocol: single_outer_fold_fit
+target_normalization: complete_official_outer_train_only
+
+execution:
+  physical_gpu_indices: [0, 1, 2, 3, 4, 5, 6, 7]
+  task_launch_order: [mp_gap, mp_e_form]
+  work_stealing: true
+  max_concurrent_gpu_jobs: 1
+  reserve_free_gpu_memory_gb: 12
+  cpu_concurrency: 8
+  preprocess_concurrency: 2
+
+optimization:
+  learning_rate: 0.00008
+  optimizer: AdamW
+  betas: [0.9, 0.95]
+  epsilon: 0.00000001
+  weight_decay: 0.1
+  gradient_clip_value: 1.0
+  warmup_epochs: 5
+  warmup_start_lr_factor: 0.1
+  cosine_max_epochs: 32
+  minimum_lr_factor: 0.1
+  validation_batches: 0
+  maximum_epochs: 32
+  maximum_wall_time_days: 3
+  checkpoint_every_n_train_steps: 10000
+  automatic_full_state_resume: true
+
+tasks:
+  mp_gap:
+    batch_size: 16
+    precision: 32-true
+    graph_reduction: mean
+    num_workers: 8
+  mp_e_form:
+    batch_size: 32
+    precision: 32-true
+    graph_reduction: mean
+    num_workers: 0
+
+artifact_policy:
+  export_predictions: true
+  export_latents: true
+  latent_dim: 256
+  latent_source: gemnet_oc_final_atom_energy_embedding_before_task_head
+  latent_split: official_matbench_outer_test

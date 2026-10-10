@@ -1,0 +1,48 @@
+schema_version: 1
+dataset: matbench_v0.1
+official_source: https://github.com/materialsproject/matbench
+access_mode: official_download_with_hash_verification
+local_root: data/raw
+server_root_env: MATBENCH_RAW_ROOT
+integrity_policy: listed_sha256_required
+
+files:
+  steels:
+    filename: matbench_steels.json.gz
+    sha256: 473bc4957b2ea5e6465aef84bc29bb48ac34db27d69ea4ec5f508745c6fae252
+  expt_gap:
+    filename: matbench_expt_gap.json.gz
+    sha256: 783e7d1461eb83b00b2f2942da4b95fda5e58a0d1ae26b581c24cf8a82ca75b2
+  glass:
+    filename: matbench_glass.json.gz
+    sha256: 36beb654e2a463ee2a6572105bea0ca2961eee7c7b26a25377bff2c3b338e53a
+  expt_is_metal:
+    filename: matbench_expt_is_metal.json.gz
+    sha256: 8f2a4f9bacdcbc5c2c73615629ee7986f09d39bed40ba7db52b61b2889730887
+  jdft2d:
+    filename: matbench_jdft2d.json.gz
+    sha256: 26057dc4524e193e32abffb296ce819b58b6e11d1278cae329a2f97817a4eddf
+  dielectric:
+    filename: matbench_dielectric.json.gz
+    sha256: 83befa09bc2ec2f4b6143afc413157827a90e5e2e42c1eb507ccfa01bf26a1d6
+  log_kvrh:
+    filename: matbench_log_kvrh.json.gz
+    sha256: 44b113ddb7e23aa18731a62c74afa7e5aa654199e0db5f951c8248a00955c9cd
+  log_gvrh:
+    filename: matbench_log_gvrh.json.gz
+    sha256: 098af941f4c663270f1fe21abf20ffad6fb85ecbfcba5786ceac03983ac29da7
+  perovskites:
+    filename: matbench_perovskites.json.gz
+    sha256: 4641e2417f8ec8b50096d2230864468dfa08278dc9d257c327f65d0305278483
+  phonons:
+    filename: matbench_phonons.json.gz
+    sha256: 4db551f21ec5f577e6202725f10e34dfc509aa7df3a6bdaac497da7f6dbbb9b3
+  mp_gap:
+    filename: matbench_mp_gap.json.gz
+    sha256: 58b65746bd88329986ed66031a2ac1369c7c522f7bc9f9081528e07097c2c057
+  mp_is_metal:
+    filename: matbench_mp_is_metal.json.gz
+    sha256: 9a028ed5750a4c76ca36e9f3c8d48fe0bf3fb21b76ec2289e58ae7048d527919
+  mp_e_form:
+    filename: matbench_mp_e_form.json.gz
+    sha256: dedcb1d4ba2e3e50dbdd45ba5bc647a00e9c2bcf8f8bf556dc8e92caa39eb21f

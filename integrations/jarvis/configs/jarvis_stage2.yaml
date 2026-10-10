@@ -1,0 +1,21 @@
+schema_version: "jarvis-hpsafemoe"
+method_name: hpsafemoe_jarvis_validation_calibrated
+source_candidate: proposal_full
+stage1_frozen: true
+proposal_checkpoints_frozen: true
+use_crossfit_benefit_gate: true
+validation_role: val
+validation_meta_crossfit_partitions: 5
+validation_partition_seed: 20261091
+residual_scale_grid: [0.0, 0.10, 0.25, 0.50, 0.75, 1.0]
+benefit_probability_threshold_grid: [0.35, 0.45, 0.55, 0.65, 0.75, 0.85]
+minimum_sample_coverage: 0.05
+bootstrap_resamples: 400
+bootstrap_max_rows: 4096
+bootstrap_confidence: 0.95
+require_training_oof_certificate: true
+require_validation_crossfit_certificate: true
+use_same_oof_locked_global_profile: true
+calibration_data_roles: [train_oof, val]
+scoring_data_role: test
+prediction_barrier_before_test_scoring: true

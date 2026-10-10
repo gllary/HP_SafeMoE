@@ -1,0 +1,38 @@
+schema_version: 1
+expected_gpu:
+  count_at_least: 3
+  allowed_indices: [0, 1, 2]
+  isolated_allowed_indices: [3]
+  name_contains: H20
+  memory_gb_minimum_each: 130
+
+scheduler:
+  poll_seconds: 5
+  retry_limit: 0
+  cpu_concurrency: 4
+  preprocess_concurrency: 2
+  work_stealing:
+    enabled: false
+    prefer_declared_lane: true
+    policy: declared_lane_first_then_least_loaded_compatible_gpu
+    reproducibility_note: physical H20 assignment changes; job inputs_seeds_and_signatures_do_not
+  gpu_lanes:
+    0: {max_concurrent_jobs: 1, reserve_free_gb: 20}
+    1: {max_concurrent_jobs: 1, reserve_free_gb: 20}
+    2: {max_concurrent_jobs: 1, reserve_free_gb: 20}
+  note: scheduler_also_checks_each_jobs_estimated_gpu_memory_before_launch
+
+job_memory_gb:
+  native_cache: 0
+  native_tabular: 0
+  native_modnet: 18
+  native_edge_gnn: 34
+  native_alignn: 46
+  native_matformer: 40
+  native_cogn: 42
+  safe_moe_validation: 28
+  safe_moe_outer: 32
+  analysis: 20
+  anchorboost: 42
+  mattervial_modnet: 70
+  jmp_l: 80

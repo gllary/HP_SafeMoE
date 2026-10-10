@@ -1,0 +1,61 @@
+task,feature_group,normalized_importance_percent
+dielectric,Attention structure,29.880102555974283
+dielectric,Branch disagreement,5.3121632022149
+dielectric,Expert disagreement and uncertainty,14.371031139588078
+dielectric,Prediction and correction,23.549223891673392
+dielectric,Route state,8.571173361243973
+dielectric,Sample position,18.316305849305365
+expt_gap,Attention structure,26.498646480665016
+expt_gap,Branch disagreement,3.756457120508548
+expt_gap,Expert disagreement and uncertainty,17.42536894599457
+expt_gap,Prediction and correction,28.49045455818205
+expt_gap,Route state,14.97801202505384
+expt_gap,Sample position,8.851060869595974
+jdft2d,Attention structure,32.31938233020314
+jdft2d,Branch disagreement,6.772717557122875
+jdft2d,Expert disagreement and uncertainty,10.0140453148049
+jdft2d,Prediction and correction,28.004162062022807
+jdft2d,Route state,6.280741692627351
+jdft2d,Sample position,16.608951043218916
+log_gvrh,Attention structure,27.531504410450815
+log_gvrh,Branch disagreement,6.373601005634789
+log_gvrh,Expert disagreement and uncertainty,19.477116178244565
+log_gvrh,Prediction and correction,18.14806540864413
+log_gvrh,Route state,19.680360273542064
+log_gvrh,Sample position,8.789352723483635
+log_kvrh,Attention structure,19.513970675836035
+log_kvrh,Branch disagreement,6.549986667235336
+log_kvrh,Expert disagreement and uncertainty,31.332892301374233
+log_kvrh,Prediction and correction,16.994811742285474
+log_kvrh,Route state,17.821549407747547
+log_kvrh,Sample position,7.7867892055213765
+mp_e_form,Attention structure,15.147769852493603
+mp_e_form,Branch disagreement,7.296781405081186
+mp_e_form,Expert disagreement and uncertainty,16.2727418472123
+mp_e_form,Prediction and correction,46.769176460854375
+mp_e_form,Route state,5.930849722862636
+mp_e_form,Sample position,8.5826807114959
+mp_gap,Attention structure,17.32959219209705
+mp_gap,Branch disagreement,5.775652718823271
+mp_gap,Expert disagreement and uncertainty,11.907166685609955
+mp_gap,Prediction and correction,36.22867623624344
+mp_gap,Route state,16.67172149005531
+mp_gap,Sample position,12.087190677170987
+perovskites,Attention structure,14.364378534192909
+perovskites,Branch disagreement,5.715870873717798
+perovskites,Expert disagreement and uncertainty,14.180399244255728
+perovskites,Prediction and correction,44.14757463336423
+perovskites,Route state,12.312782134288542
+perovskites,Sample position,9.278994580180806
+phonons,Attention structure,16.33132075640372
+phonons,Branch disagreement,9.127509808082644
+phonons,Expert disagreement and uncertainty,17.906163865293856
+phonons,Prediction and correction,33.75805434222735
+phonons,Route state,9.644127722555599
+phonons,Sample position,13.232823505436825
+steels,Attention structure,1.2102504737793926e-35
+steels,Branch disagreement,7.991148226623552
+steels,Expert disagreement and uncertainty,25.66909606299337
+steels,Prediction and correction,36.09839652972185
+steels,Route state,17.75785248143425
+steels,Sample position,12.48350669922698

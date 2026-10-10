@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software or its released results, please cite the accompanying HP-SafeMoE article."
+type: software
+title: "HP-SafeMoE"
+version: 1.0.0
+date-released: 2026-10-10
+license: MIT
+url: "https://github.com/gllary/HP_SafeMoE"
+repository-code: "https://github.com/gllary/HP_SafeMoE"
+authors:
+  - family-names: Guan
+    given-names: Yuxia
+  - family-names: Zhao
+    given-names: Weijiang
+  - family-names: Zou
+    given-names: Hao
+  - family-names: Chi
+    given-names: Guangfang
+  - family-names: Liu
+    given-names: Yong
+  - family-names: Wang
+    given-names: Jianxin
