@@ -427,7 +427,9 @@ def recompute_representations(
         })
         if not include_cka_and_pca:
             continue
-        chosen = int(pd.Series(fold_all).value_counts().index[0])
+        chosen = 0  # Stored fold 0 is the first official outer fold used in Fig. S2.
+        if not np.any(fold_all == chosen):
+            raise ValueError(f"First official outer fold is missing from {task}")
         use = fold_all == chosen
         xy = PCA(n_components=2, random_state=20260908).fit_transform(standardize_complete(hidden_all[use]))
         for sample_id, x, y_coord, target, accepted in zip(
