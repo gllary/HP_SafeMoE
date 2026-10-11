@@ -7,7 +7,7 @@
 - `tables/representation_target_probes.csv`: five-outer-fold summaries of the target probes for every Stage-1 representation.
 - `tables/representation_target_probe_folds.csv`: the 65 outer-fold probe scores used in the main-text representation-probe figure.
 - `tables/representation_descriptor_cka.csv`: fold-resolved linear CKA against descriptor groups, permutation nulls, z scores, and one-sided permutation p values.
-- `tables/pca_coordinates.csv`: the released two-dimensional PCA coordinates and correction-acceptance labels used for the PCA panel.
+- `tables/pca_coordinates.csv`: two-dimensional PCA coordinates for the first official outer fold of each task, together with target values and retained correction-acceptance metadata. The PCA panel is coloured by class or target value, not correction acceptance. The stored `outer_fold=0` corresponds to outer fold 1 in the manuscript.
 - `input/physical_descriptors.csv`: descriptor matrix used by the probe, PCA, and CKA analyses.
 - `input/representations/*.npz`: stratified diagnostic samples of the 13 expert-representation matrices, with at most 1,500 records per task.
 - `figures/representation_target_probes.*`, `representation_pca.*`, `descriptor_group_cka.*`, and `descriptor_group_cka_permutation_z.*`: the current probe, PCA, CKA, and permutation-standardized CKA visualizations used in the article and Supplementary Information.
