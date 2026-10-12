@@ -6,7 +6,13 @@ Public repository: <https://github.com/gllary/HP_SafeMoE>
 
 HP-SafeMoE treats each frozen Stage 1 expert as a heterogeneous provider. Stage 2 maps provider-specific representations into a common token space. Its Sample-conditioned and Relation-augmented branches construct candidate residuals relative to the frozen target-task anchor. Cross-fitted training predictions determine residual shrinkage, task certification and sample-level benefit gating; unsupported corrections leave the anchor unchanged.
 
-The repository contains the Matbench Stage 2 implementation, Stage 1 provider interfaces and configurations, the JARVIS validation workflow, four external-evaluation datasets and outputs, analysis and metric-recomputation scripts, environment specifications, automated tests, and a SHA-256 manifest. Full Stage 1 retraining additionally requires the upstream data and model assets listed in the documentation.
+The repository contains the Matbench Stage 2 implementation, Stage 1 provider interfaces and configurations, the JARVIS validation workflow, four external-evaluation datasets and outputs, analysis and metric-recomputation scripts, the Fig. 1 framework diagram and its editable PowerPoint source, environment specifications, automated tests, and a SHA-256 manifest. Full Stage 1 retraining additionally requires the upstream data and model assets listed in the documentation.
+
+## Framework diagram
+
+The manuscript's Fig. 1 is shown below. Its [editable PowerPoint source](docs/figures/Fig1_HP_SafeMoE_editable.pptx) is available alongside the image.
+
+![HP-SafeMoE framework](docs/figures/Fig1_HP_SafeMoE.png)
 
 ## Quick verification
 
@@ -46,6 +52,7 @@ Provider-specific training environments are documented separately because the fo
 - `results/HEA-95/`, `results/B2-18/`, `results/Core-23/`, and `results/DS2-248/`: external case-study inputs and outputs.
 - `results/JARVIS/`: row-level predictions, task summaries, a field dictionary, and metric-recomputation utilities.
 - `source_data/`: numerical source data for manuscript statistics, uncertainty analyses, and selected supplementary tables and figures.
+- `docs/figures/`: the current Fig. 1 framework diagram and its editable PowerPoint source.
 - `analysis/representation/`: representation probes, PCA, descriptor CKA, and associated figures.
 - `analysis/descriptors/`: descriptor-surrogate fidelity and attribution assets.
 - `analysis/routing_and_benefit/`: routing, source-weight diagnostics, primary matched comparisons, task-safety, and benefit-gate analyses.
