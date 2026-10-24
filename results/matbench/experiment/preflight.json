@@ -1,0 +1,8 @@
+{
+  "checkpoint_count": 50,
+  "full_compatibility_verified": true,
+  "input_manifests_match_completed_run": true,
+  "source_record_sha256": "5c88d4383936f0ae4fe67a9a5cbd8457d04685d899e8ad94b459d95ad5e06b18",
+  "status": "no_cross_expert_real_gpu_preflight_passed",
+  "input_isolation_verified": true
+}

@@ -1,0 +1,79 @@
+task_id,task,metric,direction,method,mean,sd,status,provider,evidence
+expt_is_metal,Experimental metallicity,ROC-AUC,higher,Frozen Matbench v0.1 reference,0.9598,0.0041,available,Darwin,frozen_matbench_v0.1_reference
+expt_is_metal,Experimental metallicity,ROC-AUC,higher,MatterVial,0.9763,,reported_point_estimate,MatterVial,literature_reported
+expt_is_metal,Experimental metallicity,ROC-AUC,higher,JMP-L,,,not_evaluated,not_evaluated,not_evaluated
+expt_is_metal,Experimental metallicity,ROC-AUC,higher,coGN,,,not_evaluated,not_evaluated,not_evaluated
+expt_is_metal,Experimental metallicity,ROC-AUC,higher,coNGN,,,not_evaluated,not_evaluated,not_evaluated
+expt_is_metal,Experimental metallicity,ROC-AUC,higher,HP-SafeMoE,0.9805406833033437,0.0037502456025719,available,HP-SafeMoE,official_outer_five_fold
+glass,Glass-forming ability,ROC-AUC,higher,Frozen Matbench v0.1 reference,0.9603,0.0075,available,MODNet v0.1.12,frozen_matbench_v0.1_reference
+glass,Glass-forming ability,ROC-AUC,higher,MatterVial,0.937,,reported_point_estimate,MatterVial,literature_reported
+glass,Glass-forming ability,ROC-AUC,higher,JMP-L,,,not_evaluated,not_evaluated,not_evaluated
+glass,Glass-forming ability,ROC-AUC,higher,coGN,,,not_evaluated,not_evaluated,not_evaluated
+glass,Glass-forming ability,ROC-AUC,higher,coNGN,,,not_evaluated,not_evaluated,not_evaluated
+glass,Glass-forming ability,ROC-AUC,higher,HP-SafeMoE,0.9559161290079584,0.0077983730475669,available,HP-SafeMoE,official_outer_five_fold
+mp_is_metal,MP metallicity,ROC-AUC,higher,Frozen Matbench v0.1 reference,0.952,0.0074,available,CGCNN v2019,frozen_matbench_v0.1_reference
+mp_is_metal,MP metallicity,ROC-AUC,higher,MatterVial,0.978,,reported_point_estimate,MatterVial,literature_reported
+mp_is_metal,MP metallicity,ROC-AUC,higher,JMP-L,,,not_evaluated,not_evaluated,not_evaluated
+mp_is_metal,MP metallicity,ROC-AUC,higher,coGN,0.9519008,0.0021243294706801033,available,coGN,archived_official_outer_fold_scores
+mp_is_metal,MP metallicity,ROC-AUC,higher,coNGN,0.9553788,0.001987550301250256,available,coNGN,archived_official_outer_fold_scores
+mp_is_metal,MP metallicity,ROC-AUC,higher,HP-SafeMoE,0.987062399409152,0.00105036589206,available,HP-SafeMoE,official_outer_five_fold
+dielectric,Refractive index,MAE,lower,Frozen Matbench v0.1 reference,0.2711,0.0714,available,MODNet v0.1.12,frozen_matbench_v0.1_reference
+dielectric,Refractive index,MAE,lower,MatterVial,0.2337,,reported_point_estimate,MatterVial,literature_reported
+dielectric,Refractive index,MAE,lower,JMP-L,0.2529748,0.09399018833208071,available,JMP-L,archived_official_outer_fold_scores
+dielectric,Refractive index,MAE,lower,coGN,0.3016974,0.10093564165249062,available,coGN,archived_official_outer_fold_scores
+dielectric,Refractive index,MAE,lower,coNGN,0.32383460000000003,0.10318896178758656,available,coNGN,archived_official_outer_fold_scores
+dielectric,Refractive index,MAE,lower,HP-SafeMoE,0.2434004301917192,0.0938131548150514,available,HP-SafeMoE,official_outer_five_fold
+expt_gap,Experimental band gap,MAE (eV),lower,Frozen Matbench v0.1 reference,0.2865,0.0083,available,Darwin,frozen_matbench_v0.1_reference
+expt_gap,Experimental band gap,MAE (eV),lower,MatterVial,0.29,,reported_point_estimate,MatterVial,literature_reported
+expt_gap,Experimental band gap,MAE (eV),lower,JMP-L,,,not_evaluated,not_evaluated,not_evaluated
+expt_gap,Experimental band gap,MAE (eV),lower,coGN,,,not_evaluated,not_evaluated,not_evaluated
+expt_gap,Experimental band gap,MAE (eV),lower,coNGN,,,not_evaluated,not_evaluated,not_evaluated
+expt_gap,Experimental band gap,MAE (eV),lower,HP-SafeMoE,0.2460750320997785,0.0033093084612852,available,HP-SafeMoE,official_outer_five_fold
+jdft2d,2D exfoliation energy,MAE (meV atom^-1),lower,Frozen Matbench v0.1 reference,33.1918,7.3428,available,MODNet v0.1.12,frozen_matbench_v0.1_reference
+jdft2d,2D exfoliation energy,MAE (meV atom^-1),lower,MatterVial,28.865,,reported_point_estimate,MatterVial,literature_reported
+jdft2d,2D exfoliation energy,MAE (meV atom^-1),lower,JMP-L,29.6695966,10.238142540249662,available,JMP-L,archived_official_outer_fold_scores
+jdft2d,2D exfoliation energy,MAE (meV atom^-1),lower,coGN,37.4127326,13.093232595550662,available,coGN,archived_official_outer_fold_scores
+jdft2d,2D exfoliation energy,MAE (meV atom^-1),lower,coNGN,39.7884564,13.533659039075973,available,coNGN,archived_official_outer_fold_scores
+jdft2d,2D exfoliation energy,MAE (meV atom^-1),lower,HP-SafeMoE,28.94231860484691,11.215895311347206,available,HP-SafeMoE,official_outer_five_fold
+log_gvrh,Log shear modulus,MAE,lower,Frozen Matbench v0.1 reference,0.067,0.0006,available,coNGN,frozen_matbench_v0.1_reference
+log_gvrh,Log shear modulus,MAE,lower,MatterVial,0.0325,,reported_point_estimate,MatterVial,literature_reported
+log_gvrh,Log shear modulus,MAE,lower,JMP-L,0.0586824,0.001030767820607531,available,JMP-L,archived_official_outer_fold_scores
+log_gvrh,Log shear modulus,MAE,lower,coGN,0.06912120000000001,0.0015115537370533716,available,coGN,archived_official_outer_fold_scores
+log_gvrh,Log shear modulus,MAE,lower,coNGN,0.0676076,0.0014953706229560591,available,coNGN,archived_official_outer_fold_scores
+log_gvrh,Log shear modulus,MAE,lower,HP-SafeMoE,0.0346226903400767,0.0012377038716325,available,HP-SafeMoE,official_outer_five_fold
+log_kvrh,Log bulk modulus,MAE,lower,Frozen Matbench v0.1 reference,0.0491,0.0026,available,coNGN,frozen_matbench_v0.1_reference
+log_kvrh,Log bulk modulus,MAE,lower,MatterVial,0.027,,reported_point_estimate,MatterVial,literature_reported
+log_kvrh,Log bulk modulus,MAE,lower,JMP-L,0.0453066,0.0029715693328610034,available,JMP-L,archived_official_outer_fold_scores
+log_kvrh,Log bulk modulus,MAE,lower,coGN,0.0527882,0.0028801311949284525,available,coGN,archived_official_outer_fold_scores
+log_kvrh,Log bulk modulus,MAE,lower,coNGN,0.049647,0.0027662764684680385,available,coNGN,archived_official_outer_fold_scores
+log_kvrh,Log bulk modulus,MAE,lower,HP-SafeMoE,0.0266056592326024,0.0018053371265068,available,HP-SafeMoE,official_outer_five_fold
+mp_e_form,MP formation energy,MAE (eV atom^-1),lower,Frozen Matbench v0.1 reference,0.017,0.0003,available,coGN,frozen_matbench_v0.1_reference
+mp_e_form,MP formation energy,MAE (eV atom^-1),lower,MatterVial,0.0138,,reported_point_estimate,MatterVial,literature_reported
+mp_e_form,MP formation energy,MAE (eV atom^-1),lower,JMP-L,0.0144756,0.0005054288278284089,available,JMP-L,archived_official_outer_fold_scores
+mp_e_form,MP formation energy,MAE (eV atom^-1),lower,coGN,0.0169178552,0.00034622830547443564,available,coGN,archived_official_outer_fold_scores
+mp_e_form,MP formation energy,MAE (eV atom^-1),lower,coNGN,0.017785578200000002,0.0006123812140204822,available,coNGN,archived_official_outer_fold_scores
+mp_e_form,MP formation energy,MAE (eV atom^-1),lower,HP-SafeMoE,0.0112169902531974,0.0003120932775855,available,HP-SafeMoE,official_outer_five_fold
+mp_gap,MP band gap,MAE (eV),lower,Frozen Matbench v0.1 reference,0.1559,0.0017,available,coGN,frozen_matbench_v0.1_reference
+mp_gap,MP band gap,MAE (eV),lower,MatterVial,0.1368,,reported_point_estimate,MatterVial,literature_reported
+mp_gap,MP band gap,MAE (eV),lower,JMP-L,0.0992155423951636,0.0021907590583572795,available,JMP-L,archived_official_outer_fold_scores
+mp_gap,MP band gap,MAE (eV),lower,coGN,0.15576146000000002,0.002357672070942011,available,coGN,archived_official_outer_fold_scores
+mp_gap,MP band gap,MAE (eV),lower,coNGN,0.171978018,0.0018548246454368727,available,coNGN,archived_official_outer_fold_scores
+mp_gap,MP band gap,MAE (eV),lower,HP-SafeMoE,0.0975829567831413,0.0021961267414124,available,HP-SafeMoE,official_outer_five_fold
+perovskites,Perovskite formation energy,MAE (eV unit cell^-1),lower,Frozen Matbench v0.1 reference,0.0269,0.0008,available,coGN,frozen_matbench_v0.1_reference
+perovskites,Perovskite formation energy,MAE (eV unit cell^-1),lower,MatterVial,0.0386,,reported_point_estimate,MatterVial,literature_reported
+perovskites,Perovskite formation energy,MAE (eV unit cell^-1),lower,JMP-L,0.0257254,0.0011483363183318735,available,JMP-L,archived_official_outer_fold_scores
+perovskites,Perovskite formation energy,MAE (eV unit cell^-1),lower,coGN,0.0270707648,0.0006412479531949401,available,coGN,archived_official_outer_fold_scores
+perovskites,Perovskite formation energy,MAE (eV unit cell^-1),lower,coNGN,0.0287265722,0.001607892288896771,available,coNGN,archived_official_outer_fold_scores
+perovskites,Perovskite formation energy,MAE (eV unit cell^-1),lower,HP-SafeMoE,0.0265313911253933,0.0012757746927245,available,HP-SafeMoE,official_outer_five_fold
+phonons,Optical phonon peak,MAE (cm^-1),lower,Frozen Matbench v0.1 reference,28.7606,2.5767,available,"MEGNet, kgcnn v2.1.0",frozen_matbench_v0.1_reference
+phonons,Optical phonon peak,MAE (cm^-1),lower,MatterVial,30.08,,reported_point_estimate,MatterVial,literature_reported
+phonons,Optical phonon peak,MAE (cm^-1),lower,JMP-L,21.1922568,2.102606786604238,available,JMP-L,archived_official_outer_fold_scores
+phonons,Optical phonon peak,MAE (cm^-1),lower,coGN,30.6246684,1.7337562763347978,available,coGN,archived_official_outer_fold_scores
+phonons,Optical phonon peak,MAE (cm^-1),lower,coNGN,28.4937444,2.2785596450128964,available,coNGN,archived_official_outer_fold_scores
+phonons,Optical phonon peak,MAE (cm^-1),lower,HP-SafeMoE,20.101461265340784,1.5587325507081733,available,HP-SafeMoE,official_outer_five_fold
+steels,Steel yield strength,MAE (MPa),lower,Frozen Matbench v0.1 reference,79.9468,13.5883,available,TPOT-Mat,frozen_matbench_v0.1_reference
+steels,Steel yield strength,MAE (MPa),lower,MatterVial,85.12,,reported_point_estimate,MatterVial,literature_reported
+steels,Steel yield strength,MAE (MPa),lower,JMP-L,,,not_evaluated,not_evaluated,not_evaluated
+steels,Steel yield strength,MAE (MPa),lower,coGN,,,not_evaluated,not_evaluated,not_evaluated
+steels,Steel yield strength,MAE (MPa),lower,coNGN,,,not_evaluated,not_evaluated,not_evaluated
+steels,Steel yield strength,MAE (MPa),lower,HP-SafeMoE,78.51216065453188,14.324693332431943,available,HP-SafeMoE,official_outer_five_fold

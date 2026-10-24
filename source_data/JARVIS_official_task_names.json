@@ -1,0 +1,313 @@
+{
+  "benchmark_commit": "57afc55f94c8a6f4562f73a3173968cd4b2f83b1",
+  "checked_date": "2026-10-19",
+  "names_from": "Official NIST JARVIS leaderboard task names",
+  "tasks": [
+    {
+      "internal_id": "reg_formation_energy_peratom",
+      "category": "SinglePropertyPrediction",
+      "canonical_task_id": "dft_3d_formation_energy_peratom",
+      "official_heading": "Model for formation_energy_peratom",
+      "display_name": "formation_energy_peratom",
+      "page_url": "https://pages.nist.gov/jarvis_leaderboard/AI/SinglePropertyPrediction/dft_3d_formation_energy_peratom/",
+      "benchmark_url": "https://raw.githubusercontent.com/usnistgov/jarvis_leaderboard/57afc55f94c8a6f4562f73a3173968cd4b2f83b1/jarvis_leaderboard/benchmarks/AI/SinglePropertyPrediction/dft_3d_formation_energy_peratom.json.zip"
+    },
+    {
+      "internal_id": "reg_optb88vdw_total_energy",
+      "category": "SinglePropertyPrediction",
+      "canonical_task_id": "dft_3d_optb88vdw_total_energy",
+      "official_heading": "Model for optb88vdw_total_energy",
+      "display_name": "optb88vdw_total_energy",
+      "page_url": "https://pages.nist.gov/jarvis_leaderboard/AI/SinglePropertyPrediction/dft_3d_optb88vdw_total_energy/",
+      "benchmark_url": "https://raw.githubusercontent.com/usnistgov/jarvis_leaderboard/57afc55f94c8a6f4562f73a3173968cd4b2f83b1/jarvis_leaderboard/benchmarks/AI/SinglePropertyPrediction/dft_3d_optb88vdw_total_energy.json.zip"
+    },
+    {
+      "internal_id": "reg_ehull",
+      "category": "SinglePropertyPrediction",
+      "canonical_task_id": "dft_3d_ehull",
+      "official_heading": "Model for ehull",
+      "display_name": "ehull",
+      "page_url": "https://pages.nist.gov/jarvis_leaderboard/AI/SinglePropertyPrediction/dft_3d_ehull/",
+      "benchmark_url": "https://raw.githubusercontent.com/usnistgov/jarvis_leaderboard/57afc55f94c8a6f4562f73a3173968cd4b2f83b1/jarvis_leaderboard/benchmarks/AI/SinglePropertyPrediction/dft_3d_ehull.json.zip"
+    },
+    {
+      "internal_id": "reg_optb88vdw_bandgap",
+      "category": "SinglePropertyPrediction",
+      "canonical_task_id": "dft_3d_optb88vdw_bandgap",
+      "official_heading": "Model for optb88vdw_bandgap",
+      "display_name": "optb88vdw_bandgap",
+      "page_url": "https://pages.nist.gov/jarvis_leaderboard/AI/SinglePropertyPrediction/dft_3d_optb88vdw_bandgap/",
+      "benchmark_url": "https://raw.githubusercontent.com/usnistgov/jarvis_leaderboard/57afc55f94c8a6f4562f73a3173968cd4b2f83b1/jarvis_leaderboard/benchmarks/AI/SinglePropertyPrediction/dft_3d_optb88vdw_bandgap.json.zip"
+    },
+    {
+      "internal_id": "reg_mbj_bandgap",
+      "category": "SinglePropertyPrediction",
+      "canonical_task_id": "dft_3d_mbj_bandgap",
+      "official_heading": "Model for mbj_bandgap",
+      "display_name": "mbj_bandgap",
+      "page_url": "https://pages.nist.gov/jarvis_leaderboard/AI/SinglePropertyPrediction/dft_3d_mbj_bandgap/",
+      "benchmark_url": "https://raw.githubusercontent.com/usnistgov/jarvis_leaderboard/57afc55f94c8a6f4562f73a3173968cd4b2f83b1/jarvis_leaderboard/benchmarks/AI/SinglePropertyPrediction/dft_3d_mbj_bandgap.json.zip"
+    },
+    {
+      "internal_id": "reg_bulk_modulus_kv",
+      "category": "SinglePropertyPrediction",
+      "canonical_task_id": "dft_3d_bulk_modulus_kv",
+      "official_heading": "Model for bulk_modulus_kv",
+      "display_name": "bulk_modulus_kv",
+      "page_url": "https://pages.nist.gov/jarvis_leaderboard/AI/SinglePropertyPrediction/dft_3d_bulk_modulus_kv/",
+      "benchmark_url": "https://raw.githubusercontent.com/usnistgov/jarvis_leaderboard/57afc55f94c8a6f4562f73a3173968cd4b2f83b1/jarvis_leaderboard/benchmarks/AI/SinglePropertyPrediction/dft_3d_bulk_modulus_kv.json.zip"
+    },
+    {
+      "internal_id": "reg_shear_modulus_gv",
+      "category": "SinglePropertyPrediction",
+      "canonical_task_id": "dft_3d_shear_modulus_gv",
+      "official_heading": "Model for shear_modulus_gv",
+      "display_name": "shear_modulus_gv",
+      "page_url": "https://pages.nist.gov/jarvis_leaderboard/AI/SinglePropertyPrediction/dft_3d_shear_modulus_gv/",
+      "benchmark_url": "https://raw.githubusercontent.com/usnistgov/jarvis_leaderboard/57afc55f94c8a6f4562f73a3173968cd4b2f83b1/jarvis_leaderboard/benchmarks/AI/SinglePropertyPrediction/dft_3d_shear_modulus_gv.json.zip"
+    },
+    {
+      "internal_id": "reg_epsx",
+      "category": "SinglePropertyPrediction",
+      "canonical_task_id": "dft_3d_epsx",
+      "official_heading": "Model for epsx",
+      "display_name": "epsx",
+      "page_url": "https://pages.nist.gov/jarvis_leaderboard/AI/SinglePropertyPrediction/dft_3d_epsx/",
+      "benchmark_url": "https://raw.githubusercontent.com/usnistgov/jarvis_leaderboard/57afc55f94c8a6f4562f73a3173968cd4b2f83b1/jarvis_leaderboard/benchmarks/AI/SinglePropertyPrediction/dft_3d_epsx.json.zip"
+    },
+    {
+      "internal_id": "reg_epsy",
+      "category": "SinglePropertyPrediction",
+      "canonical_task_id": "dft_3d_epsy",
+      "official_heading": "Model for epsy",
+      "display_name": "epsy",
+      "page_url": "https://pages.nist.gov/jarvis_leaderboard/AI/SinglePropertyPrediction/dft_3d_epsy/",
+      "benchmark_url": "https://raw.githubusercontent.com/usnistgov/jarvis_leaderboard/57afc55f94c8a6f4562f73a3173968cd4b2f83b1/jarvis_leaderboard/benchmarks/AI/SinglePropertyPrediction/dft_3d_epsy.json.zip"
+    },
+    {
+      "internal_id": "reg_epsz",
+      "category": "SinglePropertyPrediction",
+      "canonical_task_id": "dft_3d_epsz",
+      "official_heading": "Model for epsz",
+      "display_name": "epsz",
+      "page_url": "https://pages.nist.gov/jarvis_leaderboard/AI/SinglePropertyPrediction/dft_3d_epsz/",
+      "benchmark_url": "https://raw.githubusercontent.com/usnistgov/jarvis_leaderboard/57afc55f94c8a6f4562f73a3173968cd4b2f83b1/jarvis_leaderboard/benchmarks/AI/SinglePropertyPrediction/dft_3d_epsz.json.zip"
+    },
+    {
+      "internal_id": "reg_mepsx",
+      "category": "SinglePropertyPrediction",
+      "canonical_task_id": "dft_3d_mepsx",
+      "official_heading": "Model for mepsx",
+      "display_name": "mepsx",
+      "page_url": "https://pages.nist.gov/jarvis_leaderboard/AI/SinglePropertyPrediction/dft_3d_mepsx/",
+      "benchmark_url": "https://raw.githubusercontent.com/usnistgov/jarvis_leaderboard/57afc55f94c8a6f4562f73a3173968cd4b2f83b1/jarvis_leaderboard/benchmarks/AI/SinglePropertyPrediction/dft_3d_mepsx.json.zip"
+    },
+    {
+      "internal_id": "reg_mepsy",
+      "category": "SinglePropertyPrediction",
+      "canonical_task_id": "dft_3d_mepsy",
+      "official_heading": "Model for mepsy",
+      "display_name": "mepsy",
+      "page_url": "https://pages.nist.gov/jarvis_leaderboard/AI/SinglePropertyPrediction/dft_3d_mepsy/",
+      "benchmark_url": "https://raw.githubusercontent.com/usnistgov/jarvis_leaderboard/57afc55f94c8a6f4562f73a3173968cd4b2f83b1/jarvis_leaderboard/benchmarks/AI/SinglePropertyPrediction/dft_3d_mepsy.json.zip"
+    },
+    {
+      "internal_id": "reg_mepsz",
+      "category": "SinglePropertyPrediction",
+      "canonical_task_id": "dft_3d_mepsz",
+      "official_heading": "Model for mepsz",
+      "display_name": "mepsz",
+      "page_url": "https://pages.nist.gov/jarvis_leaderboard/AI/SinglePropertyPrediction/dft_3d_mepsz/",
+      "benchmark_url": "https://raw.githubusercontent.com/usnistgov/jarvis_leaderboard/57afc55f94c8a6f4562f73a3173968cd4b2f83b1/jarvis_leaderboard/benchmarks/AI/SinglePropertyPrediction/dft_3d_mepsz.json.zip"
+    },
+    {
+      "internal_id": "reg_dfpt_piezo_max_dielectric",
+      "category": "SinglePropertyPrediction",
+      "canonical_task_id": "dft_3d_dfpt_piezo_max_dielectric",
+      "official_heading": "Model for dfpt_piezo_max_dielectric",
+      "display_name": "dfpt_piezo_max_dielectric",
+      "page_url": "https://pages.nist.gov/jarvis_leaderboard/AI/SinglePropertyPrediction/dft_3d_dfpt_piezo_max_dielectric/",
+      "benchmark_url": "https://raw.githubusercontent.com/usnistgov/jarvis_leaderboard/57afc55f94c8a6f4562f73a3173968cd4b2f83b1/jarvis_leaderboard/benchmarks/AI/SinglePropertyPrediction/dft_3d_dfpt_piezo_max_dielectric.json.zip"
+    },
+    {
+      "internal_id": "reg_dfpt_piezo_max_dij",
+      "category": "SinglePropertyPrediction",
+      "canonical_task_id": "dft_3d_dfpt_piezo_max_dij",
+      "official_heading": "Model for dfpt_piezo_max_dij",
+      "display_name": "dfpt_piezo_max_dij",
+      "page_url": "https://pages.nist.gov/jarvis_leaderboard/AI/SinglePropertyPrediction/dft_3d_dfpt_piezo_max_dij/",
+      "benchmark_url": "https://raw.githubusercontent.com/usnistgov/jarvis_leaderboard/57afc55f94c8a6f4562f73a3173968cd4b2f83b1/jarvis_leaderboard/benchmarks/AI/SinglePropertyPrediction/dft_3d_dfpt_piezo_max_dij.json.zip"
+    },
+    {
+      "internal_id": "reg_magmom_oszicar",
+      "category": "SinglePropertyPrediction",
+      "canonical_task_id": "dft_3d_magmom_oszicar",
+      "official_heading": "Model for magmom_oszicar",
+      "display_name": "magmom_oszicar",
+      "page_url": "https://pages.nist.gov/jarvis_leaderboard/AI/SinglePropertyPrediction/dft_3d_magmom_oszicar/",
+      "benchmark_url": "https://raw.githubusercontent.com/usnistgov/jarvis_leaderboard/57afc55f94c8a6f4562f73a3173968cd4b2f83b1/jarvis_leaderboard/benchmarks/AI/SinglePropertyPrediction/dft_3d_magmom_oszicar.json.zip"
+    },
+    {
+      "internal_id": "reg_avg_elec_mass",
+      "category": "SinglePropertyPrediction",
+      "canonical_task_id": "dft_3d_avg_elec_mass",
+      "official_heading": "Model for avg_elec_mass",
+      "display_name": "avg_elec_mass",
+      "page_url": "https://pages.nist.gov/jarvis_leaderboard/AI/SinglePropertyPrediction/dft_3d_avg_elec_mass/",
+      "benchmark_url": "https://raw.githubusercontent.com/usnistgov/jarvis_leaderboard/57afc55f94c8a6f4562f73a3173968cd4b2f83b1/jarvis_leaderboard/benchmarks/AI/SinglePropertyPrediction/dft_3d_avg_elec_mass.json.zip"
+    },
+    {
+      "internal_id": "reg_avg_hole_mass",
+      "category": "SinglePropertyPrediction",
+      "canonical_task_id": "dft_3d_avg_hole_mass",
+      "official_heading": "Model for avg_hole_mass",
+      "display_name": "avg_hole_mass",
+      "page_url": "https://pages.nist.gov/jarvis_leaderboard/AI/SinglePropertyPrediction/dft_3d_avg_hole_mass/",
+      "benchmark_url": "https://raw.githubusercontent.com/usnistgov/jarvis_leaderboard/57afc55f94c8a6f4562f73a3173968cd4b2f83b1/jarvis_leaderboard/benchmarks/AI/SinglePropertyPrediction/dft_3d_avg_hole_mass.json.zip"
+    },
+    {
+      "internal_id": "reg_n_Seebeck",
+      "category": "SinglePropertyPrediction",
+      "canonical_task_id": "dft_3d_n_Seebeck",
+      "official_heading": "Model for n-Seebeck",
+      "display_name": "n-Seebeck",
+      "page_url": "https://pages.nist.gov/jarvis_leaderboard/AI/SinglePropertyPrediction/dft_3d_n_Seebeck/",
+      "benchmark_url": "https://raw.githubusercontent.com/usnistgov/jarvis_leaderboard/57afc55f94c8a6f4562f73a3173968cd4b2f83b1/jarvis_leaderboard/benchmarks/AI/SinglePropertyPrediction/dft_3d_n_Seebeck.json.zip"
+    },
+    {
+      "internal_id": "reg_n_powerfact",
+      "category": "SinglePropertyPrediction",
+      "canonical_task_id": "dft_3d_n_powerfact",
+      "official_heading": "Model for n-powerfact",
+      "display_name": "n-powerfact",
+      "page_url": "https://pages.nist.gov/jarvis_leaderboard/AI/SinglePropertyPrediction/dft_3d_n_powerfact/",
+      "benchmark_url": "https://raw.githubusercontent.com/usnistgov/jarvis_leaderboard/57afc55f94c8a6f4562f73a3173968cd4b2f83b1/jarvis_leaderboard/benchmarks/AI/SinglePropertyPrediction/dft_3d_n_powerfact.json.zip"
+    },
+    {
+      "internal_id": "reg_max_efg",
+      "category": "SinglePropertyPrediction",
+      "canonical_task_id": "dft_3d_max_efg",
+      "official_heading": "Model for max_efg",
+      "display_name": "max_efg",
+      "page_url": "https://pages.nist.gov/jarvis_leaderboard/AI/SinglePropertyPrediction/dft_3d_max_efg/",
+      "benchmark_url": "https://raw.githubusercontent.com/usnistgov/jarvis_leaderboard/57afc55f94c8a6f4562f73a3173968cd4b2f83b1/jarvis_leaderboard/benchmarks/AI/SinglePropertyPrediction/dft_3d_max_efg.json.zip"
+    },
+    {
+      "internal_id": "reg_slme",
+      "category": "SinglePropertyPrediction",
+      "canonical_task_id": "dft_3d_slme",
+      "official_heading": "Model for slme",
+      "display_name": "slme",
+      "page_url": "https://pages.nist.gov/jarvis_leaderboard/AI/SinglePropertyPrediction/dft_3d_slme/",
+      "benchmark_url": "https://raw.githubusercontent.com/usnistgov/jarvis_leaderboard/57afc55f94c8a6f4562f73a3173968cd4b2f83b1/jarvis_leaderboard/benchmarks/AI/SinglePropertyPrediction/dft_3d_slme.json.zip"
+    },
+    {
+      "internal_id": "reg_spillage",
+      "category": "SinglePropertyPrediction",
+      "canonical_task_id": "dft_3d_spillage",
+      "official_heading": "Model for spillage",
+      "display_name": "spillage",
+      "page_url": "https://pages.nist.gov/jarvis_leaderboard/AI/SinglePropertyPrediction/dft_3d_spillage/",
+      "benchmark_url": "https://raw.githubusercontent.com/usnistgov/jarvis_leaderboard/57afc55f94c8a6f4562f73a3173968cd4b2f83b1/jarvis_leaderboard/benchmarks/AI/SinglePropertyPrediction/dft_3d_spillage.json.zip"
+    },
+    {
+      "internal_id": "reg_ph_heat_capacity",
+      "category": "SinglePropertyPrediction",
+      "canonical_task_id": "dft_3d_ph_heat_capacity",
+      "official_heading": "Model for heat capacity",
+      "display_name": "heat capacity",
+      "page_url": "https://pages.nist.gov/jarvis_leaderboard/AI/SinglePropertyPrediction/dft_3d_ph_heat_capacity/",
+      "benchmark_url": "https://raw.githubusercontent.com/usnistgov/jarvis_leaderboard/57afc55f94c8a6f4562f73a3173968cd4b2f83b1/jarvis_leaderboard/benchmarks/AI/SinglePropertyPrediction/dft_3d_ph_heat_capacity.json.zip"
+    },
+    {
+      "internal_id": "reg_exfoliation_energy",
+      "category": "SinglePropertyPrediction",
+      "canonical_task_id": "dft_3d_exfoliation_energy",
+      "official_heading": "Model for exfoliation_energy",
+      "display_name": "exfoliation_energy",
+      "page_url": "https://pages.nist.gov/jarvis_leaderboard/AI/SinglePropertyPrediction/dft_3d_exfoliation_energy/",
+      "benchmark_url": "https://raw.githubusercontent.com/usnistgov/jarvis_leaderboard/57afc55f94c8a6f4562f73a3173968cd4b2f83b1/jarvis_leaderboard/benchmarks/AI/SinglePropertyPrediction/dft_3d_exfoliation_energy.json.zip"
+    },
+    {
+      "internal_id": "reg_encut",
+      "category": "SinglePropertyPrediction",
+      "canonical_task_id": "dft_3d_encut",
+      "official_heading": "Model for encut",
+      "display_name": "encut",
+      "page_url": "https://pages.nist.gov/jarvis_leaderboard/AI/SinglePropertyPrediction/dft_3d_encut/",
+      "benchmark_url": "https://raw.githubusercontent.com/usnistgov/jarvis_leaderboard/57afc55f94c8a6f4562f73a3173968cd4b2f83b1/jarvis_leaderboard/benchmarks/AI/SinglePropertyPrediction/dft_3d_encut.json.zip"
+    },
+    {
+      "internal_id": "reg_kpoint_length_unit",
+      "category": "SinglePropertyPrediction",
+      "canonical_task_id": "dft_3d_kpoint_length_unit",
+      "official_heading": "Model for kpoint_length_unit",
+      "display_name": "kpoint_length_unit",
+      "page_url": "https://pages.nist.gov/jarvis_leaderboard/AI/SinglePropertyPrediction/dft_3d_kpoint_length_unit/",
+      "benchmark_url": "https://raw.githubusercontent.com/usnistgov/jarvis_leaderboard/57afc55f94c8a6f4562f73a3173968cd4b2f83b1/jarvis_leaderboard/benchmarks/AI/SinglePropertyPrediction/dft_3d_kpoint_length_unit.json.zip"
+    },
+    {
+      "internal_id": "cls_magmom_oszicar",
+      "category": "SinglePropertyClass",
+      "canonical_task_id": "dft_3d_magmom_oszicar",
+      "official_heading": "Model for magmom_oszicar",
+      "display_name": "magmom_oszicar",
+      "page_url": "https://pages.nist.gov/jarvis_leaderboard/AI/SinglePropertyClass/dft_3d_magmom_oszicar/",
+      "benchmark_url": "https://raw.githubusercontent.com/usnistgov/jarvis_leaderboard/57afc55f94c8a6f4562f73a3173968cd4b2f83b1/jarvis_leaderboard/benchmarks/AI/SinglePropertyClass/dft_3d_magmom_oszicar.json.zip"
+    },
+    {
+      "internal_id": "cls_optb88vdw_bandgap",
+      "category": "SinglePropertyClass",
+      "canonical_task_id": "dft_3d_optb88vdw_bandgap",
+      "official_heading": "Model for optb88vdw_bandgap",
+      "display_name": "optb88vdw_bandgap",
+      "page_url": "https://pages.nist.gov/jarvis_leaderboard/AI/SinglePropertyClass/dft_3d_optb88vdw_bandgap/",
+      "benchmark_url": "https://raw.githubusercontent.com/usnistgov/jarvis_leaderboard/57afc55f94c8a6f4562f73a3173968cd4b2f83b1/jarvis_leaderboard/benchmarks/AI/SinglePropertyClass/dft_3d_optb88vdw_bandgap.json.zip"
+    },
+    {
+      "internal_id": "cls_mbj_bandgap",
+      "category": "SinglePropertyClass",
+      "canonical_task_id": "dft_3d_mbj_bandgap",
+      "official_heading": "Model for mbj_bandgap",
+      "display_name": "mbj_bandgap",
+      "page_url": "https://pages.nist.gov/jarvis_leaderboard/AI/SinglePropertyClass/dft_3d_mbj_bandgap/",
+      "benchmark_url": "https://raw.githubusercontent.com/usnistgov/jarvis_leaderboard/57afc55f94c8a6f4562f73a3173968cd4b2f83b1/jarvis_leaderboard/benchmarks/AI/SinglePropertyClass/dft_3d_mbj_bandgap.json.zip"
+    },
+    {
+      "internal_id": "cls_n_powerfact",
+      "category": "SinglePropertyClass",
+      "canonical_task_id": "dft_3d_n_powerfact",
+      "official_heading": "Model for n-powerfact",
+      "display_name": "n-powerfact",
+      "page_url": "https://pages.nist.gov/jarvis_leaderboard/AI/SinglePropertyClass/dft_3d_n_powerfact/",
+      "benchmark_url": "https://raw.githubusercontent.com/usnistgov/jarvis_leaderboard/57afc55f94c8a6f4562f73a3173968cd4b2f83b1/jarvis_leaderboard/benchmarks/AI/SinglePropertyClass/dft_3d_n_powerfact.json.zip"
+    },
+    {
+      "internal_id": "cls_p_Seebeck",
+      "category": "SinglePropertyClass",
+      "canonical_task_id": "dft_3d_p_Seebeck",
+      "official_heading": "Model for p-Seebeck",
+      "display_name": "p-Seebeck",
+      "page_url": "https://pages.nist.gov/jarvis_leaderboard/AI/SinglePropertyClass/dft_3d_p_Seebeck/",
+      "benchmark_url": "https://raw.githubusercontent.com/usnistgov/jarvis_leaderboard/57afc55f94c8a6f4562f73a3173968cd4b2f83b1/jarvis_leaderboard/benchmarks/AI/SinglePropertyClass/dft_3d_p_Seebeck.json.zip"
+    },
+    {
+      "internal_id": "cls_slme",
+      "category": "SinglePropertyClass",
+      "canonical_task_id": "dft_3d_slme",
+      "official_heading": "Model for slme",
+      "display_name": "slme",
+      "page_url": "https://pages.nist.gov/jarvis_leaderboard/AI/SinglePropertyClass/dft_3d_slme/",
+      "benchmark_url": "https://raw.githubusercontent.com/usnistgov/jarvis_leaderboard/57afc55f94c8a6f4562f73a3173968cd4b2f83b1/jarvis_leaderboard/benchmarks/AI/SinglePropertyClass/dft_3d_slme.json.zip"
+    },
+    {
+      "internal_id": "cls_spillage",
+      "category": "SinglePropertyClass",
+      "canonical_task_id": "dft_3d_spillage",
+      "official_heading": "Model for spillage",
+      "display_name": "spillage",
+      "page_url": "https://pages.nist.gov/jarvis_leaderboard/AI/SinglePropertyClass/dft_3d_spillage/",
+      "benchmark_url": "https://raw.githubusercontent.com/usnistgov/jarvis_leaderboard/57afc55f94c8a6f4562f73a3173968cd4b2f83b1/jarvis_leaderboard/benchmarks/AI/SinglePropertyClass/dft_3d_spillage.json.zip"
+    }
+  ]
+}

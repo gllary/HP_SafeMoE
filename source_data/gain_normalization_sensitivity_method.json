@@ -1,0 +1,10 @@
+{
+  "analysis_scope": "released held-out Matbench predictions and five-fold summary",
+  "bootstrap_repeats": 200000,
+  "bootstrap_structure": "resample tasks and then five official outer folds within each selected task",
+  "confidence_interval": "2.5th and 97.5th percentiles",
+  "control": "No-cross-expert: target-only source attention and reliability",
+  "positive_direction": "favours Full HP-SafeMoE",
+  "random_seed": 20260930,
+  "score_source": "analysis/routing_and_benefit/tables/outer_fold_scores.csv"
+}

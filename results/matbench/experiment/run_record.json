@@ -1,0 +1,60 @@
+{
+  "calibration": "own inner-OOF predictions under the target-only input mask",
+  "checkpoint_files_included": true,
+  "checkpoint_inventory": "checkpoints/required_checkpoints.json",
+  "completed_at": "2026-10-19T16:22:38.176224+08:00",
+  "evaluation_context": {
+    "all_predictions_committed_before_scoring": true,
+    "score_passes": 1,
+    "test_based_model_selection": false
+  },
+  "experiment": "Matbench No-cross-expert",
+  "inner_folds": 5,
+  "input_isolation": "Non-target sources masked before attention and eight reliability statistics",
+  "model_count": 50,
+  "model_seeds": [
+    20261071,
+    20261072
+  ],
+  "outer_folds": 5,
+  "prediction_file_count": 65,
+  "profile_by_outer_fold": {
+    "0": "balanced",
+    "1": "balanced",
+    "2": "balanced",
+    "3": "conservative",
+    "4": "conservative"
+  },
+  "profile_origin": "Full outer-train OOF evidence",
+  "record_export": "Final experiment settings, evaluation scope and source-artifact SHA-256 digests. Public-file digests are listed in RELEASE_MANIFEST.csv.",
+  "retained_components": [
+    "joint multitask parameter training",
+    "task-private residual heads",
+    "proposal routing"
+  ],
+  "source_artifacts": {
+    "completion_verification": {
+      "sha256": "64071db54fa13464dbe7ec2ab9da98a03c34a9aae096ea157eb0869fd3f832f5"
+    },
+    "configuration": {
+      "sha256": "04a5a745505f0e56a4dc00453f151a89ff5c9828a76b2ce64d49418af099d4cb"
+    },
+    "execution_pipeline": {
+      "sha256": "7155d0eabd7f6bdfb095268f9fe0d6b38472ad95e893dae917a0e656b22c2793"
+    },
+    "model": {
+      "sha256": "682576087dc20ffe2f4fece97c38fb4462a32c5defc7c1c5cc473a2999230dfd"
+    },
+    "result_summary": {
+      "sha256": "18d1bf3f8c2cfdff03fb409f659cf607978e5e7cf8109cc6193faa5555f2b8ff"
+    },
+    "training_and_calibration": {
+      "sha256": "417ce797e0cc82e90b4895815aa926e80e18039d59e9e055797dc74d2ee1e0e4"
+    }
+  },
+  "stage1_frozen": true,
+  "status": "complete",
+  "task_count": 13,
+  "training_steps_per_model": 1400,
+  "full_fit_shared_with_primary_comparison": true
+}

@@ -1,0 +1,84 @@
+schema_version: 1
+experiment_id: jmp_l_official_finetune_stage1
+expert_name: jmp_l
+workflow_stage: stage1
+split_protocol: official_matbench_outer_fivefold_full_outer_train_to_outer_test
+training_seed: 42
+hyperparameter_policy: fixed_release_values
+fit_protocol: single_outer_fold_fit
+target_normalization: complete_official_outer_train_only
+
+execution:
+  physical_gpu_index: 3
+  max_concurrent_gpu_jobs: 1
+  reserve_free_gpu_memory_gb: 20
+  cpu_concurrency: 1
+  preprocess_concurrency: 1
+  output_root: outputs/jmp_l_stage1
+
+official_source:
+  repository: https://github.com/facebookresearch/JMP
+  commit: 937b14874381d9b80809582e323ef82f2d4e1291
+  checkpoint_url: https://jmp-iclr-datasets.s3.amazonaws.com/jmp-l.pt
+  license: CC-BY-NC-4.0-majority_with_component_exceptions
+
+optimization:
+  learning_rate: 0.00008
+  optimizer: AdamW
+  betas: [0.9, 0.95]
+  epsilon: 0.00000001
+  weight_decay: 0.1
+  gradient_clip_value: 1.0
+  warmup_epochs: 5
+  warmup_start_lr_factor: 0.1
+  cosine_max_epochs: 32
+  minimum_lr_factor: 0.1
+  reduce_on_plateau_patience: 3
+  reduce_on_plateau_factor: 0.8
+  reduce_on_plateau_validation_feedback: false
+  validation_batches: 0
+  maximum_epochs: 500
+  layerwise_lr_decay:
+    embedding: 0.3
+    blocks_0: 0.55
+    blocks_1: 0.40
+    blocks_2: 0.30
+    blocks_3: 0.40
+    blocks_4: 0.55
+    blocks_5: 0.625
+
+graph:
+  cutoff_angstrom: 12.0
+  periodic_boundary_conditions: true
+  conditional_max_neighbors:
+    default: 30
+    above_200_atoms: 10
+    above_300_atoms: 5
+
+tasks:
+  phonons:
+    batch_size: 8
+    precision: 16-mixed
+    graph_reduction: max
+    published_jmp_l_fivefold_mae: 20.57
+  perovskites:
+    batch_size: 8
+    precision: 16-mixed
+    graph_reduction: mean
+    published_jmp_l_fivefold_mae: 0.026
+  jdft2d:
+    batch_size: 3
+    precision: 32-true
+    graph_reduction: mean
+    published_jmp_l_fivefold_mae: 29.94
+
+artifact_policy:
+  predictions_only: false
+  export_latents: true
+  latent_dim: 256
+  latent_source: gemnet_oc_final_atom_energy_embedding_before_task_head
+  latent_split: official_matbench_outer_test
+  export_uncertainty: false
+  require_checkpoint_hash: true
+  require_environment_hash: true
+  require_preprocessing_hash: true

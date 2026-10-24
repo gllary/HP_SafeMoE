@@ -1,0 +1,32 @@
+name: hpsafe-mattervial-features
+channels:
+  - conda-forge
+  - nvidia
+dependencies:
+  - python=3.10
+  - pip
+  - cudatoolkit=11.8.*
+  - cudnn=8.9.*
+  - numpy=1.24.3
+  - scipy=1.11.*
+  - pandas=2.0.3
+  - scikit-learn=1.4.*
+  - h5py=3.10.*
+  - pymatgen=2023.9.25
+  - matminer=0.9.*
+  - spglib=2.5.*
+  - pyyaml=6.*
+  - ijson=3.*
+  - orjson=3.*
+  - joblib=1.4.*
+  - requests=2.32.*
+  - xgboost=2.1.*
+  - tqdm=4.*
+  - ase=3.25.*
+  - pip:
+      - grpcio==1.58.0
+      - tensorflow==2.13.1
+      - torch==2.2.2
+      - megnet==1.3.2
+      - contextlib2==21.6.0
+      - pickle-mixin==1.0.2

@@ -1,0 +1,261 @@
+task,feature,mean_abs_shap,mean_signed_shap,normalized_importance_percent,task_display,feature_display
+steels,anchor_prediction,0.17669308403176537,-4.653769560700239e-17,4.454851183750775,Steel yield strength,Stage-1 anchor prediction
+steels,raw_proposal_prediction,0.17549239341470518,3.0635520893868615e-16,4.424578929202502,Steel yield strength,Pre-safety Stage-2 proposal
+steels,proposal_residual,0.03408877323123134,-1.1071019157205883e-19,0.8594587196998704,Steel yield strength,Signed proposal correction
+steels,abs_proposal_residual,0.5039327806891836,-2.660283417026952e-16,12.705339073601994,Steel yield strength,Proposal correction magnitude
+steels,proposal_ensemble_std,0.19380680775152348,-1.2521888925129679e-17,4.886328696235882,Steel yield strength,Proposal ensemble standard deviation
+steels,directional_agreement,0.06923320334152686,5.694681383745807e-12,1.7455330498697477,Steel yield strength,Proposal directional agreement
+steels,route_consensus,0.08335516979117294,-7.072861930227082e-18,2.1015812749592175,Steel yield strength,Route consensus
+steels,data_minus_relation_prediction,0.11892989649442028,-2.468942052141564e-18,2.998504401486799,Steel yield strength,Sample-conditioned minus Relation-augmented prediction
+steels,abs_data_minus_relation_prediction,0.11466842259128254,9.45428474463928e-19,2.8910625501775353,Steel yield strength,Absolute branch-prediction difference
+steels,route_anchor_probability,0.0,0.0,0.0,Steel yield strength,Anchor-route probability
+steels,route_data_probability,0.059963091224319386,-8.760595996963854e-18,1.5118115651543649,Steel yield strength,Sample-conditioned route probability
+steels,route_relation_probability,0.059967622051879756,-2.9350194742243126e-17,1.5119257980493945,Steel yield strength,Relation-augmented route probability
+steels,route_max_probability,0.2990778483148053,1.4757405471662054e-16,7.540460985780968,Steel yield strength,Maximum route probability
+steels,route_entropy,0.2853224230601973,2.5177146284602965e-09,7.19365413244952,Steel yield strength,Route entropy
+steels,data_attention_max,0.0,0.0,0.0,Steel yield strength,Maximum Sample-conditioned attention weight
+steels,relation_attention_max,0.0,0.0,0.0,Steel yield strength,Maximum Relation-augmented attention weight
+steels,data_attention_entropy,2.400112594591099e-37,2.400112594591099e-37,6.051252368896963e-36,Steel yield strength,Sample-conditioned attention entropy
+steels,relation_attention_entropy,2.400112594591099e-37,2.400112594591099e-37,6.051252368896963e-36,Steel yield strength,Relation-augmented attention entropy
+steels,anchor_standardized,0.31945462447804573,4.4107511039365054e-18,8.054207779602944,Steel yield strength,Standardized anchor position
+steels,abs_anchor_standardized,0.1756796027354617,-6.438580146504863e-18,4.429298919624037,Steel yield strength,Anchor distance from training center
+steels,available_expert_fraction,0.0,0.0,0.0,Steel yield strength,Available-expert fraction
+steels,expert_prediction_disagreement,0.19739484062167262,1.1405780380855904e-17,4.976791503914574,Steel yield strength,Expert prediction disagreement
+steels,anchor_vs_expert_mean_abs,0.2555655275918816,6.727327307447536e-18,6.443412312130495,Steel yield strength,Anchor-to-expert-mean absolute difference
+steels,mean_expert_uncertainty,0.23033451991851023,-1.7974466181411217e-18,5.807278843653957,Steel yield strength,Mean expert uncertainty
+steels,max_expert_uncertainty,0.33482032169167286,-1.3196405146677038e-17,8.441613403294342,Steel yield strength,Maximum expert uncertainty
+steels,max_abs_expert_prediction,0.2785262645145682,-2.35436837361835e-17,7.022306877361082,Steel yield strength,Maximum absolute expert prediction
+expt_gap,anchor_prediction,0.0898296542111806,-1.0473669345559285e-22,3.9740084976555967,Experimental band gap,Stage-1 anchor prediction
+expt_gap,raw_proposal_prediction,0.06059008308880438,-4.543425393767897e-17,2.680467905425801,Experimental band gap,Pre-safety Stage-2 proposal
+expt_gap,proposal_residual,0.11615077077012048,-8.41703344871229e-18,5.138438460027549,Experimental band gap,Signed proposal correction
+expt_gap,abs_proposal_residual,0.22289021253742405,-2.1734008140464167e-16,9.860525529638949,Experimental band gap,Proposal correction magnitude
+expt_gap,proposal_ensemble_std,0.03461463825623336,9.016703387093734e-18,1.5313302470268741,Experimental band gap,Proposal ensemble standard deviation
+expt_gap,directional_agreement,0.060252090894694944,1.1786890314890494e-11,2.6655153392233926,Experimental band gap,Proposal directional agreement
+expt_gap,route_consensus,0.02544733407235642,1.2319117610445411e-18,1.1257743640923241,Experimental band gap,Route consensus
+expt_gap,data_minus_relation_prediction,0.01909031250158324,-1.8268264080664694e-18,0.8445436506506128,Experimental band gap,Sample-conditioned minus Relation-augmented prediction
+expt_gap,abs_data_minus_relation_prediction,0.04037441247009062,3.4137125888269833e-17,1.7861391057656113,Experimental band gap,Absolute branch-prediction difference
+expt_gap,route_anchor_probability,0.0,0.0,0.0,Experimental band gap,Anchor-route probability
+expt_gap,route_data_probability,0.0155151702739175,1.4229101680094146e-18,0.6863815635555179,Experimental band gap,Sample-conditioned route probability
+expt_gap,route_relation_probability,0.015515167901982341,-1.2751037823915218e-18,0.6863814586225695,Experimental band gap,Relation-augmented route probability
+expt_gap,route_max_probability,0.17785506799551992,-6.2604951113913946e-18,7.868198511637362,Experimental band gap,Maximum route probability
+expt_gap,route_entropy,0.1296819727798909,-3.6623395834691785e-10,5.737050491238389,Experimental band gap,Route entropy
+expt_gap,data_attention_max,0.12721735480804358,1.218178407591768e-17,5.628017312277572,Experimental band gap,Maximum Sample-conditioned attention weight
+expt_gap,relation_attention_max,0.09240988308391447,-6.41445477774982e-18,4.08815623156577,Experimental band gap,Maximum Relation-augmented attention weight
+expt_gap,data_attention_entropy,0.22104812797980783,5.391633514574456e-10,9.779032844960932,Experimental band gap,Sample-conditioned attention entropy
+expt_gap,relation_attention_entropy,0.15830781492080526,1.0414436698320511e-10,7.003440091860744,Experimental band gap,Relation-augmented attention entropy
+expt_gap,anchor_standardized,0.07535505245103893,-2.8938748401850406e-19,3.3336610433533163,Experimental band gap,Standardized anchor position
+expt_gap,abs_anchor_standardized,0.12471692469419546,-8.971876082294635e-18,5.517399826242658,Experimental band gap,Anchor distance from training center
+expt_gap,available_expert_fraction,0.0,0.0,0.0,Experimental band gap,Available-expert fraction
+expt_gap,expert_prediction_disagreement,0.12023548577814439,4.833860244720958e-19,5.319143732634153,Experimental band gap,Expert prediction disagreement
+expt_gap,anchor_vs_expert_mean_abs,0.0385876436777968,2.3451265729531552e-18,1.7070935564281002,Experimental band gap,Anchor-to-expert-mean absolute difference
+expt_gap,mean_expert_uncertainty,0.2059943361475034,1.9295117351903342e-19,9.113062379095883,Experimental band gap,Mean expert uncertainty
+expt_gap,max_expert_uncertainty,0.029070687339451624,-1.7484318112701862e-19,1.2860692778364353,Experimental band gap,Maximum expert uncertainty
+expt_gap,max_abs_expert_prediction,0.05967914529302708,-2.5207372776619044e-18,2.6401685791838876,Experimental band gap,Maximum absolute expert prediction
+jdft2d,anchor_prediction,0.27131683163769393,2.46471297633803e-17,6.351562242933351,2D exfoliation energy,Stage-1 anchor prediction
+jdft2d,raw_proposal_prediction,0.27620143664131225,-1.6178091838729467e-16,6.465911480042439,2D exfoliation energy,Pre-safety Stage-2 proposal
+jdft2d,proposal_residual,0.0899957591118827,4.377222865565381e-18,2.106812401386399,2D exfoliation energy,Signed proposal correction
+jdft2d,abs_proposal_residual,0.25986391498396805,-4.614802937220276e-17,6.083447977592057,2D exfoliation energy,Proposal correction magnitude
+jdft2d,proposal_ensemble_std,0.08197409269756936,-1.7167126007368495e-17,1.9190241494927749,2D exfoliation energy,Proposal ensemble standard deviation
+jdft2d,directional_agreement,0.041307268957386824,1.671068619917066e-11,0.9670085275755544,2D exfoliation energy,Proposal directional agreement
+jdft2d,route_consensus,0.11791235989067836,-3.795604913790504e-18,2.760343648922197,2D exfoliation energy,Route consensus
+jdft2d,data_minus_relation_prediction,0.06853910918655341,-8.721303960284244e-19,1.604509441769254,2D exfoliation energy,Sample-conditioned minus Relation-augmented prediction
+jdft2d,abs_data_minus_relation_prediction,0.1028556649621131,2.810362056394549e-17,2.4078644664314237,2D exfoliation energy,Absolute branch-prediction difference
+jdft2d,route_anchor_probability,0.0,0.0,0.0,2D exfoliation energy,Anchor-route probability
+jdft2d,route_data_probability,0.045063672888744875,-8.022294367563549e-18,1.0549464311534669,2D exfoliation energy,Sample-conditioned route probability
+jdft2d,route_relation_probability,0.04506154615423362,-2.3521758668465718e-17,1.0548966440225287,2D exfoliation energy,Relation-augmented route probability
+jdft2d,route_max_probability,0.0886604464276056,-1.155529838030493e-16,2.0755525581368284,2D exfoliation energy,Maximum route probability
+jdft2d,route_entropy,0.08950595652750662,1.0449177633746728e-09,2.0953460593145268,2D exfoliation energy,Route entropy
+jdft2d,data_attention_max,0.41065373092120605,9.332722670379001e-18,9.613457139739335,2D exfoliation energy,Maximum Sample-conditioned attention weight
+jdft2d,relation_attention_max,0.2812096348883748,3.360570196748362e-17,6.583154051021763,2D exfoliation energy,Maximum Relation-augmented attention weight
+jdft2d,data_attention_entropy,0.41328594813831937,4.538199163519773e-09,9.67507768642824,2D exfoliation energy,Sample-conditioned attention entropy
+jdft2d,relation_attention_entropy,0.2754232253630399,1.7511602608716845e-10,6.4476934530138035,2D exfoliation energy,Relation-augmented attention entropy
+jdft2d,anchor_standardized,0.59006755976962,1.0428467437346574e-18,13.813558159256674,2D exfoliation energy,Standardized anchor position
+jdft2d,abs_anchor_standardized,0.11940954232212982,5.0716838508702985e-18,2.7953928839622435,2D exfoliation energy,Anchor distance from training center
+jdft2d,available_expert_fraction,0.0,0.0,0.0,2D exfoliation energy,Available-expert fraction
+jdft2d,expert_prediction_disagreement,0.12143914083197953,5.3664872822966075e-18,2.8429060485000393,2D exfoliation energy,Expert prediction disagreement
+jdft2d,anchor_vs_expert_mean_abs,0.11960422388871939,4.931109071597107e-18,2.799950404703886,2D exfoliation energy,Anchor-to-expert-mean absolute difference
+jdft2d,mean_expert_uncertainty,0.1004275733528622,1.221205825317076e-18,2.3510225267161045,2D exfoliation energy,Mean expert uncertainty
+jdft2d,max_expert_uncertainty,0.08629453800471035,1.9371324806625843e-18,2.0201663348848693,2D exfoliation energy,Maximum expert uncertainty
+jdft2d,max_abs_expert_prediction,0.17558190919138378,1.6577690891344555e-17,4.1103952830002335,2D exfoliation energy,Maximum absolute expert prediction
+dielectric,anchor_prediction,0.05335835084671682,6.119619896314169e-18,4.369103795574945,Refractive index,Stage-1 anchor prediction
+dielectric,raw_proposal_prediction,0.06324973042006092,-3.807781451907776e-16,5.179032576198593,Refractive index,Pre-safety Stage-2 proposal
+dielectric,proposal_residual,0.06975005332466512,1.3608373516394393e-17,5.711293881585555,Refractive index,Signed proposal correction
+dielectric,abs_proposal_residual,0.02408888753690384,-3.881454948244877e-18,1.9724532017679566,Refractive index,Proposal correction magnitude
+dielectric,proposal_ensemble_std,0.00990746050619084,-2.3989136538923065e-18,0.8112455241815393,Refractive index,Proposal ensemble standard deviation
+dielectric,directional_agreement,0.03596079948677172,-9.511144948979758e-12,2.94455250277345,Refractive index,Proposal directional agreement
+dielectric,route_consensus,0.04352354783908036,-2.1338076526218187e-18,3.5638076335396023,Refractive index,Route consensus
+dielectric,data_minus_relation_prediction,0.01581898605480182,-2.2081677853285146e-18,1.2952947555056313,Refractive index,Sample-conditioned minus Relation-augmented prediction
+dielectric,abs_data_minus_relation_prediction,0.00553307473456914,-2.5553426540297626e-19,0.453060813169666,Refractive index,Absolute branch-prediction difference
+dielectric,route_anchor_probability,0.0,0.0,0.0,Refractive index,Anchor-route probability
+dielectric,route_data_probability,0.020768706392899138,9.08326957255271e-18,1.7005891765858538,Refractive index,Sample-conditioned route probability
+dielectric,route_relation_probability,0.02076921303440418,6.842367188507221e-19,1.7006306615509534,Refractive index,Relation-augmented route probability
+dielectric,route_max_probability,0.03243681854169626,-4.6580224326834074e-18,2.656000883798323,Refractive index,Maximum route probability
+dielectric,route_entropy,0.030702032548672598,-2.4339775417693687e-11,2.5139526393088425,Refractive index,Route entropy
+dielectric,data_attention_max,0.1540788915345037,1.6028221830368723e-17,12.616332010621013,Refractive index,Maximum Sample-conditioned attention weight
+dielectric,relation_attention_max,0.04112266924657494,1.1652276049990228e-18,3.3672182036795246,Refractive index,Maximum Relation-augmented attention weight
+dielectric,data_attention_entropy,0.12677292433686932,-2.3033430200004475e-11,10.380456968910085,Refractive index,Sample-conditioned attention entropy
+dielectric,relation_attention_entropy,0.0429408545295849,5.066346436434427e-11,3.51609537276366,Refractive index,Relation-augmented attention entropy
+dielectric,anchor_standardized,0.17175542363550092,1.8664086092947795e-19,14.063726884516774,Refractive index,Standardized anchor position
+dielectric,abs_anchor_standardized,0.051935273461887976,-7.16257536104331e-19,4.252578964788592,Refractive index,Anchor distance from training center
+dielectric,available_expert_fraction,0.0,0.0,0.0,Refractive index,Available-expert fraction
+dielectric,expert_prediction_disagreement,0.050040720080081647,-2.5987590897839913e-18,4.097448601124462,Refractive index,Expert prediction disagreement
+dielectric,anchor_vs_expert_mean_abs,0.03439249858430188,2.004313633520271e-18,2.8161364382427334,Refractive index,Anchor-to-expert-mean absolute difference
+dielectric,mean_expert_uncertainty,0.0463296664615981,4.082421112740438e-19,3.7935790438235495,Refractive index,Mean expert uncertainty
+dielectric,max_expert_uncertainty,0.04474553890181734,1.9771249792140276e-18,3.663867056397333,Refractive index,Maximum expert uncertainty
+dielectric,max_abs_expert_prediction,0.03128322992421234,1.4741390777584225e-18,2.561542409591353,Refractive index,Maximum absolute expert prediction
+log_kvrh,anchor_prediction,0.01836273781024794,4.421137379005349e-19,2.406034883694686,Bulk modulus (log K),Stage-1 anchor prediction
+log_kvrh,raw_proposal_prediction,0.01826625456824436,-6.635008255600281e-17,2.393392866564593,Bulk modulus (log K),Pre-safety Stage-2 proposal
+log_kvrh,proposal_residual,0.0045279249261116,-9.107379230757879e-19,0.5932854586038493,Bulk modulus (log K),Signed proposal correction
+log_kvrh,abs_proposal_residual,0.017767379831417678,-4.0840179259416753e-17,2.328026251204593,Bulk modulus (log K),Proposal correction magnitude
+log_kvrh,proposal_ensemble_std,0.015214163335839501,9.528578379371433e-18,1.9934831118608827,Bulk modulus (log K),Proposal ensemble standard deviation
+log_kvrh,directional_agreement,0.01867473940911114,2.70854677402533e-12,2.4469158644280946,Bulk modulus (log K),Proposal directional agreement
+log_kvrh,route_consensus,0.0246610260286615,2.965492886463394e-20,3.231287703707677,Bulk modulus (log K),Route consensus
+log_kvrh,data_minus_relation_prediction,0.014040513270569741,-1.9320610364284516e-19,1.8397019585563004,Bulk modulus (log K),Sample-conditioned minus Relation-augmented prediction
+log_kvrh,abs_data_minus_relation_prediction,0.011287631118101979,-1.4712239035349953e-17,1.478997004971358,Bulk modulus (log K),Absolute branch-prediction difference
+log_kvrh,route_anchor_probability,0.0,0.0,0.0,Bulk modulus (log K),Anchor-route probability
+log_kvrh,route_data_probability,0.018694210169049742,1.7854420645575246e-18,2.4494670813603636,Bulk modulus (log K),Sample-conditioned route probability
+log_kvrh,route_relation_probability,0.018694355278325518,4.436297528181537e-19,2.449486094754939,Bulk modulus (log K),Relation-augmented route probability
+log_kvrh,route_max_probability,0.051556042169502755,5.335709583571951e-18,6.755290916141606,Bulk modulus (log K),Maximum route probability
+log_kvrh,route_entropy,0.04706856549402954,4.4534886476114003e-11,6.16730531549064,Bulk modulus (log K),Route entropy
+log_kvrh,data_attention_max,0.06021376305700286,-2.382058693198958e-19,7.889695746394752,Bulk modulus (log K),Maximum Sample-conditioned attention weight
+log_kvrh,relation_attention_max,0.0106234718079859,4.49466771318122e-19,1.3919734638751022,Bulk modulus (log K),Maximum Relation-augmented attention weight
+log_kvrh,data_attention_entropy,0.0590100856205943,1.4000683770489909e-11,7.731980163313295,Bulk modulus (log K),Sample-conditioned attention entropy
+log_kvrh,relation_attention_entropy,0.01908232703764636,-1.7276665412466357e-11,2.5003213022528854,Bulk modulus (log K),Relation-augmented attention entropy
+log_kvrh,anchor_standardized,0.02971329316722978,6.113722389173986e-19,3.8932767329446785,Bulk modulus (log K),Standardized anchor position
+log_kvrh,abs_anchor_standardized,0.029715092320302578,-6.36118397200791e-19,3.893512472576698,Bulk modulus (log K),Anchor distance from training center
+log_kvrh,available_expert_fraction,0.0,0.0,0.0,Bulk modulus (log K),Available-expert fraction
+log_kvrh,expert_prediction_disagreement,0.0521471028681756,-3.713623991483372e-18,6.832736484121896,Bulk modulus (log K),Expert prediction disagreement
+log_kvrh,anchor_vs_expert_mean_abs,0.03333997231843072,-1.2428639290276758e-18,4.368473658366546,Bulk modulus (log K),Anchor-to-expert-mean absolute difference
+log_kvrh,mean_expert_uncertainty,0.07416405943578624,-1.7180731165068968e-19,9.717576755864945,Bulk modulus (log K),Mean expert uncertainty
+log_kvrh,max_expert_uncertainty,0.07947993120960277,-4.0989268155039607e-19,10.414105403020846,Bulk modulus (log K),Maximum expert uncertainty
+log_kvrh,max_abs_expert_prediction,0.03689035274537092,1.1393120301544268e-18,4.833673305928775,Bulk modulus (log K),Maximum absolute expert prediction
+log_gvrh,anchor_prediction,0.00700721813823484,1.4903798336037977e-18,1.0303573948839804,Shear modulus (log G),Stage-1 anchor prediction
+log_gvrh,raw_proposal_prediction,0.006862496706654441,4.52022255765989e-17,1.0090772243105233,Shear modulus (log G),Pre-safety Stage-2 proposal
+log_gvrh,proposal_residual,0.0074395135974979,-3.171426898544219e-21,1.093923108757798,Shear modulus (log G),Signed proposal correction
+log_gvrh,abs_proposal_residual,0.03445607113572808,1.1343629975337615e-16,5.066499571296218,Shear modulus (log G),Proposal correction magnitude
+log_gvrh,proposal_ensemble_std,0.01680696970504262,2.070807469331426e-17,2.471335297340122,Shear modulus (log G),Proposal ensemble standard deviation
+log_gvrh,directional_agreement,0.0182339949080102,7.059016031522317e-12,2.6811683497094396,Shear modulus (log G),Proposal directional agreement
+log_gvrh,route_consensus,0.02196940769765826,3.084174612058853e-18,3.2304319968274116,Shear modulus (log G),Route consensus
+log_gvrh,data_minus_relation_prediction,0.00482093965378604,2.2696029865423637e-19,0.7088820020407062,Shear modulus (log G),Sample-conditioned minus Relation-augmented prediction
+log_gvrh,abs_data_minus_relation_prediction,0.01655501300051864,4.664320347718284e-17,2.4342870067666715,Shear modulus (log G),Absolute branch-prediction difference
+log_gvrh,route_anchor_probability,0.0,0.0,0.0,Shear modulus (log G),Anchor-route probability
+log_gvrh,route_data_probability,0.010815418512944059,-2.797666766617048e-18,1.5903238951234064,Shear modulus (log G),Sample-conditioned route probability
+log_gvrh,route_relation_probability,0.01081561532218034,9.055802137698938e-19,1.5903528344040145,Shear modulus (log G),Relation-augmented route probability
+log_gvrh,route_max_probability,0.06169173852016192,-5.254188600158644e-19,9.07129444717273,Shear modulus (log G),Maximum route probability
+log_gvrh,route_entropy,0.05051872590589572,-1.103365390696552e-11,7.428389096841913,Shear modulus (log G),Route entropy
+log_gvrh,data_attention_max,0.05529772524181462,4.188462124099233e-18,8.131104098540158,Shear modulus (log G),Maximum Sample-conditioned attention weight
+log_gvrh,relation_attention_max,0.042727379476575136,-1.3769308510169933e-18,6.282731683131709,Shear modulus (log G),Maximum Relation-augmented attention weight
+log_gvrh,data_attention_entropy,0.055115612142955704,-7.648950656209107e-11,8.104325771618857,Shear modulus (log G),Sample-conditioned attention entropy
+log_gvrh,relation_attention_entropy,0.03409456483382438,-5.602802349179124e-11,5.01334285716009,Shear modulus (log G),Relation-augmented attention entropy
+log_gvrh,anchor_standardized,0.0197268328775823,-1.5852025662207029e-19,2.900678661928672,Shear modulus (log G),Standardized anchor position
+log_gvrh,abs_anchor_standardized,0.040047486337424935,1.5612160680417153e-18,5.888674061554962,Shear modulus (log G),Anchor distance from training center
+log_gvrh,available_expert_fraction,0.0,0.0,0.0,Shear modulus (log G),Available-expert fraction
+log_gvrh,expert_prediction_disagreement,0.0420036145042494,-2.1727075848586452e-18,6.1763076248703115,Shear modulus (log G),Expert prediction disagreement
+log_gvrh,anchor_vs_expert_mean_abs,0.01410963410788808,8.575330100319548e-20,2.0747128968118465,Shear modulus (log G),Anchor-to-expert-mean absolute difference
+log_gvrh,mean_expert_uncertainty,0.036615241180128696,8.159533809429795e-19,5.383988877062367,Shear modulus (log G),Mean expert uncertainty
+log_gvrh,max_expert_uncertainty,0.03973079321222026,6.577980536174402e-19,5.84210677950004,Shear modulus (log G),Maximum expert uncertainty
+log_gvrh,max_abs_expert_prediction,0.03261445733395148,7.2011948071092745e-19,4.7957044623460465,Shear modulus (log G),Maximum absolute expert prediction
+perovskites,anchor_prediction,0.02028139231098544,-0.00019952169120114778,1.7446946496314886,Perovskite formation energy,Stage-1 anchor prediction
+perovskites,raw_proposal_prediction,0.020420471341517678,-0.0001978488996414531,1.7566588400936045,Perovskite formation energy,Pre-safety Stage-2 proposal
+perovskites,proposal_residual,0.0290163138517321,0.00079062631466026,2.4961110535652997,Perovskite formation energy,Signed proposal correction
+perovskites,abs_proposal_residual,0.39936285119729537,0.028982662607814257,34.35495054094947,Perovskite formation energy,Proposal correction magnitude
+perovskites,proposal_ensemble_std,0.01192099721667142,3.9392682318495234e-05,1.0254966593655879,Perovskite formation energy,Proposal ensemble standard deviation
+perovskites,directional_agreement,0.0201832027191473,0.000763972404479482,1.7362479486899207,Perovskite formation energy,Proposal directional agreement
+perovskites,route_consensus,0.03418540401553688,0.00013582919261737563,2.9407789448997663,Perovskite formation energy,Route consensus
+perovskites,data_minus_relation_prediction,0.02000963140213004,-4.229495013691341e-05,1.7213165799019172,Perovskite formation energy,Sample-conditioned minus Relation-augmented prediction
+perovskites,abs_data_minus_relation_prediction,0.012249725912512801,-0.0002231628798055138,1.0537753489161146,Perovskite formation energy,Absolute branch-prediction difference
+perovskites,route_anchor_probability,0.0,0.0,0.0,Perovskite formation energy,Anchor-route probability
+perovskites,route_data_probability,0.02080481309133904,6.390477793521008e-05,1.7897216093680852,Perovskite formation energy,Sample-conditioned route probability
+perovskites,route_relation_probability,0.02080503325445038,6.391561146467207e-05,1.7897405487681282,Perovskite formation energy,Relation-augmented route probability
+perovskites,route_max_probability,0.04029647022268734,-5.906750344591386e-05,3.466479762263481,Perovskite formation energy,Maximum route probability
+perovskites,route_entropy,0.061224955690507954,0.00011697914139224585,5.266840213888847,Perovskite formation energy,Route entropy
+perovskites,data_attention_max,0.05736490331685608,-0.00026707572289297977,4.934781515928552,Perovskite formation energy,Maximum Sample-conditioned attention weight
+perovskites,relation_attention_max,0.03821099948837926,0.00016953495464600024,3.28707838900867,Perovskite formation energy,Maximum Relation-augmented attention weight
+perovskites,data_attention_entropy,0.04823884165353358,0.00036067081775083363,4.149717516768026,Perovskite formation energy,Sample-conditioned attention entropy
+perovskites,relation_attention_entropy,0.023165532816110397,-7.640273816948957e-05,1.992801112487661,Perovskite formation energy,Relation-augmented attention entropy
+perovskites,anchor_standardized,0.03017331688594372,-0.00014375300942248448,2.5956415479437864,Perovskite formation energy,Standardized anchor position
+perovskites,abs_anchor_standardized,0.07769136268529468,-0.00023864394524198974,6.683353032237019,Perovskite formation energy,Anchor distance from training center
+perovskites,available_expert_fraction,0.0,0.0,0.0,Perovskite formation energy,Available-expert fraction
+perovskites,expert_prediction_disagreement,0.034428187466447824,4.5948720922159766e-05,2.961664246131968,Perovskite formation energy,Expert prediction disagreement
+perovskites,anchor_vs_expert_mean_abs,0.04484966990302434,0.00015599373862220235,3.858166042927995,Perovskite formation energy,Anchor-to-expert-mean absolute difference
+perovskites,mean_expert_uncertainty,0.04555223357234238,5.108487075693187e-05,3.9186036625987466,Perovskite formation energy,Mean expert uncertainty
+perovskites,max_expert_uncertainty,0.04001149910942904,1.3781169549447696e-05,3.441965292597018,Perovskite formation energy,Maximum expert uncertainty
+perovskites,max_abs_expert_prediction,0.012013044141723241,8.496199215959763e-06,1.0334149410688593,Perovskite formation energy,Maximum absolute expert prediction
+phonons,anchor_prediction,0.09795734835413687,-6.143526618479127e-18,4.41336048906657,Optical phonon frequency,Stage-1 anchor prediction
+phonons,raw_proposal_prediction,0.09953268394678647,1.7552933195654747e-19,4.484335499909912,Optical phonon frequency,Pre-safety Stage-2 proposal
+phonons,proposal_residual,0.06160969142181766,6.187408951468263e-18,2.775756821036394,Optical phonon frequency,Signed proposal correction
+phonons,abs_proposal_residual,0.2684799294900435,3.1507515086200095e-16,12.09606765421082,Optical phonon frequency,Proposal correction magnitude
+phonons,proposal_ensemble_std,0.0508923873683962,-1.0246524752963399e-17,2.29290048556592,Optical phonon frequency,Proposal ensemble standard deviation
+phonons,directional_agreement,0.06155496529961306,4.8908192011022484e-11,2.7732911958483335,Optical phonon frequency,Proposal directional agreement
+phonons,route_consensus,0.07584978746547241,-4.5637626308702085e-18,3.4173286713928865,Optical phonon frequency,Route consensus
+phonons,data_minus_relation_prediction,0.05838374119251057,9.434701592664375e-19,2.6304151848964663,Optical phonon frequency,Sample-conditioned minus Relation-augmented prediction
+phonons,abs_data_minus_relation_prediction,0.06835736780088686,-3.167207383490935e-17,3.079765951793292,Optical phonon frequency,Absolute branch-prediction difference
+phonons,route_anchor_probability,0.0,0.0,0.0,Optical phonon frequency,Anchor-route probability
+phonons,route_data_probability,0.026570304417379943,1.0158760086985128e-17,1.1970958143354373,Optical phonon frequency,Sample-conditioned route probability
+phonons,route_relation_probability,0.026568984849498357,3.4008808066580882e-18,1.1970363626572418,Optical phonon frequency,Relation-augmented route probability
+phonons,route_max_probability,0.10195474438169891,-2.907204560530304e-18,4.593458766363894,Optical phonon frequency,Maximum route probability
+phonons,route_entropy,0.05896352662336317,5.301801303536636e-10,2.6565367791990258,Optical phonon frequency,Route entropy
+phonons,data_attention_max,0.13265166577821005,4.8819095450414495e-18,5.9764747657105435,Optical phonon frequency,Maximum Sample-conditioned attention weight
+phonons,relation_attention_max,0.061540305071595656,-2.9620574767667226e-18,2.772630695414422,Optical phonon frequency,Maximum Relation-augmented attention weight
+phonons,data_attention_entropy,0.1285219389255873,-6.125351936034987e-10,5.7904144687728225,Optical phonon frequency,Sample-conditioned attention entropy
+phonons,relation_attention_entropy,0.039770161122821564,-2.1674202353831606e-11,1.791800826505933,Optical phonon frequency,Relation-augmented attention entropy
+phonons,anchor_standardized,0.2160957137567016,-5.265879958696394e-19,9.735954484012833,Optical phonon frequency,Standardized anchor position
+phonons,abs_anchor_standardized,0.07761523621943425,2.9839986432612904e-18,3.4968690214239917,Optical phonon frequency,Anchor distance from training center
+phonons,available_expert_fraction,0.0,0.0,0.0,Optical phonon frequency,Available-expert fraction
+phonons,expert_prediction_disagreement,0.11752070470000875,4.7173507963321866e-18,5.294765971973911,Optical phonon frequency,Expert prediction disagreement
+phonons,anchor_vs_expert_mean_abs,0.05703775582788456,-1.4700581551360772e-18,2.5697732960855646,Optical phonon frequency,Anchor-to-expert-mean absolute difference
+phonons,mean_expert_uncertainty,0.11535356203741534,2.7289325827619337e-18,5.19712774511335,Optical phonon frequency,Mean expert uncertainty
+phonons,max_expert_uncertainty,0.10752669466257622,-1.5564514982084396e-18,4.844496852121028,Optical phonon frequency,Maximum expert uncertainty
+phonons,max_abs_expert_prediction,0.10925452168797486,5.792467954566035e-18,4.922342196589398,Optical phonon frequency,Maximum absolute expert prediction
+mp_gap,anchor_prediction,0.15125161798137904,0.004989232787083227,6.688812545167809,MP band gap,Stage-1 anchor prediction
+mp_gap,raw_proposal_prediction,0.1521697067817765,0.004963763249107108,6.729413260503182,MP band gap,Pre-safety Stage-2 proposal
+mp_gap,proposal_residual,0.07138785959253154,0.0025257993144775547,3.156991093305126,MP band gap,Signed proposal correction
+mp_gap,abs_proposal_residual,0.1447552162825559,-0.00858856105377008,6.401521646984575,MP band gap,Proposal correction magnitude
+mp_gap,proposal_ensemble_std,0.038302386335657315,0.0018777308822324728,1.6938495313375743,MP band gap,Proposal ensemble standard deviation
+mp_gap,directional_agreement,0.16633483867112892,0.008518443834432721,7.355839034653391,MP band gap,Proposal directional agreement
+mp_gap,route_consensus,0.08112656310990633,0.0020838636774924693,3.5876665672607566,MP band gap,Route consensus
+mp_gap,data_minus_relation_prediction,0.02654767063293124,-0.00019412650623572001,1.1740197873215141,MP band gap,Sample-conditioned minus Relation-augmented prediction
+mp_gap,abs_data_minus_relation_prediction,0.0229284424005786,-5.562383857306755e-05,1.0139663642410006,MP band gap,Absolute branch-prediction difference
+mp_gap,route_anchor_probability,0.0,0.0,0.0,MP band gap,Anchor-route probability
+mp_gap,route_data_probability,0.0759026696915309,0.00230322702604326,3.3566499057679127,MP band gap,Sample-conditioned route probability
+mp_gap,route_relation_probability,0.07590188806326273,0.0023032079899715403,3.35661533975774,MP band gap,Relation-augmented route probability
+mp_gap,route_max_probability,0.12175540279427913,2.7892893965122956e-05,5.384399033355112,MP band gap,Maximum route probability
+mp_gap,route_entropy,0.10343144605380594,0.0009835760274872804,4.574057211174548,MP band gap,Route entropy
+mp_gap,data_attention_max,0.10351112029893272,0.00089909128692154,4.577580651766081,MP band gap,Maximum Sample-conditioned attention weight
+mp_gap,relation_attention_max,0.07279652875216261,0.00019284003449157407,3.2192867835772874,MP band gap,Maximum Relation-augmented attention weight
+mp_gap,data_attention_entropy,0.11958846657867603,0.00016400066520187994,5.288570437688196,MP band gap,Sample-conditioned attention entropy
+mp_gap,relation_attention_entropy,0.09597147526358249,0.00077827697433464,4.244154319065485,MP band gap,Relation-augmented attention entropy
+mp_gap,anchor_standardized,0.1448924646839152,0.004781676910944048,6.407591194147565,MP band gap,Standardized anchor position
+mp_gap,abs_anchor_standardized,0.12843066022445165,0.00105965865778,5.679599483023423,MP band gap,Anchor distance from training center
+mp_gap,available_expert_fraction,0.0,0.0,0.0,MP band gap,Available-expert fraction
+mp_gap,expert_prediction_disagreement,0.0680016168754336,428376.7257648415,3.007241007524911,MP band gap,Expert prediction disagreement
+mp_gap,anchor_vs_expert_mean_abs,0.11053226717767015,42259.040541288145,4.888077398516562,MP band gap,Anchor-to-expert-mean absolute difference
+mp_gap,mean_expert_uncertainty,0.06047705009622952,0.00047067277841784027,2.6744814817663864,MP band gap,Mean expert uncertainty
+mp_gap,max_expert_uncertainty,0.0302413755261051,0.0012032216392263925,1.3373667978020944,MP band gap,Maximum expert uncertainty
+mp_gap,max_abs_expert_prediction,0.09502388875722621,-698942.2856999601,4.2022491242917805,MP band gap,Maximum absolute expert prediction
+mp_e_form,anchor_prediction,0.022734944417023763,-9.877820904685752e-06,2.236801057866413,MP formation energy,Stage-1 anchor prediction
+mp_e_form,raw_proposal_prediction,0.022739099876576522,-1.4584598122052713e-05,2.2372098970592007,MP formation energy,Pre-safety Stage-2 proposal
+mp_e_form,proposal_residual,0.0860205607329628,-0.00034191988292679997,8.463221977427722,MP formation energy,Signed proposal correction
+mp_e_form,abs_proposal_residual,0.2322086911305945,0.012235327539543919,22.846092624610172,MP formation energy,Proposal correction magnitude
+mp_e_form,proposal_ensemble_std,0.023167955208975938,-4.617352669812001e-05,2.2794032731936227,MP formation energy,Proposal ensemble standard deviation
+mp_e_form,directional_agreement,0.028832753267676058,0.0008840571235711199,2.836740298430071,MP formation energy,Proposal directional agreement
+mp_e_form,route_consensus,0.032629483867644,-0.0002382904069305566,3.210285571586003,MP formation energy,Route consensus
+mp_e_form,data_minus_relation_prediction,0.02463685983994512,-0.0003639646521720948,2.4239229769671877,MP formation energy,Sample-conditioned minus Relation-augmented prediction
+mp_e_form,abs_data_minus_relation_prediction,0.01689846370086696,0.00010613240902372356,1.6625728565279951,MP formation energy,Absolute branch-prediction difference
+mp_e_form,route_anchor_probability,0.0,0.0,0.0,MP formation energy,Anchor-route probability
+mp_e_form,route_data_probability,0.004647805215801191,1.4407735152142134e-05,0.4572791308729359,MP formation energy,Sample-conditioned route probability
+mp_e_form,route_relation_probability,0.004648312403082951,1.4382748674836179e-05,0.45732903101905314,MP formation energy,Relation-augmented route probability
+mp_e_form,route_max_probability,0.03599210692789312,0.0005663158878087017,3.5411207247495695,MP formation energy,Maximum route probability
+mp_e_form,route_entropy,0.01499319311475518,-0.0002659380161287895,1.475120836221077,MP formation energy,Route entropy
+mp_e_form,data_attention_max,0.02642480095584916,1.7140292144920033e-05,2.5998314158047324,MP formation energy,Maximum Sample-conditioned attention weight
+mp_e_form,relation_attention_max,0.044554051728610024,0.00041481821527235995,4.383496533387879,MP formation energy,Maximum Relation-augmented attention weight
+mp_e_form,data_attention_entropy,0.031606483067095535,-6.046022448115999e-05,3.1096365780854267,MP formation energy,Sample-conditioned attention entropy
+mp_e_form,relation_attention_entropy,0.05137726384002583,-0.00017975660328334,5.054805325215564,MP formation energy,Relation-augmented attention entropy
+mp_e_form,anchor_standardized,0.019797840123094882,3.549547595619229e-05,1.9478310093271805,MP formation energy,Standardized anchor position
+mp_e_form,abs_anchor_standardized,0.06743690444155774,0.00028860825034185997,6.6348497021687205,MP formation energy,Anchor distance from training center
+mp_e_form,available_expert_fraction,0.0,0.0,0.0,MP formation energy,Available-expert fraction
+mp_e_form,expert_prediction_disagreement,0.06570978345327344,-0.0002300459488916763,6.464925114591332,MP formation energy,Expert prediction disagreement
+mp_e_form,anchor_vs_expert_mean_abs,0.04588141225007702,2.858605571182003e-05,4.514090273320855,MP formation energy,Anchor-to-expert-mean absolute difference
+mp_e_form,mean_expert_uncertainty,0.02535869958548694,-0.0002389756495096938,2.49494192809464,MP formation energy,Mean expert uncertainty
+mp_e_form,max_expert_uncertainty,0.028446969178777298,0.0002143254182202134,2.798784531205471,MP formation energy,Maximum expert uncertainty
+mp_e_form,max_abs_expert_prediction,0.05965996371200786,0.0002900734779987545,5.869707332267171,MP formation energy,Maximum absolute expert prediction

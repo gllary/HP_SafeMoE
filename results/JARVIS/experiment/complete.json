@@ -1,0 +1,9 @@
+{
+  "tasks": 34,
+  "results_sha256": "fa0c3df67e54af9297477469881f6d53055ed692ce4a8cacc702fac19513913d",
+  "selection_sha256": "42842acb1e8e513fb6fdf9f052701e9dc601da91397a51564aa67f4775b78bbc",
+  "test_predictions_sha256": "4db0c32acc6d8a66323e5d6ff286eb1bea67e30481f32296639e05dc06d371ec",
+  "exact_fallback_checked": true,
+  "official_test_id_coverage_checked": true,
+  "time": 1792415384.5781324
+}

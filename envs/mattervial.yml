@@ -1,0 +1,25 @@
+name: hpsafe-mattervial
+channels:
+  - conda-forge
+  - nvidia
+dependencies:
+  - python=3.10
+  - cudatoolkit=11.8.*
+  - cudnn=8.9.*
+  - numpy=1.24.3
+  - scipy=1.11.*
+  - pandas=2.0.3
+  - scikit-learn=1.4.*
+  - pymatgen=2023.9.25
+  - spglib=2.5.*
+  - matminer=0.9.*
+  - typing-extensions=4.5.*
+  - pyyaml=6.*
+  - ijson=3.*
+  - orjson=3.*
+  - joblib=1.4.*
+  - xgboost=2.1.4
+  - pip
+  - pip:
+      - grpcio==1.58.0
+      - tensorflow==2.13.1

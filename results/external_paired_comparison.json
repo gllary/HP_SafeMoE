@@ -1,0 +1,34 @@
+{
+  "method": "paired nonparametric material bootstrap; one unique cluster per material",
+  "difference": "Full HP-SafeMoE minus Stage 1; negative values favour Full",
+  "replicates": 200000,
+  "random_generator": "NumPy PCG64",
+  "interval": "percentile 2.5% and 97.5%; linear quantile interpolation",
+  "row_order": "ensemble_predictions.csv order; identical sampled indices for both models",
+  "datasets": [
+    {
+      "dataset": "DS2-248",
+      "n_materials": 248,
+      "seed": 20260916,
+      "mae_difference_full_minus_stage1": -0.06755199969284922,
+      "ci95_low": -0.1067518101335061,
+      "ci95_high": -0.02811488399092514,
+      "relative_mae_reduction_percent": 9.02924528546632,
+      "materials_improved": 149,
+      "materials_worsened": 99,
+      "materials_tied": 0
+    },
+    {
+      "dataset": "Core-23",
+      "n_materials": 23,
+      "seed": 20260917,
+      "mae_difference_full_minus_stage1": -0.0046768341244725255,
+      "ci95_low": -0.00774371037598748,
+      "ci95_high": -0.002168122789999149,
+      "relative_mae_reduction_percent": 8.898395619128916,
+      "materials_improved": 20,
+      "materials_worsened": 3,
+      "materials_tied": 0
+    }
+  ]
+}

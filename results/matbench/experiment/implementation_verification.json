@@ -1,0 +1,112 @@
+{
+  "status": "passed",
+  "runtime": {
+    "torch": "2.5.1",
+    "device": "cpu"
+  },
+  "frozen_model_sha256": "682576087dc20ffe2f4fece97c38fb4462a32c5defc7c1c5cc473a2999230dfd",
+  "public_model_sha256": "cbfe8ab17512bca7cfdf25c218266307c749a22195e52e1feffed22f8c4867fd",
+  "cases": [
+    {
+      "configuration": "Full",
+      "availability": "all_sources",
+      "training_mode": false,
+      "forward_exact": true,
+      "gradients_exact": true,
+      "adamw_update_exact": true
+    },
+    {
+      "configuration": "Full",
+      "availability": "all_sources",
+      "training_mode": true,
+      "forward_exact": true,
+      "gradients_exact": true,
+      "adamw_update_exact": true
+    },
+    {
+      "configuration": "Full",
+      "availability": "partial_sources",
+      "training_mode": false,
+      "forward_exact": true,
+      "gradients_exact": true,
+      "adamw_update_exact": true
+    },
+    {
+      "configuration": "Full",
+      "availability": "partial_sources",
+      "training_mode": true,
+      "forward_exact": true,
+      "gradients_exact": true,
+      "adamw_update_exact": true
+    },
+    {
+      "configuration": "Full",
+      "availability": "anchor_only",
+      "training_mode": false,
+      "forward_exact": true,
+      "gradients_exact": true,
+      "adamw_update_exact": true
+    },
+    {
+      "configuration": "Full",
+      "availability": "anchor_only",
+      "training_mode": true,
+      "forward_exact": true,
+      "gradients_exact": true,
+      "adamw_update_exact": true
+    },
+    {
+      "configuration": "No-cross-expert",
+      "availability": "all_sources",
+      "training_mode": false,
+      "forward_exact": true,
+      "gradients_exact": true,
+      "adamw_update_exact": true
+    },
+    {
+      "configuration": "No-cross-expert",
+      "availability": "all_sources",
+      "training_mode": true,
+      "forward_exact": true,
+      "gradients_exact": true,
+      "adamw_update_exact": true
+    },
+    {
+      "configuration": "No-cross-expert",
+      "availability": "partial_sources",
+      "training_mode": false,
+      "forward_exact": true,
+      "gradients_exact": true,
+      "adamw_update_exact": true
+    },
+    {
+      "configuration": "No-cross-expert",
+      "availability": "partial_sources",
+      "training_mode": true,
+      "forward_exact": true,
+      "gradients_exact": true,
+      "adamw_update_exact": true
+    },
+    {
+      "configuration": "No-cross-expert",
+      "availability": "anchor_only",
+      "training_mode": false,
+      "forward_exact": true,
+      "gradients_exact": true,
+      "adamw_update_exact": true
+    },
+    {
+      "configuration": "No-cross-expert",
+      "availability": "anchor_only",
+      "training_mode": true,
+      "forward_exact": true,
+      "gradients_exact": true,
+      "adamw_update_exact": true
+    }
+  ],
+  "scope": "Forward outputs, gradients and AdamW updates for Full and No-cross-expert using identical parameters and random state.",
+  "model_classes": [
+    "Stage2ProposalConfig",
+    "CrossExpertProposalModel"
+  ]
+}

@@ -1,0 +1,5897 @@
+{
+  "policy": "per-target/source baseline-token z-score; available official train OOF rows only",
+  "scale_floor": 1e-08,
+  "classification_token": "baseline clipped logit retained",
+  "anchor_unchanged": true,
+  "hidden_unchanged": true,
+  "uncertainty_unchanged": true,
+  "fitted_on_val": false,
+  "fitted_on_test": false,
+  "test_labels_read": false,
+  "train_id_order_sha256": {
+    "reg_formation_energy_peratom": "7e7b6b9d61c56bd554ba4840816a96660ee87a7fd84cfe5480e1f85d623a7a29",
+    "reg_optb88vdw_total_energy": "7e7b6b9d61c56bd554ba4840816a96660ee87a7fd84cfe5480e1f85d623a7a29",
+    "reg_ehull": "e080dd1f26a97e6eb893edc9cf9a99925be3bc3a6af0376d293d2f0a78bb9298",
+    "reg_optb88vdw_bandgap": "7e7b6b9d61c56bd554ba4840816a96660ee87a7fd84cfe5480e1f85d623a7a29",
+    "reg_mbj_bandgap": "c8fe003813a5fe50534d2c7411ea02c0a6f1d36950d8227abf2e8852178b9603",
+    "reg_bulk_modulus_kv": "0673a5d0b47596a04cf623470606116d841960a169381cba8455ff977e39e5d7",
+    "reg_shear_modulus_gv": "0673a5d0b47596a04cf623470606116d841960a169381cba8455ff977e39e5d7",
+    "reg_epsx": "f56848c9b4804ce7189da6418f990e05a8fac8e32a05ab05853dab72e70e6476",
+    "reg_epsy": "f56848c9b4804ce7189da6418f990e05a8fac8e32a05ab05853dab72e70e6476",
+    "reg_epsz": "f56848c9b4804ce7189da6418f990e05a8fac8e32a05ab05853dab72e70e6476",
+    "reg_mepsx": "48bb541128057b4bc0cdadd077a6c1270f486195876a6ee4f8f87e1d323f294f",
+    "reg_mepsy": "48bb541128057b4bc0cdadd077a6c1270f486195876a6ee4f8f87e1d323f294f",
+    "reg_mepsz": "48bb541128057b4bc0cdadd077a6c1270f486195876a6ee4f8f87e1d323f294f",
+    "reg_dfpt_piezo_max_dielectric": "ad491c202fc8782d51f094989d2a775854c925a32fac9de204ab9025084fa1a5",
+    "reg_dfpt_piezo_max_dij": "49f0c95f046a6b76f3d55ca55b7139429f4b81d0dde3722282d787e5f04b6720",
+    "reg_magmom_oszicar": "ad35c309643b18895125dcb2b87d73aabfa080c3b330898b573e03a9235c9380",
+    "reg_avg_elec_mass": "c4efa5a8e5159f390e04ce5723d3931ea93d537f9f70162cb9f2dde674009ba5",
+    "reg_avg_hole_mass": "c4efa5a8e5159f390e04ce5723d3931ea93d537f9f70162cb9f2dde674009ba5",
+    "reg_n_Seebeck": "2a9ffc787a72c809cdf82ff6211c73e42775be57fceb84b3be257da6c7d33859",
+    "reg_n_powerfact": "2a9ffc787a72c809cdf82ff6211c73e42775be57fceb84b3be257da6c7d33859",
+    "reg_max_efg": "f3021ae6744827047e7dcb0d05cdaefeb2322f850d15cc393eb85649e529f437",
+    "reg_slme": "1e263bb6538c1a8841104c3a77c25683e689ccf5bf05ee68a1af911650c68b5d",
+    "reg_spillage": "9aece2c49a00e8358b12392befbfc8252ad70706a70f62da063d77f844ace51b",
+    "reg_ph_heat_capacity": "d4a8b56804d122fcda9a40e374910783f87c7712b105abddb76e7840a54e8ba8",
+    "reg_exfoliation_energy": "76a389227458175cc851459ddbe031f452fd0188fe992025890345b4da8eb8fe",
+    "reg_encut": "f4cd1083eaefe059b3e28da93256b857d1d269b5e72f10cfaecba69d9c23a378",
+    "reg_kpoint_length_unit": "ff9a4b3036a98c9b070f5cf43742d6a6aae6a659641a52b3c2eeef361fae5dc6",
+    "cls_magmom_oszicar": "67217c41e3304576f0a707a1e7e093372a97115a522ee00529bd026a5a5738d8",
+    "cls_optb88vdw_bandgap": "8a18d5b77c10621f8d895dbc445a70069f2db54c5cc2252a9d1b463bd50ddcbe",
+    "cls_mbj_bandgap": "3cc040eb7e193ce57db5651e3c285e3a22b83a0375bf849d0129fece794d9fe0",
+    "cls_n_powerfact": "23692e974602e7b9f7c7463dc69ead605a813fe8816a60759db186699b0f8e5c",
+    "cls_p_Seebeck": "23692e974602e7b9f7c7463dc69ead605a813fe8816a60759db186699b0f8e5c",
+    "cls_slme": "948aa24d1de60d1d0194dad1d4fb6ca4cd67df772a780c4afd48433f4436fbb2",
+    "cls_spillage": "6a39af8c0a16b2796b3e4f8b041abcca869642c188c9179462a82e18aeabd963"
+  },
+  "statistics": {
+    "reg_formation_energy_peratom": {
+      "reg_formation_energy_peratom": {
+        "mean": -0.002901124849044849,
+        "scale": 0.995676190167869,
+        "fit_rows": 44569
+      },
+      "reg_optb88vdw_total_energy": {
+        "mean": -0.001271756089151924,
+        "scale": 0.9995445453441646,
+        "fit_rows": 44569
+      },
+      "reg_ehull": {
+        "mean": 0.003474764087742538,
+        "scale": 0.9975942062008267,
+        "fit_rows": 44569
+      },
+      "reg_optb88vdw_bandgap": {
+        "mean": 0.0036625452375741462,
+        "scale": 0.9935417828185781,
+        "fit_rows": 44569
+      },
+      "reg_mbj_bandgap": {
+        "mean": -0.16743970381454618,
+        "scale": 0.8774247826538017,
+        "fit_rows": 44569
+      },
+      "reg_bulk_modulus_kv": {
+        "mean": 0.05642201449629842,
+        "scale": 0.9502052889982613,
+        "fit_rows": 44569
+      },
+      "reg_shear_modulus_gv": {
+        "mean": 0.026478273071006267,
+        "scale": 0.8605191640307729,
+        "fit_rows": 44569
+      },
+      "reg_epsx": {
+        "mean": 0.0030951053958203777,
+        "scale": 0.9423570435860656,
+        "fit_rows": 44569
+      },
+      "reg_epsy": {
+        "mean": 0.002125883499687282,
+        "scale": 0.9475623309646699,
+        "fit_rows": 44569
+      },
+      "reg_epsz": {
+        "mean": 0.004996735267744371,
+        "scale": 0.9434089361974761,
+        "fit_rows": 44569
+      },
+      "reg_mepsx": {
+        "mean": 0.1644828333735838,
+        "scale": 0.9606238150188524,
+        "fit_rows": 44569
+      },
+      "reg_mepsy": {
+        "mean": 0.15899198924604388,
+        "scale": 0.9552878462875826,
+        "fit_rows": 44569
+      },
+      "reg_mepsz": {
+        "mean": 0.1432566098938066,
+        "scale": 0.9580409284712816,
+        "fit_rows": 44569
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "mean": 0.3857603510665632,
+        "scale": 1.1524360718037256,
+        "fit_rows": 44569
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "mean": -0.011260943217765825,
+        "scale": 0.5999692792965237,
+        "fit_rows": 44569
+      },
+      "reg_magmom_oszicar": {
+        "mean": 0.08832163261314233,
+        "scale": 1.1206389676182054,
+        "fit_rows": 44569
+      },
+      "reg_avg_elec_mass": {
+        "mean": 0.08922610196602375,
+        "scale": 0.8129672129785163,
+        "fit_rows": 44569
+      },
+      "reg_avg_hole_mass": {
+        "mean": 0.18686384988263224,
+        "scale": 1.0467921969805145,
+        "fit_rows": 44569
+      },
+      "reg_n_Seebeck": {
+        "mean": 0.11337583268165645,
+        "scale": 0.8718742324034395,
+        "fit_rows": 44569
+      },
+      "reg_n_powerfact": {
+        "mean": -0.07615472671116132,
+        "scale": 0.7384509837310835,
+        "fit_rows": 44569
+      },
+      "reg_max_efg": {
+        "mean": 0.06494593534879074,
+        "scale": 0.8549291518948714,
+        "fit_rows": 44569
+      },
+      "reg_slme": {
+        "mean": -0.011420672251679307,
+        "scale": 0.7582689537271435,
+        "fit_rows": 44569
+      },
+      "reg_spillage": {
+        "mean": -0.24707514905106212,
+        "scale": 0.8003720756524106,
+        "fit_rows": 44569
+      },
+      "reg_ph_heat_capacity": {
+        "mean": 0.36665815590542594,
+        "scale": 1.0620446414073095,
+        "fit_rows": 44569
+      },
+      "reg_exfoliation_energy": {
+        "mean": 1.2830499749302242,
+        "scale": 1.3566995792033771,
+        "fit_rows": 44569
+      },
+      "reg_encut": {
+        "mean": 0.02834201799231347,
+        "scale": 0.9377882213968426,
+        "fit_rows": 44569
+      },
+      "reg_kpoint_length_unit": {
+        "mean": 0.0057283102439792954,
+        "scale": 0.8357737931634366,
+        "fit_rows": 44569
+      },
+      "cls_magmom_oszicar": {
+        "mean": -5.812630977982207,
+        "scale": 7.899360332390237,
+        "fit_rows": 44569
+      },
+      "cls_optb88vdw_bandgap": {
+        "mean": -4.044193504848278,
+        "scale": 8.929847403831705,
+        "fit_rows": 44569
+      },
+      "cls_mbj_bandgap": {
+        "mean": -3.251017119843736,
+        "scale": 8.774583262122983,
+        "fit_rows": 44569
+      },
+      "cls_n_powerfact": {
+        "mean": -3.6777505251207185,
+        "scale": 5.0828311448212915,
+        "fit_rows": 44569
+      },
+      "cls_p_Seebeck": {
+        "mean": -3.520046421973157,
+        "scale": 8.759913119607836,
+        "fit_rows": 44569
+      },
+      "cls_slme": {
+        "mean": -0.6577318091296622,
+        "scale": 2.6664806128664837,
+        "fit_rows": 44569
+      },
+      "cls_spillage": {
+        "mean": 1.6252718929335817,
+        "scale": 6.86267009581733,
+        "fit_rows": 44569
+      }
+    },
+    "reg_optb88vdw_total_energy": {
+      "reg_formation_energy_peratom": {
+        "mean": -0.002901124849044849,
+        "scale": 0.995676190167869,
+        "fit_rows": 44569
+      },
+      "reg_optb88vdw_total_energy": {
+        "mean": -0.001271756089151924,
+        "scale": 0.9995445453441646,
+        "fit_rows": 44569
+      },
+      "reg_ehull": {
+        "mean": 0.003474764087742538,
+        "scale": 0.9975942062008267,
+        "fit_rows": 44569
+      },
+      "reg_optb88vdw_bandgap": {
+        "mean": 0.0036625452375741462,
+        "scale": 0.9935417828185781,
+        "fit_rows": 44569
+      },
+      "reg_mbj_bandgap": {
+        "mean": -0.16743970381454618,
+        "scale": 0.8774247826538017,
+        "fit_rows": 44569
+      },
+      "reg_bulk_modulus_kv": {
+        "mean": 0.05642201449629842,
+        "scale": 0.9502052889982613,
+        "fit_rows": 44569
+      },
+      "reg_shear_modulus_gv": {
+        "mean": 0.026478273071006267,
+        "scale": 0.8605191640307729,
+        "fit_rows": 44569
+      },
+      "reg_epsx": {
+        "mean": 0.0030951053958203777,
+        "scale": 0.9423570435860656,
+        "fit_rows": 44569
+      },
+      "reg_epsy": {
+        "mean": 0.002125883499687282,
+        "scale": 0.9475623309646699,
+        "fit_rows": 44569
+      },
+      "reg_epsz": {
+        "mean": 0.004996735267744371,
+        "scale": 0.9434089361974761,
+        "fit_rows": 44569
+      },
+      "reg_mepsx": {
+        "mean": 0.1644828333735838,
+        "scale": 0.9606238150188524,
+        "fit_rows": 44569
+      },
+      "reg_mepsy": {
+        "mean": 0.15899198924604388,
+        "scale": 0.9552878462875826,
+        "fit_rows": 44569
+      },
+      "reg_mepsz": {
+        "mean": 0.1432566098938066,
+        "scale": 0.9580409284712816,
+        "fit_rows": 44569
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "mean": 0.3857603510665632,
+        "scale": 1.1524360718037256,
+        "fit_rows": 44569
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "mean": -0.011260943217765825,
+        "scale": 0.5999692792965237,
+        "fit_rows": 44569
+      },
+      "reg_magmom_oszicar": {
+        "mean": 0.08832163261314233,
+        "scale": 1.1206389676182054,
+        "fit_rows": 44569
+      },
+      "reg_avg_elec_mass": {
+        "mean": 0.08922610196602375,
+        "scale": 0.8129672129785163,
+        "fit_rows": 44569
+      },
+      "reg_avg_hole_mass": {
+        "mean": 0.18686384988263224,
+        "scale": 1.0467921969805145,
+        "fit_rows": 44569
+      },
+      "reg_n_Seebeck": {
+        "mean": 0.11337583268165645,
+        "scale": 0.8718742324034395,
+        "fit_rows": 44569
+      },
+      "reg_n_powerfact": {
+        "mean": -0.07615472671116132,
+        "scale": 0.7384509837310835,
+        "fit_rows": 44569
+      },
+      "reg_max_efg": {
+        "mean": 0.06494593534879074,
+        "scale": 0.8549291518948714,
+        "fit_rows": 44569
+      },
+      "reg_slme": {
+        "mean": -0.011420672251679307,
+        "scale": 0.7582689537271435,
+        "fit_rows": 44569
+      },
+      "reg_spillage": {
+        "mean": -0.24707514905106212,
+        "scale": 0.8003720756524106,
+        "fit_rows": 44569
+      },
+      "reg_ph_heat_capacity": {
+        "mean": 0.36665815590542594,
+        "scale": 1.0620446414073095,
+        "fit_rows": 44569
+      },
+      "reg_exfoliation_energy": {
+        "mean": 1.2830499749302242,
+        "scale": 1.3566995792033771,
+        "fit_rows": 44569
+      },
+      "reg_encut": {
+        "mean": 0.02834201799231347,
+        "scale": 0.9377882213968426,
+        "fit_rows": 44569
+      },
+      "reg_kpoint_length_unit": {
+        "mean": 0.0057283102439792954,
+        "scale": 0.8357737931634366,
+        "fit_rows": 44569
+      },
+      "cls_magmom_oszicar": {
+        "mean": -5.812630977982207,
+        "scale": 7.899360332390237,
+        "fit_rows": 44569
+      },
+      "cls_optb88vdw_bandgap": {
+        "mean": -4.044193504848278,
+        "scale": 8.929847403831705,
+        "fit_rows": 44569
+      },
+      "cls_mbj_bandgap": {
+        "mean": -3.251017119843736,
+        "scale": 8.774583262122983,
+        "fit_rows": 44569
+      },
+      "cls_n_powerfact": {
+        "mean": -3.6777505251207185,
+        "scale": 5.0828311448212915,
+        "fit_rows": 44569
+      },
+      "cls_p_Seebeck": {
+        "mean": -3.520046421973157,
+        "scale": 8.759913119607836,
+        "fit_rows": 44569
+      },
+      "cls_slme": {
+        "mean": -0.6577318091296622,
+        "scale": 2.6664806128664837,
+        "fit_rows": 44569
+      },
+      "cls_spillage": {
+        "mean": 1.6252718929335817,
+        "scale": 6.86267009581733,
+        "fit_rows": 44569
+      }
+    },
+    "reg_ehull": {
+      "reg_formation_energy_peratom": {
+        "mean": -0.0060359802345332095,
+        "scale": 0.9990584089823322,
+        "fit_rows": 44290
+      },
+      "reg_optb88vdw_total_energy": {
+        "mean": 0.0001943318019030455,
+        "scale": 1.001010131605137,
+        "fit_rows": 44290
+      },
+      "reg_ehull": {
+        "mean": 0.0006183472855669415,
+        "scale": 0.9974458415235914,
+        "fit_rows": 44290
+      },
+      "reg_optb88vdw_bandgap": {
+        "mean": 0.006746850277574543,
+        "scale": 0.9972997963035632,
+        "fit_rows": 44290
+      },
+      "reg_mbj_bandgap": {
+        "mean": -0.16634760356165387,
+        "scale": 0.8775221095932789,
+        "fit_rows": 44290
+      },
+      "reg_bulk_modulus_kv": {
+        "mean": 0.05716328879474842,
+        "scale": 0.954423840747717,
+        "fit_rows": 44290
+      },
+      "reg_shear_modulus_gv": {
+        "mean": 0.0284546613047862,
+        "scale": 0.8701335527258635,
+        "fit_rows": 44290
+      },
+      "reg_epsx": {
+        "mean": 0.006419172587930547,
+        "scale": 0.9448745339671554,
+        "fit_rows": 44290
+      },
+      "reg_epsy": {
+        "mean": 0.006338591748071773,
+        "scale": 0.9517206487753989,
+        "fit_rows": 44290
+      },
+      "reg_epsz": {
+        "mean": 0.007106867987580246,
+        "scale": 0.9457456300804806,
+        "fit_rows": 44290
+      },
+      "reg_mepsx": {
+        "mean": 0.16652358292569797,
+        "scale": 0.9621540066786121,
+        "fit_rows": 44290
+      },
+      "reg_mepsy": {
+        "mean": 0.16105483561335276,
+        "scale": 0.9558985466520099,
+        "fit_rows": 44290
+      },
+      "reg_mepsz": {
+        "mean": 0.144182975813275,
+        "scale": 0.9581936430548609,
+        "fit_rows": 44290
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "mean": 0.3862224573868676,
+        "scale": 1.1558670882683875,
+        "fit_rows": 44290
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "mean": -0.011502790594200955,
+        "scale": 0.5939634553317802,
+        "fit_rows": 44290
+      },
+      "reg_magmom_oszicar": {
+        "mean": 0.08985146343255418,
+        "scale": 1.1221256334715628,
+        "fit_rows": 44290
+      },
+      "reg_avg_elec_mass": {
+        "mean": 0.08973933816245876,
+        "scale": 0.81408594342101,
+        "fit_rows": 44290
+      },
+      "reg_avg_hole_mass": {
+        "mean": 0.18848477845721165,
+        "scale": 1.0496210799427905,
+        "fit_rows": 44290
+      },
+      "reg_n_Seebeck": {
+        "mean": 0.11239587562119885,
+        "scale": 0.8723642187017252,
+        "fit_rows": 44290
+      },
+      "reg_n_powerfact": {
+        "mean": -0.07337882501716492,
+        "scale": 0.7435008973685884,
+        "fit_rows": 44290
+      },
+      "reg_max_efg": {
+        "mean": 0.0619211374074919,
+        "scale": 0.8544120549730573,
+        "fit_rows": 44290
+      },
+      "reg_slme": {
+        "mean": -0.013577072592122225,
+        "scale": 0.7583592468812353,
+        "fit_rows": 44290
+      },
+      "reg_spillage": {
+        "mean": -0.2517466091402251,
+        "scale": 0.7946991435898758,
+        "fit_rows": 44290
+      },
+      "reg_ph_heat_capacity": {
+        "mean": 0.36846146687707737,
+        "scale": 1.0608330291670527,
+        "fit_rows": 44290
+      },
+      "reg_exfoliation_energy": {
+        "mean": 1.2788660993191918,
+        "scale": 1.3549099719051385,
+        "fit_rows": 44290
+      },
+      "reg_encut": {
+        "mean": 0.03646803394818257,
+        "scale": 0.9357516424516091,
+        "fit_rows": 44290
+      },
+      "reg_kpoint_length_unit": {
+        "mean": 0.008140824867533215,
+        "scale": 0.8392968012545483,
+        "fit_rows": 44290
+      },
+      "cls_magmom_oszicar": {
+        "mean": -5.804816960502546,
+        "scale": 7.902464015384109,
+        "fit_rows": 44290
+      },
+      "cls_optb88vdw_bandgap": {
+        "mean": -4.028476818717563,
+        "scale": 8.933415626901317,
+        "fit_rows": 44290
+      },
+      "cls_mbj_bandgap": {
+        "mean": -3.2486788842178727,
+        "scale": 8.781810271112747,
+        "fit_rows": 44290
+      },
+      "cls_n_powerfact": {
+        "mean": -3.6568730193023935,
+        "scale": 5.0964629305137885,
+        "fit_rows": 44290
+      },
+      "cls_p_Seebeck": {
+        "mean": -3.5050749100823264,
+        "scale": 8.770055822128713,
+        "fit_rows": 44290
+      },
+      "cls_slme": {
+        "mean": -0.6799842921168716,
+        "scale": 2.6790842268899198,
+        "fit_rows": 44290
+      },
+      "cls_spillage": {
+        "mean": 1.5921514317420837,
+        "scale": 6.858437044279309,
+        "fit_rows": 44290
+      }
+    },
+    "reg_optb88vdw_bandgap": {
+      "reg_formation_energy_peratom": {
+        "mean": -0.002901124849044849,
+        "scale": 0.995676190167869,
+        "fit_rows": 44569
+      },
+      "reg_optb88vdw_total_energy": {
+        "mean": -0.001271756089151924,
+        "scale": 0.9995445453441646,
+        "fit_rows": 44569
+      },
+      "reg_ehull": {
+        "mean": 0.003474764087742538,
+        "scale": 0.9975942062008267,
+        "fit_rows": 44569
+      },
+      "reg_optb88vdw_bandgap": {
+        "mean": 0.0036625452375741462,
+        "scale": 0.9935417828185781,
+        "fit_rows": 44569
+      },
+      "reg_mbj_bandgap": {
+        "mean": -0.16743970381454618,
+        "scale": 0.8774247826538017,
+        "fit_rows": 44569
+      },
+      "reg_bulk_modulus_kv": {
+        "mean": 0.05642201449629842,
+        "scale": 0.9502052889982613,
+        "fit_rows": 44569
+      },
+      "reg_shear_modulus_gv": {
+        "mean": 0.026478273071006267,
+        "scale": 0.8605191640307729,
+        "fit_rows": 44569
+      },
+      "reg_epsx": {
+        "mean": 0.0030951053958203777,
+        "scale": 0.9423570435860656,
+        "fit_rows": 44569
+      },
+      "reg_epsy": {
+        "mean": 0.002125883499687282,
+        "scale": 0.9475623309646699,
+        "fit_rows": 44569
+      },
+      "reg_epsz": {
+        "mean": 0.004996735267744371,
+        "scale": 0.9434089361974761,
+        "fit_rows": 44569
+      },
+      "reg_mepsx": {
+        "mean": 0.1644828333735838,
+        "scale": 0.9606238150188524,
+        "fit_rows": 44569
+      },
+      "reg_mepsy": {
+        "mean": 0.15899198924604388,
+        "scale": 0.9552878462875826,
+        "fit_rows": 44569
+      },
+      "reg_mepsz": {
+        "mean": 0.1432566098938066,
+        "scale": 0.9580409284712816,
+        "fit_rows": 44569
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "mean": 0.3857603510665632,
+        "scale": 1.1524360718037256,
+        "fit_rows": 44569
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "mean": -0.011260943217765825,
+        "scale": 0.5999692792965237,
+        "fit_rows": 44569
+      },
+      "reg_magmom_oszicar": {
+        "mean": 0.08832163261314233,
+        "scale": 1.1206389676182054,
+        "fit_rows": 44569
+      },
+      "reg_avg_elec_mass": {
+        "mean": 0.08922610196602375,
+        "scale": 0.8129672129785163,
+        "fit_rows": 44569
+      },
+      "reg_avg_hole_mass": {
+        "mean": 0.18686384988263224,
+        "scale": 1.0467921969805145,
+        "fit_rows": 44569
+      },
+      "reg_n_Seebeck": {
+        "mean": 0.11337583268165645,
+        "scale": 0.8718742324034395,
+        "fit_rows": 44569
+      },
+      "reg_n_powerfact": {
+        "mean": -0.07615472671116132,
+        "scale": 0.7384509837310835,
+        "fit_rows": 44569
+      },
+      "reg_max_efg": {
+        "mean": 0.06494593534879074,
+        "scale": 0.8549291518948714,
+        "fit_rows": 44569
+      },
+      "reg_slme": {
+        "mean": -0.011420672251679307,
+        "scale": 0.7582689537271435,
+        "fit_rows": 44569
+      },
+      "reg_spillage": {
+        "mean": -0.24707514905106212,
+        "scale": 0.8003720756524106,
+        "fit_rows": 44569
+      },
+      "reg_ph_heat_capacity": {
+        "mean": 0.36665815590542594,
+        "scale": 1.0620446414073095,
+        "fit_rows": 44569
+      },
+      "reg_exfoliation_energy": {
+        "mean": 1.2830499749302242,
+        "scale": 1.3566995792033771,
+        "fit_rows": 44569
+      },
+      "reg_encut": {
+        "mean": 0.02834201799231347,
+        "scale": 0.9377882213968426,
+        "fit_rows": 44569
+      },
+      "reg_kpoint_length_unit": {
+        "mean": 0.0057283102439792954,
+        "scale": 0.8357737931634366,
+        "fit_rows": 44569
+      },
+      "cls_magmom_oszicar": {
+        "mean": -5.812630977982207,
+        "scale": 7.899360332390237,
+        "fit_rows": 44569
+      },
+      "cls_optb88vdw_bandgap": {
+        "mean": -4.044193504848278,
+        "scale": 8.929847403831705,
+        "fit_rows": 44569
+      },
+      "cls_mbj_bandgap": {
+        "mean": -3.251017119843736,
+        "scale": 8.774583262122983,
+        "fit_rows": 44569
+      },
+      "cls_n_powerfact": {
+        "mean": -3.6777505251207185,
+        "scale": 5.0828311448212915,
+        "fit_rows": 44569
+      },
+      "cls_p_Seebeck": {
+        "mean": -3.520046421973157,
+        "scale": 8.759913119607836,
+        "fit_rows": 44569
+      },
+      "cls_slme": {
+        "mean": -0.6577318091296622,
+        "scale": 2.6664806128664837,
+        "fit_rows": 44569
+      },
+      "cls_spillage": {
+        "mean": 1.6252718929335817,
+        "scale": 6.86267009581733,
+        "fit_rows": 44569
+      }
+    },
+    "reg_mbj_bandgap": {
+      "reg_formation_energy_peratom": {
+        "mean": -0.06322198323849078,
+        "scale": 0.9977273516298122,
+        "fit_rows": 14535
+      },
+      "reg_optb88vdw_total_energy": {
+        "mean": 0.010858340281636736,
+        "scale": 0.9781787118818146,
+        "fit_rows": 14535
+      },
+      "reg_ehull": {
+        "mean": -0.12865771122896147,
+        "scale": 0.9294553538449346,
+        "fit_rows": 14535
+      },
+      "reg_optb88vdw_bandgap": {
+        "mean": 0.1988444258247687,
+        "scale": 1.1102490818176183,
+        "fit_rows": 14535
+      },
+      "reg_mbj_bandgap": {
+        "mean": 0.015465662233851733,
+        "scale": 0.9821812469316693,
+        "fit_rows": 14535
+      },
+      "reg_bulk_modulus_kv": {
+        "mean": 0.027133380449031,
+        "scale": 0.9750687052450707,
+        "fit_rows": 14535
+      },
+      "reg_shear_modulus_gv": {
+        "mean": 0.029894135708446387,
+        "scale": 0.9318968514467765,
+        "fit_rows": 14535
+      },
+      "reg_epsx": {
+        "mean": -0.15812522253146527,
+        "scale": 0.8871288119846432,
+        "fit_rows": 14535
+      },
+      "reg_epsy": {
+        "mean": -0.15922410108758905,
+        "scale": 0.8902204222721986,
+        "fit_rows": 14535
+      },
+      "reg_epsz": {
+        "mean": -0.1495375170574081,
+        "scale": 0.8767465598527626,
+        "fit_rows": 14535
+      },
+      "reg_mepsx": {
+        "mean": 0.01909083067527599,
+        "scale": 0.9413976009835721,
+        "fit_rows": 14535
+      },
+      "reg_mepsy": {
+        "mean": 0.018050226803804956,
+        "scale": 0.9431310285872991,
+        "fit_rows": 14535
+      },
+      "reg_mepsz": {
+        "mean": 0.00954720580119869,
+        "scale": 0.9336893315946438,
+        "fit_rows": 14535
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "mean": 0.31319823430320914,
+        "scale": 1.1261261772342208,
+        "fit_rows": 14535
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "mean": -0.01686688857056862,
+        "scale": 0.6058087064311727,
+        "fit_rows": 14535
+      },
+      "reg_magmom_oszicar": {
+        "mean": -0.09405714116526347,
+        "scale": 0.8501921469080271,
+        "fit_rows": 14535
+      },
+      "reg_avg_elec_mass": {
+        "mean": 0.2413616383122169,
+        "scale": 0.9412043292469834,
+        "fit_rows": 14535
+      },
+      "reg_avg_hole_mass": {
+        "mean": 0.3956502679008715,
+        "scale": 1.172822352689762,
+        "fit_rows": 14535
+      },
+      "reg_n_Seebeck": {
+        "mean": -0.006999073316825429,
+        "scale": 0.892900386800965,
+        "fit_rows": 14535
+      },
+      "reg_n_powerfact": {
+        "mean": 0.027992136769899686,
+        "scale": 0.7925410743356158,
+        "fit_rows": 14535
+      },
+      "reg_max_efg": {
+        "mean": 0.029597294937149986,
+        "scale": 0.906058620212564,
+        "fit_rows": 14535
+      },
+      "reg_slme": {
+        "mean": -0.017116085319258918,
+        "scale": 0.808589432279933,
+        "fit_rows": 14535
+      },
+      "reg_spillage": {
+        "mean": -0.31421809005682944,
+        "scale": 0.7390362671880046,
+        "fit_rows": 14535
+      },
+      "reg_ph_heat_capacity": {
+        "mean": 0.1510576521009767,
+        "scale": 0.9763495866114142,
+        "fit_rows": 14535
+      },
+      "reg_exfoliation_energy": {
+        "mean": 1.2690251175291445,
+        "scale": 1.3807610889094875,
+        "fit_rows": 14535
+      },
+      "reg_encut": {
+        "mean": -0.034659797850920056,
+        "scale": 0.8705551697845173,
+        "fit_rows": 14535
+      },
+      "reg_kpoint_length_unit": {
+        "mean": -0.172346204921225,
+        "scale": 0.7201289226181311,
+        "fit_rows": 14535
+      },
+      "cls_magmom_oszicar": {
+        "mean": -7.0105306187611465,
+        "scale": 7.158642453692157,
+        "fit_rows": 14535
+      },
+      "cls_optb88vdw_bandgap": {
+        "mean": -2.0255518333886444,
+        "scale": 9.449383754526291,
+        "fit_rows": 14535
+      },
+      "cls_mbj_bandgap": {
+        "mean": -0.9573602970380135,
+        "scale": 9.477264869645317,
+        "fit_rows": 14535
+      },
+      "cls_n_powerfact": {
+        "mean": -2.8888644660641236,
+        "scale": 5.572098517218013,
+        "fit_rows": 14535
+      },
+      "cls_p_Seebeck": {
+        "mean": -1.4242794232427918,
+        "scale": 9.32833061798681,
+        "fit_rows": 14535
+      },
+      "cls_slme": {
+        "mean": -0.8732410064689228,
+        "scale": 3.538120586161757,
+        "fit_rows": 14535
+      },
+      "cls_spillage": {
+        "mean": 0.8423186272155152,
+        "scale": 6.885392959764079,
+        "fit_rows": 14535
+      }
+    },
+    "reg_bulk_modulus_kv": {
+      "reg_formation_energy_peratom": {
+        "mean": 0.036134872185975955,
+        "scale": 0.9828376184932861,
+        "fit_rows": 15744
+      },
+      "reg_optb88vdw_total_energy": {
+        "mean": 0.014497227973397753,
+        "scale": 0.9461828323088936,
+        "fit_rows": 15744
+      },
+      "reg_ehull": {
+        "mean": -0.10250682208098791,
+        "scale": 0.9324533247667797,
+        "fit_rows": 15744
+      },
+      "reg_optb88vdw_bandgap": {
+        "mean": 0.08434734803573128,
+        "scale": 1.0666748315044738,
+        "fit_rows": 15744
+      },
+      "reg_mbj_bandgap": {
+        "mean": -0.08915796929285036,
+        "scale": 0.9423578478976172,
+        "fit_rows": 15744
+      },
+      "reg_bulk_modulus_kv": {
+        "mean": 0.0280491097299348,
+        "scale": 0.9830447253538441,
+        "fit_rows": 15744
+      },
+      "reg_shear_modulus_gv": {
+        "mean": 0.029927802946125542,
+        "scale": 0.9554809339200344,
+        "fit_rows": 15744
+      },
+      "reg_epsx": {
+        "mean": -0.11111758343261544,
+        "scale": 0.9005710439938063,
+        "fit_rows": 15744
+      },
+      "reg_epsy": {
+        "mean": -0.11076194268959008,
+        "scale": 0.9017037529914964,
+        "fit_rows": 15744
+      },
+      "reg_epsz": {
+        "mean": -0.11829555854389796,
+        "scale": 0.8813634337407886,
+        "fit_rows": 15744
+      },
+      "reg_mepsx": {
+        "mean": 0.07934045470676203,
+        "scale": 0.9442237811872877,
+        "fit_rows": 15744
+      },
+      "reg_mepsy": {
+        "mean": 0.06971171914350463,
+        "scale": 0.9317736518935824,
+        "fit_rows": 15744
+      },
+      "reg_mepsz": {
+        "mean": 0.050834849412641055,
+        "scale": 0.9213924096582687,
+        "fit_rows": 15744
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "mean": 0.36699535381557125,
+        "scale": 1.1984532361576694,
+        "fit_rows": 15744
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "mean": -0.007258603037754185,
+        "scale": 0.652705061278831,
+        "fit_rows": 15744
+      },
+      "reg_magmom_oszicar": {
+        "mean": -0.05171843829849169,
+        "scale": 0.9067605359923547,
+        "fit_rows": 15744
+      },
+      "reg_avg_elec_mass": {
+        "mean": 0.1604177932783527,
+        "scale": 0.860293297513565,
+        "fit_rows": 15744
+      },
+      "reg_avg_hole_mass": {
+        "mean": 0.28563273257071775,
+        "scale": 1.0878912203596187,
+        "fit_rows": 15744
+      },
+      "reg_n_Seebeck": {
+        "mean": 0.041816659694759194,
+        "scale": 0.8737586031984298,
+        "fit_rows": 15744
+      },
+      "reg_n_powerfact": {
+        "mean": 0.03615197151812229,
+        "scale": 0.8006123382456467,
+        "fit_rows": 15744
+      },
+      "reg_max_efg": {
+        "mean": 0.029522088164073496,
+        "scale": 0.9059814976249602,
+        "fit_rows": 15744
+      },
+      "reg_slme": {
+        "mean": 0.007308652914858156,
+        "scale": 0.7929561167197812,
+        "fit_rows": 15744
+      },
+      "reg_spillage": {
+        "mean": -0.29260235877481594,
+        "scale": 0.7631205811591113,
+        "fit_rows": 15744
+      },
+      "reg_ph_heat_capacity": {
+        "mean": -0.024499183852088473,
+        "scale": 0.8667975934294353,
+        "fit_rows": 15744
+      },
+      "reg_exfoliation_energy": {
+        "mean": 1.3189635109185625,
+        "scale": 1.3677922157481561,
+        "fit_rows": 15744
+      },
+      "reg_encut": {
+        "mean": -0.1136584877175005,
+        "scale": 0.8274612002190569,
+        "fit_rows": 15744
+      },
+      "reg_kpoint_length_unit": {
+        "mean": -0.09795500931496534,
+        "scale": 0.7409579287230961,
+        "fit_rows": 15744
+      },
+      "cls_magmom_oszicar": {
+        "mean": -6.558991035814064,
+        "scale": 7.3700462265761715,
+        "fit_rows": 15744
+      },
+      "cls_optb88vdw_bandgap": {
+        "mean": -3.248749148324402,
+        "scale": 9.158360397427762,
+        "fit_rows": 15744
+      },
+      "cls_mbj_bandgap": {
+        "mean": -2.1973990843904225,
+        "scale": 9.082232857353576,
+        "fit_rows": 15744
+      },
+      "cls_n_powerfact": {
+        "mean": -2.7067155603528805,
+        "scale": 5.4944424131907645,
+        "fit_rows": 15744
+      },
+      "cls_p_Seebeck": {
+        "mean": -2.34966088913612,
+        "scale": 9.017557030196016,
+        "fit_rows": 15744
+      },
+      "cls_slme": {
+        "mean": -0.7283605540526663,
+        "scale": 3.288807427082828,
+        "fit_rows": 15744
+      },
+      "cls_spillage": {
+        "mean": 0.9989219509030606,
+        "scale": 6.832186577813891,
+        "fit_rows": 15744
+      }
+    },
+    "reg_shear_modulus_gv": {
+      "reg_formation_energy_peratom": {
+        "mean": 0.036134872185975955,
+        "scale": 0.9828376184932861,
+        "fit_rows": 15744
+      },
+      "reg_optb88vdw_total_energy": {
+        "mean": 0.014497227973397753,
+        "scale": 0.9461828323088936,
+        "fit_rows": 15744
+      },
+      "reg_ehull": {
+        "mean": -0.10250682208098791,
+        "scale": 0.9324533247667797,
+        "fit_rows": 15744
+      },
+      "reg_optb88vdw_bandgap": {
+        "mean": 0.08434734803573128,
+        "scale": 1.0666748315044738,
+        "fit_rows": 15744
+      },
+      "reg_mbj_bandgap": {
+        "mean": -0.08915796929285036,
+        "scale": 0.9423578478976172,
+        "fit_rows": 15744
+      },
+      "reg_bulk_modulus_kv": {
+        "mean": 0.0280491097299348,
+        "scale": 0.9830447253538441,
+        "fit_rows": 15744
+      },
+      "reg_shear_modulus_gv": {
+        "mean": 0.029927802946125542,
+        "scale": 0.9554809339200344,
+        "fit_rows": 15744
+      },
+      "reg_epsx": {
+        "mean": -0.11111758343261544,
+        "scale": 0.9005710439938063,
+        "fit_rows": 15744
+      },
+      "reg_epsy": {
+        "mean": -0.11076194268959008,
+        "scale": 0.9017037529914964,
+        "fit_rows": 15744
+      },
+      "reg_epsz": {
+        "mean": -0.11829555854389796,
+        "scale": 0.8813634337407886,
+        "fit_rows": 15744
+      },
+      "reg_mepsx": {
+        "mean": 0.07934045470676203,
+        "scale": 0.9442237811872877,
+        "fit_rows": 15744
+      },
+      "reg_mepsy": {
+        "mean": 0.06971171914350463,
+        "scale": 0.9317736518935824,
+        "fit_rows": 15744
+      },
+      "reg_mepsz": {
+        "mean": 0.050834849412641055,
+        "scale": 0.9213924096582687,
+        "fit_rows": 15744
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "mean": 0.36699535381557125,
+        "scale": 1.1984532361576694,
+        "fit_rows": 15744
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "mean": -0.007258603037754185,
+        "scale": 0.652705061278831,
+        "fit_rows": 15744
+      },
+      "reg_magmom_oszicar": {
+        "mean": -0.05171843829849169,
+        "scale": 0.9067605359923547,
+        "fit_rows": 15744
+      },
+      "reg_avg_elec_mass": {
+        "mean": 0.1604177932783527,
+        "scale": 0.860293297513565,
+        "fit_rows": 15744
+      },
+      "reg_avg_hole_mass": {
+        "mean": 0.28563273257071775,
+        "scale": 1.0878912203596187,
+        "fit_rows": 15744
+      },
+      "reg_n_Seebeck": {
+        "mean": 0.041816659694759194,
+        "scale": 0.8737586031984298,
+        "fit_rows": 15744
+      },
+      "reg_n_powerfact": {
+        "mean": 0.03615197151812229,
+        "scale": 0.8006123382456467,
+        "fit_rows": 15744
+      },
+      "reg_max_efg": {
+        "mean": 0.029522088164073496,
+        "scale": 0.9059814976249602,
+        "fit_rows": 15744
+      },
+      "reg_slme": {
+        "mean": 0.007308652914858156,
+        "scale": 0.7929561167197812,
+        "fit_rows": 15744
+      },
+      "reg_spillage": {
+        "mean": -0.29260235877481594,
+        "scale": 0.7631205811591113,
+        "fit_rows": 15744
+      },
+      "reg_ph_heat_capacity": {
+        "mean": -0.024499183852088473,
+        "scale": 0.8667975934294353,
+        "fit_rows": 15744
+      },
+      "reg_exfoliation_energy": {
+        "mean": 1.3189635109185625,
+        "scale": 1.3677922157481561,
+        "fit_rows": 15744
+      },
+      "reg_encut": {
+        "mean": -0.1136584877175005,
+        "scale": 0.8274612002190569,
+        "fit_rows": 15744
+      },
+      "reg_kpoint_length_unit": {
+        "mean": -0.09795500931496534,
+        "scale": 0.7409579287230961,
+        "fit_rows": 15744
+      },
+      "cls_magmom_oszicar": {
+        "mean": -6.558991035814064,
+        "scale": 7.3700462265761715,
+        "fit_rows": 15744
+      },
+      "cls_optb88vdw_bandgap": {
+        "mean": -3.248749148324402,
+        "scale": 9.158360397427762,
+        "fit_rows": 15744
+      },
+      "cls_mbj_bandgap": {
+        "mean": -2.1973990843904225,
+        "scale": 9.082232857353576,
+        "fit_rows": 15744
+      },
+      "cls_n_powerfact": {
+        "mean": -2.7067155603528805,
+        "scale": 5.4944424131907645,
+        "fit_rows": 15744
+      },
+      "cls_p_Seebeck": {
+        "mean": -2.34966088913612,
+        "scale": 9.017557030196016,
+        "fit_rows": 15744
+      },
+      "cls_slme": {
+        "mean": -0.7283605540526663,
+        "scale": 3.288807427082828,
+        "fit_rows": 15744
+      },
+      "cls_spillage": {
+        "mean": 0.9989219509030606,
+        "scale": 6.832186577813891,
+        "fit_rows": 15744
+      }
+    },
+    "reg_epsx": {
+      "reg_formation_energy_peratom": {
+        "mean": 0.019926351243398338,
+        "scale": 0.9974564486427707,
+        "fit_rows": 35592
+      },
+      "reg_optb88vdw_total_energy": {
+        "mean": 0.018656193091529782,
+        "scale": 0.9880534433302375,
+        "fit_rows": 35592
+      },
+      "reg_ehull": {
+        "mean": -0.033265583137192294,
+        "scale": 0.9771834296426222,
+        "fit_rows": 35592
+      },
+      "reg_optb88vdw_bandgap": {
+        "mean": 0.01279405366653944,
+        "scale": 0.9998221531857223,
+        "fit_rows": 35592
+      },
+      "reg_mbj_bandgap": {
+        "mean": -0.15983504563352827,
+        "scale": 0.879141736437742,
+        "fit_rows": 35592
+      },
+      "reg_bulk_modulus_kv": {
+        "mean": 0.048511447962064275,
+        "scale": 0.9570739972885778,
+        "fit_rows": 35592
+      },
+      "reg_shear_modulus_gv": {
+        "mean": 0.016822827836772858,
+        "scale": 0.8760008577390809,
+        "fit_rows": 35592
+      },
+      "reg_epsx": {
+        "mean": -0.00880973440752476,
+        "scale": 0.9231224066028709,
+        "fit_rows": 35592
+      },
+      "reg_epsy": {
+        "mean": -0.009455796137618,
+        "scale": 0.9261974105585015,
+        "fit_rows": 35592
+      },
+      "reg_epsz": {
+        "mean": -0.012952978011630133,
+        "scale": 0.9175855319503179,
+        "fit_rows": 35592
+      },
+      "reg_mepsx": {
+        "mean": 0.15616110509405032,
+        "scale": 0.9515233491811059,
+        "fit_rows": 35592
+      },
+      "reg_mepsy": {
+        "mean": 0.1527766350571862,
+        "scale": 0.9495329487710248,
+        "fit_rows": 35592
+      },
+      "reg_mepsz": {
+        "mean": 0.13411860714094026,
+        "scale": 0.9487537417357654,
+        "fit_rows": 35592
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "mean": 0.3750887868893798,
+        "scale": 1.134846793456372,
+        "fit_rows": 35592
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "mean": -0.009543337540557693,
+        "scale": 0.6097853174868347,
+        "fit_rows": 35592
+      },
+      "reg_magmom_oszicar": {
+        "mean": 0.039775452650610846,
+        "scale": 1.053305159771687,
+        "fit_rows": 35592
+      },
+      "reg_avg_elec_mass": {
+        "mean": 0.09559855926897039,
+        "scale": 0.824969421523699,
+        "fit_rows": 35592
+      },
+      "reg_avg_hole_mass": {
+        "mean": 0.1923040415002677,
+        "scale": 1.0490865671904128,
+        "fit_rows": 35592
+      },
+      "reg_n_Seebeck": {
+        "mean": 0.11191578772258033,
+        "scale": 0.8699534323034699,
+        "fit_rows": 35592
+      },
+      "reg_n_powerfact": {
+        "mean": -0.05146551103318733,
+        "scale": 0.7566223439239933,
+        "fit_rows": 35592
+      },
+      "reg_max_efg": {
+        "mean": 0.04621466117278384,
+        "scale": 0.867620839941198,
+        "fit_rows": 35592
+      },
+      "reg_slme": {
+        "mean": -0.011612108000645544,
+        "scale": 0.7639812024228815,
+        "fit_rows": 35592
+      },
+      "reg_spillage": {
+        "mean": -0.25381137735472914,
+        "scale": 0.7841651507537347,
+        "fit_rows": 35592
+      },
+      "reg_ph_heat_capacity": {
+        "mean": 0.2756010185995647,
+        "scale": 1.0220358044841555,
+        "fit_rows": 35592
+      },
+      "reg_exfoliation_energy": {
+        "mean": 1.321998022562273,
+        "scale": 1.365624173742072,
+        "fit_rows": 35592
+      },
+      "reg_encut": {
+        "mean": 0.013613081154274446,
+        "scale": 0.9102235195798131,
+        "fit_rows": 35592
+      },
+      "reg_kpoint_length_unit": {
+        "mean": 0.010633816213102887,
+        "scale": 0.8322364750144944,
+        "fit_rows": 35592
+      },
+      "cls_magmom_oszicar": {
+        "mean": -6.061691858454961,
+        "scale": 7.732518030636379,
+        "fit_rows": 35592
+      },
+      "cls_optb88vdw_bandgap": {
+        "mean": -3.968563694646759,
+        "scale": 8.972342850868776,
+        "fit_rows": 35592
+      },
+      "cls_mbj_bandgap": {
+        "mean": -3.119497048146197,
+        "scale": 8.850163430637348,
+        "fit_rows": 35592
+      },
+      "cls_n_powerfact": {
+        "mean": -3.5347731280778474,
+        "scale": 5.172483691505449,
+        "fit_rows": 35592
+      },
+      "cls_p_Seebeck": {
+        "mean": -3.4006008059990873,
+        "scale": 8.819127869448144,
+        "fit_rows": 35592
+      },
+      "cls_slme": {
+        "mean": -0.6867806935796142,
+        "scale": 2.7940594458910124,
+        "fit_rows": 35592
+      },
+      "cls_spillage": {
+        "mean": 1.5761130122093543,
+        "scale": 6.859094350593768,
+        "fit_rows": 35592
+      }
+    },
+    "reg_epsy": {
+      "reg_formation_energy_peratom": {
+        "mean": 0.019926351243398338,
+        "scale": 0.9974564486427707,
+        "fit_rows": 35592
+      },
+      "reg_optb88vdw_total_energy": {
+        "mean": 0.018656193091529782,
+        "scale": 0.9880534433302375,
+        "fit_rows": 35592
+      },
+      "reg_ehull": {
+        "mean": -0.033265583137192294,
+        "scale": 0.9771834296426222,
+        "fit_rows": 35592
+      },
+      "reg_optb88vdw_bandgap": {
+        "mean": 0.01279405366653944,
+        "scale": 0.9998221531857223,
+        "fit_rows": 35592
+      },
+      "reg_mbj_bandgap": {
+        "mean": -0.15983504563352827,
+        "scale": 0.879141736437742,
+        "fit_rows": 35592
+      },
+      "reg_bulk_modulus_kv": {
+        "mean": 0.048511447962064275,
+        "scale": 0.9570739972885778,
+        "fit_rows": 35592
+      },
+      "reg_shear_modulus_gv": {
+        "mean": 0.016822827836772858,
+        "scale": 0.8760008577390809,
+        "fit_rows": 35592
+      },
+      "reg_epsx": {
+        "mean": -0.00880973440752476,
+        "scale": 0.9231224066028709,
+        "fit_rows": 35592
+      },
+      "reg_epsy": {
+        "mean": -0.009455796137618,
+        "scale": 0.9261974105585015,
+        "fit_rows": 35592
+      },
+      "reg_epsz": {
+        "mean": -0.012952978011630133,
+        "scale": 0.9175855319503179,
+        "fit_rows": 35592
+      },
+      "reg_mepsx": {
+        "mean": 0.15616110509405032,
+        "scale": 0.9515233491811059,
+        "fit_rows": 35592
+      },
+      "reg_mepsy": {
+        "mean": 0.1527766350571862,
+        "scale": 0.9495329487710248,
+        "fit_rows": 35592
+      },
+      "reg_mepsz": {
+        "mean": 0.13411860714094026,
+        "scale": 0.9487537417357654,
+        "fit_rows": 35592
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "mean": 0.3750887868893798,
+        "scale": 1.134846793456372,
+        "fit_rows": 35592
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "mean": -0.009543337540557693,
+        "scale": 0.6097853174868347,
+        "fit_rows": 35592
+      },
+      "reg_magmom_oszicar": {
+        "mean": 0.039775452650610846,
+        "scale": 1.053305159771687,
+        "fit_rows": 35592
+      },
+      "reg_avg_elec_mass": {
+        "mean": 0.09559855926897039,
+        "scale": 0.824969421523699,
+        "fit_rows": 35592
+      },
+      "reg_avg_hole_mass": {
+        "mean": 0.1923040415002677,
+        "scale": 1.0490865671904128,
+        "fit_rows": 35592
+      },
+      "reg_n_Seebeck": {
+        "mean": 0.11191578772258033,
+        "scale": 0.8699534323034699,
+        "fit_rows": 35592
+      },
+      "reg_n_powerfact": {
+        "mean": -0.05146551103318733,
+        "scale": 0.7566223439239933,
+        "fit_rows": 35592
+      },
+      "reg_max_efg": {
+        "mean": 0.04621466117278384,
+        "scale": 0.867620839941198,
+        "fit_rows": 35592
+      },
+      "reg_slme": {
+        "mean": -0.011612108000645544,
+        "scale": 0.7639812024228815,
+        "fit_rows": 35592
+      },
+      "reg_spillage": {
+        "mean": -0.25381137735472914,
+        "scale": 0.7841651507537347,
+        "fit_rows": 35592
+      },
+      "reg_ph_heat_capacity": {
+        "mean": 0.2756010185995647,
+        "scale": 1.0220358044841555,
+        "fit_rows": 35592
+      },
+      "reg_exfoliation_energy": {
+        "mean": 1.321998022562273,
+        "scale": 1.365624173742072,
+        "fit_rows": 35592
+      },
+      "reg_encut": {
+        "mean": 0.013613081154274446,
+        "scale": 0.9102235195798131,
+        "fit_rows": 35592
+      },
+      "reg_kpoint_length_unit": {
+        "mean": 0.010633816213102887,
+        "scale": 0.8322364750144944,
+        "fit_rows": 35592
+      },
+      "cls_magmom_oszicar": {
+        "mean": -6.061691858454961,
+        "scale": 7.732518030636379,
+        "fit_rows": 35592
+      },
+      "cls_optb88vdw_bandgap": {
+        "mean": -3.968563694646759,
+        "scale": 8.972342850868776,
+        "fit_rows": 35592
+      },
+      "cls_mbj_bandgap": {
+        "mean": -3.119497048146197,
+        "scale": 8.850163430637348,
+        "fit_rows": 35592
+      },
+      "cls_n_powerfact": {
+        "mean": -3.5347731280778474,
+        "scale": 5.172483691505449,
+        "fit_rows": 35592
+      },
+      "cls_p_Seebeck": {
+        "mean": -3.4006008059990873,
+        "scale": 8.819127869448144,
+        "fit_rows": 35592
+      },
+      "cls_slme": {
+        "mean": -0.6867806935796142,
+        "scale": 2.7940594458910124,
+        "fit_rows": 35592
+      },
+      "cls_spillage": {
+        "mean": 1.5761130122093543,
+        "scale": 6.859094350593768,
+        "fit_rows": 35592
+      }
+    },
+    "reg_epsz": {
+      "reg_formation_energy_peratom": {
+        "mean": 0.019926351243398338,
+        "scale": 0.9974564486427707,
+        "fit_rows": 35592
+      },
+      "reg_optb88vdw_total_energy": {
+        "mean": 0.018656193091529782,
+        "scale": 0.9880534433302375,
+        "fit_rows": 35592
+      },
+      "reg_ehull": {
+        "mean": -0.033265583137192294,
+        "scale": 0.9771834296426222,
+        "fit_rows": 35592
+      },
+      "reg_optb88vdw_bandgap": {
+        "mean": 0.01279405366653944,
+        "scale": 0.9998221531857223,
+        "fit_rows": 35592
+      },
+      "reg_mbj_bandgap": {
+        "mean": -0.15983504563352827,
+        "scale": 0.879141736437742,
+        "fit_rows": 35592
+      },
+      "reg_bulk_modulus_kv": {
+        "mean": 0.048511447962064275,
+        "scale": 0.9570739972885778,
+        "fit_rows": 35592
+      },
+      "reg_shear_modulus_gv": {
+        "mean": 0.016822827836772858,
+        "scale": 0.8760008577390809,
+        "fit_rows": 35592
+      },
+      "reg_epsx": {
+        "mean": -0.00880973440752476,
+        "scale": 0.9231224066028709,
+        "fit_rows": 35592
+      },
+      "reg_epsy": {
+        "mean": -0.009455796137618,
+        "scale": 0.9261974105585015,
+        "fit_rows": 35592
+      },
+      "reg_epsz": {
+        "mean": -0.012952978011630133,
+        "scale": 0.9175855319503179,
+        "fit_rows": 35592
+      },
+      "reg_mepsx": {
+        "mean": 0.15616110509405032,
+        "scale": 0.9515233491811059,
+        "fit_rows": 35592
+      },
+      "reg_mepsy": {
+        "mean": 0.1527766350571862,
+        "scale": 0.9495329487710248,
+        "fit_rows": 35592
+      },
+      "reg_mepsz": {
+        "mean": 0.13411860714094026,
+        "scale": 0.9487537417357654,
+        "fit_rows": 35592
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "mean": 0.3750887868893798,
+        "scale": 1.134846793456372,
+        "fit_rows": 35592
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "mean": -0.009543337540557693,
+        "scale": 0.6097853174868347,
+        "fit_rows": 35592
+      },
+      "reg_magmom_oszicar": {
+        "mean": 0.039775452650610846,
+        "scale": 1.053305159771687,
+        "fit_rows": 35592
+      },
+      "reg_avg_elec_mass": {
+        "mean": 0.09559855926897039,
+        "scale": 0.824969421523699,
+        "fit_rows": 35592
+      },
+      "reg_avg_hole_mass": {
+        "mean": 0.1923040415002677,
+        "scale": 1.0490865671904128,
+        "fit_rows": 35592
+      },
+      "reg_n_Seebeck": {
+        "mean": 0.11191578772258033,
+        "scale": 0.8699534323034699,
+        "fit_rows": 35592
+      },
+      "reg_n_powerfact": {
+        "mean": -0.05146551103318733,
+        "scale": 0.7566223439239933,
+        "fit_rows": 35592
+      },
+      "reg_max_efg": {
+        "mean": 0.04621466117278384,
+        "scale": 0.867620839941198,
+        "fit_rows": 35592
+      },
+      "reg_slme": {
+        "mean": -0.011612108000645544,
+        "scale": 0.7639812024228815,
+        "fit_rows": 35592
+      },
+      "reg_spillage": {
+        "mean": -0.25381137735472914,
+        "scale": 0.7841651507537347,
+        "fit_rows": 35592
+      },
+      "reg_ph_heat_capacity": {
+        "mean": 0.2756010185995647,
+        "scale": 1.0220358044841555,
+        "fit_rows": 35592
+      },
+      "reg_exfoliation_energy": {
+        "mean": 1.321998022562273,
+        "scale": 1.365624173742072,
+        "fit_rows": 35592
+      },
+      "reg_encut": {
+        "mean": 0.013613081154274446,
+        "scale": 0.9102235195798131,
+        "fit_rows": 35592
+      },
+      "reg_kpoint_length_unit": {
+        "mean": 0.010633816213102887,
+        "scale": 0.8322364750144944,
+        "fit_rows": 35592
+      },
+      "cls_magmom_oszicar": {
+        "mean": -6.061691858454961,
+        "scale": 7.732518030636379,
+        "fit_rows": 35592
+      },
+      "cls_optb88vdw_bandgap": {
+        "mean": -3.968563694646759,
+        "scale": 8.972342850868776,
+        "fit_rows": 35592
+      },
+      "cls_mbj_bandgap": {
+        "mean": -3.119497048146197,
+        "scale": 8.850163430637348,
+        "fit_rows": 35592
+      },
+      "cls_n_powerfact": {
+        "mean": -3.5347731280778474,
+        "scale": 5.172483691505449,
+        "fit_rows": 35592
+      },
+      "cls_p_Seebeck": {
+        "mean": -3.4006008059990873,
+        "scale": 8.819127869448144,
+        "fit_rows": 35592
+      },
+      "cls_slme": {
+        "mean": -0.6867806935796142,
+        "scale": 2.7940594458910124,
+        "fit_rows": 35592
+      },
+      "cls_spillage": {
+        "mean": 1.5761130122093543,
+        "scale": 6.859094350593768,
+        "fit_rows": 35592
+      }
+    },
+    "reg_mepsx": {
+      "reg_formation_energy_peratom": {
+        "mean": -0.08688613737787647,
+        "scale": 1.0034951050525405,
+        "fit_rows": 13447
+      },
+      "reg_optb88vdw_total_energy": {
+        "mean": 0.007052670182037793,
+        "scale": 0.969504981365013,
+        "fit_rows": 13447
+      },
+      "reg_ehull": {
+        "mean": -0.14812644500300465,
+        "scale": 0.9162408848730902,
+        "fit_rows": 13447
+      },
+      "reg_optb88vdw_bandgap": {
+        "mean": 0.25434564252803343,
+        "scale": 1.143996937482275,
+        "fit_rows": 13447
+      },
+      "reg_mbj_bandgap": {
+        "mean": 0.06553252051938589,
+        "scale": 1.0096852724174141,
+        "fit_rows": 13447
+      },
+      "reg_bulk_modulus_kv": {
+        "mean": 0.012859774446310921,
+        "scale": 0.9727602504298434,
+        "fit_rows": 13447
+      },
+      "reg_shear_modulus_gv": {
+        "mean": 0.030042823817175178,
+        "scale": 0.948613313949692,
+        "fit_rows": 13447
+      },
+      "reg_epsx": {
+        "mean": -0.2270515328160675,
+        "scale": 0.8052697689138321,
+        "fit_rows": 13447
+      },
+      "reg_epsy": {
+        "mean": -0.22843826849890514,
+        "scale": 0.8051107544001364,
+        "fit_rows": 13447
+      },
+      "reg_epsz": {
+        "mean": -0.2138267076069599,
+        "scale": 0.7902939000465539,
+        "fit_rows": 13447
+      },
+      "reg_mepsx": {
+        "mean": -0.04027724747924954,
+        "scale": 0.8891415959822884,
+        "fit_rows": 13447
+      },
+      "reg_mepsy": {
+        "mean": -0.04241912031695362,
+        "scale": 0.8892379236949417,
+        "fit_rows": 13447
+      },
+      "reg_mepsz": {
+        "mean": -0.04778524518702985,
+        "scale": 0.878547025976314,
+        "fit_rows": 13447
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "mean": 0.2691491722657678,
+        "scale": 1.048083399309752,
+        "fit_rows": 13447
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "mean": -0.022320311391953732,
+        "scale": 0.571510848381415,
+        "fit_rows": 13447
+      },
+      "reg_magmom_oszicar": {
+        "mean": -0.15258195899068558,
+        "scale": 0.7515222732837313,
+        "fit_rows": 13447
+      },
+      "reg_avg_elec_mass": {
+        "mean": 0.2714798555845186,
+        "scale": 0.9491281016805412,
+        "fit_rows": 13447
+      },
+      "reg_avg_hole_mass": {
+        "mean": 0.44653321443754196,
+        "scale": 1.19552737272288,
+        "fit_rows": 13447
+      },
+      "reg_n_Seebeck": {
+        "mean": -0.04485855319283201,
+        "scale": 0.9038215386689975,
+        "fit_rows": 13447
+      },
+      "reg_n_powerfact": {
+        "mean": 0.052626101417518285,
+        "scale": 0.8018476761987791,
+        "fit_rows": 13447
+      },
+      "reg_max_efg": {
+        "mean": 0.04007935084539971,
+        "scale": 0.908284626149073,
+        "fit_rows": 13447
+      },
+      "reg_slme": {
+        "mean": -0.023432943128893068,
+        "scale": 0.8184309423882062,
+        "fit_rows": 13447
+      },
+      "reg_spillage": {
+        "mean": -0.3387959159973846,
+        "scale": 0.7141429392103523,
+        "fit_rows": 13447
+      },
+      "reg_ph_heat_capacity": {
+        "mean": 0.1430174960528446,
+        "scale": 0.9784293668602378,
+        "fit_rows": 13447
+      },
+      "reg_exfoliation_energy": {
+        "mean": 1.2371150376410553,
+        "scale": 1.3695768889889417,
+        "fit_rows": 13447
+      },
+      "reg_encut": {
+        "mean": -0.023021460758814633,
+        "scale": 0.8703649361587147,
+        "fit_rows": 13447
+      },
+      "reg_kpoint_length_unit": {
+        "mean": -0.19044495983813456,
+        "scale": 0.7150716446395063,
+        "fit_rows": 13447
+      },
+      "cls_magmom_oszicar": {
+        "mean": -7.419795635281761,
+        "scale": 6.800590567061604,
+        "fit_rows": 13447
+      },
+      "cls_optb88vdw_bandgap": {
+        "mean": -1.540124738042339,
+        "scale": 9.511960628784102,
+        "fit_rows": 13447
+      },
+      "cls_mbj_bandgap": {
+        "mean": -0.420078219487347,
+        "scale": 9.504050511916827,
+        "fit_rows": 13447
+      },
+      "cls_n_powerfact": {
+        "mean": -2.7176928015216744,
+        "scale": 5.561945955485266,
+        "fit_rows": 13447
+      },
+      "cls_p_Seebeck": {
+        "mean": -0.9567021002501319,
+        "scale": 9.387182271035092,
+        "fit_rows": 13447
+      },
+      "cls_slme": {
+        "mean": -0.9316204690122402,
+        "scale": 3.6419923826232647,
+        "fit_rows": 13447
+      },
+      "cls_spillage": {
+        "mean": 0.5941006217803545,
+        "scale": 6.8524953510079065,
+        "fit_rows": 13447
+      }
+    },
+    "reg_mepsy": {
+      "reg_formation_energy_peratom": {
+        "mean": -0.08688613737787647,
+        "scale": 1.0034951050525405,
+        "fit_rows": 13447
+      },
+      "reg_optb88vdw_total_energy": {
+        "mean": 0.007052670182037793,
+        "scale": 0.969504981365013,
+        "fit_rows": 13447
+      },
+      "reg_ehull": {
+        "mean": -0.14812644500300465,
+        "scale": 0.9162408848730902,
+        "fit_rows": 13447
+      },
+      "reg_optb88vdw_bandgap": {
+        "mean": 0.25434564252803343,
+        "scale": 1.143996937482275,
+        "fit_rows": 13447
+      },
+      "reg_mbj_bandgap": {
+        "mean": 0.06553252051938589,
+        "scale": 1.0096852724174141,
+        "fit_rows": 13447
+      },
+      "reg_bulk_modulus_kv": {
+        "mean": 0.012859774446310921,
+        "scale": 0.9727602504298434,
+        "fit_rows": 13447
+      },
+      "reg_shear_modulus_gv": {
+        "mean": 0.030042823817175178,
+        "scale": 0.948613313949692,
+        "fit_rows": 13447
+      },
+      "reg_epsx": {
+        "mean": -0.2270515328160675,
+        "scale": 0.8052697689138321,
+        "fit_rows": 13447
+      },
+      "reg_epsy": {
+        "mean": -0.22843826849890514,
+        "scale": 0.8051107544001364,
+        "fit_rows": 13447
+      },
+      "reg_epsz": {
+        "mean": -0.2138267076069599,
+        "scale": 0.7902939000465539,
+        "fit_rows": 13447
+      },
+      "reg_mepsx": {
+        "mean": -0.04027724747924954,
+        "scale": 0.8891415959822884,
+        "fit_rows": 13447
+      },
+      "reg_mepsy": {
+        "mean": -0.04241912031695362,
+        "scale": 0.8892379236949417,
+        "fit_rows": 13447
+      },
+      "reg_mepsz": {
+        "mean": -0.04778524518702985,
+        "scale": 0.878547025976314,
+        "fit_rows": 13447
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "mean": 0.2691491722657678,
+        "scale": 1.048083399309752,
+        "fit_rows": 13447
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "mean": -0.022320311391953732,
+        "scale": 0.571510848381415,
+        "fit_rows": 13447
+      },
+      "reg_magmom_oszicar": {
+        "mean": -0.15258195899068558,
+        "scale": 0.7515222732837313,
+        "fit_rows": 13447
+      },
+      "reg_avg_elec_mass": {
+        "mean": 0.2714798555845186,
+        "scale": 0.9491281016805412,
+        "fit_rows": 13447
+      },
+      "reg_avg_hole_mass": {
+        "mean": 0.44653321443754196,
+        "scale": 1.19552737272288,
+        "fit_rows": 13447
+      },
+      "reg_n_Seebeck": {
+        "mean": -0.04485855319283201,
+        "scale": 0.9038215386689975,
+        "fit_rows": 13447
+      },
+      "reg_n_powerfact": {
+        "mean": 0.052626101417518285,
+        "scale": 0.8018476761987791,
+        "fit_rows": 13447
+      },
+      "reg_max_efg": {
+        "mean": 0.04007935084539971,
+        "scale": 0.908284626149073,
+        "fit_rows": 13447
+      },
+      "reg_slme": {
+        "mean": -0.023432943128893068,
+        "scale": 0.8184309423882062,
+        "fit_rows": 13447
+      },
+      "reg_spillage": {
+        "mean": -0.3387959159973846,
+        "scale": 0.7141429392103523,
+        "fit_rows": 13447
+      },
+      "reg_ph_heat_capacity": {
+        "mean": 0.1430174960528446,
+        "scale": 0.9784293668602378,
+        "fit_rows": 13447
+      },
+      "reg_exfoliation_energy": {
+        "mean": 1.2371150376410553,
+        "scale": 1.3695768889889417,
+        "fit_rows": 13447
+      },
+      "reg_encut": {
+        "mean": -0.023021460758814633,
+        "scale": 0.8703649361587147,
+        "fit_rows": 13447
+      },
+      "reg_kpoint_length_unit": {
+        "mean": -0.19044495983813456,
+        "scale": 0.7150716446395063,
+        "fit_rows": 13447
+      },
+      "cls_magmom_oszicar": {
+        "mean": -7.419795635281761,
+        "scale": 6.800590567061604,
+        "fit_rows": 13447
+      },
+      "cls_optb88vdw_bandgap": {
+        "mean": -1.540124738042339,
+        "scale": 9.511960628784102,
+        "fit_rows": 13447
+      },
+      "cls_mbj_bandgap": {
+        "mean": -0.420078219487347,
+        "scale": 9.504050511916827,
+        "fit_rows": 13447
+      },
+      "cls_n_powerfact": {
+        "mean": -2.7176928015216744,
+        "scale": 5.561945955485266,
+        "fit_rows": 13447
+      },
+      "cls_p_Seebeck": {
+        "mean": -0.9567021002501319,
+        "scale": 9.387182271035092,
+        "fit_rows": 13447
+      },
+      "cls_slme": {
+        "mean": -0.9316204690122402,
+        "scale": 3.6419923826232647,
+        "fit_rows": 13447
+      },
+      "cls_spillage": {
+        "mean": 0.5941006217803545,
+        "scale": 6.8524953510079065,
+        "fit_rows": 13447
+      }
+    },
+    "reg_mepsz": {
+      "reg_formation_energy_peratom": {
+        "mean": -0.08688613737787647,
+        "scale": 1.0034951050525405,
+        "fit_rows": 13447
+      },
+      "reg_optb88vdw_total_energy": {
+        "mean": 0.007052670182037793,
+        "scale": 0.969504981365013,
+        "fit_rows": 13447
+      },
+      "reg_ehull": {
+        "mean": -0.14812644500300465,
+        "scale": 0.9162408848730902,
+        "fit_rows": 13447
+      },
+      "reg_optb88vdw_bandgap": {
+        "mean": 0.25434564252803343,
+        "scale": 1.143996937482275,
+        "fit_rows": 13447
+      },
+      "reg_mbj_bandgap": {
+        "mean": 0.06553252051938589,
+        "scale": 1.0096852724174141,
+        "fit_rows": 13447
+      },
+      "reg_bulk_modulus_kv": {
+        "mean": 0.012859774446310921,
+        "scale": 0.9727602504298434,
+        "fit_rows": 13447
+      },
+      "reg_shear_modulus_gv": {
+        "mean": 0.030042823817175178,
+        "scale": 0.948613313949692,
+        "fit_rows": 13447
+      },
+      "reg_epsx": {
+        "mean": -0.2270515328160675,
+        "scale": 0.8052697689138321,
+        "fit_rows": 13447
+      },
+      "reg_epsy": {
+        "mean": -0.22843826849890514,
+        "scale": 0.8051107544001364,
+        "fit_rows": 13447
+      },
+      "reg_epsz": {
+        "mean": -0.2138267076069599,
+        "scale": 0.7902939000465539,
+        "fit_rows": 13447
+      },
+      "reg_mepsx": {
+        "mean": -0.04027724747924954,
+        "scale": 0.8891415959822884,
+        "fit_rows": 13447
+      },
+      "reg_mepsy": {
+        "mean": -0.04241912031695362,
+        "scale": 0.8892379236949417,
+        "fit_rows": 13447
+      },
+      "reg_mepsz": {
+        "mean": -0.04778524518702985,
+        "scale": 0.878547025976314,
+        "fit_rows": 13447
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "mean": 0.2691491722657678,
+        "scale": 1.048083399309752,
+        "fit_rows": 13447
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "mean": -0.022320311391953732,
+        "scale": 0.571510848381415,
+        "fit_rows": 13447
+      },
+      "reg_magmom_oszicar": {
+        "mean": -0.15258195899068558,
+        "scale": 0.7515222732837313,
+        "fit_rows": 13447
+      },
+      "reg_avg_elec_mass": {
+        "mean": 0.2714798555845186,
+        "scale": 0.9491281016805412,
+        "fit_rows": 13447
+      },
+      "reg_avg_hole_mass": {
+        "mean": 0.44653321443754196,
+        "scale": 1.19552737272288,
+        "fit_rows": 13447
+      },
+      "reg_n_Seebeck": {
+        "mean": -0.04485855319283201,
+        "scale": 0.9038215386689975,
+        "fit_rows": 13447
+      },
+      "reg_n_powerfact": {
+        "mean": 0.052626101417518285,
+        "scale": 0.8018476761987791,
+        "fit_rows": 13447
+      },
+      "reg_max_efg": {
+        "mean": 0.04007935084539971,
+        "scale": 0.908284626149073,
+        "fit_rows": 13447
+      },
+      "reg_slme": {
+        "mean": -0.023432943128893068,
+        "scale": 0.8184309423882062,
+        "fit_rows": 13447
+      },
+      "reg_spillage": {
+        "mean": -0.3387959159973846,
+        "scale": 0.7141429392103523,
+        "fit_rows": 13447
+      },
+      "reg_ph_heat_capacity": {
+        "mean": 0.1430174960528446,
+        "scale": 0.9784293668602378,
+        "fit_rows": 13447
+      },
+      "reg_exfoliation_energy": {
+        "mean": 1.2371150376410553,
+        "scale": 1.3695768889889417,
+        "fit_rows": 13447
+      },
+      "reg_encut": {
+        "mean": -0.023021460758814633,
+        "scale": 0.8703649361587147,
+        "fit_rows": 13447
+      },
+      "reg_kpoint_length_unit": {
+        "mean": -0.19044495983813456,
+        "scale": 0.7150716446395063,
+        "fit_rows": 13447
+      },
+      "cls_magmom_oszicar": {
+        "mean": -7.419795635281761,
+        "scale": 6.800590567061604,
+        "fit_rows": 13447
+      },
+      "cls_optb88vdw_bandgap": {
+        "mean": -1.540124738042339,
+        "scale": 9.511960628784102,
+        "fit_rows": 13447
+      },
+      "cls_mbj_bandgap": {
+        "mean": -0.420078219487347,
+        "scale": 9.504050511916827,
+        "fit_rows": 13447
+      },
+      "cls_n_powerfact": {
+        "mean": -2.7176928015216744,
+        "scale": 5.561945955485266,
+        "fit_rows": 13447
+      },
+      "cls_p_Seebeck": {
+        "mean": -0.9567021002501319,
+        "scale": 9.387182271035092,
+        "fit_rows": 13447
+      },
+      "cls_slme": {
+        "mean": -0.9316204690122402,
+        "scale": 3.6419923826232647,
+        "fit_rows": 13447
+      },
+      "cls_spillage": {
+        "mean": 0.5941006217803545,
+        "scale": 6.8524953510079065,
+        "fit_rows": 13447
+      }
+    },
+    "reg_dfpt_piezo_max_dielectric": {
+      "reg_formation_energy_peratom": {
+        "mean": -0.5327709708037072,
+        "scale": 0.9803755871592293,
+        "fit_rows": 3764
+      },
+      "reg_optb88vdw_total_energy": {
+        "mean": -0.14680719885972,
+        "scale": 0.8482525173512302,
+        "fit_rows": 3764
+      },
+      "reg_ehull": {
+        "mean": -0.21808377568754356,
+        "scale": 0.9174022349812349,
+        "fit_rows": 3764
+      },
+      "reg_optb88vdw_bandgap": {
+        "mean": 0.946354682922807,
+        "scale": 1.3151115877442252,
+        "fit_rows": 3764
+      },
+      "reg_mbj_bandgap": {
+        "mean": 0.6207625485604036,
+        "scale": 1.1072836917015787,
+        "fit_rows": 3764
+      },
+      "reg_bulk_modulus_kv": {
+        "mean": -0.31137822115045566,
+        "scale": 0.7859416023451126,
+        "fit_rows": 3764
+      },
+      "reg_shear_modulus_gv": {
+        "mean": -0.08680795377635522,
+        "scale": 0.9320736559602719,
+        "fit_rows": 3764
+      },
+      "reg_epsx": {
+        "mean": -0.7209246497231117,
+        "scale": 0.2935020501098771,
+        "fit_rows": 3764
+      },
+      "reg_epsy": {
+        "mean": -0.723394031270773,
+        "scale": 0.28521831833069905,
+        "fit_rows": 3764
+      },
+      "reg_epsz": {
+        "mean": -0.699184779639432,
+        "scale": 0.2632860875603177,
+        "fit_rows": 3764
+      },
+      "reg_mepsx": {
+        "mean": -0.5179217597859195,
+        "scale": 0.424806860144333,
+        "fit_rows": 3764
+      },
+      "reg_mepsy": {
+        "mean": -0.5178887518371942,
+        "scale": 0.4303497693266606,
+        "fit_rows": 3764
+      },
+      "reg_mepsz": {
+        "mean": -0.5197218684551658,
+        "scale": 0.39006839674184823,
+        "fit_rows": 3764
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "mean": -0.06287553199262791,
+        "scale": 0.7269283958816355,
+        "fit_rows": 3764
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "mean": -0.022227261755840944,
+        "scale": 0.6348555324326772,
+        "fit_rows": 3764
+      },
+      "reg_magmom_oszicar": {
+        "mean": -0.16293983664336406,
+        "scale": 0.8766129281564873,
+        "fit_rows": 3764
+      },
+      "reg_avg_elec_mass": {
+        "mean": 0.6999203081403074,
+        "scale": 1.0230136667829228,
+        "fit_rows": 3764
+      },
+      "reg_avg_hole_mass": {
+        "mean": 0.9954712268752268,
+        "scale": 1.2531882912152223,
+        "fit_rows": 3764
+      },
+      "reg_n_Seebeck": {
+        "mean": -0.6325616239638341,
+        "scale": 0.8909930181594157,
+        "fit_rows": 3764
+      },
+      "reg_n_powerfact": {
+        "mean": 0.3120220305711676,
+        "scale": 0.8675753806500573,
+        "fit_rows": 3764
+      },
+      "reg_max_efg": {
+        "mean": 0.35453525806950253,
+        "scale": 0.9327468499327177,
+        "fit_rows": 3764
+      },
+      "reg_slme": {
+        "mean": -0.004037763466358934,
+        "scale": 0.9124087445201108,
+        "fit_rows": 3764
+      },
+      "reg_spillage": {
+        "mean": -0.5574146814132901,
+        "scale": 0.5326705141706025,
+        "fit_rows": 3764
+      },
+      "reg_ph_heat_capacity": {
+        "mean": 0.3389592542038764,
+        "scale": 1.0930369892866907,
+        "fit_rows": 3764
+      },
+      "reg_exfoliation_energy": {
+        "mean": 0.37378456239663654,
+        "scale": 0.9919510743910868,
+        "fit_rows": 3764
+      },
+      "reg_encut": {
+        "mean": 0.17851323734192717,
+        "scale": 0.8974468870588808,
+        "fit_rows": 3764
+      },
+      "reg_kpoint_length_unit": {
+        "mean": -0.6441543142149642,
+        "scale": 0.43419578489675853,
+        "fit_rows": 3764
+      },
+      "cls_magmom_oszicar": {
+        "mean": -8.381696309053313,
+        "scale": 6.14073116134499,
+        "fit_rows": 3764
+      },
+      "cls_optb88vdw_bandgap": {
+        "mean": 6.993845306252754,
+        "scale": 5.685592616632598,
+        "fit_rows": 3764
+      },
+      "cls_mbj_bandgap": {
+        "mean": 7.029622571347885,
+        "scale": 5.774926675763874,
+        "fit_rows": 3764
+      },
+      "cls_n_powerfact": {
+        "mean": -0.6460601222137171,
+        "scale": 6.14992991456532,
+        "fit_rows": 3764
+      },
+      "cls_p_Seebeck": {
+        "mean": 6.64957641995602,
+        "scale": 5.721230328495415,
+        "fit_rows": 3764
+      },
+      "cls_slme": {
+        "mean": -1.1901749867092775,
+        "scale": 5.002461126940286,
+        "fit_rows": 3764
+      },
+      "cls_spillage": {
+        "mean": -2.5189071670400995,
+        "scale": 6.172917816946041,
+        "fit_rows": 3764
+      }
+    },
+    "reg_dfpt_piezo_max_dij": {
+      "reg_formation_energy_peratom": {
+        "mean": -0.5217347403559912,
+        "scale": 0.9834616337830597,
+        "fit_rows": 2677
+      },
+      "reg_optb88vdw_total_energy": {
+        "mean": -0.08430740652050951,
+        "scale": 0.8684974270768618,
+        "fit_rows": 2677
+      },
+      "reg_ehull": {
+        "mean": -0.34259501116120333,
+        "scale": 0.874239558273786,
+        "fit_rows": 2677
+      },
+      "reg_optb88vdw_bandgap": {
+        "mean": 1.0105922694151028,
+        "scale": 1.337359658862743,
+        "fit_rows": 2677
+      },
+      "reg_mbj_bandgap": {
+        "mean": 0.6834851493936204,
+        "scale": 1.1214625291565452,
+        "fit_rows": 2677
+      },
+      "reg_bulk_modulus_kv": {
+        "mean": -0.2613514693514942,
+        "scale": 0.8476483536791295,
+        "fit_rows": 2677
+      },
+      "reg_shear_modulus_gv": {
+        "mean": -0.024477127625310895,
+        "scale": 1.065553819391439,
+        "fit_rows": 2677
+      },
+      "reg_epsx": {
+        "mean": -0.7185487522212054,
+        "scale": 0.3185561680762546,
+        "fit_rows": 2677
+      },
+      "reg_epsy": {
+        "mean": -0.7191785673961721,
+        "scale": 0.30723107698738616,
+        "fit_rows": 2677
+      },
+      "reg_epsz": {
+        "mean": -0.700603951259941,
+        "scale": 0.26464555502833187,
+        "fit_rows": 2677
+      },
+      "reg_mepsx": {
+        "mean": -0.5245625344946978,
+        "scale": 0.4230005660758822,
+        "fit_rows": 2677
+      },
+      "reg_mepsy": {
+        "mean": -0.5274931370246937,
+        "scale": 0.42445416093224947,
+        "fit_rows": 2677
+      },
+      "reg_mepsz": {
+        "mean": -0.5299111429013439,
+        "scale": 0.3607956623738698,
+        "fit_rows": 2677
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "mean": -0.04762247696180192,
+        "scale": 0.7498116809152336,
+        "fit_rows": 2677
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "mean": -0.03323469636079027,
+        "scale": 0.6906031057323503,
+        "fit_rows": 2677
+      },
+      "reg_magmom_oszicar": {
+        "mean": -0.2556262481282752,
+        "scale": 0.6538533288819702,
+        "fit_rows": 2677
+      },
+      "reg_avg_elec_mass": {
+        "mean": 0.6924669309077401,
+        "scale": 1.0020539720951283,
+        "fit_rows": 2677
+      },
+      "reg_avg_hole_mass": {
+        "mean": 1.033719802076638,
+        "scale": 1.2579716767066107,
+        "fit_rows": 2677
+      },
+      "reg_n_Seebeck": {
+        "mean": -0.594566573827552,
+        "scale": 0.8983501004573585,
+        "fit_rows": 2677
+      },
+      "reg_n_powerfact": {
+        "mean": 0.3855312273131426,
+        "scale": 0.8929485627792431,
+        "fit_rows": 2677
+      },
+      "reg_max_efg": {
+        "mean": 0.2492126539103266,
+        "scale": 0.9316638152598564,
+        "fit_rows": 2677
+      },
+      "reg_slme": {
+        "mean": -0.001950599184141661,
+        "scale": 0.9288102615101104,
+        "fit_rows": 2677
+      },
+      "reg_spillage": {
+        "mean": -0.5527374798462086,
+        "scale": 0.5185327336140803,
+        "fit_rows": 2677
+      },
+      "reg_ph_heat_capacity": {
+        "mean": 0.0865786959224342,
+        "scale": 0.9638287459537357,
+        "fit_rows": 2677
+      },
+      "reg_exfoliation_energy": {
+        "mean": 0.48860824418955295,
+        "scale": 1.0606818356396797,
+        "fit_rows": 2677
+      },
+      "reg_encut": {
+        "mean": 0.06440959667042802,
+        "scale": 0.8502088502483566,
+        "fit_rows": 2677
+      },
+      "reg_kpoint_length_unit": {
+        "mean": -0.6278829223793242,
+        "scale": 0.4562521841671115,
+        "fit_rows": 2677
+      },
+      "cls_magmom_oszicar": {
+        "mean": -8.952226943094987,
+        "scale": 5.43945319430985,
+        "fit_rows": 2677
+      },
+      "cls_optb88vdw_bandgap": {
+        "mean": 6.756028017956662,
+        "scale": 5.83336661868839,
+        "fit_rows": 2677
+      },
+      "cls_mbj_bandgap": {
+        "mean": 7.203251118386609,
+        "scale": 5.6437881676062815,
+        "fit_rows": 2677
+      },
+      "cls_n_powerfact": {
+        "mean": -0.16956278615776235,
+        "scale": 6.179625819351519,
+        "fit_rows": 2677
+      },
+      "cls_p_Seebeck": {
+        "mean": 6.701217902308002,
+        "scale": 5.802801699344374,
+        "fit_rows": 2677
+      },
+      "cls_slme": {
+        "mean": -1.2686801813375852,
+        "scale": 5.188855385059844,
+        "fit_rows": 2677
+      },
+      "cls_spillage": {
+        "mean": -2.6209378960103336,
+        "scale": 6.064560020449882,
+        "fit_rows": 2677
+      }
+    },
+    "reg_magmom_oszicar": {
+      "reg_formation_energy_peratom": {
+        "mean": 0.03436364225885746,
+        "scale": 0.9951260238907922,
+        "fit_rows": 41766
+      },
+      "reg_optb88vdw_total_energy": {
+        "mean": 0.030540425370949045,
+        "scale": 1.0063022130491956,
+        "fit_rows": 41766
+      },
+      "reg_ehull": {
+        "mean": -0.016766951400710894,
+        "scale": 0.9960222148205425,
+        "fit_rows": 41766
+      },
+      "reg_optb88vdw_bandgap": {
+        "mean": 0.0020926511275781165,
+        "scale": 0.9955847444440654,
+        "fit_rows": 41766
+      },
+      "reg_mbj_bandgap": {
+        "mean": -0.1624797098164952,
+        "scale": 0.8791219875629321,
+        "fit_rows": 41766
+      },
+      "reg_bulk_modulus_kv": {
+        "mean": 0.05100956133072793,
+        "scale": 0.9592351093040601,
+        "fit_rows": 41766
+      },
+      "reg_shear_modulus_gv": {
+        "mean": 0.019435370885487427,
+        "scale": 0.8777904255980223,
+        "fit_rows": 41766
+      },
+      "reg_epsx": {
+        "mean": -0.009012563618168355,
+        "scale": 0.9307493582848435,
+        "fit_rows": 41766
+      },
+      "reg_epsy": {
+        "mean": -0.008402444592321276,
+        "scale": 0.938067980357016,
+        "fit_rows": 41766
+      },
+      "reg_epsz": {
+        "mean": -0.006387252985159362,
+        "scale": 0.9316660569270337,
+        "fit_rows": 41766
+      },
+      "reg_mepsx": {
+        "mean": 0.1354147024407412,
+        "scale": 0.9328421789870911,
+        "fit_rows": 41766
+      },
+      "reg_mepsy": {
+        "mean": 0.13147483340464294,
+        "scale": 0.9297660826857811,
+        "fit_rows": 41766
+      },
+      "reg_mepsz": {
+        "mean": 0.11864701117117661,
+        "scale": 0.9347078213517311,
+        "fit_rows": 41766
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "mean": 0.36616448829845694,
+        "scale": 1.127610323336974,
+        "fit_rows": 41766
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "mean": -0.015813340183725797,
+        "scale": 0.5869798423440865,
+        "fit_rows": 41766
+      },
+      "reg_magmom_oszicar": {
+        "mean": -0.014253702809885733,
+        "scale": 0.9525599449705053,
+        "fit_rows": 41766
+      },
+      "reg_avg_elec_mass": {
+        "mean": 0.09382860916122276,
+        "scale": 0.8169134200256666,
+        "fit_rows": 41766
+      },
+      "reg_avg_hole_mass": {
+        "mean": 0.19552219184689915,
+        "scale": 1.0539549997898463,
+        "fit_rows": 41766
+      },
+      "reg_n_Seebeck": {
+        "mean": 0.12096221878885417,
+        "scale": 0.8642057626558913,
+        "fit_rows": 41766
+      },
+      "reg_n_powerfact": {
+        "mean": -0.060427151892541525,
+        "scale": 0.7439157971314777,
+        "fit_rows": 41766
+      },
+      "reg_max_efg": {
+        "mean": 0.05436697276697215,
+        "scale": 0.8623905069327553,
+        "fit_rows": 41766
+      },
+      "reg_slme": {
+        "mean": -0.011287734079315506,
+        "scale": 0.7608525438307948,
+        "fit_rows": 41766
+      },
+      "reg_spillage": {
+        "mean": -0.24049709986494058,
+        "scale": 0.7920039155905937,
+        "fit_rows": 41766
+      },
+      "reg_ph_heat_capacity": {
+        "mean": 0.32901094488620036,
+        "scale": 1.0508164285189239,
+        "fit_rows": 41766
+      },
+      "reg_exfoliation_energy": {
+        "mean": 1.338747486672915,
+        "scale": 1.3544742533822338,
+        "fit_rows": 41766
+      },
+      "reg_encut": {
+        "mean": 0.004862641315691643,
+        "scale": 0.9260916286458909,
+        "fit_rows": 41766
+      },
+      "reg_kpoint_length_unit": {
+        "mean": 0.03925855007064487,
+        "scale": 0.8428725814725522,
+        "fit_rows": 41766
+      },
+      "cls_magmom_oszicar": {
+        "mean": -6.258136303217908,
+        "scale": 7.539867475391907,
+        "fit_rows": 41766
+      },
+      "cls_optb88vdw_bandgap": {
+        "mean": -4.224576689191497,
+        "scale": 8.89385292737974,
+        "fit_rows": 41766
+      },
+      "cls_mbj_bandgap": {
+        "mean": -3.2508319395674268,
+        "scale": 8.780221527636252,
+        "fit_rows": 41766
+      },
+      "cls_n_powerfact": {
+        "mean": -3.5333652349808475,
+        "scale": 5.060756928300915,
+        "fit_rows": 41766
+      },
+      "cls_p_Seebeck": {
+        "mean": -3.597862228391222,
+        "scale": 8.760385174639374,
+        "fit_rows": 41766
+      },
+      "cls_slme": {
+        "mean": -0.671915802879691,
+        "scale": 2.669082637437626,
+        "fit_rows": 41766
+      },
+      "cls_spillage": {
+        "mean": 1.7778354682880262,
+        "scale": 6.851631414600263,
+        "fit_rows": 41766
+      }
+    },
+    "reg_avg_elec_mass": {
+      "reg_formation_energy_peratom": {
+        "mean": -0.01355167186517594,
+        "scale": 0.8519967388004179,
+        "fit_rows": 14114
+      },
+      "reg_optb88vdw_total_energy": {
+        "mean": -0.07108766772279815,
+        "scale": 0.9899766931116033,
+        "fit_rows": 14114
+      },
+      "reg_ehull": {
+        "mean": -0.01890116944944951,
+        "scale": 0.9709853189368589,
+        "fit_rows": 14114
+      },
+      "reg_optb88vdw_bandgap": {
+        "mean": -0.2509099924782855,
+        "scale": 0.6255207364427453,
+        "fit_rows": 14114
+      },
+      "reg_mbj_bandgap": {
+        "mean": -0.3751056639912113,
+        "scale": 0.6062873095844028,
+        "fit_rows": 14114
+      },
+      "reg_bulk_modulus_kv": {
+        "mean": 0.2819505552582051,
+        "scale": 0.995287908978787,
+        "fit_rows": 14114
+      },
+      "reg_shear_modulus_gv": {
+        "mean": 0.22172708695545432,
+        "scale": 0.9587381783219264,
+        "fit_rows": 14114
+      },
+      "reg_epsx": {
+        "mean": 0.1094327559371649,
+        "scale": 0.8984947235043311,
+        "fit_rows": 14114
+      },
+      "reg_epsy": {
+        "mean": 0.11106428409016089,
+        "scale": 0.9064109943676146,
+        "fit_rows": 14114
+      },
+      "reg_epsz": {
+        "mean": 0.13163471421347134,
+        "scale": 0.9255533360536111,
+        "fit_rows": 14114
+      },
+      "reg_mepsx": {
+        "mean": 0.24898827124823364,
+        "scale": 0.9329370918677782,
+        "fit_rows": 14114
+      },
+      "reg_mepsy": {
+        "mean": 0.24537521756032535,
+        "scale": 0.9286349969512945,
+        "fit_rows": 14114
+      },
+      "reg_mepsz": {
+        "mean": 0.24716718201736912,
+        "scale": 0.9445257861479351,
+        "fit_rows": 14114
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "mean": 0.5424032454494183,
+        "scale": 1.264493422218246,
+        "fit_rows": 14114
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "mean": 0.006064821365149152,
+        "scale": 0.6808262606929975,
+        "fit_rows": 14114
+      },
+      "reg_magmom_oszicar": {
+        "mean": 0.14132571871705393,
+        "scale": 1.161943904564251,
+        "fit_rows": 14114
+      },
+      "reg_avg_elec_mass": {
+        "mean": -0.0593730822070648,
+        "scale": 0.718998625504605,
+        "fit_rows": 14114
+      },
+      "reg_avg_hole_mass": {
+        "mean": -0.03784409065746461,
+        "scale": 0.8431763975459122,
+        "fit_rows": 14114
+      },
+      "reg_n_Seebeck": {
+        "mean": 0.3486016575966829,
+        "scale": 0.679620587967279,
+        "fit_rows": 14114
+      },
+      "reg_n_powerfact": {
+        "mean": -0.10241441093688584,
+        "scale": 0.816911957085532,
+        "fit_rows": 14114
+      },
+      "reg_max_efg": {
+        "mean": -0.11167753313935058,
+        "scale": 0.8662427585576257,
+        "fit_rows": 14114
+      },
+      "reg_slme": {
+        "mean": 0.05963948090102634,
+        "scale": 0.7472697190347248,
+        "fit_rows": 14114
+      },
+      "reg_spillage": {
+        "mean": -0.14385728864223804,
+        "scale": 0.8568776927323658,
+        "fit_rows": 14114
+      },
+      "reg_ph_heat_capacity": {
+        "mean": 0.1359640693146154,
+        "scale": 0.9692574057093727,
+        "fit_rows": 14114
+      },
+      "reg_exfoliation_energy": {
+        "mean": 1.5094421540162386,
+        "scale": 1.3978665803527086,
+        "fit_rows": 14114
+      },
+      "reg_encut": {
+        "mean": -0.01820154763545246,
+        "scale": 0.880885690017579,
+        "fit_rows": 14114
+      },
+      "reg_kpoint_length_unit": {
+        "mean": 0.14917568796441297,
+        "scale": 0.8076604009273627,
+        "fit_rows": 14114
+      },
+      "cls_magmom_oszicar": {
+        "mean": -5.520610711334701,
+        "scale": 8.276275206626536,
+        "fit_rows": 14114
+      },
+      "cls_optb88vdw_bandgap": {
+        "mean": -5.830409316600473,
+        "scale": 7.678502759087619,
+        "fit_rows": 14114
+      },
+      "cls_mbj_bandgap": {
+        "mean": -4.8506287156446986,
+        "scale": 7.911446946085262,
+        "fit_rows": 14114
+      },
+      "cls_n_powerfact": {
+        "mean": -3.935067878280446,
+        "scale": 5.427858410413098,
+        "fit_rows": 14114
+      },
+      "cls_p_Seebeck": {
+        "mean": -5.813978345528207,
+        "scale": 7.700239246382957,
+        "fit_rows": 14114
+      },
+      "cls_slme": {
+        "mean": -0.45024940232521027,
+        "scale": 2.426407184629097,
+        "fit_rows": 14114
+      },
+      "cls_spillage": {
+        "mean": 2.7417970114474572,
+        "scale": 6.710297289837911,
+        "fit_rows": 14114
+      }
+    },
+    "reg_avg_hole_mass": {
+      "reg_formation_energy_peratom": {
+        "mean": -0.01355167186517594,
+        "scale": 0.8519967388004179,
+        "fit_rows": 14114
+      },
+      "reg_optb88vdw_total_energy": {
+        "mean": -0.07108766772279815,
+        "scale": 0.9899766931116033,
+        "fit_rows": 14114
+      },
+      "reg_ehull": {
+        "mean": -0.01890116944944951,
+        "scale": 0.9709853189368589,
+        "fit_rows": 14114
+      },
+      "reg_optb88vdw_bandgap": {
+        "mean": -0.2509099924782855,
+        "scale": 0.6255207364427453,
+        "fit_rows": 14114
+      },
+      "reg_mbj_bandgap": {
+        "mean": -0.3751056639912113,
+        "scale": 0.6062873095844028,
+        "fit_rows": 14114
+      },
+      "reg_bulk_modulus_kv": {
+        "mean": 0.2819505552582051,
+        "scale": 0.995287908978787,
+        "fit_rows": 14114
+      },
+      "reg_shear_modulus_gv": {
+        "mean": 0.22172708695545432,
+        "scale": 0.9587381783219264,
+        "fit_rows": 14114
+      },
+      "reg_epsx": {
+        "mean": 0.1094327559371649,
+        "scale": 0.8984947235043311,
+        "fit_rows": 14114
+      },
+      "reg_epsy": {
+        "mean": 0.11106428409016089,
+        "scale": 0.9064109943676146,
+        "fit_rows": 14114
+      },
+      "reg_epsz": {
+        "mean": 0.13163471421347134,
+        "scale": 0.9255533360536111,
+        "fit_rows": 14114
+      },
+      "reg_mepsx": {
+        "mean": 0.24898827124823364,
+        "scale": 0.9329370918677782,
+        "fit_rows": 14114
+      },
+      "reg_mepsy": {
+        "mean": 0.24537521756032535,
+        "scale": 0.9286349969512945,
+        "fit_rows": 14114
+      },
+      "reg_mepsz": {
+        "mean": 0.24716718201736912,
+        "scale": 0.9445257861479351,
+        "fit_rows": 14114
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "mean": 0.5424032454494183,
+        "scale": 1.264493422218246,
+        "fit_rows": 14114
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "mean": 0.006064821365149152,
+        "scale": 0.6808262606929975,
+        "fit_rows": 14114
+      },
+      "reg_magmom_oszicar": {
+        "mean": 0.14132571871705393,
+        "scale": 1.161943904564251,
+        "fit_rows": 14114
+      },
+      "reg_avg_elec_mass": {
+        "mean": -0.0593730822070648,
+        "scale": 0.718998625504605,
+        "fit_rows": 14114
+      },
+      "reg_avg_hole_mass": {
+        "mean": -0.03784409065746461,
+        "scale": 0.8431763975459122,
+        "fit_rows": 14114
+      },
+      "reg_n_Seebeck": {
+        "mean": 0.3486016575966829,
+        "scale": 0.679620587967279,
+        "fit_rows": 14114
+      },
+      "reg_n_powerfact": {
+        "mean": -0.10241441093688584,
+        "scale": 0.816911957085532,
+        "fit_rows": 14114
+      },
+      "reg_max_efg": {
+        "mean": -0.11167753313935058,
+        "scale": 0.8662427585576257,
+        "fit_rows": 14114
+      },
+      "reg_slme": {
+        "mean": 0.05963948090102634,
+        "scale": 0.7472697190347248,
+        "fit_rows": 14114
+      },
+      "reg_spillage": {
+        "mean": -0.14385728864223804,
+        "scale": 0.8568776927323658,
+        "fit_rows": 14114
+      },
+      "reg_ph_heat_capacity": {
+        "mean": 0.1359640693146154,
+        "scale": 0.9692574057093727,
+        "fit_rows": 14114
+      },
+      "reg_exfoliation_energy": {
+        "mean": 1.5094421540162386,
+        "scale": 1.3978665803527086,
+        "fit_rows": 14114
+      },
+      "reg_encut": {
+        "mean": -0.01820154763545246,
+        "scale": 0.880885690017579,
+        "fit_rows": 14114
+      },
+      "reg_kpoint_length_unit": {
+        "mean": 0.14917568796441297,
+        "scale": 0.8076604009273627,
+        "fit_rows": 14114
+      },
+      "cls_magmom_oszicar": {
+        "mean": -5.520610711334701,
+        "scale": 8.276275206626536,
+        "fit_rows": 14114
+      },
+      "cls_optb88vdw_bandgap": {
+        "mean": -5.830409316600473,
+        "scale": 7.678502759087619,
+        "fit_rows": 14114
+      },
+      "cls_mbj_bandgap": {
+        "mean": -4.8506287156446986,
+        "scale": 7.911446946085262,
+        "fit_rows": 14114
+      },
+      "cls_n_powerfact": {
+        "mean": -3.935067878280446,
+        "scale": 5.427858410413098,
+        "fit_rows": 14114
+      },
+      "cls_p_Seebeck": {
+        "mean": -5.813978345528207,
+        "scale": 7.700239246382957,
+        "fit_rows": 14114
+      },
+      "cls_slme": {
+        "mean": -0.45024940232521027,
+        "scale": 2.426407184629097,
+        "fit_rows": 14114
+      },
+      "cls_spillage": {
+        "mean": 2.7417970114474572,
+        "scale": 6.710297289837911,
+        "fit_rows": 14114
+      }
+    },
+    "reg_n_Seebeck": {
+      "reg_formation_energy_peratom": {
+        "mean": -0.2516693100264104,
+        "scale": 0.9761075574300194,
+        "fit_rows": 18568
+      },
+      "reg_optb88vdw_total_energy": {
+        "mean": -0.1472275287994951,
+        "scale": 0.9625592015979176,
+        "fit_rows": 18568
+      },
+      "reg_ehull": {
+        "mean": -0.04405817320119607,
+        "scale": 0.9385583473200095,
+        "fit_rows": 18568
+      },
+      "reg_optb88vdw_bandgap": {
+        "mean": 0.1886919756383967,
+        "scale": 1.129469021277871,
+        "fit_rows": 18568
+      },
+      "reg_mbj_bandgap": {
+        "mean": -0.02648111611594505,
+        "scale": 0.98055457385144,
+        "fit_rows": 18568
+      },
+      "reg_bulk_modulus_kv": {
+        "mean": 0.14031103979703,
+        "scale": 0.9569212909903315,
+        "fit_rows": 18568
+      },
+      "reg_shear_modulus_gv": {
+        "mean": 0.13995977187156514,
+        "scale": 0.9037952640011437,
+        "fit_rows": 18568
+      },
+      "reg_epsx": {
+        "mean": -0.11766196334226606,
+        "scale": 0.8796814352377315,
+        "fit_rows": 18568
+      },
+      "reg_epsy": {
+        "mean": -0.11907189837287498,
+        "scale": 0.8819826459590641,
+        "fit_rows": 18568
+      },
+      "reg_epsz": {
+        "mean": -0.0970530736720956,
+        "scale": 0.8916391084238353,
+        "fit_rows": 18568
+      },
+      "reg_mepsx": {
+        "mean": 0.04638574510297931,
+        "scale": 0.9088099312096884,
+        "fit_rows": 18568
+      },
+      "reg_mepsy": {
+        "mean": 0.04048423557803326,
+        "scale": 0.9007895825481617,
+        "fit_rows": 18568
+      },
+      "reg_mepsz": {
+        "mean": 0.04320797665713634,
+        "scale": 0.9066743281070381,
+        "fit_rows": 18568
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "mean": 0.36341758487589504,
+        "scale": 1.1718241500870887,
+        "fit_rows": 18568
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "mean": -0.01249587217009201,
+        "scale": 0.6507902871179043,
+        "fit_rows": 18568
+      },
+      "reg_magmom_oszicar": {
+        "mean": 0.1219008979846165,
+        "scale": 1.186712867552806,
+        "fit_rows": 18568
+      },
+      "reg_avg_elec_mass": {
+        "mean": 0.17421887490654087,
+        "scale": 0.9216905140529197,
+        "fit_rows": 18568
+      },
+      "reg_avg_hole_mass": {
+        "mean": 0.30095824493409157,
+        "scale": 1.1540373427989365,
+        "fit_rows": 18568
+      },
+      "reg_n_Seebeck": {
+        "mean": 0.013525934265501192,
+        "scale": 0.9288906157387337,
+        "fit_rows": 18568
+      },
+      "reg_n_powerfact": {
+        "mean": -0.06814727864584602,
+        "scale": 0.7603205753972411,
+        "fit_rows": 18568
+      },
+      "reg_max_efg": {
+        "mean": 0.02810061877282789,
+        "scale": 0.8699449543286142,
+        "fit_rows": 18568
+      },
+      "reg_slme": {
+        "mean": -0.02535622351963962,
+        "scale": 0.7827961445816037,
+        "fit_rows": 18568
+      },
+      "reg_spillage": {
+        "mean": -0.27730933720463824,
+        "scale": 0.8039289584796043,
+        "fit_rows": 18568
+      },
+      "reg_ph_heat_capacity": {
+        "mean": 0.34027141670107813,
+        "scale": 1.0777916951029807,
+        "fit_rows": 18568
+      },
+      "reg_exfoliation_energy": {
+        "mean": 1.1452386651854412,
+        "scale": 1.3806948710120286,
+        "fit_rows": 18568
+      },
+      "reg_encut": {
+        "mean": 0.18671036893977017,
+        "scale": 0.9584793426813563,
+        "fit_rows": 18568
+      },
+      "reg_kpoint_length_unit": {
+        "mean": -0.10579482998267516,
+        "scale": 0.8258997429232069,
+        "fit_rows": 18568
+      },
+      "cls_magmom_oszicar": {
+        "mean": -5.813127178659135,
+        "scale": 8.048120623872515,
+        "fit_rows": 18568
+      },
+      "cls_optb88vdw_bandgap": {
+        "mean": -2.097383602332236,
+        "scale": 9.328048078969301,
+        "fit_rows": 18568
+      },
+      "cls_mbj_bandgap": {
+        "mean": -1.5882160469340367,
+        "scale": 9.155006115519909,
+        "fit_rows": 18568
+      },
+      "cls_n_powerfact": {
+        "mean": -3.6197510171146154,
+        "scale": 5.563140213072918,
+        "fit_rows": 18568
+      },
+      "cls_p_Seebeck": {
+        "mean": -2.1745017388806107,
+        "scale": 9.30678127305642,
+        "fit_rows": 18568
+      },
+      "cls_slme": {
+        "mean": -0.8516281100131655,
+        "scale": 3.1993849835252006,
+        "fit_rows": 18568
+      },
+      "cls_spillage": {
+        "mean": 0.977467386680563,
+        "scale": 7.031530523009508,
+        "fit_rows": 18568
+      }
+    },
+    "reg_n_powerfact": {
+      "reg_formation_energy_peratom": {
+        "mean": -0.2516693100264104,
+        "scale": 0.9761075574300194,
+        "fit_rows": 18568
+      },
+      "reg_optb88vdw_total_energy": {
+        "mean": -0.1472275287994951,
+        "scale": 0.9625592015979176,
+        "fit_rows": 18568
+      },
+      "reg_ehull": {
+        "mean": -0.04405817320119607,
+        "scale": 0.9385583473200095,
+        "fit_rows": 18568
+      },
+      "reg_optb88vdw_bandgap": {
+        "mean": 0.1886919756383967,
+        "scale": 1.129469021277871,
+        "fit_rows": 18568
+      },
+      "reg_mbj_bandgap": {
+        "mean": -0.02648111611594505,
+        "scale": 0.98055457385144,
+        "fit_rows": 18568
+      },
+      "reg_bulk_modulus_kv": {
+        "mean": 0.14031103979703,
+        "scale": 0.9569212909903315,
+        "fit_rows": 18568
+      },
+      "reg_shear_modulus_gv": {
+        "mean": 0.13995977187156514,
+        "scale": 0.9037952640011437,
+        "fit_rows": 18568
+      },
+      "reg_epsx": {
+        "mean": -0.11766196334226606,
+        "scale": 0.8796814352377315,
+        "fit_rows": 18568
+      },
+      "reg_epsy": {
+        "mean": -0.11907189837287498,
+        "scale": 0.8819826459590641,
+        "fit_rows": 18568
+      },
+      "reg_epsz": {
+        "mean": -0.0970530736720956,
+        "scale": 0.8916391084238353,
+        "fit_rows": 18568
+      },
+      "reg_mepsx": {
+        "mean": 0.04638574510297931,
+        "scale": 0.9088099312096884,
+        "fit_rows": 18568
+      },
+      "reg_mepsy": {
+        "mean": 0.04048423557803326,
+        "scale": 0.9007895825481617,
+        "fit_rows": 18568
+      },
+      "reg_mepsz": {
+        "mean": 0.04320797665713634,
+        "scale": 0.9066743281070381,
+        "fit_rows": 18568
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "mean": 0.36341758487589504,
+        "scale": 1.1718241500870887,
+        "fit_rows": 18568
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "mean": -0.01249587217009201,
+        "scale": 0.6507902871179043,
+        "fit_rows": 18568
+      },
+      "reg_magmom_oszicar": {
+        "mean": 0.1219008979846165,
+        "scale": 1.186712867552806,
+        "fit_rows": 18568
+      },
+      "reg_avg_elec_mass": {
+        "mean": 0.17421887490654087,
+        "scale": 0.9216905140529197,
+        "fit_rows": 18568
+      },
+      "reg_avg_hole_mass": {
+        "mean": 0.30095824493409157,
+        "scale": 1.1540373427989365,
+        "fit_rows": 18568
+      },
+      "reg_n_Seebeck": {
+        "mean": 0.013525934265501192,
+        "scale": 0.9288906157387337,
+        "fit_rows": 18568
+      },
+      "reg_n_powerfact": {
+        "mean": -0.06814727864584602,
+        "scale": 0.7603205753972411,
+        "fit_rows": 18568
+      },
+      "reg_max_efg": {
+        "mean": 0.02810061877282789,
+        "scale": 0.8699449543286142,
+        "fit_rows": 18568
+      },
+      "reg_slme": {
+        "mean": -0.02535622351963962,
+        "scale": 0.7827961445816037,
+        "fit_rows": 18568
+      },
+      "reg_spillage": {
+        "mean": -0.27730933720463824,
+        "scale": 0.8039289584796043,
+        "fit_rows": 18568
+      },
+      "reg_ph_heat_capacity": {
+        "mean": 0.34027141670107813,
+        "scale": 1.0777916951029807,
+        "fit_rows": 18568
+      },
+      "reg_exfoliation_energy": {
+        "mean": 1.1452386651854412,
+        "scale": 1.3806948710120286,
+        "fit_rows": 18568
+      },
+      "reg_encut": {
+        "mean": 0.18671036893977017,
+        "scale": 0.9584793426813563,
+        "fit_rows": 18568
+      },
+      "reg_kpoint_length_unit": {
+        "mean": -0.10579482998267516,
+        "scale": 0.8258997429232069,
+        "fit_rows": 18568
+      },
+      "cls_magmom_oszicar": {
+        "mean": -5.813127178659135,
+        "scale": 8.048120623872515,
+        "fit_rows": 18568
+      },
+      "cls_optb88vdw_bandgap": {
+        "mean": -2.097383602332236,
+        "scale": 9.328048078969301,
+        "fit_rows": 18568
+      },
+      "cls_mbj_bandgap": {
+        "mean": -1.5882160469340367,
+        "scale": 9.155006115519909,
+        "fit_rows": 18568
+      },
+      "cls_n_powerfact": {
+        "mean": -3.6197510171146154,
+        "scale": 5.563140213072918,
+        "fit_rows": 18568
+      },
+      "cls_p_Seebeck": {
+        "mean": -2.1745017388806107,
+        "scale": 9.30678127305642,
+        "fit_rows": 18568
+      },
+      "cls_slme": {
+        "mean": -0.8516281100131655,
+        "scale": 3.1993849835252006,
+        "fit_rows": 18568
+      },
+      "cls_spillage": {
+        "mean": 0.977467386680563,
+        "scale": 7.031530523009508,
+        "fit_rows": 18568
+      }
+    },
+    "reg_max_efg": {
+      "reg_formation_energy_peratom": {
+        "mean": 0.07228614998535574,
+        "scale": 0.9154114049813473,
+        "fit_rows": 9493
+      },
+      "reg_optb88vdw_total_energy": {
+        "mean": -0.00031892199302913836,
+        "scale": 1.008112399480572,
+        "fit_rows": 9493
+      },
+      "reg_ehull": {
+        "mean": -0.11823293675169025,
+        "scale": 0.9573774767906998,
+        "fit_rows": 9493
+      },
+      "reg_optb88vdw_bandgap": {
+        "mean": -0.10253069184031602,
+        "scale": 0.892319105196292,
+        "fit_rows": 9493
+      },
+      "reg_mbj_bandgap": {
+        "mean": -0.25853393079216885,
+        "scale": 0.798873931858645,
+        "fit_rows": 9493
+      },
+      "reg_bulk_modulus_kv": {
+        "mean": 0.1988509186200977,
+        "scale": 1.048009911746835,
+        "fit_rows": 9493
+      },
+      "reg_shear_modulus_gv": {
+        "mean": 0.1879700020710155,
+        "scale": 0.989225813334235,
+        "fit_rows": 9493
+      },
+      "reg_epsx": {
+        "mean": 0.047950545655420285,
+        "scale": 0.903011762694446,
+        "fit_rows": 9493
+      },
+      "reg_epsy": {
+        "mean": 0.04859776828325264,
+        "scale": 0.9131005257745328,
+        "fit_rows": 9493
+      },
+      "reg_epsz": {
+        "mean": 0.03915286638441514,
+        "scale": 0.915937881706816,
+        "fit_rows": 9493
+      },
+      "reg_mepsx": {
+        "mean": 0.19019645909679392,
+        "scale": 0.9237266232471701,
+        "fit_rows": 9493
+      },
+      "reg_mepsy": {
+        "mean": 0.18286265423556916,
+        "scale": 0.9127423746053761,
+        "fit_rows": 9493
+      },
+      "reg_mepsz": {
+        "mean": 0.15676992662942962,
+        "scale": 0.903389020049512,
+        "fit_rows": 9493
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "mean": 0.4556497926847268,
+        "scale": 1.2120898873955384,
+        "fit_rows": 9493
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "mean": -0.006279612572466343,
+        "scale": 0.7227874092414767,
+        "fit_rows": 9493
+      },
+      "reg_magmom_oszicar": {
+        "mean": -0.06775349959710564,
+        "scale": 0.8728654294287659,
+        "fit_rows": 9493
+      },
+      "reg_avg_elec_mass": {
+        "mean": -0.027145803972386244,
+        "scale": 0.7043771819695352,
+        "fit_rows": 9493
+      },
+      "reg_avg_hole_mass": {
+        "mean": 0.025851394855339545,
+        "scale": 0.9024547134522476,
+        "fit_rows": 9493
+      },
+      "reg_n_Seebeck": {
+        "mean": 0.2764075639385013,
+        "scale": 0.7788905706079517,
+        "fit_rows": 9493
+      },
+      "reg_n_powerfact": {
+        "mean": -0.010251021452538516,
+        "scale": 0.8306176637127631,
+        "fit_rows": 9493
+      },
+      "reg_max_efg": {
+        "mean": -0.06372087713020388,
+        "scale": 0.8633223714736857,
+        "fit_rows": 9493
+      },
+      "reg_slme": {
+        "mean": 0.023989576531479973,
+        "scale": 0.7697539756158116,
+        "fit_rows": 9493
+      },
+      "reg_spillage": {
+        "mean": -0.21252335032372963,
+        "scale": 0.8009989626030267,
+        "fit_rows": 9493
+      },
+      "reg_ph_heat_capacity": {
+        "mean": -0.1779350381222295,
+        "scale": 0.715362551817262,
+        "fit_rows": 9493
+      },
+      "reg_exfoliation_energy": {
+        "mean": 1.5147989104476929,
+        "scale": 1.34038836434492,
+        "fit_rows": 9493
+      },
+      "reg_encut": {
+        "mean": -0.10327540405622011,
+        "scale": 0.7626027746118986,
+        "fit_rows": 9493
+      },
+      "reg_kpoint_length_unit": {
+        "mean": 0.18068780952597427,
+        "scale": 0.8496497906325694,
+        "fit_rows": 9493
+      },
+      "cls_magmom_oszicar": {
+        "mean": -6.6237939569271,
+        "scale": 7.3819365339016585,
+        "fit_rows": 9493
+      },
+      "cls_optb88vdw_bandgap": {
+        "mean": -5.312168777130636,
+        "scale": 8.473663352328188,
+        "fit_rows": 9493
+      },
+      "cls_mbj_bandgap": {
+        "mean": -4.092938927232016,
+        "scale": 8.554856163113321,
+        "fit_rows": 9493
+      },
+      "cls_n_powerfact": {
+        "mean": -3.2754370004170905,
+        "scale": 5.462510174249879,
+        "fit_rows": 9493
+      },
+      "cls_p_Seebeck": {
+        "mean": -5.063645671641028,
+        "scale": 8.358666662972672,
+        "fit_rows": 9493
+      },
+      "cls_slme": {
+        "mean": -0.6100366549360561,
+        "scale": 3.0321341701215845,
+        "fit_rows": 9493
+      },
+      "cls_spillage": {
+        "mean": 2.0256522966794654,
+        "scale": 6.6946040828134725,
+        "fit_rows": 9493
+      }
+    },
+    "reg_slme": {
+      "reg_formation_energy_peratom": {
+        "mean": -0.5743653199411382,
+        "scale": 0.9949193736277162,
+        "fit_rows": 7250
+      },
+      "reg_optb88vdw_total_energy": {
+        "mean": -0.1070070394861255,
+        "scale": 0.9043951399664387,
+        "fit_rows": 7250
+      },
+      "reg_ehull": {
+        "mean": -0.2762987028294492,
+        "scale": 0.8611019054550976,
+        "fit_rows": 7250
+      },
+      "reg_optb88vdw_bandgap": {
+        "mean": 0.9793137032823509,
+        "scale": 1.2497380287096171,
+        "fit_rows": 7250
+      },
+      "reg_mbj_bandgap": {
+        "mean": 0.7100931847547063,
+        "scale": 1.0540098124454735,
+        "fit_rows": 7250
+      },
+      "reg_bulk_modulus_kv": {
+        "mean": -0.22988936833892537,
+        "scale": 0.8389532915136343,
+        "fit_rows": 7250
+      },
+      "reg_shear_modulus_gv": {
+        "mean": -0.045360361598897725,
+        "scale": 0.9364932830919297,
+        "fit_rows": 7250
+      },
+      "reg_epsx": {
+        "mean": -0.7630948288923145,
+        "scale": 0.21203138322216475,
+        "fit_rows": 7250
+      },
+      "reg_epsy": {
+        "mean": -0.7617809930880121,
+        "scale": 0.21324887710337703,
+        "fit_rows": 7250
+      },
+      "reg_epsz": {
+        "mean": -0.7281912986080098,
+        "scale": 0.2012548300389738,
+        "fit_rows": 7250
+      },
+      "reg_mepsx": {
+        "mean": -0.5880248645765642,
+        "scale": 0.2843997640699267,
+        "fit_rows": 7250
+      },
+      "reg_mepsy": {
+        "mean": -0.586953864712798,
+        "scale": 0.28752479323113056,
+        "fit_rows": 7250
+      },
+      "reg_mepsz": {
+        "mean": -0.5714422045274926,
+        "scale": 0.2618292620551023,
+        "fit_rows": 7250
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "mean": -0.09777944185018111,
+        "scale": 0.5549200127158553,
+        "fit_rows": 7250
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "mean": -0.07442204192249796,
+        "scale": 0.4418192544289759,
+        "fit_rows": 7250
+      },
+      "reg_magmom_oszicar": {
+        "mean": -0.332722633814391,
+        "scale": 0.44134570716237836,
+        "fit_rows": 7250
+      },
+      "reg_avg_elec_mass": {
+        "mean": 0.7761336788406178,
+        "scale": 1.073207562269437,
+        "fit_rows": 7250
+      },
+      "reg_avg_hole_mass": {
+        "mean": 1.1383694437485272,
+        "scale": 1.2840799692077836,
+        "fit_rows": 7250
+      },
+      "reg_n_Seebeck": {
+        "mean": -0.6545568304800976,
+        "scale": 0.8606602223400172,
+        "fit_rows": 7250
+      },
+      "reg_n_powerfact": {
+        "mean": 0.28364873851712674,
+        "scale": 0.7935332978649321,
+        "fit_rows": 7250
+      },
+      "reg_max_efg": {
+        "mean": 0.29802461406975134,
+        "scale": 0.8906523732455977,
+        "fit_rows": 7250
+      },
+      "reg_slme": {
+        "mean": -0.03894025120589968,
+        "scale": 0.925402935803835,
+        "fit_rows": 7250
+      },
+      "reg_spillage": {
+        "mean": -0.555499546261127,
+        "scale": 0.5288035643799116,
+        "fit_rows": 7250
+      },
+      "reg_ph_heat_capacity": {
+        "mean": 0.46789770704995365,
+        "scale": 1.1007565398499168,
+        "fit_rows": 7250
+      },
+      "reg_exfoliation_energy": {
+        "mean": 0.44502160916150324,
+        "scale": 0.9428421921942698,
+        "fit_rows": 7250
+      },
+      "reg_encut": {
+        "mean": 0.2414777132132781,
+        "scale": 0.9446872382707067,
+        "fit_rows": 7250
+      },
+      "reg_kpoint_length_unit": {
+        "mean": -0.6323213085416864,
+        "scale": 0.438662598617155,
+        "fit_rows": 7250
+      },
+      "cls_magmom_oszicar": {
+        "mean": -9.187065082881213,
+        "scale": 4.5681143788566105,
+        "fit_rows": 7250
+      },
+      "cls_optb88vdw_bandgap": {
+        "mean": 6.629178671972152,
+        "scale": 5.781288034977619,
+        "fit_rows": 7250
+      },
+      "cls_mbj_bandgap": {
+        "mean": 7.759521121579503,
+        "scale": 4.820943210178602,
+        "fit_rows": 7250
+      },
+      "cls_n_powerfact": {
+        "mean": -0.8151544852735362,
+        "scale": 5.814705070110277,
+        "fit_rows": 7250
+      },
+      "cls_p_Seebeck": {
+        "mean": 6.80068800387098,
+        "scale": 5.656469701621476,
+        "fit_rows": 7250
+      },
+      "cls_slme": {
+        "mean": -1.2473132474787276,
+        "scale": 4.8888708795904385,
+        "fit_rows": 7250
+      },
+      "cls_spillage": {
+        "mean": -2.520489374141747,
+        "scale": 5.930145138867683,
+        "fit_rows": 7250
+      }
+    },
+    "reg_spillage": {
+      "reg_formation_energy_peratom": {
+        "mean": 0.18932173904957003,
+        "scale": 0.700551129274934,
+        "fit_rows": 9101
+      },
+      "reg_optb88vdw_total_energy": {
+        "mean": 0.04420819015066161,
+        "scale": 1.0031462227536434,
+        "fit_rows": 9101
+      },
+      "reg_ehull": {
+        "mean": 0.005211930923480322,
+        "scale": 1.0206590084598983,
+        "fit_rows": 9101
+      },
+      "reg_optb88vdw_bandgap": {
+        "mean": -0.41055897439006056,
+        "scale": 0.23103882628888792,
+        "fit_rows": 9101
+      },
+      "reg_mbj_bandgap": {
+        "mean": -0.5148248476754489,
+        "scale": 0.31021355956386704,
+        "fit_rows": 9101
+      },
+      "reg_bulk_modulus_kv": {
+        "mean": 0.26971195016016647,
+        "scale": 1.0039137480526383,
+        "fit_rows": 9101
+      },
+      "reg_shear_modulus_gv": {
+        "mean": 0.12421800917792464,
+        "scale": 0.8376228862587102,
+        "fit_rows": 9101
+      },
+      "reg_epsx": {
+        "mean": 0.16010554225055837,
+        "scale": 0.8696427727839938,
+        "fit_rows": 9101
+      },
+      "reg_epsy": {
+        "mean": 0.15644614725855022,
+        "scale": 0.8741044735815932,
+        "fit_rows": 9101
+      },
+      "reg_epsz": {
+        "mean": 0.18438971073648894,
+        "scale": 0.8989988021475234,
+        "fit_rows": 9101
+      },
+      "reg_mepsx": {
+        "mean": 0.18877877332040122,
+        "scale": 0.8342537682598385,
+        "fit_rows": 9101
+      },
+      "reg_mepsy": {
+        "mean": 0.18394683296110695,
+        "scale": 0.8228676061041914,
+        "fit_rows": 9101
+      },
+      "reg_mepsz": {
+        "mean": 0.1878337129065682,
+        "scale": 0.8383474009205923,
+        "fit_rows": 9101
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "mean": 0.5221771202282243,
+        "scale": 1.1536533186497766,
+        "fit_rows": 9101
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "mean": 0.028765568258743334,
+        "scale": 0.7240849640829863,
+        "fit_rows": 9101
+      },
+      "reg_magmom_oszicar": {
+        "mean": -0.10016508373945049,
+        "scale": 0.9092305990573767,
+        "fit_rows": 9101
+      },
+      "reg_avg_elec_mass": {
+        "mean": -0.1758801305077761,
+        "scale": 0.5534386854571284,
+        "fit_rows": 9101
+      },
+      "reg_avg_hole_mass": {
+        "mean": -0.20795403255850364,
+        "scale": 0.5599350142273954,
+        "fit_rows": 9101
+      },
+      "reg_n_Seebeck": {
+        "mean": 0.4200847649881905,
+        "scale": 0.6282872036171858,
+        "fit_rows": 9101
+      },
+      "reg_n_powerfact": {
+        "mean": -0.13094281817774,
+        "scale": 0.8172458842229312,
+        "fit_rows": 9101
+      },
+      "reg_max_efg": {
+        "mean": -0.04399544796608738,
+        "scale": 0.9448574953235717,
+        "fit_rows": 9101
+      },
+      "reg_slme": {
+        "mean": 0.129160894464917,
+        "scale": 0.7526598386335535,
+        "fit_rows": 9101
+      },
+      "reg_spillage": {
+        "mean": -0.06172103863668636,
+        "scale": 0.8247544418136983,
+        "fit_rows": 9101
+      },
+      "reg_ph_heat_capacity": {
+        "mean": 0.10887040972125007,
+        "scale": 0.931913517508775,
+        "fit_rows": 9101
+      },
+      "reg_exfoliation_energy": {
+        "mean": 1.7955390960827715,
+        "scale": 1.3718983871156032,
+        "fit_rows": 9101
+      },
+      "reg_encut": {
+        "mean": -0.19352223789144504,
+        "scale": 0.8141016985666657,
+        "fit_rows": 9101
+      },
+      "reg_kpoint_length_unit": {
+        "mean": 0.3847548728486888,
+        "scale": 0.7713352931107702,
+        "fit_rows": 9101
+      },
+      "cls_magmom_oszicar": {
+        "mean": -7.794349142933855,
+        "scale": 6.687264756361944,
+        "fit_rows": 9101
+      },
+      "cls_optb88vdw_bandgap": {
+        "mean": -7.11276823258465,
+        "scale": 6.877635456746219,
+        "fit_rows": 9101
+      },
+      "cls_mbj_bandgap": {
+        "mean": -5.816613156363663,
+        "scale": 7.250174768113761,
+        "fit_rows": 9101
+      },
+      "cls_n_powerfact": {
+        "mean": -4.239879235398346,
+        "scale": 4.9646459458817755,
+        "fit_rows": 9101
+      },
+      "cls_p_Seebeck": {
+        "mean": -7.079622761125158,
+        "scale": 6.682920529520952,
+        "fit_rows": 9101
+      },
+      "cls_slme": {
+        "mean": -0.1572722018169461,
+        "scale": 2.034703673099023,
+        "fit_rows": 9101
+      },
+      "cls_spillage": {
+        "mean": 4.531680315779185,
+        "scale": 6.537625857495072,
+        "fit_rows": 9101
+      }
+    },
+    "reg_ph_heat_capacity": {
+      "reg_formation_energy_peratom": {
+        "mean": -0.07919560805068812,
+        "scale": 0.940328485075313,
+        "fit_rows": 9644
+      },
+      "reg_optb88vdw_total_energy": {
+        "mean": -0.08811456292571565,
+        "scale": 0.9315770939803001,
+        "fit_rows": 9644
+      },
+      "reg_ehull": {
+        "mean": -0.08990443229263863,
+        "scale": 0.9217165061828019,
+        "fit_rows": 9644
+      },
+      "reg_optb88vdw_bandgap": {
+        "mean": 0.16171390544831848,
+        "scale": 1.1305647022375849,
+        "fit_rows": 9644
+      },
+      "reg_mbj_bandgap": {
+        "mean": -0.04685988922923844,
+        "scale": 0.9871877189752877,
+        "fit_rows": 9644
+      },
+      "reg_bulk_modulus_kv": {
+        "mean": 0.153134382365803,
+        "scale": 0.9916653488159674,
+        "fit_rows": 9644
+      },
+      "reg_shear_modulus_gv": {
+        "mean": 0.16437067631129654,
+        "scale": 0.9549731060856049,
+        "fit_rows": 9644
+      },
+      "reg_epsx": {
+        "mean": -0.09217216024749372,
+        "scale": 0.8765763623496754,
+        "fit_rows": 9644
+      },
+      "reg_epsy": {
+        "mean": -0.09618544626009574,
+        "scale": 0.8727985916644265,
+        "fit_rows": 9644
+      },
+      "reg_epsz": {
+        "mean": -0.0942041286732259,
+        "scale": 0.8618037923866801,
+        "fit_rows": 9644
+      },
+      "reg_mepsx": {
+        "mean": 0.10215366431790845,
+        "scale": 0.9291791873514578,
+        "fit_rows": 9644
+      },
+      "reg_mepsy": {
+        "mean": 0.09234917968156499,
+        "scale": 0.917675493250645,
+        "fit_rows": 9644
+      },
+      "reg_mepsz": {
+        "mean": 0.0753220330821383,
+        "scale": 0.9032023441633515,
+        "fit_rows": 9644
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "mean": 0.431266531701298,
+        "scale": 1.2551665298482462,
+        "fit_rows": 9644
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "mean": -0.004680317073540663,
+        "scale": 0.7167832787199431,
+        "fit_rows": 9644
+      },
+      "reg_magmom_oszicar": {
+        "mean": -0.0654610820526181,
+        "scale": 0.8897027375329355,
+        "fit_rows": 9644
+      },
+      "reg_avg_elec_mass": {
+        "mean": 0.15016411601499194,
+        "scale": 0.8851102407577909,
+        "fit_rows": 9644
+      },
+      "reg_avg_hole_mass": {
+        "mean": 0.2770986804196613,
+        "scale": 1.1276179035702307,
+        "fit_rows": 9644
+      },
+      "reg_n_Seebeck": {
+        "mean": 0.058362183667354954,
+        "scale": 0.9047116886892795,
+        "fit_rows": 9644
+      },
+      "reg_n_powerfact": {
+        "mean": 0.012795115670540825,
+        "scale": 0.814273039626733,
+        "fit_rows": 9644
+      },
+      "reg_max_efg": {
+        "mean": -0.04072008195749473,
+        "scale": 0.9033073823624754,
+        "fit_rows": 9644
+      },
+      "reg_slme": {
+        "mean": -0.04818683763712726,
+        "scale": 0.780118602676315,
+        "fit_rows": 9644
+      },
+      "reg_spillage": {
+        "mean": -0.29602645678244627,
+        "scale": 0.758979576692936,
+        "fit_rows": 9644
+      },
+      "reg_ph_heat_capacity": {
+        "mean": -0.003606740812906607,
+        "scale": 0.9060011349087921,
+        "fit_rows": 9644
+      },
+      "reg_exfoliation_energy": {
+        "mean": 1.380885629769523,
+        "scale": 1.4044699922199733,
+        "fit_rows": 9644
+      },
+      "reg_encut": {
+        "mean": -0.00470037447019981,
+        "scale": 0.8516673835763711,
+        "fit_rows": 9644
+      },
+      "reg_kpoint_length_unit": {
+        "mean": -0.11743412513154823,
+        "scale": 0.7552219602815561,
+        "fit_rows": 9644
+      },
+      "cls_magmom_oszicar": {
+        "mean": -6.664073048217374,
+        "scale": 7.3769024164852395,
+        "fit_rows": 9644
+      },
+      "cls_optb88vdw_bandgap": {
+        "mean": -2.732754990924693,
+        "scale": 9.471393917754634,
+        "fit_rows": 9644
+      },
+      "cls_mbj_bandgap": {
+        "mean": -1.9846865127762323,
+        "scale": 9.395804408626486,
+        "fit_rows": 9644
+      },
+      "cls_n_powerfact": {
+        "mean": -3.0994844308095844,
+        "scale": 5.599804365747239,
+        "fit_rows": 9644
+      },
+      "cls_p_Seebeck": {
+        "mean": -2.602283213223542,
+        "scale": 9.369531782755931,
+        "fit_rows": 9644
+      },
+      "cls_slme": {
+        "mean": -0.9382762931285743,
+        "scale": 3.568675493794437,
+        "fit_rows": 9644
+      },
+      "cls_spillage": {
+        "mean": 1.0279084385237995,
+        "scale": 6.955068155490884,
+        "fit_rows": 9644
+      }
+    },
+    "reg_exfoliation_energy": {
+      "reg_formation_energy_peratom": {
+        "mean": -0.1360189560539304,
+        "scale": 0.7750149209365912,
+        "fit_rows": 650
+      },
+      "reg_optb88vdw_total_energy": {
+        "mean": 0.054840118946650855,
+        "scale": 0.8179019203844765,
+        "fit_rows": 650
+      },
+      "reg_ehull": {
+        "mean": -0.31648123810354334,
+        "scale": 0.7727158888943093,
+        "fit_rows": 650
+      },
+      "reg_optb88vdw_bandgap": {
+        "mean": 0.37302017407133603,
+        "scale": 0.9984307258253741,
+        "fit_rows": 650
+      },
+      "reg_mbj_bandgap": {
+        "mean": 0.1599897114842987,
+        "scale": 0.8290524877708132,
+        "fit_rows": 650
+      },
+      "reg_bulk_modulus_kv": {
+        "mean": -0.5568244834530812,
+        "scale": 0.5234722168841098,
+        "fit_rows": 650
+      },
+      "reg_shear_modulus_gv": {
+        "mean": -0.30362656477623834,
+        "scale": 0.53447383819597,
+        "fit_rows": 650
+      },
+      "reg_epsx": {
+        "mean": -0.5287674967686717,
+        "scale": 0.4902368653346722,
+        "fit_rows": 650
+      },
+      "reg_epsy": {
+        "mean": -0.5491989425584101,
+        "scale": 0.476698880701831,
+        "fit_rows": 650
+      },
+      "reg_epsz": {
+        "mean": -0.5796980918714634,
+        "scale": 0.3909164011700245,
+        "fit_rows": 650
+      },
+      "reg_mepsx": {
+        "mean": -0.3464460465261856,
+        "scale": 0.5935783533780049,
+        "fit_rows": 650
+      },
+      "reg_mepsy": {
+        "mean": -0.33468713854511195,
+        "scale": 0.6286030640772438,
+        "fit_rows": 650
+      },
+      "reg_mepsz": {
+        "mean": -0.4339641329150002,
+        "scale": 0.41569937003444724,
+        "fit_rows": 650
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "mean": 0.27360491370023876,
+        "scale": 1.265994651417025,
+        "fit_rows": 650
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "mean": -0.025529239673274928,
+        "scale": 0.8464004890812087,
+        "fit_rows": 650
+      },
+      "reg_magmom_oszicar": {
+        "mean": -0.1135621612948867,
+        "scale": 0.8380435787425877,
+        "fit_rows": 650
+      },
+      "reg_avg_elec_mass": {
+        "mean": 0.5198216740471813,
+        "scale": 1.0757746056052735,
+        "fit_rows": 650
+      },
+      "reg_avg_hole_mass": {
+        "mean": 0.7028320179743549,
+        "scale": 1.2483505997088717,
+        "fit_rows": 650
+      },
+      "reg_n_Seebeck": {
+        "mean": -0.3676577228365036,
+        "scale": 0.9271545949990402,
+        "fit_rows": 650
+      },
+      "reg_n_powerfact": {
+        "mean": 0.23607630082746395,
+        "scale": 0.798099701344613,
+        "fit_rows": 650
+      },
+      "reg_max_efg": {
+        "mean": 0.5127522686868906,
+        "scale": 0.8921531964739834,
+        "fit_rows": 650
+      },
+      "reg_slme": {
+        "mean": 0.26681888713555124,
+        "scale": 0.9272636259696247,
+        "fit_rows": 650
+      },
+      "reg_spillage": {
+        "mean": -0.3910538724118557,
+        "scale": 0.7324285378652714,
+        "fit_rows": 650
+      },
+      "reg_ph_heat_capacity": {
+        "mean": -0.06465920257883576,
+        "scale": 0.881412712631535,
+        "fit_rows": 650
+      },
+      "reg_exfoliation_energy": {
+        "mean": 0.019265647225905784,
+        "scale": 0.7170940226212066,
+        "fit_rows": 650
+      },
+      "reg_encut": {
+        "mean": -0.14529802245392393,
+        "scale": 0.7493562600824472,
+        "fit_rows": 650
+      },
+      "reg_kpoint_length_unit": {
+        "mean": -0.28474492836519716,
+        "scale": 0.7091417402301834,
+        "fit_rows": 650
+      },
+      "cls_magmom_oszicar": {
+        "mean": -7.590813001910082,
+        "scale": 6.964893330689267,
+        "fit_rows": 650
+      },
+      "cls_optb88vdw_bandgap": {
+        "mean": 2.4042992480958882,
+        "scale": 8.24079357731791,
+        "fit_rows": 650
+      },
+      "cls_mbj_bandgap": {
+        "mean": 3.6793782176077365,
+        "scale": 7.488386128734463,
+        "fit_rows": 650
+      },
+      "cls_n_powerfact": {
+        "mean": -0.5467306198036441,
+        "scale": 5.904118061442027,
+        "fit_rows": 650
+      },
+      "cls_p_Seebeck": {
+        "mean": 2.8843783591565892,
+        "scale": 8.153254958557433,
+        "fit_rows": 650
+      },
+      "cls_slme": {
+        "mean": -0.030737851479878793,
+        "scale": 3.7789899621156606,
+        "fit_rows": 650
+      },
+      "cls_spillage": {
+        "mean": 0.7063242724451881,
+        "scale": 6.5686818046450615,
+        "fit_rows": 650
+      }
+    },
+    "reg_encut": {
+      "reg_formation_energy_peratom": {
+        "mean": 0.0009601950844558707,
+        "scale": 0.9966990665170314,
+        "fit_rows": 44308
+      },
+      "reg_optb88vdw_total_energy": {
+        "mean": 0.00023299736059893285,
+        "scale": 1.0009873712877035,
+        "fit_rows": 44308
+      },
+      "reg_ehull": {
+        "mean": 0.0036375467349720326,
+        "scale": 0.9981940635251397,
+        "fit_rows": 44308
+      },
+      "reg_optb88vdw_bandgap": {
+        "mean": 0.002680030051804282,
+        "scale": 0.9965014277813897,
+        "fit_rows": 44308
+      },
+      "reg_mbj_bandgap": {
+        "mean": -0.16966218482300582,
+        "scale": 0.8755437282972061,
+        "fit_rows": 44308
+      },
+      "reg_bulk_modulus_kv": {
+        "mean": 0.05915825479707419,
+        "scale": 0.9552139188893751,
+        "fit_rows": 44308
+      },
+      "reg_shear_modulus_gv": {
+        "mean": 0.028861595980123347,
+        "scale": 0.8754396846038074,
+        "fit_rows": 44308
+      },
+      "reg_epsx": {
+        "mean": 0.005977331345408223,
+        "scale": 0.9419951297836613,
+        "fit_rows": 44308
+      },
+      "reg_epsy": {
+        "mean": 0.005675439760222679,
+        "scale": 0.9497630509003907,
+        "fit_rows": 44308
+      },
+      "reg_epsz": {
+        "mean": 0.006573099389017369,
+        "scale": 0.9437088660426065,
+        "fit_rows": 44308
+      },
+      "reg_mepsx": {
+        "mean": 0.16488207978419211,
+        "scale": 0.9601226767065042,
+        "fit_rows": 44308
+      },
+      "reg_mepsy": {
+        "mean": 0.15968870455834147,
+        "scale": 0.95458332532383,
+        "fit_rows": 44308
+      },
+      "reg_mepsz": {
+        "mean": 0.1416050380914951,
+        "scale": 0.9538182717111082,
+        "fit_rows": 44308
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "mean": 0.38350121863925934,
+        "scale": 1.1487611916165652,
+        "fit_rows": 44308
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "mean": -0.01152903140462867,
+        "scale": 0.6064230216450197,
+        "fit_rows": 44308
+      },
+      "reg_magmom_oszicar": {
+        "mean": 0.08655369784474529,
+        "scale": 1.1197449338103551,
+        "fit_rows": 44308
+      },
+      "reg_avg_elec_mass": {
+        "mean": 0.08792004844921102,
+        "scale": 0.810332138955391,
+        "fit_rows": 44308
+      },
+      "reg_avg_hole_mass": {
+        "mean": 0.18642664051031627,
+        "scale": 1.0468960611124873,
+        "fit_rows": 44308
+      },
+      "reg_n_Seebeck": {
+        "mean": 0.11648261140079604,
+        "scale": 0.8688830833200268,
+        "fit_rows": 44308
+      },
+      "reg_n_powerfact": {
+        "mean": -0.07565225517818064,
+        "scale": 0.7439254346873577,
+        "fit_rows": 44308
+      },
+      "reg_max_efg": {
+        "mean": 0.061105274835668875,
+        "scale": 0.8548911267486492,
+        "fit_rows": 44308
+      },
+      "reg_slme": {
+        "mean": -0.008312547146851843,
+        "scale": 0.7598860074636905,
+        "fit_rows": 44308
+      },
+      "reg_spillage": {
+        "mean": -0.24912161423830717,
+        "scale": 0.7979941817779145,
+        "fit_rows": 44308
+      },
+      "reg_ph_heat_capacity": {
+        "mean": 0.3637204232914513,
+        "scale": 1.0621959402647994,
+        "fit_rows": 44308
+      },
+      "reg_exfoliation_energy": {
+        "mean": 1.2843667339139737,
+        "scale": 1.3536704812469036,
+        "fit_rows": 44308
+      },
+      "reg_encut": {
+        "mean": 0.02637047075609142,
+        "scale": 0.9325016627580278,
+        "fit_rows": 44308
+      },
+      "reg_kpoint_length_unit": {
+        "mean": 0.012696268083169503,
+        "scale": 0.8397252270356921,
+        "fit_rows": 44308
+      },
+      "cls_magmom_oszicar": {
+        "mean": -5.845719882663212,
+        "scale": 7.877424238569333,
+        "fit_rows": 44308
+      },
+      "cls_optb88vdw_bandgap": {
+        "mean": -4.078859075130264,
+        "scale": 8.914951992507667,
+        "fit_rows": 44308
+      },
+      "cls_mbj_bandgap": {
+        "mean": -3.2865815763481865,
+        "scale": 8.759583782405468,
+        "fit_rows": 44308
+      },
+      "cls_n_powerfact": {
+        "mean": -3.6760736899907407,
+        "scale": 5.074786351196491,
+        "fit_rows": 44308
+      },
+      "cls_p_Seebeck": {
+        "mean": -3.539921480504779,
+        "scale": 8.74862404525063,
+        "fit_rows": 44308
+      },
+      "cls_slme": {
+        "mean": -0.6706113390733992,
+        "scale": 2.6670950573115118,
+        "fit_rows": 44308
+      },
+      "cls_spillage": {
+        "mean": 1.6284036727989353,
+        "scale": 6.855064528853312,
+        "fit_rows": 44308
+      }
+    },
+    "reg_kpoint_length_unit": {
+      "reg_formation_energy_peratom": {
+        "mean": 0.0005434409080904168,
+        "scale": 0.9958356453676278,
+        "fit_rows": 44313
+      },
+      "reg_optb88vdw_total_energy": {
+        "mean": 0.0036779976303219263,
+        "scale": 0.9999867720221918,
+        "fit_rows": 44313
+      },
+      "reg_ehull": {
+        "mean": -7.720900501148145e-05,
+        "scale": 0.997760934310775,
+        "fit_rows": 44313
+      },
+      "reg_optb88vdw_bandgap": {
+        "mean": 0.005038313361891067,
+        "scale": 0.9989348006536858,
+        "fit_rows": 44313
+      },
+      "reg_mbj_bandgap": {
+        "mean": -0.16778077641522132,
+        "scale": 0.8780535695342286,
+        "fit_rows": 44313
+      },
+      "reg_bulk_modulus_kv": {
+        "mean": 0.05570602030263793,
+        "scale": 0.9516578770141831,
+        "fit_rows": 44313
+      },
+      "reg_shear_modulus_gv": {
+        "mean": 0.02305360655998406,
+        "scale": 0.8597021610785952,
+        "fit_rows": 44313
+      },
+      "reg_epsx": {
+        "mean": 0.005367187475812479,
+        "scale": 0.9425654342315061,
+        "fit_rows": 44313
+      },
+      "reg_epsy": {
+        "mean": 0.004771041728400241,
+        "scale": 0.9486090900926546,
+        "fit_rows": 44313
+      },
+      "reg_epsz": {
+        "mean": 0.005512082735273781,
+        "scale": 0.9427544987796247,
+        "fit_rows": 44313
+      },
+      "reg_mepsx": {
+        "mean": 0.16484082151391774,
+        "scale": 0.9613939106286684,
+        "fit_rows": 44313
+      },
+      "reg_mepsy": {
+        "mean": 0.15869131332568948,
+        "scale": 0.9557048998726501,
+        "fit_rows": 44313
+      },
+      "reg_mepsz": {
+        "mean": 0.14060136099314616,
+        "scale": 0.9531569094530018,
+        "fit_rows": 44313
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "mean": 0.39024860786556953,
+        "scale": 1.16423622568898,
+        "fit_rows": 44313
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "mean": -0.009314248070323642,
+        "scale": 0.6140885719174044,
+        "fit_rows": 44313
+      },
+      "reg_magmom_oszicar": {
+        "mean": 0.08924952417122822,
+        "scale": 1.121769087160254,
+        "fit_rows": 44313
+      },
+      "reg_avg_elec_mass": {
+        "mean": 0.08934874395670851,
+        "scale": 0.8107066492974827,
+        "fit_rows": 44313
+      },
+      "reg_avg_hole_mass": {
+        "mean": 0.18821684180284168,
+        "scale": 1.0486913258743058,
+        "fit_rows": 44313
+      },
+      "reg_n_Seebeck": {
+        "mean": 0.11385185659298687,
+        "scale": 0.86886257289967,
+        "fit_rows": 44313
+      },
+      "reg_n_powerfact": {
+        "mean": -0.07310503448870308,
+        "scale": 0.7405643626212465,
+        "fit_rows": 44313
+      },
+      "reg_max_efg": {
+        "mean": 0.05912418325943182,
+        "scale": 0.8538227911671494,
+        "fit_rows": 44313
+      },
+      "reg_slme": {
+        "mean": -0.009579600550704444,
+        "scale": 0.7603547184918803,
+        "fit_rows": 44313
+      },
+      "reg_spillage": {
+        "mean": -0.24961444843635688,
+        "scale": 0.7985747446190298,
+        "fit_rows": 44313
+      },
+      "reg_ph_heat_capacity": {
+        "mean": 0.3612880554900567,
+        "scale": 1.0594891621908757,
+        "fit_rows": 44313
+      },
+      "reg_exfoliation_energy": {
+        "mean": 1.286938732129528,
+        "scale": 1.3556443119988444,
+        "fit_rows": 44313
+      },
+      "reg_encut": {
+        "mean": 0.025133613896991692,
+        "scale": 0.9316725378670498,
+        "fit_rows": 44313
+      },
+      "reg_kpoint_length_unit": {
+        "mean": 0.008953989613995681,
+        "scale": 0.8374664584834829,
+        "fit_rows": 44313
+      },
+      "cls_magmom_oszicar": {
+        "mean": -5.829497924845008,
+        "scale": 7.898778529715183,
+        "fit_rows": 44313
+      },
+      "cls_optb88vdw_bandgap": {
+        "mean": -4.053208805965303,
+        "scale": 8.929642174891043,
+        "fit_rows": 44313
+      },
+      "cls_mbj_bandgap": {
+        "mean": -3.271910862938499,
+        "scale": 8.76667493341367,
+        "fit_rows": 44313
+      },
+      "cls_n_powerfact": {
+        "mean": -3.6529689244361463,
+        "scale": 5.074346427848791,
+        "fit_rows": 44313
+      },
+      "cls_p_Seebeck": {
+        "mean": -3.525558464251989,
+        "scale": 8.754689463535438,
+        "fit_rows": 44313
+      },
+      "cls_slme": {
+        "mean": -0.6744378871042668,
+        "scale": 2.6662920608446234,
+        "fit_rows": 44313
+      },
+      "cls_spillage": {
+        "mean": 1.5993279189525267,
+        "scale": 6.858795796180496,
+        "fit_rows": 44313
+      }
+    },
+    "cls_magmom_oszicar": {
+      "reg_formation_energy_peratom": {
+        "mean": 0.03436364225885746,
+        "scale": 0.9951260238907921,
+        "fit_rows": 41766
+      },
+      "reg_optb88vdw_total_energy": {
+        "mean": 0.030540425370949045,
+        "scale": 1.0063022130491956,
+        "fit_rows": 41766
+      },
+      "reg_ehull": {
+        "mean": -0.016766951400710894,
+        "scale": 0.9960222148205425,
+        "fit_rows": 41766
+      },
+      "reg_optb88vdw_bandgap": {
+        "mean": 0.0020926511275781165,
+        "scale": 0.9955847444440654,
+        "fit_rows": 41766
+      },
+      "reg_mbj_bandgap": {
+        "mean": -0.1624797098164952,
+        "scale": 0.8791219875629321,
+        "fit_rows": 41766
+      },
+      "reg_bulk_modulus_kv": {
+        "mean": 0.05100956133072793,
+        "scale": 0.95923510930406,
+        "fit_rows": 41766
+      },
+      "reg_shear_modulus_gv": {
+        "mean": 0.019435370885487427,
+        "scale": 0.8777904255980223,
+        "fit_rows": 41766
+      },
+      "reg_epsx": {
+        "mean": -0.009012563618168355,
+        "scale": 0.9307493582848436,
+        "fit_rows": 41766
+      },
+      "reg_epsy": {
+        "mean": -0.008402444592321276,
+        "scale": 0.9380679803570161,
+        "fit_rows": 41766
+      },
+      "reg_epsz": {
+        "mean": -0.006387252985159362,
+        "scale": 0.9316660569270336,
+        "fit_rows": 41766
+      },
+      "reg_mepsx": {
+        "mean": 0.1354147024407412,
+        "scale": 0.9328421789870911,
+        "fit_rows": 41766
+      },
+      "reg_mepsy": {
+        "mean": 0.13147483340464294,
+        "scale": 0.9297660826857811,
+        "fit_rows": 41766
+      },
+      "reg_mepsz": {
+        "mean": 0.11864701117117661,
+        "scale": 0.9347078213517311,
+        "fit_rows": 41766
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "mean": 0.36616448829845694,
+        "scale": 1.127610323336974,
+        "fit_rows": 41766
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "mean": -0.015813340183725797,
+        "scale": 0.5869798423440865,
+        "fit_rows": 41766
+      },
+      "reg_magmom_oszicar": {
+        "mean": -0.014253702809885733,
+        "scale": 0.9525599449705053,
+        "fit_rows": 41766
+      },
+      "reg_avg_elec_mass": {
+        "mean": 0.09382860916122276,
+        "scale": 0.8169134200256666,
+        "fit_rows": 41766
+      },
+      "reg_avg_hole_mass": {
+        "mean": 0.19552219184689915,
+        "scale": 1.0539549997898463,
+        "fit_rows": 41766
+      },
+      "reg_n_Seebeck": {
+        "mean": 0.12096221878885417,
+        "scale": 0.8642057626558913,
+        "fit_rows": 41766
+      },
+      "reg_n_powerfact": {
+        "mean": -0.060427151892541525,
+        "scale": 0.7439157971314776,
+        "fit_rows": 41766
+      },
+      "reg_max_efg": {
+        "mean": 0.05436697276697215,
+        "scale": 0.8623905069327553,
+        "fit_rows": 41766
+      },
+      "reg_slme": {
+        "mean": -0.011287734079315506,
+        "scale": 0.7608525438307949,
+        "fit_rows": 41766
+      },
+      "reg_spillage": {
+        "mean": -0.24049709986494058,
+        "scale": 0.7920039155905937,
+        "fit_rows": 41766
+      },
+      "reg_ph_heat_capacity": {
+        "mean": 0.32901094488620036,
+        "scale": 1.0508164285189239,
+        "fit_rows": 41766
+      },
+      "reg_exfoliation_energy": {
+        "mean": 1.338747486672915,
+        "scale": 1.3544742533822338,
+        "fit_rows": 41766
+      },
+      "reg_encut": {
+        "mean": 0.004862641315691643,
+        "scale": 0.9260916286458909,
+        "fit_rows": 41766
+      },
+      "reg_kpoint_length_unit": {
+        "mean": 0.03925855007064487,
+        "scale": 0.8428725814725522,
+        "fit_rows": 41766
+      },
+      "cls_magmom_oszicar": {
+        "mean": -6.258136303217908,
+        "scale": 7.539867475391907,
+        "fit_rows": 41766
+      },
+      "cls_optb88vdw_bandgap": {
+        "mean": -4.224576689191497,
+        "scale": 8.89385292737974,
+        "fit_rows": 41766
+      },
+      "cls_mbj_bandgap": {
+        "mean": -3.2508319395674268,
+        "scale": 8.780221527636252,
+        "fit_rows": 41766
+      },
+      "cls_n_powerfact": {
+        "mean": -3.5333652349808475,
+        "scale": 5.060756928300915,
+        "fit_rows": 41766
+      },
+      "cls_p_Seebeck": {
+        "mean": -3.597862228391222,
+        "scale": 8.760385174639373,
+        "fit_rows": 41766
+      },
+      "cls_slme": {
+        "mean": -0.671915802879691,
+        "scale": 2.6690826374376266,
+        "fit_rows": 41766
+      },
+      "cls_spillage": {
+        "mean": 1.7778354682880262,
+        "scale": 6.851631414600262,
+        "fit_rows": 41766
+      }
+    },
+    "cls_optb88vdw_bandgap": {
+      "reg_formation_energy_peratom": {
+        "mean": -0.002901124849044849,
+        "scale": 0.9956761901678691,
+        "fit_rows": 44569
+      },
+      "reg_optb88vdw_total_energy": {
+        "mean": -0.001271756089151924,
+        "scale": 0.9995445453441646,
+        "fit_rows": 44569
+      },
+      "reg_ehull": {
+        "mean": 0.003474764087742538,
+        "scale": 0.9975942062008267,
+        "fit_rows": 44569
+      },
+      "reg_optb88vdw_bandgap": {
+        "mean": 0.0036625452375741462,
+        "scale": 0.9935417828185781,
+        "fit_rows": 44569
+      },
+      "reg_mbj_bandgap": {
+        "mean": -0.16743970381454618,
+        "scale": 0.8774247826538017,
+        "fit_rows": 44569
+      },
+      "reg_bulk_modulus_kv": {
+        "mean": 0.05642201449629842,
+        "scale": 0.9502052889982613,
+        "fit_rows": 44569
+      },
+      "reg_shear_modulus_gv": {
+        "mean": 0.026478273071006267,
+        "scale": 0.8605191640307729,
+        "fit_rows": 44569
+      },
+      "reg_epsx": {
+        "mean": 0.0030951053958203777,
+        "scale": 0.9423570435860656,
+        "fit_rows": 44569
+      },
+      "reg_epsy": {
+        "mean": 0.002125883499687282,
+        "scale": 0.9475623309646699,
+        "fit_rows": 44569
+      },
+      "reg_epsz": {
+        "mean": 0.004996735267744371,
+        "scale": 0.9434089361974761,
+        "fit_rows": 44569
+      },
+      "reg_mepsx": {
+        "mean": 0.1644828333735838,
+        "scale": 0.9606238150188524,
+        "fit_rows": 44569
+      },
+      "reg_mepsy": {
+        "mean": 0.15899198924604388,
+        "scale": 0.9552878462875826,
+        "fit_rows": 44569
+      },
+      "reg_mepsz": {
+        "mean": 0.1432566098938066,
+        "scale": 0.9580409284712816,
+        "fit_rows": 44569
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "mean": 0.3857603510665632,
+        "scale": 1.1524360718037256,
+        "fit_rows": 44569
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "mean": -0.011260943217765825,
+        "scale": 0.5999692792965237,
+        "fit_rows": 44569
+      },
+      "reg_magmom_oszicar": {
+        "mean": 0.08832163261314233,
+        "scale": 1.1206389676182054,
+        "fit_rows": 44569
+      },
+      "reg_avg_elec_mass": {
+        "mean": 0.08922610196602375,
+        "scale": 0.8129672129785162,
+        "fit_rows": 44569
+      },
+      "reg_avg_hole_mass": {
+        "mean": 0.18686384988263224,
+        "scale": 1.0467921969805143,
+        "fit_rows": 44569
+      },
+      "reg_n_Seebeck": {
+        "mean": 0.11337583268165645,
+        "scale": 0.8718742324034395,
+        "fit_rows": 44569
+      },
+      "reg_n_powerfact": {
+        "mean": -0.07615472671116132,
+        "scale": 0.7384509837310835,
+        "fit_rows": 44569
+      },
+      "reg_max_efg": {
+        "mean": 0.06494593534879074,
+        "scale": 0.8549291518948713,
+        "fit_rows": 44569
+      },
+      "reg_slme": {
+        "mean": -0.011420672251679307,
+        "scale": 0.7582689537271435,
+        "fit_rows": 44569
+      },
+      "reg_spillage": {
+        "mean": -0.24707514905106212,
+        "scale": 0.8003720756524105,
+        "fit_rows": 44569
+      },
+      "reg_ph_heat_capacity": {
+        "mean": 0.36665815590542594,
+        "scale": 1.0620446414073095,
+        "fit_rows": 44569
+      },
+      "reg_exfoliation_energy": {
+        "mean": 1.2830499749302242,
+        "scale": 1.3566995792033774,
+        "fit_rows": 44569
+      },
+      "reg_encut": {
+        "mean": 0.02834201799231347,
+        "scale": 0.9377882213968426,
+        "fit_rows": 44569
+      },
+      "reg_kpoint_length_unit": {
+        "mean": 0.005728310243979298,
+        "scale": 0.8357737931634366,
+        "fit_rows": 44569
+      },
+      "cls_magmom_oszicar": {
+        "mean": -5.812630977982207,
+        "scale": 7.899360332390237,
+        "fit_rows": 44569
+      },
+      "cls_optb88vdw_bandgap": {
+        "mean": -4.044193504848278,
+        "scale": 8.929847403831705,
+        "fit_rows": 44569
+      },
+      "cls_mbj_bandgap": {
+        "mean": -3.251017119843736,
+        "scale": 8.774583262122983,
+        "fit_rows": 44569
+      },
+      "cls_n_powerfact": {
+        "mean": -3.6777505251207185,
+        "scale": 5.0828311448212915,
+        "fit_rows": 44569
+      },
+      "cls_p_Seebeck": {
+        "mean": -3.520046421973157,
+        "scale": 8.759913119607836,
+        "fit_rows": 44569
+      },
+      "cls_slme": {
+        "mean": -0.6577318091296622,
+        "scale": 2.6664806128664837,
+        "fit_rows": 44569
+      },
+      "cls_spillage": {
+        "mean": 1.6252718929335817,
+        "scale": 6.862670095817331,
+        "fit_rows": 44569
+      }
+    },
+    "cls_mbj_bandgap": {
+      "reg_formation_energy_peratom": {
+        "mean": -0.06322198323849078,
+        "scale": 0.9977273516298122,
+        "fit_rows": 14535
+      },
+      "reg_optb88vdw_total_energy": {
+        "mean": 0.010858340281636736,
+        "scale": 0.9781787118818146,
+        "fit_rows": 14535
+      },
+      "reg_ehull": {
+        "mean": -0.12865771122896147,
+        "scale": 0.9294553538449346,
+        "fit_rows": 14535
+      },
+      "reg_optb88vdw_bandgap": {
+        "mean": 0.1988444258247687,
+        "scale": 1.1102490818176183,
+        "fit_rows": 14535
+      },
+      "reg_mbj_bandgap": {
+        "mean": 0.015465662233851733,
+        "scale": 0.9821812469316693,
+        "fit_rows": 14535
+      },
+      "reg_bulk_modulus_kv": {
+        "mean": 0.027133380449031,
+        "scale": 0.9750687052450707,
+        "fit_rows": 14535
+      },
+      "reg_shear_modulus_gv": {
+        "mean": 0.029894135708446387,
+        "scale": 0.9318968514467764,
+        "fit_rows": 14535
+      },
+      "reg_epsx": {
+        "mean": -0.15812522253146527,
+        "scale": 0.8871288119846432,
+        "fit_rows": 14535
+      },
+      "reg_epsy": {
+        "mean": -0.15922410108758905,
+        "scale": 0.8902204222721987,
+        "fit_rows": 14535
+      },
+      "reg_epsz": {
+        "mean": -0.1495375170574081,
+        "scale": 0.8767465598527626,
+        "fit_rows": 14535
+      },
+      "reg_mepsx": {
+        "mean": 0.01909083067527599,
+        "scale": 0.9413976009835722,
+        "fit_rows": 14535
+      },
+      "reg_mepsy": {
+        "mean": 0.018050226803804956,
+        "scale": 0.9431310285872991,
+        "fit_rows": 14535
+      },
+      "reg_mepsz": {
+        "mean": 0.00954720580119869,
+        "scale": 0.9336893315946437,
+        "fit_rows": 14535
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "mean": 0.31319823430320914,
+        "scale": 1.1261261772342206,
+        "fit_rows": 14535
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "mean": -0.01686688857056862,
+        "scale": 0.6058087064311727,
+        "fit_rows": 14535
+      },
+      "reg_magmom_oszicar": {
+        "mean": -0.09405714116526347,
+        "scale": 0.8501921469080271,
+        "fit_rows": 14535
+      },
+      "reg_avg_elec_mass": {
+        "mean": 0.2413616383122169,
+        "scale": 0.9412043292469834,
+        "fit_rows": 14535
+      },
+      "reg_avg_hole_mass": {
+        "mean": 0.3956502679008715,
+        "scale": 1.172822352689762,
+        "fit_rows": 14535
+      },
+      "reg_n_Seebeck": {
+        "mean": -0.006999073316825429,
+        "scale": 0.892900386800965,
+        "fit_rows": 14535
+      },
+      "reg_n_powerfact": {
+        "mean": 0.027992136769899686,
+        "scale": 0.7925410743356158,
+        "fit_rows": 14535
+      },
+      "reg_max_efg": {
+        "mean": 0.029597294937149986,
+        "scale": 0.906058620212564,
+        "fit_rows": 14535
+      },
+      "reg_slme": {
+        "mean": -0.017116085319258918,
+        "scale": 0.8085894322799331,
+        "fit_rows": 14535
+      },
+      "reg_spillage": {
+        "mean": -0.31421809005682944,
+        "scale": 0.7390362671880046,
+        "fit_rows": 14535
+      },
+      "reg_ph_heat_capacity": {
+        "mean": 0.1510576521009767,
+        "scale": 0.9763495866114142,
+        "fit_rows": 14535
+      },
+      "reg_exfoliation_energy": {
+        "mean": 1.2690251175291445,
+        "scale": 1.3807610889094875,
+        "fit_rows": 14535
+      },
+      "reg_encut": {
+        "mean": -0.034659797850920056,
+        "scale": 0.8705551697845173,
+        "fit_rows": 14535
+      },
+      "reg_kpoint_length_unit": {
+        "mean": -0.172346204921225,
+        "scale": 0.7201289226181311,
+        "fit_rows": 14535
+      },
+      "cls_magmom_oszicar": {
+        "mean": -7.0105306187611465,
+        "scale": 7.158642453692157,
+        "fit_rows": 14535
+      },
+      "cls_optb88vdw_bandgap": {
+        "mean": -2.0255518333886444,
+        "scale": 9.449383754526293,
+        "fit_rows": 14535
+      },
+      "cls_mbj_bandgap": {
+        "mean": -0.9573602970380135,
+        "scale": 9.477264869645317,
+        "fit_rows": 14535
+      },
+      "cls_n_powerfact": {
+        "mean": -2.8888644660641236,
+        "scale": 5.572098517218013,
+        "fit_rows": 14535
+      },
+      "cls_p_Seebeck": {
+        "mean": -1.4242794232427918,
+        "scale": 9.32833061798681,
+        "fit_rows": 14535
+      },
+      "cls_slme": {
+        "mean": -0.8732410064689228,
+        "scale": 3.538120586161757,
+        "fit_rows": 14535
+      },
+      "cls_spillage": {
+        "mean": 0.8423186272155152,
+        "scale": 6.88539295976408,
+        "fit_rows": 14535
+      }
+    },
+    "cls_n_powerfact": {
+      "reg_formation_energy_peratom": {
+        "mean": -0.2516693100264104,
+        "scale": 0.9761075574300193,
+        "fit_rows": 18568
+      },
+      "reg_optb88vdw_total_energy": {
+        "mean": -0.1472275287994951,
+        "scale": 0.9625592015979176,
+        "fit_rows": 18568
+      },
+      "reg_ehull": {
+        "mean": -0.04405817320119607,
+        "scale": 0.9385583473200095,
+        "fit_rows": 18568
+      },
+      "reg_optb88vdw_bandgap": {
+        "mean": 0.1886919756383967,
+        "scale": 1.129469021277871,
+        "fit_rows": 18568
+      },
+      "reg_mbj_bandgap": {
+        "mean": -0.02648111611594505,
+        "scale": 0.98055457385144,
+        "fit_rows": 18568
+      },
+      "reg_bulk_modulus_kv": {
+        "mean": 0.14031103979703,
+        "scale": 0.9569212909903315,
+        "fit_rows": 18568
+      },
+      "reg_shear_modulus_gv": {
+        "mean": 0.13995977187156514,
+        "scale": 0.9037952640011437,
+        "fit_rows": 18568
+      },
+      "reg_epsx": {
+        "mean": -0.11766196334226606,
+        "scale": 0.8796814352377315,
+        "fit_rows": 18568
+      },
+      "reg_epsy": {
+        "mean": -0.11907189837287498,
+        "scale": 0.8819826459590641,
+        "fit_rows": 18568
+      },
+      "reg_epsz": {
+        "mean": -0.0970530736720956,
+        "scale": 0.8916391084238353,
+        "fit_rows": 18568
+      },
+      "reg_mepsx": {
+        "mean": 0.04638574510297931,
+        "scale": 0.9088099312096884,
+        "fit_rows": 18568
+      },
+      "reg_mepsy": {
+        "mean": 0.04048423557803326,
+        "scale": 0.9007895825481615,
+        "fit_rows": 18568
+      },
+      "reg_mepsz": {
+        "mean": 0.04320797665713634,
+        "scale": 0.9066743281070381,
+        "fit_rows": 18568
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "mean": 0.36341758487589504,
+        "scale": 1.1718241500870887,
+        "fit_rows": 18568
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "mean": -0.01249587217009201,
+        "scale": 0.6507902871179044,
+        "fit_rows": 18568
+      },
+      "reg_magmom_oszicar": {
+        "mean": 0.1219008979846165,
+        "scale": 1.1867128675528058,
+        "fit_rows": 18568
+      },
+      "reg_avg_elec_mass": {
+        "mean": 0.17421887490654087,
+        "scale": 0.9216905140529197,
+        "fit_rows": 18568
+      },
+      "reg_avg_hole_mass": {
+        "mean": 0.30095824493409157,
+        "scale": 1.1540373427989365,
+        "fit_rows": 18568
+      },
+      "reg_n_Seebeck": {
+        "mean": 0.013525934265501192,
+        "scale": 0.9288906157387337,
+        "fit_rows": 18568
+      },
+      "reg_n_powerfact": {
+        "mean": -0.06814727864584602,
+        "scale": 0.7603205753972411,
+        "fit_rows": 18568
+      },
+      "reg_max_efg": {
+        "mean": 0.02810061877282789,
+        "scale": 0.8699449543286142,
+        "fit_rows": 18568
+      },
+      "reg_slme": {
+        "mean": -0.02535622351963962,
+        "scale": 0.7827961445816036,
+        "fit_rows": 18568
+      },
+      "reg_spillage": {
+        "mean": -0.27730933720463824,
+        "scale": 0.8039289584796043,
+        "fit_rows": 18568
+      },
+      "reg_ph_heat_capacity": {
+        "mean": 0.34027141670107813,
+        "scale": 1.0777916951029807,
+        "fit_rows": 18568
+      },
+      "reg_exfoliation_energy": {
+        "mean": 1.1452386651854412,
+        "scale": 1.3806948710120286,
+        "fit_rows": 18568
+      },
+      "reg_encut": {
+        "mean": 0.18671036893977017,
+        "scale": 0.9584793426813563,
+        "fit_rows": 18568
+      },
+      "reg_kpoint_length_unit": {
+        "mean": -0.10579482998267516,
+        "scale": 0.8258997429232069,
+        "fit_rows": 18568
+      },
+      "cls_magmom_oszicar": {
+        "mean": -5.813127178659135,
+        "scale": 8.048120623872514,
+        "fit_rows": 18568
+      },
+      "cls_optb88vdw_bandgap": {
+        "mean": -2.097383602332236,
+        "scale": 9.328048078969303,
+        "fit_rows": 18568
+      },
+      "cls_mbj_bandgap": {
+        "mean": -1.5882160469340367,
+        "scale": 9.15500611551991,
+        "fit_rows": 18568
+      },
+      "cls_n_powerfact": {
+        "mean": -3.6197510171146154,
+        "scale": 5.563140213072917,
+        "fit_rows": 18568
+      },
+      "cls_p_Seebeck": {
+        "mean": -2.1745017388806107,
+        "scale": 9.30678127305642,
+        "fit_rows": 18568
+      },
+      "cls_slme": {
+        "mean": -0.8516281100131655,
+        "scale": 3.1993849835252006,
+        "fit_rows": 18568
+      },
+      "cls_spillage": {
+        "mean": 0.977467386680563,
+        "scale": 7.031530523009508,
+        "fit_rows": 18568
+      }
+    },
+    "cls_p_Seebeck": {
+      "reg_formation_energy_peratom": {
+        "mean": -0.2516693100264104,
+        "scale": 0.9761075574300193,
+        "fit_rows": 18568
+      },
+      "reg_optb88vdw_total_energy": {
+        "mean": -0.1472275287994951,
+        "scale": 0.9625592015979176,
+        "fit_rows": 18568
+      },
+      "reg_ehull": {
+        "mean": -0.04405817320119607,
+        "scale": 0.9385583473200095,
+        "fit_rows": 18568
+      },
+      "reg_optb88vdw_bandgap": {
+        "mean": 0.1886919756383967,
+        "scale": 1.129469021277871,
+        "fit_rows": 18568
+      },
+      "reg_mbj_bandgap": {
+        "mean": -0.02648111611594505,
+        "scale": 0.98055457385144,
+        "fit_rows": 18568
+      },
+      "reg_bulk_modulus_kv": {
+        "mean": 0.14031103979703,
+        "scale": 0.9569212909903315,
+        "fit_rows": 18568
+      },
+      "reg_shear_modulus_gv": {
+        "mean": 0.13995977187156514,
+        "scale": 0.9037952640011437,
+        "fit_rows": 18568
+      },
+      "reg_epsx": {
+        "mean": -0.11766196334226606,
+        "scale": 0.8796814352377315,
+        "fit_rows": 18568
+      },
+      "reg_epsy": {
+        "mean": -0.11907189837287498,
+        "scale": 0.8819826459590641,
+        "fit_rows": 18568
+      },
+      "reg_epsz": {
+        "mean": -0.0970530736720956,
+        "scale": 0.8916391084238353,
+        "fit_rows": 18568
+      },
+      "reg_mepsx": {
+        "mean": 0.04638574510297931,
+        "scale": 0.9088099312096884,
+        "fit_rows": 18568
+      },
+      "reg_mepsy": {
+        "mean": 0.04048423557803326,
+        "scale": 0.9007895825481615,
+        "fit_rows": 18568
+      },
+      "reg_mepsz": {
+        "mean": 0.04320797665713634,
+        "scale": 0.9066743281070381,
+        "fit_rows": 18568
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "mean": 0.36341758487589504,
+        "scale": 1.1718241500870887,
+        "fit_rows": 18568
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "mean": -0.01249587217009201,
+        "scale": 0.6507902871179044,
+        "fit_rows": 18568
+      },
+      "reg_magmom_oszicar": {
+        "mean": 0.1219008979846165,
+        "scale": 1.1867128675528058,
+        "fit_rows": 18568
+      },
+      "reg_avg_elec_mass": {
+        "mean": 0.17421887490654087,
+        "scale": 0.9216905140529197,
+        "fit_rows": 18568
+      },
+      "reg_avg_hole_mass": {
+        "mean": 0.30095824493409157,
+        "scale": 1.1540373427989365,
+        "fit_rows": 18568
+      },
+      "reg_n_Seebeck": {
+        "mean": 0.013525934265501192,
+        "scale": 0.9288906157387337,
+        "fit_rows": 18568
+      },
+      "reg_n_powerfact": {
+        "mean": -0.06814727864584602,
+        "scale": 0.7603205753972411,
+        "fit_rows": 18568
+      },
+      "reg_max_efg": {
+        "mean": 0.02810061877282789,
+        "scale": 0.8699449543286142,
+        "fit_rows": 18568
+      },
+      "reg_slme": {
+        "mean": -0.02535622351963962,
+        "scale": 0.7827961445816036,
+        "fit_rows": 18568
+      },
+      "reg_spillage": {
+        "mean": -0.27730933720463824,
+        "scale": 0.8039289584796043,
+        "fit_rows": 18568
+      },
+      "reg_ph_heat_capacity": {
+        "mean": 0.34027141670107813,
+        "scale": 1.0777916951029807,
+        "fit_rows": 18568
+      },
+      "reg_exfoliation_energy": {
+        "mean": 1.1452386651854412,
+        "scale": 1.3806948710120286,
+        "fit_rows": 18568
+      },
+      "reg_encut": {
+        "mean": 0.18671036893977017,
+        "scale": 0.9584793426813563,
+        "fit_rows": 18568
+      },
+      "reg_kpoint_length_unit": {
+        "mean": -0.10579482998267516,
+        "scale": 0.8258997429232069,
+        "fit_rows": 18568
+      },
+      "cls_magmom_oszicar": {
+        "mean": -5.813127178659135,
+        "scale": 8.048120623872514,
+        "fit_rows": 18568
+      },
+      "cls_optb88vdw_bandgap": {
+        "mean": -2.097383602332236,
+        "scale": 9.328048078969303,
+        "fit_rows": 18568
+      },
+      "cls_mbj_bandgap": {
+        "mean": -1.5882160469340367,
+        "scale": 9.15500611551991,
+        "fit_rows": 18568
+      },
+      "cls_n_powerfact": {
+        "mean": -3.6197510171146154,
+        "scale": 5.563140213072917,
+        "fit_rows": 18568
+      },
+      "cls_p_Seebeck": {
+        "mean": -2.1745017388806107,
+        "scale": 9.30678127305642,
+        "fit_rows": 18568
+      },
+      "cls_slme": {
+        "mean": -0.8516281100131655,
+        "scale": 3.1993849835252006,
+        "fit_rows": 18568
+      },
+      "cls_spillage": {
+        "mean": 0.977467386680563,
+        "scale": 7.031530523009508,
+        "fit_rows": 18568
+      }
+    },
+    "cls_slme": {
+      "reg_formation_energy_peratom": {
+        "mean": -0.5743653199411382,
+        "scale": 0.9949193736277162,
+        "fit_rows": 7250
+      },
+      "reg_optb88vdw_total_energy": {
+        "mean": -0.1070070394861255,
+        "scale": 0.9043951399664387,
+        "fit_rows": 7250
+      },
+      "reg_ehull": {
+        "mean": -0.2762987028294492,
+        "scale": 0.8611019054550976,
+        "fit_rows": 7250
+      },
+      "reg_optb88vdw_bandgap": {
+        "mean": 0.9793137032823509,
+        "scale": 1.2497380287096171,
+        "fit_rows": 7250
+      },
+      "reg_mbj_bandgap": {
+        "mean": 0.7100931847547063,
+        "scale": 1.0540098124454735,
+        "fit_rows": 7250
+      },
+      "reg_bulk_modulus_kv": {
+        "mean": -0.22988936833892537,
+        "scale": 0.8389532915136344,
+        "fit_rows": 7250
+      },
+      "reg_shear_modulus_gv": {
+        "mean": -0.045360361598897725,
+        "scale": 0.9364932830919297,
+        "fit_rows": 7250
+      },
+      "reg_epsx": {
+        "mean": -0.7630948288923145,
+        "scale": 0.21203138322216475,
+        "fit_rows": 7250
+      },
+      "reg_epsy": {
+        "mean": -0.7617809930880121,
+        "scale": 0.21324887710337703,
+        "fit_rows": 7250
+      },
+      "reg_epsz": {
+        "mean": -0.7281912986080098,
+        "scale": 0.2012548300389738,
+        "fit_rows": 7250
+      },
+      "reg_mepsx": {
+        "mean": -0.5880248645765642,
+        "scale": 0.2843997640699267,
+        "fit_rows": 7250
+      },
+      "reg_mepsy": {
+        "mean": -0.586953864712798,
+        "scale": 0.28752479323113056,
+        "fit_rows": 7250
+      },
+      "reg_mepsz": {
+        "mean": -0.5714422045274926,
+        "scale": 0.2618292620551023,
+        "fit_rows": 7250
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "mean": -0.09777944185018111,
+        "scale": 0.5549200127158553,
+        "fit_rows": 7250
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "mean": -0.07442204192249796,
+        "scale": 0.44181925442897585,
+        "fit_rows": 7250
+      },
+      "reg_magmom_oszicar": {
+        "mean": -0.332722633814391,
+        "scale": 0.44134570716237836,
+        "fit_rows": 7250
+      },
+      "reg_avg_elec_mass": {
+        "mean": 0.7761336788406178,
+        "scale": 1.073207562269437,
+        "fit_rows": 7250
+      },
+      "reg_avg_hole_mass": {
+        "mean": 1.1383694437485272,
+        "scale": 1.2840799692077836,
+        "fit_rows": 7250
+      },
+      "reg_n_Seebeck": {
+        "mean": -0.6545568304800976,
+        "scale": 0.8606602223400172,
+        "fit_rows": 7250
+      },
+      "reg_n_powerfact": {
+        "mean": 0.28364873851712674,
+        "scale": 0.7935332978649321,
+        "fit_rows": 7250
+      },
+      "reg_max_efg": {
+        "mean": 0.29802461406975134,
+        "scale": 0.8906523732455977,
+        "fit_rows": 7250
+      },
+      "reg_slme": {
+        "mean": -0.03894025120589968,
+        "scale": 0.925402935803835,
+        "fit_rows": 7250
+      },
+      "reg_spillage": {
+        "mean": -0.555499546261127,
+        "scale": 0.5288035643799116,
+        "fit_rows": 7250
+      },
+      "reg_ph_heat_capacity": {
+        "mean": 0.46789770704995365,
+        "scale": 1.1007565398499168,
+        "fit_rows": 7250
+      },
+      "reg_exfoliation_energy": {
+        "mean": 0.44502160916150324,
+        "scale": 0.9428421921942697,
+        "fit_rows": 7250
+      },
+      "reg_encut": {
+        "mean": 0.2414777132132781,
+        "scale": 0.9446872382707067,
+        "fit_rows": 7250
+      },
+      "reg_kpoint_length_unit": {
+        "mean": -0.6323213085416864,
+        "scale": 0.438662598617155,
+        "fit_rows": 7250
+      },
+      "cls_magmom_oszicar": {
+        "mean": -9.187065082881213,
+        "scale": 4.568114378856611,
+        "fit_rows": 7250
+      },
+      "cls_optb88vdw_bandgap": {
+        "mean": 6.629178671972152,
+        "scale": 5.781288034977619,
+        "fit_rows": 7250
+      },
+      "cls_mbj_bandgap": {
+        "mean": 7.759521121579503,
+        "scale": 4.820943210178602,
+        "fit_rows": 7250
+      },
+      "cls_n_powerfact": {
+        "mean": -0.8151544852735362,
+        "scale": 5.814705070110277,
+        "fit_rows": 7250
+      },
+      "cls_p_Seebeck": {
+        "mean": 6.80068800387098,
+        "scale": 5.656469701621476,
+        "fit_rows": 7250
+      },
+      "cls_slme": {
+        "mean": -1.2473132474787276,
+        "scale": 4.888870879590439,
+        "fit_rows": 7250
+      },
+      "cls_spillage": {
+        "mean": -2.520489374141747,
+        "scale": 5.930145138867683,
+        "fit_rows": 7250
+      }
+    },
+    "cls_spillage": {
+      "reg_formation_energy_peratom": {
+        "mean": 0.18932173904957003,
+        "scale": 0.700551129274934,
+        "fit_rows": 9101
+      },
+      "reg_optb88vdw_total_energy": {
+        "mean": 0.04420819015066161,
+        "scale": 1.0031462227536434,
+        "fit_rows": 9101
+      },
+      "reg_ehull": {
+        "mean": 0.005211930923480322,
+        "scale": 1.0206590084598983,
+        "fit_rows": 9101
+      },
+      "reg_optb88vdw_bandgap": {
+        "mean": -0.41055897439006056,
+        "scale": 0.23103882628888792,
+        "fit_rows": 9101
+      },
+      "reg_mbj_bandgap": {
+        "mean": -0.5148248476754489,
+        "scale": 0.31021355956386704,
+        "fit_rows": 9101
+      },
+      "reg_bulk_modulus_kv": {
+        "mean": 0.26971195016016647,
+        "scale": 1.0039137480526383,
+        "fit_rows": 9101
+      },
+      "reg_shear_modulus_gv": {
+        "mean": 0.12421800917792464,
+        "scale": 0.8376228862587102,
+        "fit_rows": 9101
+      },
+      "reg_epsx": {
+        "mean": 0.16010554225055837,
+        "scale": 0.8696427727839938,
+        "fit_rows": 9101
+      },
+      "reg_epsy": {
+        "mean": 0.15644614725855022,
+        "scale": 0.8741044735815932,
+        "fit_rows": 9101
+      },
+      "reg_epsz": {
+        "mean": 0.18438971073648894,
+        "scale": 0.8989988021475234,
+        "fit_rows": 9101
+      },
+      "reg_mepsx": {
+        "mean": 0.18877877332040122,
+        "scale": 0.8342537682598384,
+        "fit_rows": 9101
+      },
+      "reg_mepsy": {
+        "mean": 0.18394683296110695,
+        "scale": 0.8228676061041913,
+        "fit_rows": 9101
+      },
+      "reg_mepsz": {
+        "mean": 0.1878337129065682,
+        "scale": 0.8383474009205923,
+        "fit_rows": 9101
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "mean": 0.5221771202282243,
+        "scale": 1.1536533186497766,
+        "fit_rows": 9101
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "mean": 0.028765568258743334,
+        "scale": 0.7240849640829863,
+        "fit_rows": 9101
+      },
+      "reg_magmom_oszicar": {
+        "mean": -0.10016508373945049,
+        "scale": 0.9092305990573767,
+        "fit_rows": 9101
+      },
+      "reg_avg_elec_mass": {
+        "mean": -0.1758801305077761,
+        "scale": 0.5534386854571284,
+        "fit_rows": 9101
+      },
+      "reg_avg_hole_mass": {
+        "mean": -0.20795403255850364,
+        "scale": 0.5599350142273954,
+        "fit_rows": 9101
+      },
+      "reg_n_Seebeck": {
+        "mean": 0.4200847649881905,
+        "scale": 0.6282872036171858,
+        "fit_rows": 9101
+      },
+      "reg_n_powerfact": {
+        "mean": -0.13094281817774,
+        "scale": 0.8172458842229312,
+        "fit_rows": 9101
+      },
+      "reg_max_efg": {
+        "mean": -0.04399544796608738,
+        "scale": 0.9448574953235717,
+        "fit_rows": 9101
+      },
+      "reg_slme": {
+        "mean": 0.129160894464917,
+        "scale": 0.7526598386335533,
+        "fit_rows": 9101
+      },
+      "reg_spillage": {
+        "mean": -0.06172103863668636,
+        "scale": 0.8247544418136982,
+        "fit_rows": 9101
+      },
+      "reg_ph_heat_capacity": {
+        "mean": 0.10887040972125007,
+        "scale": 0.931913517508775,
+        "fit_rows": 9101
+      },
+      "reg_exfoliation_energy": {
+        "mean": 1.7955390960827715,
+        "scale": 1.3718983871156032,
+        "fit_rows": 9101
+      },
+      "reg_encut": {
+        "mean": -0.19352223789144504,
+        "scale": 0.8141016985666658,
+        "fit_rows": 9101
+      },
+      "reg_kpoint_length_unit": {
+        "mean": 0.3847548728486888,
+        "scale": 0.7713352931107702,
+        "fit_rows": 9101
+      },
+      "cls_magmom_oszicar": {
+        "mean": -7.794349142933855,
+        "scale": 6.687264756361944,
+        "fit_rows": 9101
+      },
+      "cls_optb88vdw_bandgap": {
+        "mean": -7.11276823258465,
+        "scale": 6.877635456746219,
+        "fit_rows": 9101
+      },
+      "cls_mbj_bandgap": {
+        "mean": -5.816613156363663,
+        "scale": 7.250174768113761,
+        "fit_rows": 9101
+      },
+      "cls_n_powerfact": {
+        "mean": -4.239879235398346,
+        "scale": 4.964645945881776,
+        "fit_rows": 9101
+      },
+      "cls_p_Seebeck": {
+        "mean": -7.079622761125158,
+        "scale": 6.682920529520952,
+        "fit_rows": 9101
+      },
+      "cls_slme": {
+        "mean": -0.1572722018169461,
+        "scale": 2.034703673099023,
+        "fit_rows": 9101
+      },
+      "cls_spillage": {
+        "mean": 4.531680315779185,
+        "scale": 6.537625857495072,
+        "fit_rows": 9101
+      }
+    }
+  }
+}

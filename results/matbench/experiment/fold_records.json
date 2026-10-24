@@ -1,0 +1,87 @@
+[
+  {
+    "calibration_receipt_sha256": "5b72660fed1267f5909073c89b894f9b1412face2ef2e805198854932219714d",
+    "calibration_status": "true_inner_oof_calibration_complete_before_outer_test_access",
+    "inner_oof_folds": 5,
+    "model_count": 10,
+    "model_seeds": [
+      20261071,
+      20261072
+    ],
+    "outer_fold": 0,
+    "prediction_labels_accessed": false,
+    "prediction_receipt_sha256": "4a39c345753996a12bf1a555eeed73b773a5230ca9e97d5c42ce8973d540fda0",
+    "prediction_status": "oof_profile_locked_crossfit_ensemble_test_prediction_complete",
+    "profile": "balanced",
+    "profile_lock_digest": "0c84706c1916aa00567bae61703e93ee91c94c88a0e63b972ca6ffe272d657be",
+    "scoring_receipt_sha256": "9d0c1cecdc48f40ea49dc15b3e9233cbc2478d02fab84bed3eb43124d116a5ae"
+  },
+  {
+    "calibration_receipt_sha256": "eee11e042dae08738cb0b83f47d49eda5f83832b7bea332372fc18316358a9f7",
+    "calibration_status": "true_inner_oof_calibration_complete_before_outer_test_access",
+    "inner_oof_folds": 5,
+    "model_count": 10,
+    "model_seeds": [
+      20261071,
+      20261072
+    ],
+    "outer_fold": 1,
+    "prediction_labels_accessed": false,
+    "prediction_receipt_sha256": "857e9cd5e675bcc1b7cfeb2b1ca7257a381d373234943487859d426642181b1a",
+    "prediction_status": "oof_profile_locked_crossfit_ensemble_test_prediction_complete",
+    "profile": "balanced",
+    "profile_lock_digest": "68719e4082c76425d22851fe2549384a08e29c9fdb8762253a6e0368cc40d453",
+    "scoring_receipt_sha256": "b4b35b87d16c6922bccbd0949358a32e668bc41f2d30293d591fa3db214fa9fc"
+  },
+  {
+    "calibration_receipt_sha256": "c23cd4cae9c76bb7cf92b473b1bdede1aac4264b4adf1d039bb662aef88b9edd",
+    "calibration_status": "true_inner_oof_calibration_complete_before_outer_test_access",
+    "inner_oof_folds": 5,
+    "model_count": 10,
+    "model_seeds": [
+      20261071,
+      20261072
+    ],
+    "outer_fold": 2,
+    "prediction_labels_accessed": false,
+    "prediction_receipt_sha256": "3f6ad09ccd61ff399423eec56c85deb5ef6283b7fa108089260c6c5b6f6be651",
+    "prediction_status": "oof_profile_locked_crossfit_ensemble_test_prediction_complete",
+    "profile": "balanced",
+    "profile_lock_digest": "df0a0c79c937a272f546836aab3b84b9d170e22626a1f4b82a92fceb41348e63",
+    "scoring_receipt_sha256": "c59c200c9067d46d2558e9d47fc31c1a8bf9fee513579f2d342d2a79f8044489"
+  },
+  {
+    "calibration_receipt_sha256": "c56f3d7e12952eb82a27acf9672d6b6248532dda79a3358bdac8e4814a0e44c7",
+    "calibration_status": "true_inner_oof_calibration_complete_before_outer_test_access",
+    "inner_oof_folds": 5,
+    "model_count": 10,
+    "model_seeds": [
+      20261071,
+      20261072
+    ],
+    "outer_fold": 3,
+    "prediction_labels_accessed": false,
+    "prediction_receipt_sha256": "0cb46dd721dae7c236898cb627da2670b27e8d981bde1b6baddc5708a4875ad0",
+    "prediction_status": "oof_profile_locked_crossfit_ensemble_test_prediction_complete",
+    "profile": "conservative",
+    "profile_lock_digest": "e4b0d545bedfcccbee4dad3997fc3a9848105768b282f7b8e76e98e9d87783ba",
+    "scoring_receipt_sha256": "65cc17ea2c679e485ac6b5dc390ca78d47b56cacdb4c8f6ade787c79887c6e75"
+  },
+  {
+    "calibration_receipt_sha256": "663c18c40072ad9d2987883dbec1c3a772dd91e98d6064b12101d9293570bc1f",
+    "calibration_status": "true_inner_oof_calibration_complete_before_outer_test_access",
+    "inner_oof_folds": 5,
+    "model_count": 10,
+    "model_seeds": [
+      20261071,
+      20261072
+    ],
+    "outer_fold": 4,
+    "prediction_labels_accessed": false,
+    "prediction_receipt_sha256": "c9ede41e22627877f86b8fc4f9b2b9f05eb1e1d0c0d5a69d95d825c6361444be",
+    "prediction_status": "oof_profile_locked_crossfit_ensemble_test_prediction_complete",
+    "profile": "conservative",
+    "profile_lock_digest": "bf5b38933f677788a890f28b789f0f7bb80f50b36e488343779e2c659778f30d",
+    "scoring_receipt_sha256": "dc4915f5b292bbef948e0bb4d27621ef433b9bc71fdf6f2994f3b98e29874cec"
+  }
+]

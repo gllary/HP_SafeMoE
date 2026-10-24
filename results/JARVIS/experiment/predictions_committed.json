@@ -1,0 +1,283 @@
+{
+  "variants": {
+    "full": {
+      "reg_formation_energy_peratom": {
+        "path": "stage2/full/test_predictions/reg_formation_energy_peratom.npz",
+        "sha256": "4551d5e9cc335f49fbe8d35f45a22d038fff12fd5f9c2780f5ba5675e863b058"
+      },
+      "reg_optb88vdw_total_energy": {
+        "path": "stage2/full/test_predictions/reg_optb88vdw_total_energy.npz",
+        "sha256": "6eec13919d7758592156ac48f36a3268c1f5cdea433de1ca97c43373a982e895"
+      },
+      "reg_ehull": {
+        "path": "stage2/full/test_predictions/reg_ehull.npz",
+        "sha256": "238b50727100e49c10602e9fd263bc919245626877b7d6df79efa7d46347f98f"
+      },
+      "reg_optb88vdw_bandgap": {
+        "path": "stage2/full/test_predictions/reg_optb88vdw_bandgap.npz",
+        "sha256": "4f3d3388a30ec5bfccefc7a1a000bd3c8581636886ee6b8d35b5d9f72350e450"
+      },
+      "reg_mbj_bandgap": {
+        "path": "stage2/full/test_predictions/reg_mbj_bandgap.npz",
+        "sha256": "f4a4b20b0290a91b3c4910353b5d2131bc279c96a55abc3c7852e19d7358d83b"
+      },
+      "reg_bulk_modulus_kv": {
+        "path": "stage2/full/test_predictions/reg_bulk_modulus_kv.npz",
+        "sha256": "025c599de598e5d5e275ec086c3b3e4bd53188596a0e01b76b4a2ca5f14ba02e"
+      },
+      "reg_shear_modulus_gv": {
+        "path": "stage2/full/test_predictions/reg_shear_modulus_gv.npz",
+        "sha256": "20b3d5a9da967394ed9457dfb7fa585fc49972785db9085b4f42f271a0b4cb59"
+      },
+      "reg_epsx": {
+        "path": "stage2/full/test_predictions/reg_epsx.npz",
+        "sha256": "6a1be7ce935c01a76616453cd33745389b818f167949ffba975a83d8830136b3"
+      },
+      "reg_epsy": {
+        "path": "stage2/full/test_predictions/reg_epsy.npz",
+        "sha256": "b68098eeca766f61b66db509f3f64022bf5aa6c5fa972be3fa4cb8e7890eedb7"
+      },
+      "reg_epsz": {
+        "path": "stage2/full/test_predictions/reg_epsz.npz",
+        "sha256": "674fe14284dd7b5dd99a5b8e99b2d3ae781a92831abed3702aa99d4b29c754c4"
+      },
+      "reg_mepsx": {
+        "path": "stage2/full/test_predictions/reg_mepsx.npz",
+        "sha256": "1101703b5671099806095cda4816c662ebdb2fde5c9cfce4a4d665fb9ebf9a49"
+      },
+      "reg_mepsy": {
+        "path": "stage2/full/test_predictions/reg_mepsy.npz",
+        "sha256": "252a49360190d5abe8df463893cd663f359674c97fe038f4589ea443e64c15e2"
+      },
+      "reg_mepsz": {
+        "path": "stage2/full/test_predictions/reg_mepsz.npz",
+        "sha256": "0a9c8d72b69cf176b543892dd8474d18a09fefb1185489fe99ec23fe56ecf99c"
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "path": "stage2/full/test_predictions/reg_dfpt_piezo_max_dielectric.npz",
+        "sha256": "8769e5c88c47a119397fffc8b5eaa807627f6a351acd1a59cece3e43c4b805fc"
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "path": "stage2/full/test_predictions/reg_dfpt_piezo_max_dij.npz",
+        "sha256": "1cb9fccfe73deafbf8d4ba31b04c8fabebed75db7a44eacb7cb2798c2df9e957"
+      },
+      "reg_magmom_oszicar": {
+        "path": "stage2/full/test_predictions/reg_magmom_oszicar.npz",
+        "sha256": "c68519e83304db20daf96ff8c7a0fc9c117c81a7e234b70fe475004bf27b2aba"
+      },
+      "reg_avg_elec_mass": {
+        "path": "stage2/full/test_predictions/reg_avg_elec_mass.npz",
+        "sha256": "f7868f23337cca5e7dff9edfa9b42084f6abe2929f1276835b6f3145b05df0e8"
+      },
+      "reg_avg_hole_mass": {
+        "path": "stage2/full/test_predictions/reg_avg_hole_mass.npz",
+        "sha256": "df80ad754abb387908d0ec054bf280963f80f5d948b3bb10aec7eb264ac06a77"
+      },
+      "reg_n_Seebeck": {
+        "path": "stage2/full/test_predictions/reg_n_Seebeck.npz",
+        "sha256": "89b4f51bb53e7775b224066fbdc81a38146d87b11eadb804ccd1e40ea37da0c0"
+      },
+      "reg_n_powerfact": {
+        "path": "stage2/full/test_predictions/reg_n_powerfact.npz",
+        "sha256": "c7939b7cc57d2a3045b6d4ed8d82ce2f912c3141ba25af86651d4045e65e7316"
+      },
+      "reg_max_efg": {
+        "path": "stage2/full/test_predictions/reg_max_efg.npz",
+        "sha256": "31e1905de815f09d3845598bfd9f6a7d8e80214fad8b901c280712fdc8d1fa68"
+      },
+      "reg_slme": {
+        "path": "stage2/full/test_predictions/reg_slme.npz",
+        "sha256": "c80880f4a9f74249c51b6f574b6423747d90421bdcaa7ae9ba3889418d3e7546"
+      },
+      "reg_spillage": {
+        "path": "stage2/full/test_predictions/reg_spillage.npz",
+        "sha256": "7d6ce52bcac5df5a2f8a76dace693b9b80bb00903625d06f68b490017b0c8076"
+      },
+      "reg_ph_heat_capacity": {
+        "path": "stage2/full/test_predictions/reg_ph_heat_capacity.npz",
+        "sha256": "f1ca6d0696f1b7841d0c588037d15a85cdb085b5ed4bdb05f836eef9224fcbc3"
+      },
+      "reg_exfoliation_energy": {
+        "path": "stage2/full/test_predictions/reg_exfoliation_energy.npz",
+        "sha256": "c5f38d63cb3cfaaea536c8cc687d329717f9d06e80aa4c8ca71eaa4b822ddde8"
+      },
+      "reg_encut": {
+        "path": "stage2/full/test_predictions/reg_encut.npz",
+        "sha256": "396503d7cc0ec8610757bbb6e63c8e1fb2c0ad832c7e8ef4e21d6072aee69610"
+      },
+      "reg_kpoint_length_unit": {
+        "path": "stage2/full/test_predictions/reg_kpoint_length_unit.npz",
+        "sha256": "a176db3dbebd7a49588268a6208221888c5f064600ea7a8857b8c0ae6ec0ac54"
+      },
+      "cls_magmom_oszicar": {
+        "path": "stage2/full/test_predictions/cls_magmom_oszicar.npz",
+        "sha256": "bf18282729b3a60464df0d643f55695a6486c5a811b112a8b1ccd923f0063d7e"
+      },
+      "cls_optb88vdw_bandgap": {
+        "path": "stage2/full/test_predictions/cls_optb88vdw_bandgap.npz",
+        "sha256": "b9529b55fda1a25dabe82d894e5c9acf275dd358b84ac1f5d1a0f34751b1bb3b"
+      },
+      "cls_mbj_bandgap": {
+        "path": "stage2/full/test_predictions/cls_mbj_bandgap.npz",
+        "sha256": "ab25178cf7cfa793553a17975a7332b61f3e123f341ecfebc95493b41ce6a64a"
+      },
+      "cls_n_powerfact": {
+        "path": "stage2/full/test_predictions/cls_n_powerfact.npz",
+        "sha256": "dc443687a62792628f4f7d1dc49817a7ce7ec18e5ae7589d636a8962d914d763"
+      },
+      "cls_p_Seebeck": {
+        "path": "stage2/full/test_predictions/cls_p_Seebeck.npz",
+        "sha256": "5e5122f0632c6784acf176560770989395232a5850804d1a853eef3215d5e4fd"
+      },
+      "cls_slme": {
+        "path": "stage2/full/test_predictions/cls_slme.npz",
+        "sha256": "52cc8c6f635d9bf4dc57f8f23b5ab7648c2e028d8010915ad04560b9c59c8f61"
+      },
+      "cls_spillage": {
+        "path": "stage2/full/test_predictions/cls_spillage.npz",
+        "sha256": "ca27b16f569519419cb1fbf9fde29b87ddeb19c3499ad9b27d85ba95e55a3ad5"
+      }
+    },
+    "no_cross_expert": {
+      "reg_formation_energy_peratom": {
+        "path": "stage2/no_cross_expert/test_predictions/reg_formation_energy_peratom.npz",
+        "sha256": "6cb912918a7aec73a55b9d07522fe75adb9e0ec469ee1f8f2b357be579e9268b"
+      },
+      "reg_optb88vdw_total_energy": {
+        "path": "stage2/no_cross_expert/test_predictions/reg_optb88vdw_total_energy.npz",
+        "sha256": "69501126a68c2be758be1b0d0812df771d39fd755187b782f0e4573c8ddbf9fd"
+      },
+      "reg_ehull": {
+        "path": "stage2/no_cross_expert/test_predictions/reg_ehull.npz",
+        "sha256": "7767f499d0a6e7cf0c58825086d9412ab828025d2b0b47491b3ff5c7937ef468"
+      },
+      "reg_optb88vdw_bandgap": {
+        "path": "stage2/no_cross_expert/test_predictions/reg_optb88vdw_bandgap.npz",
+        "sha256": "9ce363f4987085c5ca5fe85d5cff59897cfe69b5648f14b90b84f51a7b2bf51d"
+      },
+      "reg_mbj_bandgap": {
+        "path": "stage2/no_cross_expert/test_predictions/reg_mbj_bandgap.npz",
+        "sha256": "1266c56c7d591fc216d34b8ed0be40812e2c1933d307b62dce896271a1852c44"
+      },
+      "reg_bulk_modulus_kv": {
+        "path": "stage2/no_cross_expert/test_predictions/reg_bulk_modulus_kv.npz",
+        "sha256": "0a6c6448cb321b083eb61d9d86d552c627a9a7ec4a64286636a60a0b648a7f02"
+      },
+      "reg_shear_modulus_gv": {
+        "path": "stage2/no_cross_expert/test_predictions/reg_shear_modulus_gv.npz",
+        "sha256": "77872df6b43b12d0a08f35c8f860712fff7e4b9807e3c17f55d7e9a982c0ea6f"
+      },
+      "reg_epsx": {
+        "path": "stage2/no_cross_expert/test_predictions/reg_epsx.npz",
+        "sha256": "f99b6de5d09be01bf6172f54ad1c21143095f098fd44fc55c762a82d73c3c729"
+      },
+      "reg_epsy": {
+        "path": "stage2/no_cross_expert/test_predictions/reg_epsy.npz",
+        "sha256": "b64dd1457aae43d870729fd48df3e6b5c59cf6faeae6c893bc5fee7191d1ac13"
+      },
+      "reg_epsz": {
+        "path": "stage2/no_cross_expert/test_predictions/reg_epsz.npz",
+        "sha256": "68d45f38a52a86b923124c3acec7ee2ae8d8e91748e363418d0c0c0395285892"
+      },
+      "reg_mepsx": {
+        "path": "stage2/no_cross_expert/test_predictions/reg_mepsx.npz",
+        "sha256": "0dfd9a812fa96bef0352da5829512585f28e533794467dfaba5a61ff01f044fb"
+      },
+      "reg_mepsy": {
+        "path": "stage2/no_cross_expert/test_predictions/reg_mepsy.npz",
+        "sha256": "850a99308555a31681254a4ab42968a761a1d032299787e1bfe4b85980bb084f"
+      },
+      "reg_mepsz": {
+        "path": "stage2/no_cross_expert/test_predictions/reg_mepsz.npz",
+        "sha256": "c12f61be6a3baa975f8c6e62f1cf8bd30c73e8e06468a6599dc156ac29d407c0"
+      },
+      "reg_dfpt_piezo_max_dielectric": {
+        "path": "stage2/no_cross_expert/test_predictions/reg_dfpt_piezo_max_dielectric.npz",
+        "sha256": "1c283ad299af0eb38f64a959ff70fddd9d93e2d5a71928e4abee96eae46fc747"
+      },
+      "reg_dfpt_piezo_max_dij": {
+        "path": "stage2/no_cross_expert/test_predictions/reg_dfpt_piezo_max_dij.npz",
+        "sha256": "616a22e81f8866b0d2fa7e6489469ac1e5df4b39349cac8ad9f8b676f49e79d2"
+      },
+      "reg_magmom_oszicar": {
+        "path": "stage2/no_cross_expert/test_predictions/reg_magmom_oszicar.npz",
+        "sha256": "a8a9afb0f96c697141a60888b299523b0110e66f0107beb50d67bf607c3aeae3"
+      },
+      "reg_avg_elec_mass": {
+        "path": "stage2/no_cross_expert/test_predictions/reg_avg_elec_mass.npz",
+        "sha256": "ebd8c57b349f10d2542bf70e77996275587f82adb649d1d472a23c9648788c16"
+      },
+      "reg_avg_hole_mass": {
+        "path": "stage2/no_cross_expert/test_predictions/reg_avg_hole_mass.npz",
+        "sha256": "d6bc886cf670c756c8c8cfea96d52cae87b13ef158e246fa4ffc3888feda3677"
+      },
+      "reg_n_Seebeck": {
+        "path": "stage2/no_cross_expert/test_predictions/reg_n_Seebeck.npz",
+        "sha256": "65e42547bde203c4dc26b229b93b979e15851321bae29c685f172f9d8d24d9cb"
+      },
+      "reg_n_powerfact": {
+        "path": "stage2/no_cross_expert/test_predictions/reg_n_powerfact.npz",
+        "sha256": "6fbefa837a8e23cff33da9f9d87fe0339562281b45636045445a0f5cb0d18b73"
+      },
+      "reg_max_efg": {
+        "path": "stage2/no_cross_expert/test_predictions/reg_max_efg.npz",
+        "sha256": "3a723ea61393dfe0fa11af72d4bd6794d98f93c418a41b16daafbb0023fb6a51"
+      },
+      "reg_slme": {
+        "path": "stage2/no_cross_expert/test_predictions/reg_slme.npz",
+        "sha256": "e43d5eaa93aeab45b0ba7d83f74e7f0be2af1eca3ff37cf52235aa8ba1ee4057"
+      },
+      "reg_spillage": {
+        "path": "stage2/no_cross_expert/test_predictions/reg_spillage.npz",
+        "sha256": "0918387ff2c6c762e9bde2daeb519049fa499a0dc7c017bf6e9ddc6aabc9340d"
+      },
+      "reg_ph_heat_capacity": {
+        "path": "stage2/no_cross_expert/test_predictions/reg_ph_heat_capacity.npz",
+        "sha256": "a580c818e482e950c2864ec1ff946fa7ed40453bf10eb9e2843e155fbf781ed5"
+      },
+      "reg_exfoliation_energy": {
+        "path": "stage2/no_cross_expert/test_predictions/reg_exfoliation_energy.npz",
+        "sha256": "2f60e63e59346e822af301e2519af8ec977208ba3be2f3b2930ddcaf5d7a64e5"
+      },
+      "reg_encut": {
+        "path": "stage2/no_cross_expert/test_predictions/reg_encut.npz",
+        "sha256": "b2287db0805bd10c8ad7c6319b0251b2e85971521c9fc044bfc4917056f41694"
+      },
+      "reg_kpoint_length_unit": {
+        "path": "stage2/no_cross_expert/test_predictions/reg_kpoint_length_unit.npz",
+        "sha256": "b30eb0f4c6718346b19a939089160fd214a8aca48109deba25707bc0b27e4dee"
+      },
+      "cls_magmom_oszicar": {
+        "path": "stage2/no_cross_expert/test_predictions/cls_magmom_oszicar.npz",
+        "sha256": "b7c48358f390e7f7775b2e8683ef6da94bf70b8497e20f062f514aeddfb47752"
+      },
+      "cls_optb88vdw_bandgap": {
+        "path": "stage2/no_cross_expert/test_predictions/cls_optb88vdw_bandgap.npz",
+        "sha256": "99cdf233da47afb3161c3ccb13edcb54a5fff80b4b12a11f15401612dfc9c1dd"
+      },
+      "cls_mbj_bandgap": {
+        "path": "stage2/no_cross_expert/test_predictions/cls_mbj_bandgap.npz",
+        "sha256": "3a1f59dc8d6935c5f38ec851906c2dd1bc9a69cf23d94b3cccd926bc6f1bbf3c"
+      },
+      "cls_n_powerfact": {
+        "path": "stage2/no_cross_expert/test_predictions/cls_n_powerfact.npz",
+        "sha256": "887d6320267aba6ce3450102b929cbe3fd2ae376e6cce5534095233283819090"
+      },
+      "cls_p_Seebeck": {
+        "path": "stage2/no_cross_expert/test_predictions/cls_p_Seebeck.npz",
+        "sha256": "4b3b91c9978e85c3c39c9febc4cbd82a5fb8cd69ecbebddf0c81bba4ccb27cf1"
+      },
+      "cls_slme": {
+        "path": "stage2/no_cross_expert/test_predictions/cls_slme.npz",
+        "sha256": "88ac248e4050728886caabedc231f0e5c43052a76878fbcc394bdfa76b4efbb7"
+      },
+      "cls_spillage": {
+        "path": "stage2/no_cross_expert/test_predictions/cls_spillage.npz",
+        "sha256": "04800897b648cac2855bed5615e4cdc3c751f1e23bc2e4def1dbc3dc0b989c28"
+      }
+    }
+  },
+  "selection_sha256": "42842acb1e8e513fb6fdf9f052701e9dc601da91397a51564aa67f4775b78bbc",
+  "test_labels_read": false,
+  "time": 1792415384.296003
+}

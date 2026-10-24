@@ -1,0 +1,167 @@
+[
+  {
+    "outer_fold": 0,
+    "selected_safety_profile": "balanced",
+    "proposal_model_count": 10,
+    "checkpoint_paths": [
+      "matbench/stage2/full/outer_0/inner_0/seed_20261071.pt",
+      "matbench/stage2/full/outer_0/inner_0/seed_20261072.pt",
+      "matbench/stage2/full/outer_0/inner_1/seed_20261071.pt",
+      "matbench/stage2/full/outer_0/inner_1/seed_20261072.pt",
+      "matbench/stage2/full/outer_0/inner_2/seed_20261071.pt",
+      "matbench/stage2/full/outer_0/inner_2/seed_20261072.pt",
+      "matbench/stage2/full/outer_0/inner_3/seed_20261071.pt",
+      "matbench/stage2/full/outer_0/inner_3/seed_20261072.pt",
+      "matbench/stage2/full/outer_0/inner_4/seed_20261071.pt",
+      "matbench/stage2/full/outer_0/inner_4/seed_20261072.pt"
+    ],
+    "original_prediction_receipt_sha256": "7d79cb4622d5ebb16fb6b1bb5b9c14f42f2f9a54a2c1e04874bdb1bcc824eb88",
+    "calibration_files": {
+      "dielectric.json": "fc445743aa3eb90cbe07bcaab8620d98b71c4604ea15de274cb8018fcbd4f26d",
+      "expt_gap.json": "20fe0fde31f9834fcceee9fa4cd05e2dd3a98b40bc084a1891b2a6cc575130ac",
+      "expt_is_metal.json": "9d6a04b9b6d4e3d2b7b932cc2f971fad341aa00afd4ae0721ef872a9dde2bfd8",
+      "glass.json": "c3cad6ac3b4e44c6229f5d91f834fdaf22b7c65132b3da74c7db733941c00d8c",
+      "jdft2d.json": "cee70ca2b78248844705f34035b4a87d633882d15d99533bd210cdaeeb700831",
+      "log_gvrh.json": "b5bcd3ef30b4dcb094516de9ad674c52ba8c0270cdb065898ec9b238ece9f857",
+      "log_kvrh.json": "00fa4ca78ac6ebca98a02925dd4cfa91a0f7e69f44bca83c3ddb7404c3bf92d5",
+      "mp_e_form.json": "f2fc7fcb8b4feac593ab04caa6919f21ed5072f714d07f551c6dd0ceb0de1123",
+      "mp_gap.json": "3a45d5dd65ae6d79bbb06bc99d68b0adf8de0b41e2421d0eed40bab5c4834bcc",
+      "mp_is_metal.json": "01a4e7090b49de7dd59f30a43da5eaa06dc3ec0747ce5286485e33295e59d604",
+      "perovskites.json": "657e33a093cc93932b1b02a81f6c5c10155249bd6c075cd4b19c8d95848a6507",
+      "phonons.json": "beb36892eb418fecf83d46261f25d24b4e3ab26ff6d6f4f38eb872c8af6a74f2",
+      "steels.json": "229419010eb62ada8456cfbcaae4b28950d066e5eaf34a9f0f08c37884cc2bf6"
+    }
+  },
+  {
+    "outer_fold": 1,
+    "selected_safety_profile": "balanced",
+    "proposal_model_count": 10,
+    "checkpoint_paths": [
+      "matbench/stage2/full/outer_1/inner_0/seed_20261071.pt",
+      "matbench/stage2/full/outer_1/inner_0/seed_20261072.pt",
+      "matbench/stage2/full/outer_1/inner_1/seed_20261071.pt",
+      "matbench/stage2/full/outer_1/inner_1/seed_20261072.pt",
+      "matbench/stage2/full/outer_1/inner_2/seed_20261071.pt",
+      "matbench/stage2/full/outer_1/inner_2/seed_20261072.pt",
+      "matbench/stage2/full/outer_1/inner_3/seed_20261071.pt",
+      "matbench/stage2/full/outer_1/inner_3/seed_20261072.pt",
+      "matbench/stage2/full/outer_1/inner_4/seed_20261071.pt",
+      "matbench/stage2/full/outer_1/inner_4/seed_20261072.pt"
+    ],
+    "original_prediction_receipt_sha256": "eeec8f0cb93b61ef79a0526338049ae4400302eb2e99587cd58a159788b2e467",
+    "calibration_files": {
+      "dielectric.json": "62c5cde1471cf560a8ae2929f57e76d18415ab8e67fc99505802d5cb6b9287da",
+      "expt_gap.json": "9164357323c59451c20463e0c2e09ce03f90b5123d249693cf8c8f23d0d5470e",
+      "expt_is_metal.json": "2bb33311c3771ef3990ffe83993a2ea8698e34e9d2971607bb11fc709948da07",
+      "glass.json": "9c47e2fd437ef5dfc61a5f82915c56af287402be05e7694fc81c58ad567fce93",
+      "jdft2d.json": "f3fd562c96c6ad327029891c38ca66299196f7cb57288e5ed0532410098c0201",
+      "log_gvrh.json": "11aed496d16ec88949294894812b91f8714ce4875d7ee8f67c189738ce4318aa",
+      "log_kvrh.json": "6f25eb4859aec3ba064ba8480cda74d6ed8a7575c01a10e43faaadf4c5ad104b",
+      "mp_e_form.json": "02771c65df85c2acf720307fdf45751bd2b3d20b9fbd1e976253d9a43d7700af",
+      "mp_gap.json": "58635b6e4d3cac056e6959b43e46ed978b9826af583f2f012fb92aab223235b4",
+      "mp_is_metal.json": "4d992fcadf57372c658761ae92fa477b17eb6a0d79bbbe412dfea63f9b46ffaf",
+      "perovskites.json": "c76abb01effa380ec1c582092ac763649a835678751e755907323581e42dab79",
+      "phonons.json": "fe887a0c20498dcff1ae159778317a60e8715165dab08cac6f89d7510110f6be",
+      "steels.json": "9bbc4f9cbfce6442fe37016ac5e56129e9778d32eb02966ecc654895b3a990e6"
+    }
+  },
+  {
+    "outer_fold": 2,
+    "selected_safety_profile": "balanced",
+    "proposal_model_count": 10,
+    "checkpoint_paths": [
+      "matbench/stage2/full/outer_2/inner_0/seed_20261071.pt",
+      "matbench/stage2/full/outer_2/inner_0/seed_20261072.pt",
+      "matbench/stage2/full/outer_2/inner_1/seed_20261071.pt",
+      "matbench/stage2/full/outer_2/inner_1/seed_20261072.pt",
+      "matbench/stage2/full/outer_2/inner_2/seed_20261071.pt",
+      "matbench/stage2/full/outer_2/inner_2/seed_20261072.pt",
+      "matbench/stage2/full/outer_2/inner_3/seed_20261071.pt",
+      "matbench/stage2/full/outer_2/inner_3/seed_20261072.pt",
+      "matbench/stage2/full/outer_2/inner_4/seed_20261071.pt",
+      "matbench/stage2/full/outer_2/inner_4/seed_20261072.pt"
+    ],
+    "original_prediction_receipt_sha256": "5e711b4f904f770c84f2bef3451f78cb8a1320b054ef572f7847b43863358264",
+    "calibration_files": {
+      "dielectric.json": "6d1f9c95c55b908ec9139d95578889268096bd5b58a8275f6a4dfdb4ad4086bd",
+      "expt_gap.json": "72c1613f7ce15444543a158ea196f22f03a17a9f2b72e901b1ce1febdb06b5b7",
+      "expt_is_metal.json": "386c2c6aea34f94cb886358c1f35e6ea30ab4d4e59e217612935b114e9ecde22",
+      "glass.json": "e3411f8cb1e27ea70caf24e27ad31ce78b52d063d4efeefd49a43557bb793621",
+      "jdft2d.json": "a68826d3ca847b3abc30b328231e47199abc9b880bcbec92202c6494c5467698",
+      "log_gvrh.json": "90ff5d0dcee88cdb7cfb82b9e68bfb8cb23c8fcc6faad12847ca1c0e13d08325",
+      "log_kvrh.json": "f03145ea29e713f867d9ac198ae4eed14db9ebb4cfc4c5a3a4214f16cf5abff4",
+      "mp_e_form.json": "98be57a2a68d5676bbe46556c8b53f342c8393544fd51afb5d1bb4dd0f67e94b",
+      "mp_gap.json": "4e47e3ef481fff578776f11a7efd8cb2b14dcdf38445c7ea6fe9baba14b39bbd",
+      "mp_is_metal.json": "beb11a2e2c3b140d59d70212937463dc12c079f4e5787680d83766739557ebd8",
+      "perovskites.json": "3a8b1b94569c9eb384e19cc59ce79df7020c8baecb6a943e2bbd853b6ce649cf",
+      "phonons.json": "9b7dadece551069c49581d6302d661974bed5bd26092b41d992456ab09d25524",
+      "steels.json": "1de12525923eed8d9e61618e33a5d4490dc63ca05f93841a0db23921a99904bb"
+    }
+  },
+  {
+    "outer_fold": 3,
+    "selected_safety_profile": "conservative",
+    "proposal_model_count": 10,
+    "checkpoint_paths": [
+      "matbench/stage2/full/outer_3/inner_0/seed_20261071.pt",
+      "matbench/stage2/full/outer_3/inner_0/seed_20261072.pt",
+      "matbench/stage2/full/outer_3/inner_1/seed_20261071.pt",
+      "matbench/stage2/full/outer_3/inner_1/seed_20261072.pt",
+      "matbench/stage2/full/outer_3/inner_2/seed_20261071.pt",
+      "matbench/stage2/full/outer_3/inner_2/seed_20261072.pt",
+      "matbench/stage2/full/outer_3/inner_3/seed_20261071.pt",
+      "matbench/stage2/full/outer_3/inner_3/seed_20261072.pt",
+      "matbench/stage2/full/outer_3/inner_4/seed_20261071.pt",
+      "matbench/stage2/full/outer_3/inner_4/seed_20261072.pt"
+    ],
+    "original_prediction_receipt_sha256": "4e69a510ef6867a7c07ab2e8d0c1de5f2ad834f10e43c9cb057056d09df65494",
+    "calibration_files": {
+      "dielectric.json": "c24bae6d027c3de55477b31a110a27fb42c00b74047563287dcd7ac5194de162",
+      "expt_gap.json": "52b8e06336f97e4e92da47ab592e5295f361f0c5701a976389f6ff16c5f0a9ab",
+      "expt_is_metal.json": "48e38add7bf3f47021608abf142f5e91d8c322e0dfc77bd26034b45335a08e6f",
+      "glass.json": "b8b98c312940b60c314982082ed16b7b913839e0925223214939a6119c5ef3bc",
+      "jdft2d.json": "ec98168ee864cfda6794a45706bb648decbdbc76d7dd206c8575ac437e23a45b",
+      "log_gvrh.json": "02e58106d9308511ecd89eccb4df8c62689587202ccf2d41d0774d84c62ce399",
+      "log_kvrh.json": "080b3516b28bff658dab4727a4bd88d304a0e201a2e00af9f13e40dfc0fe194e",
+      "mp_e_form.json": "7638067cb4f1016a71a12efd066ea9225c805afc550462c4d4cca8621b006aac",
+      "mp_gap.json": "2cbfdd1e897482b73953c24afe23cfa8f04d64180e58fa4dac7b4aa17fe7614f",
+      "mp_is_metal.json": "daa7e843f8b05e4bd64e36ab9c330348bd563e4e0c43a4e921b4296e597834f8",
+      "perovskites.json": "8b9b76402b22a8dd8848d3b7a7ba3a4bdc07513ff01fed1309aa7d5eb53c8839",
+      "phonons.json": "c2377583537cdbe6610ef400b8eb25cc5dceaec07d368e8455c4d0fa47ae5658",
+      "steels.json": "0814b5ed7b1af2f0ecae93c5941b8fd4660c56290b70879c24b72a178a97eecc"
+    }
+  },
+  {
+    "outer_fold": 4,
+    "selected_safety_profile": "conservative",
+    "proposal_model_count": 10,
+    "checkpoint_paths": [
+      "matbench/stage2/full/outer_4/inner_0/seed_20261071.pt",
+      "matbench/stage2/full/outer_4/inner_0/seed_20261072.pt",
+      "matbench/stage2/full/outer_4/inner_1/seed_20261071.pt",
+      "matbench/stage2/full/outer_4/inner_1/seed_20261072.pt",
+      "matbench/stage2/full/outer_4/inner_2/seed_20261071.pt",
+      "matbench/stage2/full/outer_4/inner_2/seed_20261072.pt",
+      "matbench/stage2/full/outer_4/inner_3/seed_20261071.pt",
+      "matbench/stage2/full/outer_4/inner_3/seed_20261072.pt",
+      "matbench/stage2/full/outer_4/inner_4/seed_20261071.pt",
+      "matbench/stage2/full/outer_4/inner_4/seed_20261072.pt"
+    ],
+    "original_prediction_receipt_sha256": "63014a51bb85b9f38b8a1b7148298c3e36dbbff4c321cbdd71206ba4a9995564",
+    "calibration_files": {
+      "dielectric.json": "0eb64b7e170c17bff368586864ff50ddbc65a72921469b4053084022a8eed8f6",
+      "expt_gap.json": "e452dd4abfb9b47b12aaa263e94bc9cf3be16e7e509baf4c8382da773d5074fe",
+      "expt_is_metal.json": "7466f3f96a6c94763f4423de95795131c14733dfc8e87b7e110b48b57780e3a1",
+      "glass.json": "960e13c46eaff87fd22a65cfd5734ef744d2133f586b692ea7d0e3c322fbf1a1",
+      "jdft2d.json": "aa5f68ca84ee7cbff9d839d72c8bf14acc19f84b582e96701ecc2d9167c320d3",
+      "log_gvrh.json": "f24ec4cfae49ac525bcaa6a7b4b274351472ff9dfeb093820975375f6a712423",
+      "log_kvrh.json": "b2cad9eecc2f9b466da64f6dc55f979121de73fbad1b18d937ae6447090e26f5",
+      "mp_e_form.json": "2e1710d89e187a678f59c5d733133a460c9a3f18ff85f6c55c3bc560d1f316ec",
+      "mp_gap.json": "ee5d6812f30b2e4d969548067653e3a8c864eea2f0b8b7c09f34d5d7e6e5f4f1",
+      "mp_is_metal.json": "51665e162bb0afe38923ea848a938dc366384883aeacaed6c49a638e5444294f",
+      "perovskites.json": "28b6595af6c879483f28bd913d9edea6fcc69e6799e1efa6c1e72ff65b99da8b",
+      "phonons.json": "dd3c51bd7cac26be03c481ead5ff1879eda2c57db56efd0135a6bfe377a1de5b",
+      "steels.json": "ef673440e3bcfbee48faf06495d9490f1fe3065ebb53e30af7d368bf3a980a20"
+    }
+  }
+]

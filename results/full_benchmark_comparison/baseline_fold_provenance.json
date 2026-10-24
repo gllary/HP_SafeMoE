@@ -1,0 +1,23 @@
+{
+  "archived_baseline_fold_table": {
+    "source_sha256": "40be4f8e530b73b917f27fbd097fa3d08f3bfeeb6110419d26461f6b693dbe29",
+    "source_format": "Five official outer-fold scores per evaluated task/method; source_value records the value in the source unit.",
+    "included_methods": [
+      "JMP-L",
+      "coGN",
+      "coNGN"
+    ],
+    "unit_conversion": "coGN/coNGN energy columns mp_gap, mp_e_form and perovskites are divided by 1000 to match the manuscript eV units; remaining columns retain source units."
+  },
+  "released_stage1_outer_fold_score": {
+    "path": "analysis/routing_and_benefit/tables/outer_fold_scores.csv",
+    "sha256": "8f3aef9232def13ac44c5a3b9ab4cbf4325c3c83bc19d5f9ae4b01c517a32bc3",
+    "selection": {
+      "task": "mp_gap",
+      "variant": "Stage1"
+    },
+    "reason": "The Table 2 footnote specifies the frozen JMP-L Stage 1 predictions from all five official folds for MP band gap."
+  },
+  "scope": "130 final fold scores for 26 task/method combinations reported in the article.",
+  "aggregate": "Arithmetic mean and sample standard deviation across five official folds; rounding only at display."
+}

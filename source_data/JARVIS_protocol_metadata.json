@@ -1,0 +1,93 @@
+{
+  "benchmark": "JARVIS-DFT",
+  "results_sha256": "fa0c3df67e54af9297477469881f6d53055ed692ce4a8cacc702fac19513913d",
+  "material_oof_assignment": {
+    "input": "prefix followed by JID, encoded as UTF-8",
+    "prefix": "jarvis34-oof-v1:",
+    "hash": "BLAKE2b",
+    "digest_bytes": 8,
+    "integer_byte_order": "little",
+    "fold_index": "unsigned digest integer modulo 5",
+    "same_assignment_across_tasks": true
+  },
+  "stage1_input_sets": {
+    "oof": 170,
+    "full_fit": 34,
+    "total": 204,
+    "official_ALIGNN_full_fit_tasks": [
+      "reg_avg_elec_mass",
+      "reg_avg_hole_mass",
+      "reg_n_powerfact",
+      "reg_max_efg"
+    ],
+    "public_weights_copied_into_oof_fits": false
+  },
+  "member_selection": {
+    "full/20261071": {
+      "seed": 20261071,
+      "best_step": 600,
+      "checkpoint_sha256": "0fbcffd0b0e47113aa8f8eee5a929f39af1ef8ce9ffccfe5ee1fa6f8680413eb"
+    },
+    "full/20261072": {
+      "seed": 20261072,
+      "best_step": 400,
+      "checkpoint_sha256": "02aa69f855997d295847ec5020ef6f56a1691fa7fe028a8d1938711fcbf90b94"
+    },
+    "no_cross_expert/20261071": {
+      "seed": 20261071,
+      "best_step": 100,
+      "checkpoint_sha256": "49d09f9523ce07a1e0537cf5dcbabedd2690ddbe830e54103b22268afdee70ea"
+    },
+    "no_cross_expert/20261072": {
+      "seed": 20261072,
+      "best_step": 200,
+      "checkpoint_sha256": "9d6afd31dfa337d1d21059ca67103e6ed8d52f1a399ac317cca5a5b348e4a3ac"
+    }
+  },
+  "test_prediction_files": {
+    "by_configuration": {
+      "full": 34,
+      "no_cross_expert": 34
+    },
+    "total": 68,
+    "selection_sha256": "42842acb1e8e513fb6fdf9f052701e9dc601da91397a51564aa67f4775b78bbc"
+  },
+  "leaderboard_reference": {
+    "snapshot_date": "2026-10-14",
+    "benchmark_commit": "57afc55f94c8a6f4562f73a3173968cd4b2f83b1",
+    "task_details": "source_data/JARVIS_official_task_names.json"
+  },
+  "evaluation_scope": {
+    "split_membership": "official_task_specific",
+    "stage2_training_inputs": "material_hash_oof_experts",
+    "stage2_validation_and_test_inputs": "full_fit_experts",
+    "checkpoint_selection": "official_validation",
+    "calibration": "five_partition_validation_meta_crossfit",
+    "scoring": "official_test"
+  },
+  "provenance": {
+    "scope": "SHA-256 digests identify the source artifacts for the final JARVIS results. Public-file digests are listed separately in RELEASE_MANIFEST.csv.",
+    "source_artifacts": [
+      {
+        "role": "final_task_results",
+        "sha256": "fa0c3df67e54af9297477469881f6d53055ed692ce4a8cacc702fac19513913d"
+      },
+      {
+        "role": "final_training_cost_summary",
+        "sha256": "61bd8f8e4edbb636bb155e3085f70a575563f09e97265b4079688bb3b3961740"
+      },
+      {
+        "role": "execution_protocol_implementation",
+        "sha256": "6f302697fd45e253275eeb7e13816c902e3768691891af31a09a12484c551182"
+      },
+      {
+        "role": "frozen_expert_input_validation",
+        "sha256": "b56e39a3d95ac0d0faf14b7af677dcccd2aefeab80f216374c1769e8c3c5aa97"
+      },
+      {
+        "role": "committed_test_predictions",
+        "sha256": "4db0c32acc6d8a66323e5d6ff286eb1bea67e30481f32296639e05dc06d371ec"
+      }
+    ]
+  }
+}

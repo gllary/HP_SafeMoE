@@ -1,0 +1,63 @@
+{
+  "result_source_sha256": "fa0c3df67e54af9297477469881f6d53055ed692ce4a8cacc702fac19513913d",
+  "modules": [
+    {
+      "public_module": "baseline_inputs.py",
+      "public_sha256": "3703683ef8b4c2a691af0644c7bb47846698558abcababd6eb2332597d723ee3",
+      "execution_source_sha256": "f53a88f34075ec45713e9889bc126e1c6f1304fc93bb5bfc2ea2943239d872c3"
+    },
+    {
+      "public_module": "inputs.py",
+      "public_sha256": "c5cc4c44431a4276d1b81d13630fa9adbaa6eb6b165053dc6b2a8c61e47e0a87",
+      "execution_source_sha256": "54d7c24de5d764be7545f862da1efe7ddb9a52e1f143fd73d3dddf93d7fb1c80"
+    },
+    {
+      "public_module": "model.py",
+      "public_sha256": "b341a6cf30fe5c69ac8efb72cb90e012064e02e4a1bb8cc5bed1aa88331594af",
+      "execution_source_sha256": "bb696f0f9f928bbcdc575da4f35d898a700f113b3bf1d6ae5054b2d2742371a0"
+    },
+    {
+      "public_module": "safety.py",
+      "public_sha256": "77576e0becf8be1076c35631b38a293d5e3e49783482982224f44dfa057f4318",
+      "execution_source_sha256": "d320bd275c9e42e63b8b7e85d2bd1f14ded8a8c67216d59e96f7eee0b3835b2f"
+    },
+    {
+      "public_module": "bootstrap.py",
+      "public_sha256": "6881137b7ddda3ad483485218c53bcb1c01ab4eb005d8d1fb1c6ca6d923a92d4",
+      "execution_source_sha256": "2273f4eeed2f77ccb090b14081d151f4f319cd7cc56903252843765c46790b65"
+    },
+    {
+      "public_module": "train.py",
+      "public_sha256": "da153683bcbcd6261a0e7923cb9eafd75da4d3593cf42aec8b69c5f46ea8cd97",
+      "execution_source_sha256": "08f4338f00cd4c25f12c24c2bed8817f4039333023ade526186a385c70615838"
+    },
+    {
+      "public_module": "metrics.py",
+      "public_sha256": "a5532e9016b880fda86d7e721c19a6a5eeebc34f940d79df60cdb8c2466db97d",
+      "execution_source_sha256": "a5532e9016b880fda86d7e721c19a6a5eeebc34f940d79df60cdb8c2466db97d"
+    },
+    {
+      "public_module": "common.py",
+      "public_sha256": "f338df343912c2a3c391f0b99dea2f84c21c763c995ccaf462fcd1fa849b4200",
+      "execution_source_sha256": "6f302697fd45e253275eeb7e13816c902e3768691891af31a09a12484c551182"
+    }
+  ],
+  "verification": {
+    "model_checks": [
+      {
+        "variant": "Full",
+        "all_output_tensors_bit_exact": true
+      },
+      {
+        "variant": "No-cross-expert",
+        "all_output_tensors_bit_exact": true
+      }
+    ],
+    "classification_bootstrap_exact_seeds": [
+      17,
+      20261074
+    ],
+    "scientific_source": "frozen execution implementation",
+    "training_executed": false
+  }
+}

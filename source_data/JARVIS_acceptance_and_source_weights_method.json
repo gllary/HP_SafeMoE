@@ -1,0 +1,13 @@
+{
+  "source_result_sha256": "fa0c3df67e54af9297477469881f6d53055ed692ce4a8cacc702fac19513913d",
+  "method": "Pool accepted samples of saved_route[:,1]*saved_data_attention + saved_route[:,2]*saved_relation_attention; exclude target; normalize each row to 100%.",
+  "ensemble_semantics": "Saved routing probabilities and branch attention arrays are ensemble-member means. Source weights use their products, summed over the two branches.",
+  "active_figures": [
+    "Main Fig. 4: JARVIS correction acceptance",
+    "Supplementary Fig. S7: JARVIS source weights"
+  ],
+  "annotations": "Every defined non-target cell is labelled to one decimal place, including 0.0. Target-self cells are dashes. Each other cell in a zero-acceptance row is N/A. Rounded rows may differ from 100%. Exact values are in CSV.",
+  "numeric_cell_count": 858,
+  "undefined_non_target_cell_count": 264,
+  "target_self_cell_count": 34
+}

@@ -1,0 +1,41 @@
+{
+  "task": "expt_gap",
+  "export_policy": "Arrays cover the published dataset IDs in the recorded sample order. learned_relation_attention contains the Relation-augmented branch attention; source and public array values are identical.",
+  "records": [
+    {
+      "outer_fold": 0,
+      "sample_count": 248,
+      "source_archive_sha256": "e77d3af380eb1e5db3a606e332661c90bf91bc680e355cf7b9130baa33363fff",
+      "export_path": "outer_0.npz",
+      "export_sha256": "8b6fa8e3ed054c4431fa949ec7d7667e53bd1d2fe650a8f152b9c1d8730dcece"
+    },
+    {
+      "outer_fold": 1,
+      "sample_count": 248,
+      "source_archive_sha256": "ba4968d40fd552281ea283e007e8163b021021ca129a784cddc58cd48fb83d82",
+      "export_path": "outer_1.npz",
+      "export_sha256": "0ebd34ea015253fb36a0cc484388753a108e90e5830acf385a7247443cbfd645"
+    },
+    {
+      "outer_fold": 2,
+      "sample_count": 248,
+      "source_archive_sha256": "69a91d98234b462e0ea5885bd7a4240ebc635e345285da568b286170cf3239fd",
+      "export_path": "outer_2.npz",
+      "export_sha256": "6110424029466f96e92cfb495f40edace2c7fab4a8cfd72dc8a64f85e395f81a"
+    },
+    {
+      "outer_fold": 3,
+      "sample_count": 248,
+      "source_archive_sha256": "73d5989b82831e92e04995b713acbb2045dad414f971051cf9593dd48f76f3dd",
+      "export_path": "outer_3.npz",
+      "export_sha256": "4fc81be92b2f14fd1a64f4daac151461561acf78b18b223ba53256471db3a0fa"
+    },
+    {
+      "outer_fold": 4,
+      "sample_count": 248,
+      "source_archive_sha256": "823991c1bdf8ccaec57c05f6509122f781c94cdc0671ff5e2424b0906069e02d",
+      "export_path": "outer_4.npz",
+      "export_sha256": "1cd3eb68613c249ff0f20062303da3548b93f691fee4f2ef41b664a63e8b59aa"
+    }
+  ]
+}

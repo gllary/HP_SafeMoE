@@ -1,0 +1,678 @@
+{
+  "clear_gain_threshold_percent": 0.1,
+  "locked_before_outer_test_prediction": true,
+  "maximum_worst_loss_percent": 1.0,
+  "original_file_sha256": "b54c0b9fbec7923ade89c8b5e7c9c54de9794cef9779274bee0d7995fb980fe8",
+  "original_selection_digest": "68719e4082c76425d22851fe2549384a08e29c9fdb8762253a6e0368cc40d453",
+  "outer_fold": 1,
+  "outer_test_features_accessed": false,
+  "outer_test_labels_accessed": false,
+  "per_task_profile_selection": false,
+  "profile_evidence": {
+    "balanced": {
+      "clear_positive_tasks": 11,
+      "macro_normalized_gain_percent": 15.310761435574666,
+      "negative_tasks": 0,
+      "neutral_tasks": 2,
+      "positive_tasks": 11,
+      "tasks": {
+        "dielectric": {
+          "bootstrap_lower_gain_percent": 7.950265760774503,
+          "bootstrap_upper_gain_percent": 14.663810970935147,
+          "coverage": 0.40566780372605615,
+          "deployed_oof_gain_percent": 10.954679376564282,
+          "partition_gains_percent": [
+            11.702432134944164,
+            13.008083964564143,
+            2.2858809793309294,
+            13.560881640497382,
+            9.813812919852076
+          ],
+          "positive_partitions": 5,
+          "profile_accepted": true,
+          "raw_meta_crossfit_gain_percent": 10.954679376564282
+        },
+        "expt_gap": {
+          "bootstrap_lower_gain_percent": 22.13088178650713,
+          "bootstrap_upper_gain_percent": 27.86762897988702,
+          "coverage": 0.588650556611458,
+          "deployed_oof_gain_percent": 25.25180673645714,
+          "partition_gains_percent": [
+            30.05704474077445,
+            20.069902641495236,
+            22.394568528089035,
+            24.031809082588257,
+            29.519557461255552
+          ],
+          "positive_partitions": 5,
+          "profile_accepted": true,
+          "raw_meta_crossfit_gain_percent": 25.25180673645714
+        },
+        "expt_is_metal": {
+          "bootstrap_lower_gain_percent": 23.208480447581366,
+          "bootstrap_upper_gain_percent": 31.926510096521863,
+          "coverage": 1.0,
+          "deployed_oof_gain_percent": 27.487445855997468,
+          "partition_gains_percent": [
+            21.89392104625817,
+            25.85591667470364,
+            28.851540616246403,
+            31.99212770610085,
+            29.72822454889741
+          ],
+          "positive_partitions": 5,
+          "profile_accepted": true,
+          "raw_meta_crossfit_gain_percent": 27.487445855997468
+        },
+        "glass": {
+          "bootstrap_lower_gain_percent": -5.9137853638806,
+          "bootstrap_upper_gain_percent": 9.512126196269893,
+          "coverage": 1.0,
+          "deployed_oof_gain_percent": 0.0,
+          "partition_gains_percent": [
+            2.2535211267619455,
+            4.307692307692629,
+            4.469273743019448,
+            -6.185567010302073,
+            -8.602150537623956
+          ],
+          "positive_partitions": 3,
+          "profile_accepted": false,
+          "raw_meta_crossfit_gain_percent": 1.7847629195528154
+        },
+        "jdft2d": {
+          "bootstrap_lower_gain_percent": 10.754254825118327,
+          "bootstrap_upper_gain_percent": 25.698089857844785,
+          "coverage": 0.862475442043222,
+          "deployed_oof_gain_percent": 18.099251040304754,
+          "partition_gains_percent": [
+            32.91938586264664,
+            19.76930990287364,
+            13.800955028880903,
+            22.08341721039956,
+            7.8134558665988045
+          ],
+          "positive_partitions": 5,
+          "profile_accepted": true,
+          "raw_meta_crossfit_gain_percent": 18.099251040304754
+        },
+        "log_gvrh": {
+          "bootstrap_lower_gain_percent": -0.09372881721188094,
+          "bootstrap_upper_gain_percent": 0.41777589522815556,
+          "coverage": 0.9531232222095801,
+          "deployed_oof_gain_percent": 0.15271431083314868,
+          "partition_gains_percent": [
+            -0.17435739838179085,
+            -0.089559788587724,
+            0.09049814552472944,
+            0.41426470600932963,
+            0.5544186933243762
+          ],
+          "positive_partitions": 3,
+          "profile_accepted": true,
+          "raw_meta_crossfit_gain_percent": 0.15271431083314868
+        },
+        "log_kvrh": {
+          "bootstrap_lower_gain_percent": 1.5110671585154356,
+          "bootstrap_upper_gain_percent": 3.2505827532193936,
+          "coverage": 0.9733758106724314,
+          "deployed_oof_gain_percent": 2.3828875435125614,
+          "partition_gains_percent": [
+            1.4462060927029614,
+            2.151318880449531,
+            2.771806826889786,
+            1.8749622042243967,
+            3.701221457200146
+          ],
+          "positive_partitions": 5,
+          "profile_accepted": true,
+          "raw_meta_crossfit_gain_percent": 2.3828875435125614
+        },
+        "mp_e_form": {
+          "bootstrap_lower_gain_percent": 18.120863769782886,
+          "bootstrap_upper_gain_percent": 21.786472598292633,
+          "coverage": 0.9839455372359959,
+          "deployed_oof_gain_percent": 19.93341750139917,
+          "partition_gains_percent": [
+            20.305267276215222,
+            19.591788652414014,
+            19.8752057464199,
+            20.300912604067815,
+            19.60361653924343
+          ],
+          "positive_partitions": 5,
+          "profile_accepted": true,
+          "raw_meta_crossfit_gain_percent": 19.93341750139917
+        },
+        "mp_gap": {
+          "bootstrap_lower_gain_percent": 7.137910794494121,
+          "bootstrap_upper_gain_percent": 9.585606368648335,
+          "coverage": 0.910884674284368,
+          "deployed_oof_gain_percent": 8.262260225647314,
+          "partition_gains_percent": [
+            8.284855039047015,
+            7.974937747151773,
+            8.68320617691913,
+            7.724918947890685,
+            8.651381436026297
+          ],
+          "positive_partitions": 5,
+          "profile_accepted": true,
+          "raw_meta_crossfit_gain_percent": 8.262260225647314
+        },
+        "mp_is_metal": {
+          "bootstrap_lower_gain_percent": 19.938649903706843,
+          "bootstrap_upper_gain_percent": 29.04739740604319,
+          "coverage": 1.0,
+          "deployed_oof_gain_percent": 24.051765134512905,
+          "partition_gains_percent": [
+            24.45196524461088,
+            24.968197398462063,
+            22.984701531757015,
+            23.727433547029793,
+            23.99200518670404
+          ],
+          "positive_partitions": 5,
+          "profile_accepted": true,
+          "raw_meta_crossfit_gain_percent": 24.051765134512905
+        },
+        "perovskites": {
+          "bootstrap_lower_gain_percent": 21.715369334725214,
+          "bootstrap_upper_gain_percent": 24.392154598229723,
+          "coverage": 0.952780346057324,
+          "deployed_oof_gain_percent": 23.08557749433445,
+          "partition_gains_percent": [
+            23.062566611546334,
+            22.726475203340332,
+            22.729111009022755,
+            23.59345344530157,
+            23.325218881750214
+          ],
+          "positive_partitions": 5,
+          "profile_accepted": true,
+          "raw_meta_crossfit_gain_percent": 23.08557749433445
+        },
+        "phonons": {
+          "bootstrap_lower_gain_percent": 34.97452264028871,
+          "bootstrap_upper_gain_percent": 44.083273765204716,
+          "coverage": 0.950592885375494,
+          "deployed_oof_gain_percent": 39.378093442907485,
+          "partition_gains_percent": [
+            39.829910035869815,
+            40.582395692580555,
+            31.45259768725741,
+            43.95149737909566,
+            39.98640680035375
+          ],
+          "positive_partitions": 5,
+          "profile_accepted": true,
+          "raw_meta_crossfit_gain_percent": 39.378093442907485
+        },
+        "steels": {
+          "bootstrap_lower_gain_percent": -3.192546759492182,
+          "bootstrap_upper_gain_percent": 0.7724192454327907,
+          "coverage": 0.3614457831325301,
+          "deployed_oof_gain_percent": 0.0,
+          "partition_gains_percent": [
+            -0.6397544006031084,
+            -3.9160928700607704,
+            -2.614577046459116,
+            -0.08638013443469911,
+            2.2888476864660725
+          ],
+          "positive_partitions": 1,
+          "profile_accepted": false,
+          "raw_meta_crossfit_gain_percent": -1.1805008966853896
+        }
+      },
+      "worst_task_gain_percent": 0.0
+    },
+    "conservative": {
+      "clear_positive_tasks": 10,
+      "macro_normalized_gain_percent": 15.29901418089519,
+      "negative_tasks": 0,
+      "neutral_tasks": 3,
+      "positive_tasks": 10,
+      "tasks": {
+        "dielectric": {
+          "bootstrap_lower_gain_percent": 7.950265760774503,
+          "bootstrap_upper_gain_percent": 14.663810970935147,
+          "coverage": 0.40566780372605615,
+          "deployed_oof_gain_percent": 10.954679376564282,
+          "partition_gains_percent": [
+            11.702432134944164,
+            13.008083964564143,
+            2.2858809793309294,
+            13.560881640497382,
+            9.813812919852076
+          ],
+          "positive_partitions": 5,
+          "profile_accepted": true,
+          "raw_meta_crossfit_gain_percent": 10.954679376564282
+        },
+        "expt_gap": {
+          "bootstrap_lower_gain_percent": 22.13088178650713,
+          "bootstrap_upper_gain_percent": 27.86762897988702,
+          "coverage": 0.588650556611458,
+          "deployed_oof_gain_percent": 25.25180673645714,
+          "partition_gains_percent": [
+            30.05704474077445,
+            20.069902641495236,
+            22.394568528089035,
+            24.031809082588257,
+            29.519557461255552
+          ],
+          "positive_partitions": 5,
+          "profile_accepted": true,
+          "raw_meta_crossfit_gain_percent": 25.25180673645714
+        },
+        "expt_is_metal": {
+          "bootstrap_lower_gain_percent": 23.208480447581366,
+          "bootstrap_upper_gain_percent": 31.926510096521863,
+          "coverage": 1.0,
+          "deployed_oof_gain_percent": 27.487445855997468,
+          "partition_gains_percent": [
+            21.89392104625817,
+            25.85591667470364,
+            28.851540616246403,
+            31.99212770610085,
+            29.72822454889741
+          ],
+          "positive_partitions": 5,
+          "profile_accepted": true,
+          "raw_meta_crossfit_gain_percent": 27.487445855997468
+        },
+        "glass": {
+          "bootstrap_lower_gain_percent": -5.9137853638806,
+          "bootstrap_upper_gain_percent": 9.512126196269893,
+          "coverage": 1.0,
+          "deployed_oof_gain_percent": 0.0,
+          "partition_gains_percent": [
+            2.2535211267619455,
+            4.307692307692629,
+            4.469273743019448,
+            -6.185567010302073,
+            -8.602150537623956
+          ],
+          "positive_partitions": 3,
+          "profile_accepted": false,
+          "raw_meta_crossfit_gain_percent": 1.7847629195528154
+        },
+        "jdft2d": {
+          "bootstrap_lower_gain_percent": 10.754254825118327,
+          "bootstrap_upper_gain_percent": 25.698089857844785,
+          "coverage": 0.862475442043222,
+          "deployed_oof_gain_percent": 18.099251040304754,
+          "partition_gains_percent": [
+            32.91938586264664,
+            19.76930990287364,
+            13.800955028880903,
+            22.08341721039956,
+            7.8134558665988045
+          ],
+          "positive_partitions": 5,
+          "profile_accepted": true,
+          "raw_meta_crossfit_gain_percent": 18.099251040304754
+        },
+        "log_gvrh": {
+          "bootstrap_lower_gain_percent": -0.09372881721188094,
+          "bootstrap_upper_gain_percent": 0.41777589522815556,
+          "coverage": 0.9531232222095801,
+          "deployed_oof_gain_percent": 0.0,
+          "partition_gains_percent": [
+            -0.17435739838179085,
+            -0.089559788587724,
+            0.09049814552472944,
+            0.41426470600932963,
+            0.5544186933243762
+          ],
+          "positive_partitions": 3,
+          "profile_accepted": false,
+          "raw_meta_crossfit_gain_percent": 0.15271431083314868
+        },
+        "log_kvrh": {
+          "bootstrap_lower_gain_percent": 1.5110671585154356,
+          "bootstrap_upper_gain_percent": 3.2505827532193936,
+          "coverage": 0.9733758106724314,
+          "deployed_oof_gain_percent": 2.3828875435125614,
+          "partition_gains_percent": [
+            1.4462060927029614,
+            2.151318880449531,
+            2.771806826889786,
+            1.8749622042243967,
+            3.701221457200146
+          ],
+          "positive_partitions": 5,
+          "profile_accepted": true,
+          "raw_meta_crossfit_gain_percent": 2.3828875435125614
+        },
+        "mp_e_form": {
+          "bootstrap_lower_gain_percent": 18.120863769782886,
+          "bootstrap_upper_gain_percent": 21.786472598292633,
+          "coverage": 0.9839455372359959,
+          "deployed_oof_gain_percent": 19.93341750139917,
+          "partition_gains_percent": [
+            20.305267276215222,
+            19.591788652414014,
+            19.8752057464199,
+            20.300912604067815,
+            19.60361653924343
+          ],
+          "positive_partitions": 5,
+          "profile_accepted": true,
+          "raw_meta_crossfit_gain_percent": 19.93341750139917
+        },
+        "mp_gap": {
+          "bootstrap_lower_gain_percent": 7.137910794494121,
+          "bootstrap_upper_gain_percent": 9.585606368648335,
+          "coverage": 0.910884674284368,
+          "deployed_oof_gain_percent": 8.262260225647314,
+          "partition_gains_percent": [
+            8.284855039047015,
+            7.974937747151773,
+            8.68320617691913,
+            7.724918947890685,
+            8.651381436026297
+          ],
+          "positive_partitions": 5,
+          "profile_accepted": true,
+          "raw_meta_crossfit_gain_percent": 8.262260225647314
+        },
+        "mp_is_metal": {
+          "bootstrap_lower_gain_percent": 19.938649903706843,
+          "bootstrap_upper_gain_percent": 29.04739740604319,
+          "coverage": 1.0,
+          "deployed_oof_gain_percent": 24.051765134512905,
+          "partition_gains_percent": [
+            24.45196524461088,
+            24.968197398462063,
+            22.984701531757015,
+            23.727433547029793,
+            23.99200518670404
+          ],
+          "positive_partitions": 5,
+          "profile_accepted": true,
+          "raw_meta_crossfit_gain_percent": 24.051765134512905
+        },
+        "perovskites": {
+          "bootstrap_lower_gain_percent": 21.715369334725214,
+          "bootstrap_upper_gain_percent": 24.392154598229723,
+          "coverage": 0.952780346057324,
+          "deployed_oof_gain_percent": 23.08557749433445,
+          "partition_gains_percent": [
+            23.062566611546334,
+            22.726475203340332,
+            22.729111009022755,
+            23.59345344530157,
+            23.325218881750214
+          ],
+          "positive_partitions": 5,
+          "profile_accepted": true,
+          "raw_meta_crossfit_gain_percent": 23.08557749433445
+        },
+        "phonons": {
+          "bootstrap_lower_gain_percent": 34.97452264028871,
+          "bootstrap_upper_gain_percent": 44.083273765204716,
+          "coverage": 0.950592885375494,
+          "deployed_oof_gain_percent": 39.378093442907485,
+          "partition_gains_percent": [
+            39.829910035869815,
+            40.582395692580555,
+            31.45259768725741,
+            43.95149737909566,
+            39.98640680035375
+          ],
+          "positive_partitions": 5,
+          "profile_accepted": true,
+          "raw_meta_crossfit_gain_percent": 39.378093442907485
+        },
+        "steels": {
+          "bootstrap_lower_gain_percent": -3.192546759492182,
+          "bootstrap_upper_gain_percent": 0.7724192454327907,
+          "coverage": 0.3614457831325301,
+          "deployed_oof_gain_percent": 0.0,
+          "partition_gains_percent": [
+            -0.6397544006031084,
+            -3.9160928700607704,
+            -2.614577046459116,
+            -0.08638013443469911,
+            2.2888476864660725
+          ],
+          "positive_partitions": 1,
+          "profile_accepted": false,
+          "raw_meta_crossfit_gain_percent": -1.1805008966853896
+        }
+      },
+      "worst_task_gain_percent": 0.0
+    },
+    "liberal": {
+      "clear_positive_tasks": 11,
+      "macro_normalized_gain_percent": 15.310761435574666,
+      "negative_tasks": 0,
+      "neutral_tasks": 2,
+      "positive_tasks": 11,
+      "tasks": {
+        "dielectric": {
+          "bootstrap_lower_gain_percent": 7.950265760774503,
+          "bootstrap_upper_gain_percent": 14.663810970935147,
+          "coverage": 0.40566780372605615,
+          "deployed_oof_gain_percent": 10.954679376564282,
+          "partition_gains_percent": [
+            11.702432134944164,
+            13.008083964564143,
+            2.2858809793309294,
+            13.560881640497382,
+            9.813812919852076
+          ],
+          "positive_partitions": 5,
+          "profile_accepted": true,
+          "raw_meta_crossfit_gain_percent": 10.954679376564282
+        },
+        "expt_gap": {
+          "bootstrap_lower_gain_percent": 22.13088178650713,
+          "bootstrap_upper_gain_percent": 27.86762897988702,
+          "coverage": 0.588650556611458,
+          "deployed_oof_gain_percent": 25.25180673645714,
+          "partition_gains_percent": [
+            30.05704474077445,
+            20.069902641495236,
+            22.394568528089035,
+            24.031809082588257,
+            29.519557461255552
+          ],
+          "positive_partitions": 5,
+          "profile_accepted": true,
+          "raw_meta_crossfit_gain_percent": 25.25180673645714
+        },
+        "expt_is_metal": {
+          "bootstrap_lower_gain_percent": 23.208480447581366,
+          "bootstrap_upper_gain_percent": 31.926510096521863,
+          "coverage": 1.0,
+          "deployed_oof_gain_percent": 27.487445855997468,
+          "partition_gains_percent": [
+            21.89392104625817,
+            25.85591667470364,
+            28.851540616246403,
+            31.99212770610085,
+            29.72822454889741
+          ],
+          "positive_partitions": 5,
+          "profile_accepted": true,
+          "raw_meta_crossfit_gain_percent": 27.487445855997468
+        },
+        "glass": {
+          "bootstrap_lower_gain_percent": -5.9137853638806,
+          "bootstrap_upper_gain_percent": 9.512126196269893,
+          "coverage": 1.0,
+          "deployed_oof_gain_percent": 0.0,
+          "partition_gains_percent": [
+            2.2535211267619455,
+            4.307692307692629,
+            4.469273743019448,
+            -6.185567010302073,
+            -8.602150537623956
+          ],
+          "positive_partitions": 3,
+          "profile_accepted": false,
+          "raw_meta_crossfit_gain_percent": 1.7847629195528154
+        },
+        "jdft2d": {
+          "bootstrap_lower_gain_percent": 10.754254825118327,
+          "bootstrap_upper_gain_percent": 25.698089857844785,
+          "coverage": 0.862475442043222,
+          "deployed_oof_gain_percent": 18.099251040304754,
+          "partition_gains_percent": [
+            32.91938586264664,
+            19.76930990287364,
+            13.800955028880903,
+            22.08341721039956,
+            7.8134558665988045
+          ],
+          "positive_partitions": 5,
+          "profile_accepted": true,
+          "raw_meta_crossfit_gain_percent": 18.099251040304754
+        },
+        "log_gvrh": {
+          "bootstrap_lower_gain_percent": -0.09372881721188094,
+          "bootstrap_upper_gain_percent": 0.41777589522815556,
+          "coverage": 0.9531232222095801,
+          "deployed_oof_gain_percent": 0.15271431083314868,
+          "partition_gains_percent": [
+            -0.17435739838179085,
+            -0.089559788587724,
+            0.09049814552472944,
+            0.41426470600932963,
+            0.5544186933243762
+          ],
+          "positive_partitions": 3,
+          "profile_accepted": true,
+          "raw_meta_crossfit_gain_percent": 0.15271431083314868
+        },
+        "log_kvrh": {
+          "bootstrap_lower_gain_percent": 1.5110671585154356,
+          "bootstrap_upper_gain_percent": 3.2505827532193936,
+          "coverage": 0.9733758106724314,
+          "deployed_oof_gain_percent": 2.3828875435125614,
+          "partition_gains_percent": [
+            1.4462060927029614,
+            2.151318880449531,
+            2.771806826889786,
+            1.8749622042243967,
+            3.701221457200146
+          ],
+          "positive_partitions": 5,
+          "profile_accepted": true,
+          "raw_meta_crossfit_gain_percent": 2.3828875435125614
+        },
+        "mp_e_form": {
+          "bootstrap_lower_gain_percent": 18.120863769782886,
+          "bootstrap_upper_gain_percent": 21.786472598292633,
+          "coverage": 0.9839455372359959,
+          "deployed_oof_gain_percent": 19.93341750139917,
+          "partition_gains_percent": [
+            20.305267276215222,
+            19.591788652414014,
+            19.8752057464199,
+            20.300912604067815,
+            19.60361653924343
+          ],
+          "positive_partitions": 5,
+          "profile_accepted": true,
+          "raw_meta_crossfit_gain_percent": 19.93341750139917
+        },
+        "mp_gap": {
+          "bootstrap_lower_gain_percent": 7.137910794494121,
+          "bootstrap_upper_gain_percent": 9.585606368648335,
+          "coverage": 0.910884674284368,
+          "deployed_oof_gain_percent": 8.262260225647314,
+          "partition_gains_percent": [
+            8.284855039047015,
+            7.974937747151773,
+            8.68320617691913,
+            7.724918947890685,
+            8.651381436026297
+          ],
+          "positive_partitions": 5,
+          "profile_accepted": true,
+          "raw_meta_crossfit_gain_percent": 8.262260225647314
+        },
+        "mp_is_metal": {
+          "bootstrap_lower_gain_percent": 19.938649903706843,
+          "bootstrap_upper_gain_percent": 29.04739740604319,
+          "coverage": 1.0,
+          "deployed_oof_gain_percent": 24.051765134512905,
+          "partition_gains_percent": [
+            24.45196524461088,
+            24.968197398462063,
+            22.984701531757015,
+            23.727433547029793,
+            23.99200518670404
+          ],
+          "positive_partitions": 5,
+          "profile_accepted": true,
+          "raw_meta_crossfit_gain_percent": 24.051765134512905
+        },
+        "perovskites": {
+          "bootstrap_lower_gain_percent": 21.715369334725214,
+          "bootstrap_upper_gain_percent": 24.392154598229723,
+          "coverage": 0.952780346057324,
+          "deployed_oof_gain_percent": 23.08557749433445,
+          "partition_gains_percent": [
+            23.062566611546334,
+            22.726475203340332,
+            22.729111009022755,
+            23.59345344530157,
+            23.325218881750214
+          ],
+          "positive_partitions": 5,
+          "profile_accepted": true,
+          "raw_meta_crossfit_gain_percent": 23.08557749433445
+        },
+        "phonons": {
+          "bootstrap_lower_gain_percent": 34.97452264028871,
+          "bootstrap_upper_gain_percent": 44.083273765204716,
+          "coverage": 0.950592885375494,
+          "deployed_oof_gain_percent": 39.378093442907485,
+          "partition_gains_percent": [
+            39.829910035869815,
+            40.582395692580555,
+            31.45259768725741,
+            43.95149737909566,
+            39.98640680035375
+          ],
+          "positive_partitions": 5,
+          "profile_accepted": true,
+          "raw_meta_crossfit_gain_percent": 39.378093442907485
+        },
+        "steels": {
+          "bootstrap_lower_gain_percent": -3.192546759492182,
+          "bootstrap_upper_gain_percent": 0.7724192454327907,
+          "coverage": 0.3614457831325301,
+          "deployed_oof_gain_percent": 0.0,
+          "partition_gains_percent": [
+            -0.6397544006031084,
+            -3.9160928700607704,
+            -2.614577046459116,
+            -0.08638013443469911,
+            2.2888476864660725
+          ],
+          "positive_partitions": 1,
+          "profile_accepted": false,
+          "raw_meta_crossfit_gain_percent": -1.1805008966853896
+        }
+      },
+      "worst_task_gain_percent": 0.0
+    }
+  },
+  "profile_selection_uses_outer_test": false,
+  "selected_safety_profile": "balanced",
+  "selection_evidence_scope": "matching_official_outer_train_true_inner_oof_only",
+  "selection_rule": "prefer profiles satisfying the OOF worst-task floor; then maximize clear-positive tasks, macro OOF gain, worst-task OOF gain, and positive tasks; exact ties prefer the stricter predeclared profile",
+  "selection_scope": "one_profile_for_all_13_tasks_within_this_outer_fold",
+  "status": "profile_locked_from_fold_local_outer_train_oof",
+  "tie_break_order": [
+    "conservative",
+    "balanced",
+    "liberal"
+  ]
+}

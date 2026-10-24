@@ -1,0 +1,338 @@
+{
+  "array_key_mapping": {
+    "physics_attention": "learned_relation_attention"
+  },
+  "array_values_modified": false,
+  "committed_unix": 1792398094.707157,
+  "original_barrier_sha256": "34b27e26d8a9416a6c51d33f441567383447e3328ed0b8fdd4745837396c35c7",
+  "prediction_file_count": 65,
+  "predictions": [
+    {
+      "path": "results/matbench/per_sample_predictions/outer_0/ablation_no_cross_expert__oof_locked/steels.npz",
+      "sha256": "a5a69977bc79c136917ca28758eb295261c5e88c98aafab76a0352850a6ebdc7",
+      "source_sha256": "bb82bb8402f58cda7a2829261cda5d56d2835543440cd9bb90449337ea3c2d7f"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_0/ablation_no_cross_expert__oof_locked/expt_gap.npz",
+      "sha256": "6680b6610b8e610cf1c78d7a267eef5e507ad539a3098a7fdd1500a0b4b5541e",
+      "source_sha256": "acbc65b3f75158f29ee8976c4a800c4ed51e6b65e82dd6851bcb5855c711986e"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_0/ablation_no_cross_expert__oof_locked/glass.npz",
+      "sha256": "68c8fed78a9184610025ef6505ba33d3043a28813aca26a0694845202f6eb4e7",
+      "source_sha256": "a44b76d57d14cf2f08710d33f0b3aa2702dec7f96a078d9b67567070a8c4be3d"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_0/ablation_no_cross_expert__oof_locked/expt_is_metal.npz",
+      "sha256": "60df3f1af36ddf9ffeea2ae8875bf5ac79461f536d1ecbcad2c3625efaf7d6d6",
+      "source_sha256": "b92ca8fd745daf72003d690bcf686addd7d5085b97833756f98ecd1088669961"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_0/ablation_no_cross_expert__oof_locked/jdft2d.npz",
+      "sha256": "74bcfced2e983397490c479a3e172ea32db435adcb9ccb91fb7e529f60f71027",
+      "source_sha256": "e1442e31c146814c8dcc4ba47776a34d5a449735b4dc008cc46196e868a057ee"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_0/ablation_no_cross_expert__oof_locked/dielectric.npz",
+      "sha256": "d75c93071bd7b1563a25ba38862bdf3caafae3e8fb5f6093d94806477a37aa16",
+      "source_sha256": "115d6ca9e1a554fe7cfc1005b075ad94ee84dbaf415c6c659799ed301eb1daf5"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_0/ablation_no_cross_expert__oof_locked/log_kvrh.npz",
+      "sha256": "e030f890cdc584b38d7650cf2f9b6dcf03b97d08b16e241ff791f50039921a07",
+      "source_sha256": "d1043beffc09ceb20ba81ce629278839ab42af4eda78477311d8bba9758b8e57"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_0/ablation_no_cross_expert__oof_locked/log_gvrh.npz",
+      "sha256": "da814d43972538f4c85066d223d5c7f066362b1dc20f3b30ea85d9cccba9c17d",
+      "source_sha256": "a74c0482105a62ec4bfeb3e9e2c20fc4feb6e21428675ae2c21dd33c06dad45f"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_0/ablation_no_cross_expert__oof_locked/perovskites.npz",
+      "sha256": "b8e97c1611cacbba395e3b746898b78960210156e9b31bbc62c53527b2a83dfa",
+      "source_sha256": "b0ec5842a6ff93d9dbab058244eb79122d972488f510a4ebf203984aaabe5124"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_0/ablation_no_cross_expert__oof_locked/phonons.npz",
+      "sha256": "12012ab4b9d19957f66b9e20385d1b274a22ebd4ef4ae7556bd6a54911058a9c",
+      "source_sha256": "6143fd828bfd88c070dda39e9a43e175e221e43449c01db6ee8cbf510f0f16b0"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_0/ablation_no_cross_expert__oof_locked/mp_gap.npz",
+      "sha256": "595ca7f369142411f6fc3505e464124e4168e1bd5c2f631abc4cfa4bfa3c14cc",
+      "source_sha256": "b5d28bbb25005124e54a0cc746966cabad265fbf286d8da972f92bde3105d0bd"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_0/ablation_no_cross_expert__oof_locked/mp_is_metal.npz",
+      "sha256": "d31afabb605c03fc7782f3d6d40efd28e755ffa3de3d7a291f2ca445ccf108b2",
+      "source_sha256": "fd545031a022a6c3c54b75cb7f6e26b7e0c96dda6c393f971c73ce28ae0b014a"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_0/ablation_no_cross_expert__oof_locked/mp_e_form.npz",
+      "sha256": "e0de8948ec98346ae9adc733fde250e2d06c6cd91fd5501bc2f1ae3ca87883e7",
+      "source_sha256": "70e4a626c273c33fbac2b2b54690047ea5781509a2fb0448fdc7db4a1b5b12cd"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_1/ablation_no_cross_expert__oof_locked/steels.npz",
+      "sha256": "cab31ea251f39fb802ff31bdd0f5f7da864c3a5f67e46efc5f6a9baacfcb2f76",
+      "source_sha256": "97ebda940227fd9dde8190eaf6f30114fdbab477d8ffddb65f394bdaca181f26"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_1/ablation_no_cross_expert__oof_locked/expt_gap.npz",
+      "sha256": "2783fbfc1ad0e5c6b16b7dc2b6a76bf445771172b34066927f2b6694df825e77",
+      "source_sha256": "adc13c17af467de125898ee190e92d65669ecdd4110a8bbc9423a32e028334c3"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_1/ablation_no_cross_expert__oof_locked/glass.npz",
+      "sha256": "458e92657c1f6f4158bf818f9a6c94e43f9ab56a74dd26b9b251f1be552684ea",
+      "source_sha256": "0138df1d243d0a49de7b3a69fbac200455cafaaea48f682c09c8ef51452b7147"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_1/ablation_no_cross_expert__oof_locked/expt_is_metal.npz",
+      "sha256": "50996e32edabe798df03cd17829a0964039142c2cb1f6b81df2676044da62c8c",
+      "source_sha256": "4d43186ddbd870fd42180704db33f3d936456ab4d1fa61664efdc048d8ca3af6"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_1/ablation_no_cross_expert__oof_locked/jdft2d.npz",
+      "sha256": "41bbf61c060af7823134f28d1e480eb9b6c44bcebb6735f0ea1d49c9c4c5531d",
+      "source_sha256": "9967dec64b111dcf67d0f470b9a0141d7e8457d8e15e49efa15a7c02ed384127"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_1/ablation_no_cross_expert__oof_locked/dielectric.npz",
+      "sha256": "6af852cc97bc7b88154ddab4319bd98fd69bab20ae83f963bb4180bd1cb0f4c1",
+      "source_sha256": "1a37300e1c91d4f9fe332ff21c5c30705455b11aebf34d85bae0dae38e2d4346"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_1/ablation_no_cross_expert__oof_locked/log_kvrh.npz",
+      "sha256": "ead08efd6e9750fa2913e574bb6f97e992fd234df860ebf1f91c4c1d231005e6",
+      "source_sha256": "e5d4dbc9acc50de126ca31f3174e94dc3f1ea98850840c393f162168f4281430"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_1/ablation_no_cross_expert__oof_locked/log_gvrh.npz",
+      "sha256": "3ad0239709bf85666e6bc0e74c29a8dc15d1e62bf8e38acc447892d4d208a878",
+      "source_sha256": "69473a849a29f5a18a095116ff619aeb2c53294d4d93fb3fc7b86e891eb61ee7"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_1/ablation_no_cross_expert__oof_locked/perovskites.npz",
+      "sha256": "585734a68ca9211cf3d9ace45dcb0489543298154378645fe15fd41fef131d5b",
+      "source_sha256": "23597c3ac4d692f1206b1dcc25e00c69e1e82fac5851171f0a013604c9039e43"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_1/ablation_no_cross_expert__oof_locked/phonons.npz",
+      "sha256": "bd19993bbf58702ed6e6931d09d62fd935c86dcb995f79c7733dc36fa0d9a20d",
+      "source_sha256": "f89939d17b42784cbe574b797fa88cea8b18884bccf5cd7e92d137356126ab75"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_1/ablation_no_cross_expert__oof_locked/mp_gap.npz",
+      "sha256": "e2d7e74cb52ce951536646387a4bd7d93cbcef694e5212bb84415ce90ef9a0ee",
+      "source_sha256": "88e2e622e85d31915ae44e9c80ded9048c2be6358334cf19fd3bb89fde6eb54b"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_1/ablation_no_cross_expert__oof_locked/mp_is_metal.npz",
+      "sha256": "b0ae21f0bc8368f2db85225703b3192ead01d0bf86bc0ae6f76b5fc704df810a",
+      "source_sha256": "a85f1a1759f2a65a0e21273ea6f5a4a0044a163b43faf0a6cccfc4ddaea6e2ad"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_1/ablation_no_cross_expert__oof_locked/mp_e_form.npz",
+      "sha256": "824de56cf2fa509391e2fbf20709bffa2b8d75872a01bbe664ae0a9440877981",
+      "source_sha256": "e3fca4f2eb1d2574e3584ef31e58735a6c9e7bcf0a069a72547ce5a16fdcf3c8"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_2/ablation_no_cross_expert__oof_locked/steels.npz",
+      "sha256": "c595bbfb91c087ac4c4577b311b23663174144da93a2dc56e6f08690b0a6501d",
+      "source_sha256": "d6d0a8b14c7b8e8746e0efa7d2d5f02dd20dc216ad1e6921454c85058060c06d"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_2/ablation_no_cross_expert__oof_locked/expt_gap.npz",
+      "sha256": "7d0e8d7b5c2a4058d4d3cdb22984966b84d0d1d2bc2fac3e5a7b25db3abc2748",
+      "source_sha256": "b5f4196cc41ad1c3d7d55b70d52a830acc43020d69cde86b517964acb69525f5"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_2/ablation_no_cross_expert__oof_locked/glass.npz",
+      "sha256": "b5eca7057e73af82fa4619efbb7d9413405d4424cd24cbfbebb1c95eb733569e",
+      "source_sha256": "f623a0148e507e3311e29baef74662ea782949e241e54a53a0629c46d4b1c9b7"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_2/ablation_no_cross_expert__oof_locked/expt_is_metal.npz",
+      "sha256": "daabea40d1a3e3b5bbd79e1b2b9f58126e8a865d19dde4a8e105ad0d03ace1ae",
+      "source_sha256": "4d659415d6d3013e379911775181a1b0a68d5d8a024a2d121f55d58ff8986743"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_2/ablation_no_cross_expert__oof_locked/jdft2d.npz",
+      "sha256": "fdf57148ff2b0afa89cb2c7652d61d706359232e175991fd8934a1a556f77939",
+      "source_sha256": "add73c2de64442edf5ff9ad6f411309d9b82a3efd4083c0411bbbd435fd48c40"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_2/ablation_no_cross_expert__oof_locked/dielectric.npz",
+      "sha256": "192e5a9c02c4196f36347def54a137bfb6f3c70a48b6934aa4c756df5f60b11b",
+      "source_sha256": "444f0c523e9f997e9538265d34355bc46886ef8edc49b42ce661fb4f22afac17"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_2/ablation_no_cross_expert__oof_locked/log_kvrh.npz",
+      "sha256": "53390653b80876c7490ccb598c352b0b28d5a9f2cb39bd136601f6b6da9a28eb",
+      "source_sha256": "65fd9296b4a6a2b92008261fc6b83c7b16fb4efaaebc327d2c7074ef4519b9b2"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_2/ablation_no_cross_expert__oof_locked/log_gvrh.npz",
+      "sha256": "754a5109f5665adab51de315cf56165d08af282ca1270d09889397a71a0c6981",
+      "source_sha256": "0f25196913d40abf0b1cf75e34f3904aecda3800e25afc2304a63dd2ed971baf"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_2/ablation_no_cross_expert__oof_locked/perovskites.npz",
+      "sha256": "6c12475b279af31b59f3f03768143d38b3feee4b1dc1bc5c8113e72d1f112f5d",
+      "source_sha256": "7def8714191df2091384cbb14edd2da495a054f7adf9eaacd54f4cf7d1eb3f18"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_2/ablation_no_cross_expert__oof_locked/phonons.npz",
+      "sha256": "b99a011aaaf3b3c7b15df8803d664113ebb77427d1f64f715e6bb75ba1119572",
+      "source_sha256": "11631f695424f0ffea3adbb362c0e9fa6d9c98311ee4da7ce99a33c6fcffc6eb"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_2/ablation_no_cross_expert__oof_locked/mp_gap.npz",
+      "sha256": "73b26c3eb5c3f77955624092ab25ea064cee1e03f6808da74fe2e2e4146689ea",
+      "source_sha256": "8abdc0b0e3f045bd79af6b4b8f28fd7edb4caaf609c4a21b4c3cf80bcbd35a99"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_2/ablation_no_cross_expert__oof_locked/mp_is_metal.npz",
+      "sha256": "a3a8d1cc008bf0a1cf1efcc9b2626283754fb7c843c8e0854dc81dc1b1296124",
+      "source_sha256": "bc23db5143ad45b3f144b34b3e3f4206934c702d409ba239e4c773884924960f"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_2/ablation_no_cross_expert__oof_locked/mp_e_form.npz",
+      "sha256": "7428ff81fb1e8225194f3c26a5642baa296c8db1b088afe66e3a982055688be0",
+      "source_sha256": "af9ef3f79c590b8a5e53347e75f01d1415d06c028d74a7ee955797d572e12a59"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_3/ablation_no_cross_expert__oof_locked/steels.npz",
+      "sha256": "cc15a3e8c606a90cfd29e751765a0ad35669f01a4cfebede3b2d91333fc65057",
+      "source_sha256": "1aac12c6bbd4c1ac6300fd17b33dd2bc48f8133b3087890f38075c0c7a1fcf6b"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_3/ablation_no_cross_expert__oof_locked/expt_gap.npz",
+      "sha256": "87faaaee67e5732552fcb2d4b4ce570a4d7a845875bb83ab594fe2a7d72a2d54",
+      "source_sha256": "c3836e5f2173be20e06739718d209e65d10c02f3cec6a9bd44e9c9b299ba7050"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_3/ablation_no_cross_expert__oof_locked/glass.npz",
+      "sha256": "ac84b04d4564f9e2fd4e27ed405e50024f8d08e12b5c905fa4784777c4b8ebb0",
+      "source_sha256": "6f86b70020d30b00dd0e75742c18c3ffaa9c698ffc657c5ef2acc23b3759742d"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_3/ablation_no_cross_expert__oof_locked/expt_is_metal.npz",
+      "sha256": "5c556b729165ead3194e6e5221ddfdfb49eaba4063c5df0dec04452c210b4464",
+      "source_sha256": "b7e85a807c39b5e3d70f12506a4683ce63be7ccf6e4f2569469f24cf8464fb6a"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_3/ablation_no_cross_expert__oof_locked/jdft2d.npz",
+      "sha256": "9fb5ca284c7d1e2c4a6ce45d16dfa95e3296ffe26ef7fd3af251503efa4ea2a5",
+      "source_sha256": "7f28e2890737f0eee81a8018ad2f978ec018c57f9415c5d6ac6e9692a49b91cf"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_3/ablation_no_cross_expert__oof_locked/dielectric.npz",
+      "sha256": "ec90d4de2b12d078c98bdb117de4b277d804cb26d3d8e1e7c642a3b95af43ca2",
+      "source_sha256": "3bf8a94228798db644dfac26f7289396827afe8a07c9a4f71bfba84af2f6a185"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_3/ablation_no_cross_expert__oof_locked/log_kvrh.npz",
+      "sha256": "9299e68fbe0729f394bcd1b9d0a952c6092440981ffb3a53a5b4f1d1a9ff916d",
+      "source_sha256": "ff5f50a64c9eb051931b048b398e4ca4f99c551d4864a95971d0958e2896775b"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_3/ablation_no_cross_expert__oof_locked/log_gvrh.npz",
+      "sha256": "8ac4171a2af9e9af8dccb767b5f0db00c57352a1ba3859ca887c72e0908991cb",
+      "source_sha256": "272b0ebaba3d0ed59c764a8552d64c91677ebe79d02be4af2f3d008be250b786"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_3/ablation_no_cross_expert__oof_locked/perovskites.npz",
+      "sha256": "4204b0e1fe2d5cb91d2aef0fe14a5e84090fbd7832d6b2735d8a0e0b56aa8ed0",
+      "source_sha256": "456ff89beb7f529aed00db05ec2bb2a3891c6ead3dfb41b7059512b738134df3"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_3/ablation_no_cross_expert__oof_locked/phonons.npz",
+      "sha256": "ca901340731dcaab5edb1dbf1bf801ca504c42614a4d35e486d9bfed7dfce622",
+      "source_sha256": "a9a04a982a8811b5cbcb3194089ceccdb3ebe871a82263dcfbfa964e1082f831"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_3/ablation_no_cross_expert__oof_locked/mp_gap.npz",
+      "sha256": "2e074c07deea906311a9e9ecf1b0543529dd8a231e3f0a0e0c699131e4a9be0c",
+      "source_sha256": "1b0297fe83c317ef90b5900dc1402f94c1530509be376f14a33b970b260ac796"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_3/ablation_no_cross_expert__oof_locked/mp_is_metal.npz",
+      "sha256": "1d2ac865e8e882c442e4b87582fd8bb2b76ca0ea370ef73f04569123559359c5",
+      "source_sha256": "eee0641038c115678085217a90c41e0270322ceb5c0e3a7fc852f48e3f50a247"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_3/ablation_no_cross_expert__oof_locked/mp_e_form.npz",
+      "sha256": "b083588064307e2ce12b6e6051c41506b849030145bf98543a34eba5e12f6aa5",
+      "source_sha256": "33d44b9ef109baec50bf4a57a4b21750c7a28b614a257ced8fbe0e6115e056e0"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_4/ablation_no_cross_expert__oof_locked/steels.npz",
+      "sha256": "c853ea472395fefa91da48d077e8793ec0ebb479f7f46aba10eefebf33c7b497",
+      "source_sha256": "911ca18830970fcef46ca383fc067630acf026cf03c37d527c63993facf7b4b4"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_4/ablation_no_cross_expert__oof_locked/expt_gap.npz",
+      "sha256": "280eaff437c96bc0ec3087a0b9a6a6293c3bc9022dd3843b724721daab0f4e64",
+      "source_sha256": "350683d6bb34a072524197f7e00f6cfc58f7e351371303d4c8f8a09f0be382b5"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_4/ablation_no_cross_expert__oof_locked/glass.npz",
+      "sha256": "fb5e8f11a81a1c1fee7844975e69a33851c8a2c3e388a1794f6c827d21c7d665",
+      "source_sha256": "42ff3033609c4ba3dd0b0dd38ef73b78f03a730a6f0db715a24ea2cb06e4ae87"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_4/ablation_no_cross_expert__oof_locked/expt_is_metal.npz",
+      "sha256": "514e304d255c167cb5f8315972baa7be6e97e6d4c157bc389ae4958ba51e8d19",
+      "source_sha256": "f0fa7bc3a9747139adddceec7a7d0b23e11f926767294efd2dda258d96a91d2b"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_4/ablation_no_cross_expert__oof_locked/jdft2d.npz",
+      "sha256": "8021a3fe3a891a39f58c7813f66723cae260bae37d6f4627c19f17759871a6fb",
+      "source_sha256": "f994985afd5b1e46dd0d7f8100570c6968cb9010ea92beec23be45381cfb6c5b"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_4/ablation_no_cross_expert__oof_locked/dielectric.npz",
+      "sha256": "565857c9408655b1305fb9f972aae481246d58f03d5060b4a0fa07d6e5b54752",
+      "source_sha256": "e64751512daf520d75867e44e98b9dc45cd9d2e81a1b3240bb9eca58489b6bb6"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_4/ablation_no_cross_expert__oof_locked/log_kvrh.npz",
+      "sha256": "f388776afb9696729ce79dbd48836c5ad990b769609f82a9f50f1098d2f56aff",
+      "source_sha256": "3c383834e5e6195f570a1eab619774e47b96447e203a89af6dd6a988b6a0bb85"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_4/ablation_no_cross_expert__oof_locked/log_gvrh.npz",
+      "sha256": "2727dc73a94d780adb2c0d9b21d1f0f0ee8409eace5bc23f91807c67e97cfa77",
+      "source_sha256": "35e437092d451ff0559f8f3ff0cf7b18965bbcbfb13fb464ea543a2aa2c75daf"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_4/ablation_no_cross_expert__oof_locked/perovskites.npz",
+      "sha256": "e6fdab4a06b0af8336ece66ca4b885c40b420ef1ec8c79633b92aeac54e9383f",
+      "source_sha256": "dc8c5c199290b8b80fa460614d2441e5905806ca6c6418f770a88592dceb7a3c"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_4/ablation_no_cross_expert__oof_locked/phonons.npz",
+      "sha256": "ec5c2ede666ef909d74699651e5c8e981789d5b939df3235b63e2ede32fd019a",
+      "source_sha256": "faa477bd9d613aae32506e3fa37e7c9289cc576ea6500960b3b3aefcb35aeba0"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_4/ablation_no_cross_expert__oof_locked/mp_gap.npz",
+      "sha256": "d032795870e63a5eb6ac84123adbc91ff450f8aba5be8fd12ecea495fffcf1d1",
+      "source_sha256": "52461e0e0f562f4a0cd77d5d00bf529d69213a4eeef9b00a99264999330363f3"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_4/ablation_no_cross_expert__oof_locked/mp_is_metal.npz",
+      "sha256": "3f779e2cf6e62e76f2c13f2d91848b9e11b69146d11357019dc71917de8f2092",
+      "source_sha256": "e597d1f7886abd8df9644ce0bb4fbbee899b0f3ac0137bbc35691df6d2222ad7"
+    },
+    {
+      "path": "results/matbench/per_sample_predictions/outer_4/ablation_no_cross_expert__oof_locked/mp_e_form.npz",
+      "sha256": "65bd53f8745a115bd5b6a72539c0e0868367819d28792ee9175dc85f56e4012a",
+      "source_sha256": "c94efe8a08a862e1221a461d8bfe1d29ed4d2805ca60233a77d7bb8f27251c54"
+    }
+  ],
+  "scored_unix": 1792398158.1762245,
+  "status": "all_target_free_predictions_committed_before_scoring"
+}

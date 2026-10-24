@@ -1,0 +1,44 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.DS_Store
+
+# Local Python environments and package builds
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+
+# Local credentials and machine-specific settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Reproduction inputs and run products that are not part of the release
+data/raw/
+data/manifests/
+inputs/
+stage1_exports/
+run_outputs/
+integrations/*/vendor/
+integrations/*/work/
+*.log
+*_history.json
+*_progress.json
+*_resume.pt
+*.pt
+*.pth
+*.ckpt
+
+# Model weights downloaded from the GitHub Release.
+checkpoints/**/*.pkl
+checkpoints/**/*.joblib
+checkpoints/**/*.h5
+checkpoints/**/*.part

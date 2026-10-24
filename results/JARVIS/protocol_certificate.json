@@ -1,0 +1,82 @@
+{
+  "task_scope": "all_34_official_tasks",
+  "task_count": 34,
+  "regression_metric": "MAE",
+  "classification_metric": "ACC",
+  "locked_before_test_prediction": true,
+  "prediction_barrier_before_test_scoring": true,
+  "calibration_data_scope": "official_validation_meta_crossfit",
+  "task_policy": "one_profile_per_configuration",
+  "source_availability": "All non-target sources in Full. No property-family or training-membership exclusions. Target-only availability in No-cross-expert precedes attention and reliability.",
+  "input_protocol": {
+    "task_count": 34,
+    "regression_tasks": 27,
+    "classification_tasks": 7,
+    "stage1_expected_fits": 204,
+    "stage1_oof_fits": 170,
+    "stage2_seeds": [
+      20261071,
+      20261072
+    ],
+    "stage2_steps": 1400,
+    "batch_per_task": 128,
+    "val_interval_steps": 100,
+    "source_dropout": 0.05,
+    "source_availability": "All non-target sources in Full. No property-family or training-membership exclusions. Target-only availability in No-cross-expert precedes attention and reliability.",
+    "train_inputs": "material-hash OOF",
+    "val_test_inputs": "full-fit",
+    "normalization_fit": "official training OOF predictions, per target/source pair",
+    "normalization_scale_floor": 1e-08,
+    "classification_input": "clipped logit",
+    "calibration_data_roles": [
+      "val"
+    ],
+    "scoring_data_role": "test",
+    "classification_bootstrap": "original validation class proportions",
+    "prediction_barrier_before_test_scoring": true,
+    "public_alignn_full_tasks": [
+      "reg_avg_elec_mass",
+      "reg_avg_hole_mass",
+      "reg_n_powerfact",
+      "reg_max_efg"
+    ],
+    "evaluation_scope": {
+      "split_membership": "official_task_specific",
+      "stage2_training_inputs": "material_hash_oof_experts",
+      "stage2_validation_and_test_inputs": "full_fit_experts",
+      "checkpoint_selection": "official_validation",
+      "calibration": "five_partition_validation_meta_crossfit",
+      "scoring": "official_test"
+    }
+  },
+  "profiles": {
+    "full": "liberal",
+    "no_cross_expert": "liberal"
+  },
+  "selected_steps": {
+    "full": [
+      600,
+      400
+    ],
+    "no_cross_expert": [
+      100,
+      200
+    ]
+  },
+  "full_vs_stage1": [
+    25,
+    8,
+    1
+  ],
+  "full_vs_no_cross_expert": [
+    24,
+    5,
+    5
+  ],
+  "full_vs_archived_reference": [
+    23,
+    1,
+    10
+  ],
+  "result_source_sha256": "fa0c3df67e54af9297477469881f6d53055ed692ce4a8cacc702fac19513913d"
+}

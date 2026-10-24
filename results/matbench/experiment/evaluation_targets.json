@@ -1,0 +1,80 @@
+[
+  {
+    "evaluation_targets": "results/matbench/evaluation_targets/dielectric.npz",
+    "sha256": "26dc9d953064b697b88e2b290b01845f67e2b5f86a27dbebad216a65445d195e",
+    "source_manifest_sha256": "975025780227f409f3c1c2e2e6b390f1aa3cccf9a860e16d236d206e4129505e",
+    "task": "dielectric"
+  },
+  {
+    "evaluation_targets": "results/matbench/evaluation_targets/expt_gap.npz",
+    "sha256": "8f44bea9b9f3a7b909fcfdf6bfdf76f2c31fbbafc54090292651717c65342080",
+    "source_manifest_sha256": "5a858482b2387c8d0fc185ad5c35fc0161552bf83c3ebe71f953aa3aab79a973",
+    "task": "expt_gap"
+  },
+  {
+    "evaluation_targets": "results/matbench/evaluation_targets/expt_is_metal.npz",
+    "sha256": "2a4f4caa6c441d69554f27e08ef8952e0e2f51914091c0bb05640b49a94b15ab",
+    "source_manifest_sha256": "0b9816bf76e2fe5f4b0ec04d9c1ae08fe2972397f34e6385977d4b9bfdb1a364",
+    "task": "expt_is_metal"
+  },
+  {
+    "evaluation_targets": "results/matbench/evaluation_targets/glass.npz",
+    "sha256": "0944cb3d0bd2cf8f4a05860b978e5e7fd1c1f5d8fa0853a90ef53da7a96f1fda",
+    "source_manifest_sha256": "eeee0cd515fd9d0920a3e875b8fe29d416dd42124468b5a52f669c286ee0f226",
+    "task": "glass"
+  },
+  {
+    "evaluation_targets": "results/matbench/evaluation_targets/jdft2d.npz",
+    "sha256": "138300f877b5157e8f8b9c81a90a20d54edd229adb251b72b1ea97166bccf341",
+    "source_manifest_sha256": "8a5bbf2aed46e42b7aeb562699a3ce3a38b7221b00e7539776f0f5b83b277835",
+    "task": "jdft2d"
+  },
+  {
+    "evaluation_targets": "results/matbench/evaluation_targets/log_gvrh.npz",
+    "sha256": "00a528791463aa9904c12138a32ed402f8acc9304d60b824ea89e12fe441f6c1",
+    "source_manifest_sha256": "3a33210a8e973ecc0edaa85f063e74e9b8686990cecfff1b4370f3ce9b83b300",
+    "task": "log_gvrh"
+  },
+  {
+    "evaluation_targets": "results/matbench/evaluation_targets/log_kvrh.npz",
+    "sha256": "b198a86edb545e84aad8f6170115aa415fb8a86fecde4d3195fb21797dd17e5b",
+    "source_manifest_sha256": "423fd9189a7cf55dc254c79965da964f3bd697c4afabf05ca1b62c9bf06ad011",
+    "task": "log_kvrh"
+  },
+  {
+    "evaluation_targets": "results/matbench/evaluation_targets/mp_e_form.npz",
+    "sha256": "041ab118adeef0f94908e72768958745c62082a32d6a0787ab19bd80613ec5e1",
+    "source_manifest_sha256": "7382baea2f38671dac35d3a7abf568f71c3e40e876ec2150c9dbf22254182292",
+    "task": "mp_e_form"
+  },
+  {
+    "evaluation_targets": "results/matbench/evaluation_targets/mp_gap.npz",
+    "sha256": "72311e7ba1e4ee3c1af846c0a0d977d989054645158cddcbf7cbd815e91fba54",
+    "source_manifest_sha256": "32b44cf8f91e698d1e39b292954b68bff8f9cd0fbb9e0450d07344fca8fee553",
+    "task": "mp_gap"
+  },
+  {
+    "evaluation_targets": "results/matbench/evaluation_targets/mp_is_metal.npz",
+    "sha256": "8e20a8511fd455c61a3e6e99befc5ddb5c9a9ff853b340472cd7664b6198f5ff",
+    "source_manifest_sha256": "440b0aee77bbd0694f0d29b6ead9de1c3b1f0bdcb4156a36fecf736094661b4d",
+    "task": "mp_is_metal"
+  },
+  {
+    "evaluation_targets": "results/matbench/evaluation_targets/perovskites.npz",
+    "sha256": "a8e6621169c9f4e961676ed9ccde2d6ec3a8a78b232bb88aa8ee73347697ecc1",
+    "source_manifest_sha256": "7e289bf4dd10137d650c671f4c0a94eb73830a9361e338e2acdb8abfe66a6a1c",
+    "task": "perovskites"
+  },
+  {
+    "evaluation_targets": "results/matbench/evaluation_targets/phonons.npz",
+    "sha256": "acf22dd9a2dbd70943cccef62e438143fbdeeff6038b7d0c1240f3f80bced064",
+    "source_manifest_sha256": "f3ef9ce035dfb00211e24c83ba228e96e21e920c1551c6766246fefda40c25d8",
+    "task": "phonons"
+  },
+  {
+    "evaluation_targets": "results/matbench/evaluation_targets/steels.npz",
+    "sha256": "3805f8203e6fdeab3c91becdf3ca0ae38a3e4219cca09a290a69768f0149e978",
+    "source_manifest_sha256": "9e2d7b54ce42ba788761d1cbd9042eaced69b8d1c0f85338adb58d30e3902326",
+    "task": "steels"
+  }
+]

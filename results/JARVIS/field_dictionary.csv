@@ -1,0 +1,16 @@
+field,definition
+sample_id,Official JARVIS material identifier in test order
+y_true,Official test target
+stage1_anchor_prediction,"Full-fit target expert prediction, in native units or probability"
+full_prediction,Final prediction after validation-calibrated safety controls
+full_raw_prediction,Uncalibrated ensemble proposal for reconstructing the update only
+full_accepted,Final sample acceptance including task certification
+full_residual_scale,Validation-selected residual scaling coefficient
+full_task_certificate_accepted,Validation-selected task certification
+full_benefit_probability,"Regression benefit-gate probability, or one for classification"
+no_cross_prediction,Final prediction after validation-calibrated safety controls
+no_cross_raw_prediction,Uncalibrated ensemble proposal for reconstructing the update only
+no_cross_accepted,Final sample acceptance including task certification
+no_cross_residual_scale,Validation-selected residual scaling coefficient
+no_cross_task_certificate_accepted,Validation-selected task certification
+no_cross_benefit_probability,"Regression benefit-gate probability, or one for classification"

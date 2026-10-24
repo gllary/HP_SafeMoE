@@ -1,0 +1,764 @@
+{
+  "aggregate": {
+    "clear_positive_tasks": 6,
+    "macro_normalized_gain_percent": 1.499054843606408,
+    "negative_tasks": 4,
+    "neutral_tasks": 3,
+    "positive_tasks": 6,
+    "tasks": {
+      "dielectric": {
+        "anchor_score": 0.2710317070542949,
+        "fold_gain_95ci_half_width_percent": 4.186780712500533,
+        "fold_gains_percent": [
+          11.58478654203134,
+          12.74648942816006,
+          1.5440541451377257,
+          4.2697160732254895,
+          6.339576841002176
+        ],
+        "metric": "mae",
+        "model_score": 0.2541196816216645,
+        "normalized_gain_percent": 7.296924605911357
+      },
+      "expt_gap": {
+        "anchor_score": 0.3278961732713187,
+        "fold_gain_95ci_half_width_percent": 0.4992130872453963,
+        "fold_gains_percent": [
+          -1.0054301505823167,
+          -0.003949366666118745,
+          -0.4079949815100526,
+          0.20606971230500404,
+          0.4425195758479148
+        ],
+        "metric": "mae",
+        "model_score": 0.3283255403779861,
+        "normalized_gain_percent": -0.1537570421211138
+      },
+      "expt_is_metal": {
+        "anchor_score": 0.9765004821985359,
+        "fold_gain_95ci_half_width_percent": 0.0,
+        "fold_gains_percent": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "metric": "roc_auc",
+        "model_score": 0.9765004821985359,
+        "normalized_gain_percent": 0.0
+      },
+      "glass": {
+        "anchor_score": 0.9559161290079585,
+        "fold_gain_95ci_half_width_percent": 0.0,
+        "fold_gains_percent": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "metric": "roc_auc",
+        "model_score": 0.9559161290079585,
+        "normalized_gain_percent": 0.0
+      },
+      "jdft2d": {
+        "anchor_score": 28.95780057231039,
+        "fold_gain_95ci_half_width_percent": 0.23976189364965217,
+        "fold_gains_percent": [
+          0.40774997988694817,
+          -0.12422701969688284,
+          0.08773338126447014,
+          0.0,
+          0.5175913833833797
+        ],
+        "metric": "mae",
+        "model_score": 28.90411444147248,
+        "normalized_gain_percent": 0.17776954496758304
+      },
+      "log_gvrh": {
+        "anchor_score": 0.034602046596117875,
+        "fold_gain_95ci_half_width_percent": 0.3689008227691204,
+        "fold_gains_percent": [
+          -0.8550283128828228,
+          0.0,
+          -0.7339428006898613,
+          -0.10152890335171934,
+          0.0
+        ],
+        "metric": "mae",
+        "model_score": 0.03471766524686746,
+        "normalized_gain_percent": -0.33810000338488067
+      },
+      "log_kvrh": {
+        "anchor_score": 0.0266322446505941,
+        "fold_gain_95ci_half_width_percent": 0.7306406871426865,
+        "fold_gains_percent": [
+          -1.9378605919718277,
+          -1.0059169161671362,
+          -0.30406039671920193,
+          0.11408377141827339,
+          -0.1110358991246441
+        ],
+        "metric": "mae",
+        "model_score": 0.026797348891957305,
+        "normalized_gain_percent": -0.6489580065129074
+      },
+      "mp_e_form": {
+        "anchor_score": 0.012106452939865448,
+        "fold_gain_95ci_half_width_percent": 1.7619898429815228,
+        "fold_gains_percent": [
+          8.693475215283083,
+          9.578177697321408,
+          4.801408846852091,
+          6.15258362131161,
+          8.662819890711484
+        ],
+        "metric": "mae",
+        "model_score": 0.01118466103176598,
+        "normalized_gain_percent": 7.577693054295935
+      },
+      "mp_gap": {
+        "anchor_score": 0.09921554239516364,
+        "fold_gain_95ci_half_width_percent": 0.6227785303468559,
+        "fold_gains_percent": [
+          2.628802736834339,
+          1.5966304169711896,
+          0.9640952193353269,
+          0.8794740334568213,
+          1.233002160004361
+        ],
+        "metric": "mae",
+        "model_score": 0.09776371660407611,
+        "normalized_gain_percent": 1.4604009133204077
+      },
+      "mp_is_metal": {
+        "anchor_score": 0.9824552111138776,
+        "fold_gain_95ci_half_width_percent": 0.22141168160061614,
+        "fold_gains_percent": [
+          0.0,
+          0.0,
+          -0.5791354949273914,
+          -0.07701558661338653,
+          0.0
+        ],
+        "metric": "roc_auc",
+        "model_score": 0.9824328238241289,
+        "normalized_gain_percent": -0.13123021630815557
+      },
+      "perovskites": {
+        "anchor_score": 0.027345038480902174,
+        "fold_gain_95ci_half_width_percent": 0.6973781075631013,
+        "fold_gains_percent": [
+          1.6673130209862312,
+          2.004032989723687,
+          3.1469806577219193,
+          3.3997986484540035,
+          3.2403414320886803
+        ],
+        "metric": "mae",
+        "model_score": 0.026612755520895613,
+        "normalized_gain_percent": 2.691693349794904
+      },
+      "phonons": {
+        "anchor_score": 20.426046833075606,
+        "fold_gain_95ci_half_width_percent": 1.4847278230151923,
+        "fold_gains_percent": [
+          -0.14378409833854905,
+          3.8613181148339715,
+          2.690422836834172,
+          1.166842509845172,
+          0.20158447142610736
+        ],
+        "metric": "mae",
+        "model_score": 20.10941389246068,
+        "normalized_gain_percent": 1.5552767669201748
+      },
+      "steels": {
+        "anchor_score": 78.51216065453188,
+        "fold_gain_95ci_half_width_percent": 0.0,
+        "fold_gains_percent": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "metric": "mae",
+        "model_score": 78.51216065453188,
+        "normalized_gain_percent": 0.0
+      }
+    },
+    "worst_task_gain_percent": -0.6489580065129074
+  },
+  "experiment": "Matbench No-cross-expert",
+  "folds": [
+    {
+      "outer_fold": 0,
+      "outer_test_labels_used_for_evaluation_only": true,
+      "results": {
+        "ablation_no_cross_expert__oof_locked": {
+          "dielectric": {
+            "anchor_score": 0.13987786780547692,
+            "metric": "mae",
+            "model_score": 0.12367331540066764,
+            "n_samples": 953,
+            "normalized_gain_percent": 11.58478654203134,
+            "task_type": "regression"
+          },
+          "expt_gap": {
+            "anchor_score": 0.3068199903260458,
+            "metric": "mae",
+            "model_score": 0.3099048510167976,
+            "n_samples": 921,
+            "normalized_gain_percent": -1.0054301505823167,
+            "task_type": "regression"
+          },
+          "expt_is_metal": {
+            "anchor_score": 0.9766526216842436,
+            "metric": "roc_auc",
+            "model_score": 0.9766526216842436,
+            "n_samples": 985,
+            "normalized_gain_percent": 0.0,
+            "task_type": "classification"
+          },
+          "glass": {
+            "anchor_score": 0.9681547854449856,
+            "metric": "roc_auc",
+            "model_score": 0.9681547854449856,
+            "n_samples": 1136,
+            "normalized_gain_percent": 0.0,
+            "task_type": "classification"
+          },
+          "jdft2d": {
+            "anchor_score": 21.027254613025313,
+            "metric": "mae",
+            "model_score": 20.941515986569925,
+            "n_samples": 128,
+            "normalized_gain_percent": 0.40774997988694817,
+            "task_type": "regression"
+          },
+          "log_gvrh": {
+            "anchor_score": 0.03466405705754176,
+            "metric": "mae",
+            "model_score": 0.0349604445597776,
+            "n_samples": 2198,
+            "normalized_gain_percent": -0.8550283128828228,
+            "task_type": "regression"
+          },
+          "log_kvrh": {
+            "anchor_score": 0.023932113461924795,
+            "metric": "mae",
+            "model_score": 0.02439588445752942,
+            "n_samples": 2198,
+            "normalized_gain_percent": -1.9378605919718277,
+            "task_type": "regression"
+          },
+          "mp_e_form": {
+            "anchor_score": 0.012642185927843948,
+            "metric": "mae",
+            "model_score": 0.011543140627536828,
+            "n_samples": 26551,
+            "normalized_gain_percent": 8.693475215283083,
+            "task_type": "regression"
+          },
+          "mp_gap": {
+            "anchor_score": 0.09873634081565373,
+            "metric": "mae",
+            "model_score": 0.09614075718604174,
+            "n_samples": 21223,
+            "normalized_gain_percent": 2.628802736834339,
+            "task_type": "regression"
+          },
+          "mp_is_metal": {
+            "anchor_score": 0.9829437025335925,
+            "metric": "roc_auc",
+            "model_score": 0.9829437025335925,
+            "n_samples": 21223,
+            "normalized_gain_percent": 0.0,
+            "task_type": "classification"
+          },
+          "perovskites": {
+            "anchor_score": 0.027152270483580203,
+            "metric": "mae",
+            "model_score": 0.02669955714231407,
+            "n_samples": 3786,
+            "normalized_gain_percent": 1.6673130209862312,
+            "task_type": "regression"
+          },
+          "phonons": {
+            "anchor_score": 21.139858671770988,
+            "metric": "mae",
+            "model_score": 21.170254426952237,
+            "n_samples": 253,
+            "normalized_gain_percent": -0.14378409833854905,
+            "task_type": "regression"
+          },
+          "steels": {
+            "anchor_score": 102.96913248697916,
+            "metric": "mae",
+            "model_score": 102.96913248697916,
+            "n_samples": 63,
+            "normalized_gain_percent": 0.0,
+            "task_type": "regression"
+          }
+        }
+      },
+      "status": "no_cross_expert_scored_after_global_prediction_barrier"
+    },
+    {
+      "outer_fold": 1,
+      "outer_test_labels_used_for_evaluation_only": true,
+      "results": {
+        "ablation_no_cross_expert__oof_locked": {
+          "dielectric": {
+            "anchor_score": 0.23507605199674103,
+            "metric": "mae",
+            "model_score": 0.2051121078808404,
+            "n_samples": 953,
+            "normalized_gain_percent": 12.74648942816006,
+            "task_type": "regression"
+          },
+          "expt_gap": {
+            "anchor_score": 0.3185639148067637,
+            "metric": "mae",
+            "model_score": 0.3185764960638254,
+            "n_samples": 921,
+            "normalized_gain_percent": -0.003949366666118745,
+            "task_type": "regression"
+          },
+          "expt_is_metal": {
+            "anchor_score": 0.9782347351896225,
+            "metric": "roc_auc",
+            "model_score": 0.9782347351896225,
+            "n_samples": 984,
+            "normalized_gain_percent": 0.0,
+            "task_type": "classification"
+          },
+          "glass": {
+            "anchor_score": 0.9510702327280671,
+            "metric": "roc_auc",
+            "model_score": 0.9510702327280671,
+            "n_samples": 1136,
+            "normalized_gain_percent": 0.0,
+            "task_type": "classification"
+          },
+          "jdft2d": {
+            "anchor_score": 26.114386361069293,
+            "metric": "mae",
+            "model_score": 26.14682748495778,
+            "n_samples": 127,
+            "normalized_gain_percent": -0.12422701969688284,
+            "task_type": "regression"
+          },
+          "log_gvrh": {
+            "anchor_score": 0.03447578596709412,
+            "metric": "mae",
+            "model_score": 0.03447578596709412,
+            "n_samples": 2198,
+            "normalized_gain_percent": 0.0,
+            "task_type": "regression"
+          },
+          "log_kvrh": {
+            "anchor_score": 0.028312399294191822,
+            "metric": "mae",
+            "model_score": 0.028597198508064883,
+            "n_samples": 2198,
+            "normalized_gain_percent": -1.0059169161671362,
+            "task_type": "regression"
+          },
+          "mp_e_form": {
+            "anchor_score": 0.012063935200326746,
+            "metric": "mae",
+            "model_score": 0.010908430049549743,
+            "n_samples": 26551,
+            "normalized_gain_percent": 9.578177697321408,
+            "task_type": "regression"
+          },
+          "mp_gap": {
+            "anchor_score": 0.10144693155877804,
+            "metric": "mae",
+            "model_score": 0.09982719899242665,
+            "n_samples": 21223,
+            "normalized_gain_percent": 1.5966304169711896,
+            "task_type": "regression"
+          },
+          "mp_is_metal": {
+            "anchor_score": 0.9816876926853053,
+            "metric": "roc_auc",
+            "model_score": 0.9816876926853053,
+            "n_samples": 21223,
+            "normalized_gain_percent": 0.0,
+            "task_type": "classification"
+          },
+          "perovskites": {
+            "anchor_score": 0.029195867901558734,
+            "metric": "mae",
+            "model_score": 0.02861077307717535,
+            "n_samples": 3786,
+            "normalized_gain_percent": 2.004032989723687,
+            "task_type": "regression"
+          },
+          "phonons": {
+            "anchor_score": 18.821717166515207,
+            "metric": "mae",
+            "model_score": 18.09495079204174,
+            "n_samples": 253,
+            "normalized_gain_percent": 3.8613181148339715,
+            "task_type": "regression"
+          },
+          "steels": {
+            "anchor_score": 69.47615249875993,
+            "metric": "mae",
+            "model_score": 69.47615249875993,
+            "n_samples": 63,
+            "normalized_gain_percent": 0.0,
+            "task_type": "regression"
+          }
+        }
+      },
+      "status": "no_cross_expert_scored_after_global_prediction_barrier"
+    },
+    {
+      "outer_fold": 2,
+      "outer_test_labels_used_for_evaluation_only": true,
+      "results": {
+        "ablation_no_cross_expert__oof_locked": {
+          "dielectric": {
+            "anchor_score": 0.3816184534463217,
+            "metric": "mae",
+            "model_score": 0.3757260578972733,
+            "n_samples": 953,
+            "normalized_gain_percent": 1.5440541451377257,
+            "task_type": "regression"
+          },
+          "expt_gap": {
+            "anchor_score": 0.3282150013115556,
+            "metric": "mae",
+            "model_score": 0.3295541020454699,
+            "n_samples": 921,
+            "normalized_gain_percent": -0.4079949815100526,
+            "task_type": "regression"
+          },
+          "expt_is_metal": {
+            "anchor_score": 0.9788110385854747,
+            "metric": "roc_auc",
+            "model_score": 0.9788110385854747,
+            "n_samples": 984,
+            "normalized_gain_percent": 0.0,
+            "task_type": "classification"
+          },
+          "glass": {
+            "anchor_score": 0.9478160322105589,
+            "metric": "roc_auc",
+            "model_score": 0.9478160322105589,
+            "n_samples": 1136,
+            "normalized_gain_percent": 0.0,
+            "task_type": "classification"
+          },
+          "jdft2d": {
+            "anchor_score": 45.95614129347243,
+            "metric": "mae",
+            "model_score": 45.91582241681699,
+            "n_samples": 127,
+            "normalized_gain_percent": 0.08773338126447014,
+            "task_type": "regression"
+          },
+          "log_gvrh": {
+            "anchor_score": 0.03375146978182983,
+            "metric": "mae",
+            "model_score": 0.03399918626442058,
+            "n_samples": 2197,
+            "normalized_gain_percent": -0.7339428006898613,
+            "task_type": "regression"
+          },
+          "log_kvrh": {
+            "anchor_score": 0.026076167719028626,
+            "metric": "mae",
+            "model_score": 0.02615545501804427,
+            "n_samples": 2197,
+            "normalized_gain_percent": -0.30406039671920193,
+            "task_type": "regression"
+          },
+          "mp_e_form": {
+            "anchor_score": 0.011447311113663611,
+            "metric": "mae",
+            "model_score": 0.010897678905125484,
+            "n_samples": 26550,
+            "normalized_gain_percent": 4.801408846852091,
+            "task_type": "regression"
+          },
+          "mp_gap": {
+            "anchor_score": 0.09809400709905168,
+            "metric": "mae",
+            "model_score": 0.09714828746615527,
+            "n_samples": 21223,
+            "normalized_gain_percent": 0.9640952193353269,
+            "task_type": "regression"
+          },
+          "mp_is_metal": {
+            "anchor_score": 0.982947073045989,
+            "metric": "roc_auc",
+            "model_score": 0.9828483134930743,
+            "n_samples": 21223,
+            "normalized_gain_percent": -0.5791354949273914,
+            "task_type": "classification"
+          },
+          "perovskites": {
+            "anchor_score": 0.02597314772313698,
+            "metric": "mae",
+            "model_score": 0.025155777788088318,
+            "n_samples": 3786,
+            "normalized_gain_percent": 3.1469806577219193,
+            "task_type": "regression"
+          },
+          "phonons": {
+            "anchor_score": 22.787650668212613,
+            "metric": "mae",
+            "model_score": 22.174566510657026,
+            "n_samples": 253,
+            "normalized_gain_percent": 2.690422836834172,
+            "task_type": "regression"
+          },
+          "steels": {
+            "anchor_score": 76.86285912298388,
+            "metric": "mae",
+            "model_score": 76.86285912298388,
+            "n_samples": 62,
+            "normalized_gain_percent": 0.0,
+            "task_type": "regression"
+          }
+        }
+      },
+      "status": "no_cross_expert_scored_after_global_prediction_barrier"
+    },
+    {
+      "outer_fold": 3,
+      "outer_test_labels_used_for_evaluation_only": true,
+      "results": {
+        "ablation_no_cross_expert__oof_locked": {
+          "dielectric": {
+            "anchor_score": 0.2632348364913628,
+            "metric": "mae",
+            "model_score": 0.25199545636736226,
+            "n_samples": 953,
+            "normalized_gain_percent": 4.2697160732254895,
+            "task_type": "regression"
+          },
+          "expt_gap": {
+            "anchor_score": 0.31526970676175065,
+            "metric": "mae",
+            "model_score": 0.3146200313840419,
+            "n_samples": 921,
+            "normalized_gain_percent": 0.20606971230500404,
+            "task_type": "regression"
+          },
+          "expt_is_metal": {
+            "anchor_score": 0.9771750805585392,
+            "metric": "roc_auc",
+            "model_score": 0.9771750805585392,
+            "n_samples": 984,
+            "normalized_gain_percent": 0.0,
+            "task_type": "classification"
+          },
+          "glass": {
+            "anchor_score": 0.9548329020764361,
+            "metric": "roc_auc",
+            "model_score": 0.9548329020764361,
+            "n_samples": 1136,
+            "normalized_gain_percent": 0.0,
+            "task_type": "classification"
+          },
+          "jdft2d": {
+            "anchor_score": 17.916648493400388,
+            "metric": "mae",
+            "model_score": 17.916648493400388,
+            "n_samples": 127,
+            "normalized_gain_percent": 0.0,
+            "task_type": "regression"
+          },
+          "log_gvrh": {
+            "anchor_score": 0.033477431351327816,
+            "metric": "mae",
+            "model_score": 0.033511420620249144,
+            "n_samples": 2197,
+            "normalized_gain_percent": -0.10152890335171934,
+            "task_type": "regression"
+          },
+          "log_kvrh": {
+            "anchor_score": 0.02808683545201633,
+            "metric": "mae",
+            "model_score": 0.028054792930860627,
+            "n_samples": 2197,
+            "normalized_gain_percent": 0.11408377141827339,
+            "task_type": "regression"
+          },
+          "mp_e_form": {
+            "anchor_score": 0.012234603974121693,
+            "metric": "mae",
+            "model_score": 0.011481859733877543,
+            "n_samples": 26550,
+            "normalized_gain_percent": 6.15258362131161,
+            "task_type": "regression"
+          },
+          "mp_gap": {
+            "anchor_score": 0.09639699166284162,
+            "metric": "mae",
+            "model_score": 0.09554920515213339,
+            "n_samples": 21222,
+            "normalized_gain_percent": 0.8794740334568213,
+            "task_type": "regression"
+          },
+          "mp_is_metal": {
+            "anchor_score": 0.982890611617568,
+            "metric": "roc_auc",
+            "model_score": 0.9828774347217393,
+            "n_samples": 21222,
+            "normalized_gain_percent": -0.07701558661338653,
+            "task_type": "classification"
+          },
+          "perovskites": {
+            "anchor_score": 0.027194995580292754,
+            "metric": "mae",
+            "model_score": 0.026270420488106835,
+            "n_samples": 3785,
+            "normalized_gain_percent": 3.3997986484540035,
+            "task_type": "regression"
+          },
+          "phonons": {
+            "anchor_score": 20.131811635950324,
+            "metric": "mae",
+            "model_score": 19.8969050997801,
+            "n_samples": 253,
+            "normalized_gain_percent": 1.166842509845172,
+            "task_type": "regression"
+          },
+          "steels": {
+            "anchor_score": 76.28706487840222,
+            "metric": "mae",
+            "model_score": 76.28706487840222,
+            "n_samples": 62,
+            "normalized_gain_percent": 0.0,
+            "task_type": "regression"
+          }
+        }
+      },
+      "status": "no_cross_expert_scored_after_global_prediction_barrier"
+    },
+    {
+      "outer_fold": 4,
+      "outer_test_labels_used_for_evaluation_only": true,
+      "results": {
+        "ablation_no_cross_expert__oof_locked": {
+          "dielectric": {
+            "anchor_score": 0.33535132553157215,
+            "metric": "mae",
+            "model_score": 0.3140914705621788,
+            "n_samples": 952,
+            "normalized_gain_percent": 6.339576841002176,
+            "task_type": "regression"
+          },
+          "expt_gap": {
+            "anchor_score": 0.3706122531504775,
+            "metric": "mae",
+            "model_score": 0.36897222137979563,
+            "n_samples": 920,
+            "normalized_gain_percent": 0.4425195758479148,
+            "task_type": "regression"
+          },
+          "expt_is_metal": {
+            "anchor_score": 0.9716289349747997,
+            "metric": "roc_auc",
+            "model_score": 0.9716289349747997,
+            "n_samples": 984,
+            "normalized_gain_percent": 0.0,
+            "task_type": "classification"
+          },
+          "glass": {
+            "anchor_score": 0.9577066925797448,
+            "metric": "roc_auc",
+            "model_score": 0.9577066925797448,
+            "n_samples": 1136,
+            "normalized_gain_percent": 0.0,
+            "task_type": "classification"
+          },
+          "jdft2d": {
+            "anchor_score": 33.77457210058454,
+            "metric": "mae",
+            "model_score": 33.59975782561731,
+            "n_samples": 127,
+            "normalized_gain_percent": 0.5175913833833797,
+            "task_type": "regression"
+          },
+          "log_gvrh": {
+            "anchor_score": 0.03664148882279583,
+            "metric": "mae",
+            "model_score": 0.03664148882279583,
+            "n_samples": 2197,
+            "normalized_gain_percent": 0.0,
+            "task_type": "regression"
+          },
+          "log_kvrh": {
+            "anchor_score": 0.026753707325808933,
+            "metric": "mae",
+            "model_score": 0.02678341354528732,
+            "n_samples": 2197,
+            "normalized_gain_percent": -0.1110358991246441,
+            "task_type": "regression"
+          },
+          "mp_e_form": {
+            "anchor_score": 0.012144228483371239,
+            "metric": "mae",
+            "model_score": 0.011092195842740305,
+            "n_samples": 26550,
+            "normalized_gain_percent": 8.662819890711484,
+            "task_type": "regression"
+          },
+          "mp_gap": {
+            "anchor_score": 0.10140344083949317,
+            "metric": "mae",
+            "model_score": 0.10015313422362347,
+            "n_samples": 21222,
+            "normalized_gain_percent": 1.233002160004361,
+            "task_type": "regression"
+          },
+          "mp_is_metal": {
+            "anchor_score": 0.9818069756869332,
+            "metric": "roc_auc",
+            "model_score": 0.9818069756869332,
+            "n_samples": 21222,
+            "normalized_gain_percent": 0.0,
+            "task_type": "classification"
+          },
+          "perovskites": {
+            "anchor_score": 0.027208910715942183,
+            "metric": "mae",
+            "model_score": 0.026327249108793492,
+            "n_samples": 3785,
+            "normalized_gain_percent": 3.2403414320886803,
+            "task_type": "regression"
+          },
+          "phonons": {
+            "anchor_score": 19.2491960229289,
+            "metric": "mae",
+            "model_score": 19.210392632872303,
+            "n_samples": 253,
+            "normalized_gain_percent": 0.20158447142610736,
+            "task_type": "regression"
+          },
+          "steels": {
+            "anchor_score": 66.96559428553425,
+            "metric": "mae",
+            "model_score": 66.96559428553425,
+            "n_samples": 62,
+            "normalized_gain_percent": 0.0,
+            "task_type": "regression"
+          }
+        }
+      },
+      "status": "no_cross_expert_scored_after_global_prediction_barrier"
+    }
+  ],
+  "source_summary_sha256": "18d1bf3f8c2cfdff03fb409f659cf607978e5e7cf8109cc6193faa5555f2b8ff",
+  "status": "complete_no_cross_expert_scored_once_after_commit"
+}

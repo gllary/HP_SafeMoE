@@ -1,0 +1,137 @@
+task,metric,model,score,evidence_type
+reg_formation_energy_peratom,MAE,Stage 1,0.025378175957034108,matched
+reg_formation_energy_peratom,MAE,No-cross-expert,0.0253629487653913,matched
+reg_formation_energy_peratom,MAE,Full,0.025383875446137027,matched
+reg_formation_energy_peratom,MAE,coGN,0.027117597982185934,archived_reference
+reg_optb88vdw_total_energy,MAE,Stage 1,0.026008176888380002,matched
+reg_optb88vdw_total_energy,MAE,No-cross-expert,0.026006528592230287,matched
+reg_optb88vdw_total_energy,MAE,Full,0.026008176888380002,matched
+reg_optb88vdw_total_energy,MAE,coGN,0.02620960261390883,archived_reference
+reg_ehull,MAE,Stage 1,0.03202821011351133,matched
+reg_ehull,MAE,No-cross-expert,0.03195152012217073,matched
+reg_ehull,MAE,Full,0.031901937356832465,matched
+reg_ehull,MAE,coGN,0.046633509449497554,archived_reference
+reg_optb88vdw_bandgap,MAE,Stage 1,0.10648857809024946,matched
+reg_optb88vdw_bandgap,MAE,No-cross-expert,0.10648857809024946,matched
+reg_optb88vdw_bandgap,MAE,Full,0.10646376245896315,matched
+reg_optb88vdw_bandgap,MAE,coGN,0.1218875091333256,archived_reference
+reg_mbj_bandgap,MAE,Stage 1,0.2397030596997599,matched
+reg_mbj_bandgap,MAE,No-cross-expert,0.23967401606745756,matched
+reg_mbj_bandgap,MAE,Full,0.23295570466912072,matched
+reg_mbj_bandgap,MAE,coGN,0.2640396921991691,archived_reference
+reg_bulk_modulus_kv,MAE,Stage 1,8.76160034458061,matched
+reg_bulk_modulus_kv,MAE,No-cross-expert,8.756177613832115,matched
+reg_bulk_modulus_kv,MAE,Full,8.75163196327725,matched
+reg_bulk_modulus_kv,MAE,coNGN,8.702193222748475,archived_reference
+reg_shear_modulus_gv,MAE,Stage 1,8.681423329562369,matched
+reg_shear_modulus_gv,MAE,No-cross-expert,8.679763070122013,matched
+reg_shear_modulus_gv,MAE,Full,8.673817306959894,matched
+reg_shear_modulus_gv,MAE,coNGN,8.488126655746697,archived_reference
+reg_epsx,MAE,Stage 1,18.75731402554003,matched
+reg_epsx,MAE,No-cross-expert,18.75731402554003,matched
+reg_epsx,MAE,Full,18.49921517888063,matched
+reg_epsx,MAE,coNGN,18.573764232600585,archived_reference
+reg_epsy,MAE,Stage 1,18.47964293918555,matched
+reg_epsy,MAE,No-cross-expert,18.474783846321547,matched
+reg_epsy,MAE,Full,18.358143071186454,matched
+reg_epsy,MAE,coNGN,18.59233839179591,archived_reference
+reg_epsz,MAE,Stage 1,18.28730570501485,matched
+reg_epsz,MAE,No-cross-expert,18.28730570501485,matched
+reg_epsz,MAE,Full,18.131003625133353,matched
+reg_epsz,MAE,coNGN,17.810425011207013,archived_reference
+reg_mepsx,MAE,Stage 1,24.15615919420423,matched
+reg_mepsx,MAE,No-cross-expert,24.125664343255362,matched
+reg_mepsx,MAE,Full,19.509357653278027,matched
+reg_mepsx,MAE,coNGN,23.380130691814397,archived_reference
+reg_mepsy,MAE,Stage 1,23.46408286283585,matched
+reg_mepsy,MAE,No-cross-expert,23.4492419998296,matched
+reg_mepsy,MAE,Full,19.51838824817537,matched
+reg_mepsy,MAE,coNGN,23.329943660083284,archived_reference
+reg_mepsz,MAE,Stage 1,22.97126824521593,matched
+reg_mepsz,MAE,No-cross-expert,22.94618242007862,matched
+reg_mepsz,MAE,Full,19.527263841434547,matched
+reg_mepsz,MAE,coNGN,22.841967574836403,archived_reference
+reg_dfpt_piezo_max_dielectric,MAE,Stage 1,26.77818644238443,matched
+reg_dfpt_piezo_max_dielectric,MAE,No-cross-expert,26.77818644238443,matched
+reg_dfpt_piezo_max_dielectric,MAE,Full,26.77818644238443,matched
+reg_dfpt_piezo_max_dielectric,MAE,coNGN,25.555261732276595,archived_reference
+reg_dfpt_piezo_max_dij,MAE,Stage 1,12.626242394354694,matched
+reg_dfpt_piezo_max_dij,MAE,No-cross-expert,12.66860322912271,matched
+reg_dfpt_piezo_max_dij,MAE,Full,12.280212179923488,matched
+reg_dfpt_piezo_max_dij,MAE,coNGN,13.886808122425526,archived_reference
+reg_magmom_oszicar,MAE,Stage 1,0.24667580209607495,matched
+reg_magmom_oszicar,MAE,No-cross-expert,0.24666600324229576,matched
+reg_magmom_oszicar,MAE,Full,0.24667055851312258,matched
+reg_magmom_oszicar,MAE,coNGN,0.2436608248357224,archived_reference
+reg_avg_elec_mass,MAE,Stage 1,0.08531673926254699,matched
+reg_avg_elec_mass,MAE,No-cross-expert,0.0838602495318221,matched
+reg_avg_elec_mass,MAE,Full,0.07717320466578817,matched
+reg_avg_elec_mass,MAE,ALIGNN,0.08533456368102796,archived_reference
+reg_avg_hole_mass,MAE,Stage 1,0.12376298694346925,matched
+reg_avg_hole_mass,MAE,No-cross-expert,0.12320043659607795,matched
+reg_avg_hole_mass,MAE,Full,0.1091334293543369,matched
+reg_avg_hole_mass,MAE,ALIGNN,0.12386299981103553,archived_reference
+reg_n_Seebeck,MAE,Stage 1,39.7843206397314,matched
+reg_n_Seebeck,MAE,No-cross-expert,39.76551665915183,matched
+reg_n_Seebeck,MAE,Full,38.92092266761921,matched
+reg_n_Seebeck,MAE,coGN,39.26923196761668,archived_reference
+reg_n_powerfact,MAE,Stage 1,441.75055214557364,matched
+reg_n_powerfact,MAE,No-cross-expert,440.42011543311384,matched
+reg_n_powerfact,MAE,Full,432.43545170470423,matched
+reg_n_powerfact,MAE,ALIGNN,442.29931320996695,archived_reference
+reg_max_efg,MAE,Stage 1,19.127156837828146,matched
+reg_max_efg,MAE,No-cross-expert,19.11702233502485,matched
+reg_max_efg,MAE,Full,19.127156837828146,matched
+reg_max_efg,MAE,ALIGNN,19.121051774030356,archived_reference
+reg_slme,MAE,Stage 1,4.388649783745973,matched
+reg_slme,MAE,No-cross-expert,4.388649783745973,matched
+reg_slme,MAE,Full,4.283798052181267,matched
+reg_slme,MAE,coNGN,4.442774824618319,archived_reference
+reg_spillage,MAE,Stage 1,0.35151865503441465,matched
+reg_spillage,MAE,No-cross-expert,0.3431681496126984,matched
+reg_spillage,MAE,Full,0.33394357511122025,matched
+reg_spillage,MAE,coNGN,0.34627679354265606,archived_reference
+reg_ph_heat_capacity,MAE,Stage 1,5.279716542734088,matched
+reg_ph_heat_capacity,MAE,No-cross-expert,5.267905008467121,matched
+reg_ph_heat_capacity,MAE,Full,5.279716542734088,matched
+reg_ph_heat_capacity,MAE,matminer + RF,5.2756917659291895,archived_reference
+reg_exfoliation_energy,MAE,Stage 1,42.799116420039425,matched
+reg_exfoliation_energy,MAE,No-cross-expert,42.799116420039425,matched
+reg_exfoliation_energy,MAE,Full,42.799116420039425,matched
+reg_exfoliation_energy,MAE,matminer + XGBoost,40.88704609876543,archived_reference
+reg_encut,MAE,Stage 1,124.35307513662443,matched
+reg_encut,MAE,No-cross-expert,124.24277421820786,matched
+reg_encut,MAE,Full,124.09171399710345,matched
+reg_encut,MAE,coNGN,129.82655876692544,archived_reference
+reg_kpoint_length_unit,MAE,Stage 1,8.894647208463631,matched
+reg_kpoint_length_unit,MAE,No-cross-expert,8.837771441708792,matched
+reg_kpoint_length_unit,MAE,Full,8.778442529160788,matched
+reg_kpoint_length_unit,MAE,matminer + XGBoost,9.0470369819462,archived_reference
+cls_magmom_oszicar,ACC,Stage 1,0.9475296821141325,matched
+cls_magmom_oszicar,ACC,No-cross-expert,0.9475296821141325,matched
+cls_magmom_oszicar,ACC,Full,0.948870164687859,matched
+cls_magmom_oszicar,ACC,matminer + XGBoost,0.948870164687859,archived_reference
+cls_optb88vdw_bandgap,ACC,Stage 1,0.9391600861450108,matched
+cls_optb88vdw_bandgap,ACC,No-cross-expert,0.9391600861450108,matched
+cls_optb88vdw_bandgap,ACC,Full,0.9431083991385499,matched
+cls_optb88vdw_bandgap,ACC,matminer + XGBoost,0.9361091170136396,archived_reference
+cls_mbj_bandgap,ACC,Stage 1,0.9421487603305785,matched
+cls_mbj_bandgap,ACC,No-cross-expert,0.9421487603305785,matched
+cls_mbj_bandgap,ACC,Full,0.9421487603305785,matched
+cls_mbj_bandgap,ACC,matminer + XGBoost,0.9399449035812673,archived_reference
+cls_n_powerfact,ACC,Stage 1,0.8134424816889272,matched
+cls_n_powerfact,ACC,No-cross-expert,0.8134424816889272,matched
+cls_n_powerfact,ACC,Full,0.8134424816889272,matched
+cls_n_powerfact,ACC,matminer + XGBoost,0.8186126669538992,archived_reference
+cls_p_Seebeck,ACC,Stage 1,0.9323567427832831,matched
+cls_p_Seebeck,ACC,No-cross-expert,0.9323567427832831,matched
+cls_p_Seebeck,ACC,Full,0.9370960792761741,matched
+cls_p_Seebeck,ACC,matminer + XGBoost,0.933218440327445,archived_reference
+cls_slme,ACC,Stage 1,0.8388520971302428,matched
+cls_slme,ACC,No-cross-expert,0.8388520971302428,matched
+cls_slme,ACC,Full,0.8609271523178808,matched
+cls_slme,ACC,matminer + RF,0.8421633554083885,archived_reference
+cls_spillage,ACC,Stage 1,0.8311345646437994,matched
+cls_spillage,ACC,No-cross-expert,0.8311345646437994,matched
+cls_spillage,ACC,Full,0.8311345646437994,matched
+cls_spillage,ACC,matminer + XGBoost,0.8364116094986808,archived_reference

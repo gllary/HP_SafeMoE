@@ -1,0 +1,199 @@
+schema_version: 1
+registry_version: matbench_final_task_registry
+benchmark:
+  name: matbench_v0.1
+  official_outer_folds: 5
+  official_repository: https://github.com/materialsproject/matbench
+  official_snapshot_commit: 936176db18ca4cd7b38cbd957c017a5bac770c6b
+  official_snapshot_commit_date: '2024-01-20T09:41:36Z'
+  scope: official_generated_leaderboard_snapshot
+sources:
+  matbench_official_2024:
+    evidence_tier: A
+    kind: official_submission_with_fold_results
+    title: Matbench v0.1 official per-task leaderboards
+    url: https://github.com/materialsproject/matbench/tree/936176db18ca4cd7b38cbd957c017a5bac770c6b/docs_src/Leaderboards%20Per-Task
+    code_url: https://github.com/materialsproject/matbench/tree/936176db18ca4cd7b38cbd957c017a5bac770c6b/benchmarks
+tasks:
+  steels:
+    matbench_name: matbench_steels
+    input_type: composition
+    task_type: regression
+    n_samples: 312
+    target: yield strength
+    unit: MPa
+    metric: mae
+    direction: minimize
+    official_reference:
+      method: TPOT-Mat
+      score: 79.9468
+      source_id: matbench_official_2024
+      status: official_frozen
+  expt_gap:
+    matbench_name: matbench_expt_gap
+    input_type: composition
+    task_type: regression
+    n_samples: 4604
+    target: gap expt
+    unit: eV
+    metric: mae
+    direction: minimize
+    official_reference:
+      method: Darwin
+      score: 0.2865
+      source_id: matbench_official_2024
+      status: official_frozen
+  glass:
+    matbench_name: matbench_glass
+    input_type: composition
+    task_type: classification
+    n_samples: 5680
+    target: gfa
+    unit: null
+    metric: roc_auc
+    direction: maximize
+    official_reference:
+      method: MODNet v0.1.12
+      score: 0.9603
+      source_id: matbench_official_2024
+      status: official_frozen
+  expt_is_metal:
+    matbench_name: matbench_expt_is_metal
+    input_type: composition
+    task_type: classification
+    n_samples: 4921
+    target: is_metal
+    unit: null
+    metric: roc_auc
+    direction: maximize
+    official_reference:
+      method: Darwin
+      score: 0.9598
+      source_id: matbench_official_2024
+      status: official_frozen
+  jdft2d:
+    matbench_name: matbench_jdft2d
+    input_type: structure
+    task_type: regression
+    n_samples: 636
+    target: exfoliation_en
+    unit: meV/atom
+    metric: mae
+    direction: minimize
+    official_reference:
+      method: MODNet v0.1.12
+      score: 33.1918
+      source_id: matbench_official_2024
+      status: official_frozen
+  dielectric:
+    matbench_name: matbench_dielectric
+    input_type: structure
+    task_type: regression
+    n_samples: 4764
+    target: n
+    unit: unitless
+    metric: mae
+    direction: minimize
+    official_reference:
+      method: MODNet v0.1.12
+      score: 0.2711
+      source_id: matbench_official_2024
+      status: official_frozen
+  log_kvrh:
+    matbench_name: matbench_log_kvrh
+    input_type: structure
+    task_type: regression
+    n_samples: 10987
+    target: log10(K_VRH)
+    unit: log10(GPa)
+    metric: mae
+    direction: minimize
+    official_reference:
+      method: coNGN
+      score: 0.0491
+      source_id: matbench_official_2024
+      status: official_frozen
+  log_gvrh:
+    matbench_name: matbench_log_gvrh
+    input_type: structure
+    task_type: regression
+    n_samples: 10987
+    target: log10(G_VRH)
+    unit: log10(GPa)
+    metric: mae
+    direction: minimize
+    official_reference:
+      method: coNGN
+      score: 0.067
+      source_id: matbench_official_2024
+      status: official_frozen
+  perovskites:
+    matbench_name: matbench_perovskites
+    input_type: structure
+    task_type: regression
+    n_samples: 18928
+    target: e_form
+    unit: eV/unit cell
+    metric: mae
+    direction: minimize
+    official_reference:
+      method: coGN
+      score: 0.0269
+      source_id: matbench_official_2024
+      status: official_frozen
+  phonons:
+    matbench_name: matbench_phonons
+    input_type: structure
+    task_type: regression
+    n_samples: 1265
+    target: last phdos peak
+    unit: cm^-1
+    metric: mae
+    direction: minimize
+    official_reference:
+      method: MegNet kgcnn v2.1.0
+      score: 28.7606
+      source_id: matbench_official_2024
+      status: official_frozen
+  mp_gap:
+    matbench_name: matbench_mp_gap
+    input_type: structure
+    task_type: regression
+    n_samples: 106113
+    target: gap pbe
+    unit: eV
+    metric: mae
+    direction: minimize
+    official_reference:
+      method: coGN
+      score: 0.1559
+      source_id: matbench_official_2024
+      status: official_frozen
+  mp_is_metal:
+    matbench_name: matbench_mp_is_metal
+    input_type: structure
+    task_type: classification
+    n_samples: 106113
+    target: is_metal
+    unit: null
+    metric: roc_auc
+    direction: maximize
+    official_reference:
+      method: CGCNN v2019
+      score: 0.952
+      source_id: matbench_official_2024
+      status: official_frozen
+  mp_e_form:
+    matbench_name: matbench_mp_e_form
+    input_type: structure
+    task_type: regression
+    n_samples: 132752
+    target: e_form
+    unit: eV/atom
+    metric: mae
+    direction: minimize
+    official_reference:
+      method: coGN
+      score: 0.017
+      source_id: matbench_official_2024
+      status: official_frozen

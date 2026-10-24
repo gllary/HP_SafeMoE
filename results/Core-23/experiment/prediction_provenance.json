@@ -1,0 +1,41 @@
+{
+  "task": "dielectric",
+  "export_policy": "Arrays cover the published dataset IDs in the recorded sample order. learned_relation_attention contains the Relation-augmented branch attention; source and public array values are identical.",
+  "records": [
+    {
+      "outer_fold": 0,
+      "sample_count": 23,
+      "source_archive_sha256": "ac708d93a0f847651e48454cbc7c724d2586823fc83a8fd2273b661ce3305996",
+      "export_path": "outer_0.npz",
+      "export_sha256": "d42c67059c2062f70505e6c4dfc3430ccdf244975eb7852e3f8a02587d0b0d79"
+    },
+    {
+      "outer_fold": 1,
+      "sample_count": 23,
+      "source_archive_sha256": "624790a7bedea1d0e901aa3f851a9b32350e6a4b13b8d9e3b88277780483238a",
+      "export_path": "outer_1.npz",
+      "export_sha256": "37cedc5fc8189875004e83eda1ef4dd542fdf0813762c78d5aac98c89f2fa653"
+    },
+    {
+      "outer_fold": 2,
+      "sample_count": 23,
+      "source_archive_sha256": "48e7d655f71a58ad540297eb592fd31a99126256d72d5246e75627594c92f6c6",
+      "export_path": "outer_2.npz",
+      "export_sha256": "30ccdb1d99a3c0cf1c35fb3d1dd600b9d857357383a84680821a2f44231e7197"
+    },
+    {
+      "outer_fold": 3,
+      "sample_count": 23,
+      "source_archive_sha256": "8cee6be7f988d00157325d31244790fa99865e766251d83adaa92d6c4b295302",
+      "export_path": "outer_3.npz",
+      "export_sha256": "87c2888677a00d9376dcf11d2902b8536a6d81e85dde6d29a0877888c39c19a6"
+    },
+    {
+      "outer_fold": 4,
+      "sample_count": 23,
+      "source_archive_sha256": "c7e56a254d43834b237229505741799447cbc66131a5df35cab5c35ff2aa6755",
+      "export_path": "outer_4.npz",
+      "export_sha256": "52850ca3740f84615c74c6242292676f614f6edeb9c1027f303fbc086d8c7a23"
+    }
+  ]
+}

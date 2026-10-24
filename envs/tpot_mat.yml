@@ -1,0 +1,25 @@
+name: hpsafe-tpot-mat
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip=24.2
+  # TPOT 0.11.7 imports pkg_resources; keep the compatibility provider.
+  - setuptools=69.5.1
+  - numpy=1.23.5
+  - pandas=1.5.1
+  - scipy=1.10.1
+  - scikit-learn=1.2.2
+  - joblib=1.2.0
+  - xgboost=1.7.6
+  - pyyaml=6.0.2
+  - orjson=3.10.7
+  - ijson=3.3.0
+  - tqdm=4.66.5
+  - pytest=8.3.3
+  - pip:
+      - tpot==0.11.7
+      - deap==1.4.1
+      - stopit==1.1.2
+      - update-checker==0.18.0

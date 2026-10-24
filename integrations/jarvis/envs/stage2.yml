@@ -1,0 +1,12 @@
+name: hpsafe-jarvis-stage2
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy=1.26
+  - pyyaml=6
+  - pytorch=2.5
+  - pytorch-cuda=12.4
+  - pytest=8
